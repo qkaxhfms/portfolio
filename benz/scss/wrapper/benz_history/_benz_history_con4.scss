@@ -1,0 +1,120 @@
+.benz_history_con4_wrapper{
+    >div{
+        width:1170px;
+        margin:0px auto;
+        >div{
+            padding-top:230px;
+            padding-bottom:200px;
+            >div{
+                float: left;
+                &:nth-of-type(1){
+                    width:22.9%;
+                    padding-right:27.8%;
+                    >p{
+                        font:400 133px/1 'Cardo';
+                        color: #fff;
+                        padding-bottom:64px;
+                        &:nth-of-type(1){
+                            position: relative;
+                            &::after{
+                                position: absolute;
+                                bottom:0px;
+                                left:50%;
+                                display: block;
+                                content:'';
+                                width:1px;
+                                height:64px;
+                                background-color:#fff;
+                            }
+                        }
+
+                        &:nth-of-type(3){
+                            font:400 20px/1.8 'NanumBarunGothic';
+                            letter-spacing: -0.2px;
+                            color: #999;
+
+                        }
+                    }
+
+                }
+                &:nth-of-type(2){
+                    width:49.3%;
+                    >ul{
+                        >li{
+                            padding-bottom:30px;
+                            transform:translateY(60px);
+                            opacity:0;
+
+                            &:nth-child(1){
+                                transition:all linear 0.5s;
+                            }
+                            &:nth-child(2){
+                                transition:all linear 0.5s;
+                            }
+                            &:nth-child(3){
+                                transition:all linear 0.5s;
+                            }
+                            &:nth-child(4){
+                                transition:all linear 1s;
+                            }
+                            &:nth-child(5){
+                                transition:all linear 1s;
+                            }
+                            &:nth-child(6){
+                                transition:all linear 1s;
+                            }
+
+                            >div{
+                                background-size:cover;
+                                background-repeat:no-repeat;
+                                text-indent:-9999em;
+                            }
+
+                            &:nth-child(2)>div{
+                                width:414px;
+                                height:272px;
+                                margin-top:30px;
+                                margin-left:100px;
+                                background-image:url('../img/benz_history/benz_history_con4_pic1.png'); 
+                            }
+
+                            &:nth-child(4)>div{
+                                width:414px;
+                                height:272px;
+                                margin-top:30px;
+                                margin-left:100px;
+                                background-image:url('../img/benz_history/benz_history_con4_pic2.png'); 
+                            }
+
+                            >p{
+                                >span{
+                                    display: inline-block;
+                                    font:400 18px/1 'NanumBarunGothic';
+                                    &:nth-of-type(1){
+                                        color:#999;
+                                        padding-right:28px;
+                                    }
+                                    &:nth-of-type(2){
+                                        font-family:'Lato';
+                                        color:#fff;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }&::after{
+                display: block;
+                content:'';
+                clear:both;
+            }
+        }
+    }
+}
+
+
+
+.benz_history_con4_wrapper.on > div > div > div:nth-of-type(2) > ul > li{    
+    transform:translateY(0px);
+    opacity:1;
+}

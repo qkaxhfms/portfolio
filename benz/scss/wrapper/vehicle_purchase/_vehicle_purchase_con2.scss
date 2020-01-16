@@ -1,0 +1,88 @@
+.vehicle_purchase_con2_wrapper{
+    background: linear-gradient(to right, #001555, #410a5d);
+    >div{
+        width:1170px;
+        margin:0px auto;
+        padding-top:126px;
+        >h2{
+            position: relative;
+            font: 400 48px/60px 'Cardo';
+            color: #fff;
+            text-align: center;
+        }
+        >p{
+            padding-top: 24px;
+            font: 400 16px/30px 'NanumBarunGothic';
+            color: #dedede;
+            letter-spacing: -0.4px;
+            text-align: center;
+        }
+        >div{
+            padding-top:64px;
+            padding-bottom:58px;
+            >dl{
+                float: left;
+                width:50%;
+
+                &:nth-of-type(2n)>dd:nth-of-type(2){
+                    padding-right:0px;
+                }
+
+
+                &:nth-of-type(1)>dt{
+                    background-image:url('../img/vehicle_purchase/vehicle_purchase_con2_pic1.png');
+                    width:58px;
+
+                }
+
+                &:nth-of-type(2)>dt{
+                    background-image:url('../img/vehicle_purchase/vehicle_purchase_con2_pic2.png');
+                    width:48px;
+
+                }
+
+                &:nth-of-type(3)>dt{
+                    background-image:url('../img/vehicle_purchase/vehicle_purchase_con2_pic3.png');
+                    width:52px;
+
+                }
+
+                &:nth-of-type(4)>dt{
+                    background-image:url('../img/vehicle_purchase/vehicle_purchase_con2_pic4.png');
+                    width:44px;
+
+                }
+
+
+
+                >dt{
+                    display: block;
+                    height:70px;
+                    background-size:contain;
+                    background-repeat:no-repeat;
+                    background-position:bottom center;
+                    text-indent:-9999em;
+                    margin-bottom:28px;
+                }
+                >dd{    
+
+                    &:nth-of-type(1){
+                        font:400 30px/1.58 'NanumBarunGothic';
+                        color:#fefefe;
+                        letter-spacing:-0.75px;
+                    }
+                    &:nth-of-type(2){
+                        padding:24px 50px 72px 0px;
+                        font:400 16px/1.88 'NanumBarunGothic';
+                        color:#999;
+                        letter-spacing:-0.4px;
+                    }
+                }
+            }&::after{
+                display: block;
+                content:'';
+                clear:both;
+            }
+        }
+    }
+}

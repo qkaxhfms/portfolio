@@ -1,0 +1,213 @@
+//all_product_con2_wrapper
+.all_product_con2_wrapper{
+    >div{
+        width:1170px;
+        margin:0px auto;
+        >h2{
+            font: 400 48px/60px 'Cardo';
+            color: #fff;
+            text-align: center;
+            padding-top: 162px;
+            padding-bottom: 24px;
+        }
+        >p{
+            font: 400 16px/30px 'NanumBarunGothic';
+            color: #dedede;
+            letter-spacing: -0.4px;
+            text-align: center;
+        }
+        >div{
+            >ul{
+                text-align: center;
+                padding-top:72px;
+                padding-bottom:84px;
+                >li{
+                    display: inline-block;
+                    >a{
+                        display: block;
+                        width:140px;
+                        font:400 18px/50px 'NanumBarunGothic';
+                        color:#444;
+                        box-sizing:border-box;
+                        border-bottom:2px solid #444;
+                        transition:0.5s;
+                    }
+                    &.on>a{
+                        color:#fff;
+                        border-bottom:2px solid #fff;
+                    }
+                }
+            }
+            >div{
+                position: relative;
+                height:714px;
+                >div{
+                    display: none;
+                    position: absolute;
+                    width:100%;
+                    height:100%;
+                    >div{
+                        width:100%;
+                        height:714px;
+                        position: relative;
+                        box-sizing:border-box;
+                        overflow:hidden;
+                        >ul{
+                            &:first-of-type{
+                                width:100%;
+                                height:100%;
+                                position:relative;
+                                right:0%;
+                                >li{
+                                    width:100%;
+                                    height:100%;
+                                    position:absolute;
+                                    top:0px;
+                                    left:0px;
+                                    display:none;
+                                    background-size:contain;
+                                    background-position:top center;
+                                    background-repeat:no-repeat;
+
+
+
+                                    &.on{display: block;}
+
+                                    >div{
+                                        position: absolute;
+                                        background-repeat:no-repeat;
+                                        background-size:cover;
+                                        width:100%;
+                                        height:100%;
+                                    }
+                                }
+                            }
+                            >li{
+
+                                >a{
+                                    display: block;
+                                }
+                            }
+
+                            &:last-of-type{
+                                transition:0.5s;
+                                opacity:0;
+                                position: absolute;
+                                right:0px;
+                                top:120px;
+                                >li{
+                                    margin-left:20px;
+                                    float:left;
+
+                                    &:first-child{
+                                        margin-left:0px;
+                                    }
+                                    >a{
+                                        display: block;
+                                        background-color:rgba(255,255,255,0.3);
+                                        width:34px;
+                                        height:2px;
+                                        transition:0.5s;
+                                        &.on{
+                                            width:70px;
+                                            background-color:rgba(255,255,255,1);
+                                        }
+                                    }
+                                }&::after{
+                                    display: block;
+                                    content:'';
+                                    clear:both;
+                                }
+                            }
+
+                        }
+                        >div{
+                            position: absolute;
+                            background-color:#232323;
+                            top:174px;
+                            left:500px;
+                            padding:76px 74px 140px;
+                            >div{
+                                width:426px;
+                                >a{
+                                    display:inline-block;
+                                    width:58px;
+                                    height:58px;
+                                    &:nth-of-type(1){
+                                        left:640px;
+                                        margin-right:30px;
+                                    }
+                                    &:nth-of-type(2){ 
+                                        left:740px;
+                                    }
+                                }
+                                
+                                >p{
+                                    &:nth-of-type(1){
+                                        padding-top:50px;
+                                        display: block;
+                                        background-image: linear-gradient(87deg, #0053ff 0%, #bb33ff), linear-gradient(to bottom, #fefefe, #fefefe);
+                                        font:400 18px/1.33 'Cardo';
+                                        letter-spacing: 0.36px;
+                                        color: #fefefe;
+                                        -webkit-background-clip: text;
+                                        background-clip: text;
+                                        -webkit-text-fill-color: transparent;
+                                    }
+                                    &:nth-of-type(2){
+                                        font:400 30px/1.5 'NanumBarunGothic';
+                                        color:#fefefe;
+                                    }
+                                }
+                                >div{
+                                    padding-top:42px;
+                                    font:400 16px/1.5 'NanumBarunGothic';
+                                    letter-spacing:-0.4px;
+                                    color:#777;
+                                }
+                            }
+                        }
+
+                    }
+
+                    &:nth-of-type(1){
+                        background-color:#555;
+                    }
+                    
+                    &:nth-of-type(1){
+                        background-color:#777;
+                    }
+
+                    &.on{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/**/
+.wrapper .all_product_con2_wrapper > div > div > div > div:nth-of-type(1){
+    background-color:transparent;
+}
+
+/*image*/
+.all_product_con2_pic1{
+    background-image: url(../img/all_product/all_product_con2_pic1.png);
+}
+.all_product_con2_pic2{
+    background-image: url(../img/all_product/all_product_con2_pic2.png);
+}
+.all_product_con2_pic3{
+    background-image: url(../img/all_product/all_product_con2_pic3.png);
+}
+.all_product_con2_pic4{
+    background-image: url(../img/all_product/all_product_con2_pic4.png);
+}
+.all_product_con2_pic5{
+    background-image: url(../img/all_product/all_product_con2_pic5.png);
+}
+.all_product_con2_pic6{
+    background-image: url(../img/all_product/all_product_con2_pic6.png);
+}
