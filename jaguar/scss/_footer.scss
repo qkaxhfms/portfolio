@@ -1,0 +1,219 @@
+/*footer*/
+.footerWrap{
+    background-color:#e9e9e9;
+    h4{
+        padding-top:100px;
+        font:700 12px/1 'Raleway';
+        color:#333;
+    }
+
+    >div{
+        position:relative;
+        >div:nth-of-type(1){
+            /***/
+            width:960px;
+            margin:0px auto;
+            >div{
+
+                float:left;
+                width:(100%/5);
+                padding-right:5%;
+                >ul{
+                    padding-top:20px;
+                    padding-bottom:100px;
+                    li{
+                        font:12px/16px 'Spoqa Han Sans';
+                        color:#777;
+                    }
+                }
+                &:last-of-type{
+                    >ul{
+                        width:100%;
+                        li{
+                            float:left;
+                            display:block;
+                            width:40px;
+                            height:40px;
+                            margin-right:5px;
+                            margin-bottom:5px;
+                            box-sizing:border-box;
+                            border:1px solid #fff;
+                            /*background-image in instagram.js*/
+                        }
+                    }
+                }
+            }
+            &::after{
+                display:block;
+                content:'';
+                clear:both;
+            }
+        }
+        >div:nth-of-type(2){
+            background-color:#1f1f1f;
+            >div{
+                position:relative;
+                width:960px;
+                margin:0px auto;
+                padding:20px 0px;
+                >p{
+                    float:left;
+                    font:100 12px/40px 'arial';
+                    color:#666;
+                }
+                >ul{
+                    float:right;
+                    li{
+                        float:left;
+                        margin-right:12px;
+                        a{
+                            display: block;
+                            font-size:20px;
+                            line-height:40px;
+                            color:#666;
+                        }&::after{
+                            display: block;
+                            content:'';
+                            clear:both;
+                        }
+                    }
+                    
+
+                }&::after{
+                    display:block;
+                    content:'';
+                    clear:both;
+                }
+                >a{
+                    position:absolute;
+                    right:0px;
+                    bottom:300px;
+                    display:block;
+                    transform:rotate(-90deg);
+                    transform-origin:bottom right;
+                    color:#999;
+                    font:bold 12px/26px 'arial';
+                    width:180px;
+                    transition:0.5s;
+                    >span{
+                        display:block;
+                        position: relative;
+                        top:-14px;
+                        left:100px;
+                        height:2px;
+                        width:30px;
+                        background-color:#999;
+                        transition: all 0.3s ease;
+
+                        /**/
+                        &::before{
+                            position: absolute;
+                            display: block;
+                            right:-4px;
+                            bottom:-2px;
+                            content:'';
+                            width:0px;
+                            height:0px;
+                            border-top:3px solid transparent;
+                            border-bottom:3px solid transparent;
+                            border-left:4px solid #999;
+                        }
+                    }
+                    &:hover{
+                        color:$sysRed;
+                    }
+                }
+                >a:hover>span{
+                    width:60px;
+                    background-color:$sysRed;
+                    &::before{
+                        border-left-color:$sysRed;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*device-width*/
+/* tablet */
+@media screen and (max-width:$tabletWid) {
+    /*footer*/
+    .footerWrap{
+        >div{
+            >div:nth-of-type(1){
+                /***/
+                width:90%;
+                >div{
+                    width:(100%/3);
+                    padding-right:0%;
+                    >ul{
+                        padding-bottom:0px;
+                    }
+                    &:nth-of-type(3){
+                    }
+                    &:last-of-type{
+                        >h4{
+                            padding-top:50px;
+                        }
+                        width:100%;
+                        padding-bottom:100px;
+                    }
+                }
+            }
+            >div:nth-of-type(2){
+                >div{
+                    width:90%;
+                }
+            }
+        }
+    }
+}
+
+/* mobile */
+@media screen and (max-width:$mobileWid) {
+    /*footer*/
+    .footerWrap{
+        h4{
+            padding-top:30px;
+        }
+        >div{
+            >div:nth-of-type(1){
+                >div{
+                    width:(100%/1);
+                    padding-right:0%;
+                    &:nth-of-type(1){
+                        padding-top:50px;
+                        >h4{
+                            padding-top:0px;
+                        }
+                    }
+                    &:nth-of-type(3){
+                    }
+                    &:last-of-type{
+                        padding-bottom:50px;
+                        >ul{
+                            li{
+                                width:60px;
+                                height:60px;
+                            }
+                        }
+                    }
+                }
+            }
+            >div:nth-of-type(2){
+                >div{
+                    >p{
+                        float:none;
+                    }
+                    >ul{
+                        float:none;
+                        }
+                    >a{
+                        bottom:250px;            
+                    }
+                }
+            }
+        }
+    }    
+}

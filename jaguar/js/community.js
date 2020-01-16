@@ -1,0 +1,4 @@
+//community
+$(document).ready(function(){
+    
+});

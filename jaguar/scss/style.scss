@@ -1,0 +1,98 @@
+@import 'reset';
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/*common-style*/
+
+/*style*/
+body{
+    /**/
+    font:100 14px/1 'Raleway', 'arial', 'Spoqa Han Sans', 'Spoqa Han Sans JP', sans-serif; color:#ccc;
+    /**/
+    div{
+        /**/
+    }
+    /**/
+    h2{
+        font:400 40px/1 'Raleway', 'Spoqa Han Sans'; color:#fff;
+    }
+    p{
+        font-family:'Spoqa Han Sans';
+        color:#fff;
+    }
+    a{
+        color:#000;
+    }
+}
+.blind{
+    position: absolute; top:-9999px;
+}
+/*skip navigation*/
+#skipNavi{
+}
+#skipNavi>li>a{
+    z-index:100;
+    position: fixed;
+    display:block;
+    width:100%;
+    height:50px;
+    background-color:rgb(179,40,45);
+    font:bold 16px/50px 'Spoqa Han Sans';
+    color:#fff;
+    text-align: center;
+    letter-spacing:1px;
+    top:-50px;
+    left:0px;
+    }
+#skipNavi>li>a.on{
+    top:0px;
+}
+
+
+/*device-width*/
+$pchWid : 1200px;
+$tabletWid : 939px;
+$mobileWid : 539px;
+
+/*color*/
+$sysRed : rgb(179,40,45);
+$sysRedGb : rgba(179,40,45,0.7);
+$sysRedGs : rgba(179,40,45,0.25);
+$sysWhi : rgba(255,255,255,1);
+
+@import 'header';
+
+@import 'pageNav';
+@import './contentWrap/visual';
+@import './contentWrap/intro';
+@import './contentWrap/product';
+@import './contentWrap/service';
+@import './contentWrap/news';
+@import './contentWrap/community';
+@import './contentWrap/location';
+
+@import 'footer';
+
+/*device-width*/
+/* tablet */
+@media screen and (max-width:$tabletWid) {
+
+}
+
+/* mobile */
+@media screen and (max-width:$mobileWid) {
+    /*style*/
+    body{
+        /**/
+        h2{
+            font-size:28px;
+        }
+        p{
+            font-family:'Spoqa Han Sans';
+            color:#fff;
+        }
+        a{
+            color:#000;
+        }
+    }
+}

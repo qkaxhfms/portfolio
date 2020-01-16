@@ -1,0 +1,62 @@
+@charset "utf-8";
+/* CSS Document */
+/*헤드영역 배경 수정*/
+#top_head.forbus{position: relative; display:block; background-image:url('../images/sub_images/forex_bg.jpg'); background-repeat:no-repeat; background-size:cover;}
+/*배경색수정*/
+body .bg_wrap{background-color:#145a11;}
+/*글씨색상*/
+.fc666{color:#666666;}
+.fc000{color:#000000;}
+/*글씨크기*/
+
+dl{color:#666;}
+dd{font-size:1.1em; line-height:1.4em;}
+dt{font-size:2em; margin:0.5em 0;}
+.fz1_4em{font-size:1.4em;}
+.forbus h6{margin:10px 0;}
+/*영역시작*/
+#top_head.forbus>div{display:block; width:1320px; height:750px; margin:0 auto; position:absolute; left:calc(50% - 725px); top:calc(50% - 375px);}
+
+#buy_slideshow{position: absolute; display:block; width:600px; height:600px;background-color:white; left:125px; top:75px; z-index:1;}
+#buy_slideshow1{position: absolute; display:block; width:570px; height:570px; left:15px; top:15px; z-index:1; background-image:url('../images/sub_images/forex_rollpic2.jpg'); background-size:contain; text-indent:-9999em;}
+
+#top_head.forbus>div div:nth-of-type(2){position: absolute; display:block; width:1000px; height:680px;background-color:#145a11; right:0; top:30px;}
+#top_head.forbus>div div:nth-of-type(2)>div:before{position:absolute; left:-80px; top:-50px; display:block; content:''; width:130%; height:5px; background-color:white;}
+#top_head.forbus>div div:nth-of-type(2)>div:after{position:absolute; left:-80px; bottom:-50px; display:block; content:''; width:130%; height:5px; background-color:white;}
+#top_head.forbus>div div:nth-of-type(2)>div{position: absolute; left:calc(50% - 60px); background-color:transparent; text-align:left; width:523px; height:410px; top:125px;}
+#top_head.forbus>div div:nth-of-type(2)>div h4{padding:0;}
+#top_head.forbus>div div:nth-of-type(2)>div h2{padding:0; padding-top:0.3em;}
+#top_head.forbus>div div:nth-of-type(2)>div p{padding:100px 0 20px; font-size: 18pt;}
+#forbus_f1{display:block; width:500px; height:30px;}
+#forbus_f1 li{}
+#top_head.forbus #forbus_f1 li a{display:block; width:28%; line-height:30px; display:block; height:30px; font-size: 15pt; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;}
+/*헤드영역 호버시 이동*/
+/*메인영역*/
+/*영역크기*/
+/*forbus_1b*/
+#forbus_1b{height:1300px; background-color:white; width:100%;}
+#forbus_1b section{background-color:white; width:95%; margin:0 auto;}
+.forbus_1b_fb{color:black; text-align:center; padding-top:140px;}
+.forbus_1b_md{margin:40px auto; background-image:url('../images/sc5_bg.jpg'); background-repeat:no-repeat; width:988px; height:615px;}
+.forbus_1b_bt{}
+.forbus_1b_bt div{width:90%; height:250px; margin:40px auto;}
+.forbus_1b_bt dl{width:20%; float: left; text-align: center;}
+.forbus_1b_bt dt{}
+.forbus_1b_bt dd{color:#666666;}
+.forbus_1b_bt p{text-align: center; font-size:1.2em;}
+/*forbus_2b*/
+#forbus_2b{height:2000px; background-color:white;}
+#forbus_2b section{background-color:white; width:95%; margin:0 auto; text-align:center;}
+.forbus_2b_fb{color:black; text-align:center; padding-top:140px;}
+.forbus_2b_md{margin:40px auto; width:90%; height:400px;}
+.forbus_2b_md div{display:block; height:100%; width:100%;}
+.forbus_2b_md div img{width:95%; height:95%; margin:0 auto;}
+#midline{text-align: center; font-size:1.2em;}
+.forbus_2b_bt div:nth-of-type(1){color:black; text-align:center; padding-top:140px;}
+.forbus_2b_bt div:nth-of-type(2){height:1300px; margin-top:40px;}
+.forbus_2b_bt div:nth-of-type(2)>div{width:80%; height:60%; margin:0 auto;}
+.forbus_2b_bt div:nth-of-type(2)>div iframe{width:100%; height:100%;}
+.fixedbanner{background-color:#145a11;}
+}

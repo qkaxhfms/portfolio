@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+
+#htl{
+  animation-duration: 3s;
+  animation-name: slidein1;
+}
+
+#hh{
+  animation-duration: 3s;
+  animation-name: slidein2;
+  animation-timing-function: ease;
+}
+
+#hp{
+  animation-duration: 3s;
+  animation-name: slidein3;
+}
+
+#hl{
+  animation-duration: 3s;
+  animation-name: slidein4;
+}
+@keyframes slidein1 {
+  from {
+    top: 0px;
+  }
+
+  to {
+    top:9%;
+  }
+}
+
+@keyframes slidein2 {
+  from {
+    left: 0px;
+  }
+
+  to {
+    left:3.5%;
+  }
+}
+
+@keyframes slidein3 {
+  from {
+    left: 18%;
+  }
+
+  to {
+    left:20.5%;
+  }
+}
+@keyframes slidein4 {
+  from {
+    right:0px;
+  }
+
+  to {
+    right:-5%;
+  }
+}

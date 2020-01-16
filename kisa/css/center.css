@@ -1,0 +1,87 @@
+@charset 'utf-8';
+
+/*center main-contents영역*/
+article>section:before{display:block; content:''; height:200px;}
+article section{}
+#center_main1{float:left; display:block; width:226px; height:2300px;}
+#center_main2{float:left; left:580px; top:200px; display:block; width:940px; height:2300px; margin-left:25px;}
+/*fixedbanner*/
+#fixedbanner{position:fixed; top:215px; left:50%; margin-left:620px;border:1px solid #c1c1c1; height:630px; width:90px; text-align:center;}
+#fixed_list{}
+#fixed_list li{height:90px; background-color:white; border:1px solid #c1c1c1; box-sizing:border-box;}
+#fixed_list li a{font-weight:bold; color:#888; margin:0 auto; font-size:9pt; display:block; width:90px; height:90px; cursor:pointer;}
+#fixed_list li a:hover{color:black;}
+#fixed_list li a:before{display:block; content:''; width:45px; height:45px; background:url('../images/sub_images/fixed_banner_m.png') no-repeat; margin:0 auto; margin-top:10px;}
+#fixed_list li:hover a:before{display:block; content:''; width:45px; height:45px; background:url('../images/sub_images/fixed_banner_m_on.png') no-repeat; margin:0 auto; transition:1s; margin-top:10px;}
+#fixed_list li:nth-child(1) a:before{background-position:left;}
+#fixed_list li:nth-child(2) a:before{background-position:-45px 0;}
+#fixed_list li:nth-child(3) a:before{background-position:-91px 0;}
+#fixed_list li:nth-child(4) a:before{background-position:-135px 0;}
+#fixed_list li:nth-child(5) a:before{background-position:-184px 0;}
+#fixed_list li:nth-child(6) a:before{background-position:-231px 0;}
+#fixed_list li:nth-child(7) a:before{background-position:right;}
+
+#protect{font-size:28pt; margin-bottom:20px; font-weight:bold;}/*개인정보보호*/
+#protect_image{background-image:url('../images/sub_images/privacy.gif'); height:79px; text-indent:-9999em;}
+#center_main1 ul{}
+#left_menu_fixed li{border:1px solid #ebebeb; box-sizing:border-box; padding:10px;}
+
+#left_menu_fixed>li:last-child{height:60px; background:url('../images/sub_images/bar_mini.gif') no-repeat;}
+#left_menu_fixed li a{display:inline-block; width:200px; font-weight:bold; font-size:13pt; color:#666; line-height:22px; margin-top:3px;}
+#left_menu_fixed li:nth-child(3)>a:after{float:right; display:block; content:''; width:9px; height:9px; background-image:url('../images/sub_images/arrow_gray_mini.gif'); margin-top:6px;}
+
+/*호버 펼침*/
+#left_menu_fixed>li:nth-child(3):hover ol{position:relative; display:block; width:226px; font-weight:bold;}
+#left_menu_fixed ol{position:absolute; left:-10px; top:10px; display:none; width:209px; background-color:#f4f4f4; color:#666; height:89px; font-size:0.9em; box-sizing:border-box;}
+#left_menu_fixed ol li a{margin-left:10px; cursor:pointer; font-size:0.95em;}
+#left_menu_fixed ol li a:before{float:left; display:block; content:''; background-image:url('../images/sub_images/arrow_gray_mini_r.gif'); width:9px; height:9px; margin:8px 10px 0 0;}
+#left_menu_fixed ol li a:hover{color:#3058a7;}
+
+/*본문*/
+#top_section{display: block; height:50px;}
+#center_main2{}
+#center_main2_top{float:right;}
+#center_main2_top li{float:left; font-weight:bold; font-size:10pt; line-height:30px;}
+
+#qna{}
+#qna a{margin-top:20px; display:block; background-image:url('../images/sub_images/faq.gif'); width:226px; height:79px; text-indent:-9999em; cursor:pointer;}
+#qna a:hover{opacity:0.8; transition:0.5s;}
+/*privacy_area*/
+#privacy_area{}
+#privacy_area>h3{font-size:22pt; margin-bottom:40px;}
+#privacy_area h4:before{float:left; display:block; width:13px; height:13px; background:url(../images/sub_images/headbox.gif) no-repeat; content:''; margin:8px;}
+h4{font-size:17pt; margin:15px 0; display: inline-block;}
+#privacy_area h4{margin-left:15px;}
+.fsp{line-height:30px;}
+.mb{margin-bottom:20px;}
+.bs{margin-left:25px;}
+/**/
+#politic_contents{display:block; width:900px; height:1350px;}
+#politic_contents img{padding-left:20px;}
+#politic_contents div{}
+#politic_contents div span{font-size:15pt; font-weight:bold;}
+#politic_contents p{margin-left:5px; font-size:13pt;}
+/**/
+#politic_guidance,#politic_contents{display:block;}
+#politic_guidance table{margin-left:30px;border:2px solid white; box-sizing:border-box; width:870px;font-size:0.9em;}
+#politic_guidance table th{padding:10px; background-color:#516ab5; color:white;}
+#politic_guidance table tr td{height:40px; text-align:left;line-height:50px; padding-left:15px;}
+#politic_guidance table tr:nth-of-type{}
+#politic_guidance table tr:nth-of-type(2){background-color:#f4f4f4;}
+#politic_guidance table tr:nth-of-type(3){background-color:}
+#politic_guidance table tr:nth-of-type(4){background-color:#f4f4f4;}
+#politic_guidance table tr:nth-of-type(5){background-color:}
+#politic_guidance table tr:nth-of-type(6){background-color:#f4f4f4;}
+
+#politic_guidance table tr td:nth-of-type(3){line-height:20px;}
+#politic_guidance table tr td:nth-of-type(4){}
+
+#politic_role{display:block; width:100%; height:2300px;}
+#politic_contents{display: block;}
+#politic_guidance{display: block;}
+#call_print{margin:50px 0 50px 100px; width:470px;}
+#call_print li{margin-left:110px;}
+#call_print li a{text-indent:-9999em; display:block; float:left; height:30px; width:120px; background:url('../images/sub_images/bottom_btn.gif') no-repeat; cursor:pointer;}
+#call_print li:first-child a{background-position:left; margin-right:10px;}
+#call_print li:last-child a{background-position:right;}
+#call_print li a:hover{opacity:0.7; transition:0.5s;}
