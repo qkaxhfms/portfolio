@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,27 +15,867 @@
     <script src="js/scroll.js"></script>
     <script src="js/all_product.js"></script>
 </head>
-<body>
-    <!--header-->
-    <?php include 'php/header.php'; ?>
 
-    <!--wrapper-start-->
+<body>
+    <!--header_wrapper-->
+    <div class="header_wrapper">
+        <!--header-->
+        <div id="header" class="scroll_event">
+            <!--logo-->
+            <h1><a href="index.html"></a></h1>
+            <!--//logo-->
+            <!--gnb-->
+            <ul id="gnb">
+                <li>
+                    <a href="all_product.html">모든제품</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                            <li><a href="#">서비스 상품 안내</a></li>
+                            <li><a href="#">메리스데스-벤츠 순정부품</a></li>
+                            <li><a href="#">모빌리티 솔류션</a></li>
+                            <li><a href="#">맞춤 서비스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="vehicle_purchase.html">구매가이드</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">금융 프로그램</a></li>
+                            <li><a href="#">벤츠 인증 중고차</a></li>
+                            <li><a href="#">임직원 우대 프로그램</a></li>
+                            <li><a href="#">재구매 혜택</a></li>
+                            <li><a href="#">부가서비스 안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="professional_benz_service.html">고객서비스</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                            <li><a href="#">서비스 상품안내</a></li>
+                            <li><a href="#">메르세데스-벤츠 순정부품</a></li>
+                            <li><a href="#">모빌리티 솔루션</a></li>
+                            <li><a href="#">맞춤 서비스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="benz_history.html">회사소개</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">주요 연혁</a></li>
+                            <li><a href="#">경영 철학</a></li>
+                            <li><a href="#">딜러 검색</a></li>
+                            <li><a href="#">공식 서비스 센터</a></li>
+                            <li><a href="#">파이낸셜 서비스 코리아</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="new_benz_promotion.html">프로모션</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">AMG Experience</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!--sns-->
+            <ul id="sns">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <!--//sns-->
+            <!--btn_menu-->
+            <a href="#" class="gnb_mega_open">
+                <span>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14.94">
+                        <title>Untitled-1</title>
+                        <rect class="cls-1" width="17" height="2" />
+                        <rect class="cls-1" y="6.47" width="17" height="2" />
+                        <rect class="cls-1" y="12.94" width="17" height="2" />
+                    </svg>
+                </span>
+            </a>
+            <!--//btn_menu-->
+        </div>
+        <!--//header-->
+        <!--gnb_mega-->
+        <div class="gnb_mega_wrapper">
+            <ul id="gnb_mega">
+                <li>
+                    <a href="#">모든제품</a>
+                    <ul>
+                        <li><a href="#">전체 모델 알아보기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">구매가이드</a>
+                    <ul>
+                        <li><a href="#">금융 프로그램</a></li>
+                        <li><a href="#">벤츠 인증 중고차</a></li>
+                        <li><a href="#">임직원 우대 프로그램</a></li>
+                        <li><a href="#">재구매 혜택</a></li>
+                        <li><a href="#">부가서비스 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객서비스</a>
+                    <ul>
+                        <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                        <li><a href="#">서비스 상품안내</a></li>
+                        <li><a href="#">메르세데스-벤츠 순정부품</a></li>
+                        <li><a href="#">모빌리티 솔루션</a></li>
+                        <li><a href="#">맞춤 서비스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="#">주요 연혁</a></li>
+                        <li><a href="#">경영 철학</a></li>
+                        <li><a href="#">딜러 검색</a></li>
+                        <li><a href="#">공식 서비스 센터</a></li>
+                        <li><a href="#">파이낸셜 서비스 코리아</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프로모션</a>
+                    <ul>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">AMG Experience</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--//gnb_mega-->
+    </div>
+    <!--//header-wrapper-->
+    <!--wrapper-->
     <div class="wrapper">
         <!--sub-page-vehicle-purchase-start-->
         <?php include 'php/wrapper/all_product/sub_page_top.php'; ?>
-        <?php include 'php/wrapper/all_product/all_product_con1.php'; ?>
-        <?php include 'php/wrapper/all_product/all_product_con2.php'; ?>
-        <?php include 'php/wrapper/all_product/all_product_con3.php'; ?>
-        <?php include 'php/wrapper/all_product/all_product_con4.php'; ?>
-        <?php include 'php/wrapper/all_product/all_product_con5.php'; ?>
-        <!--sub-page-vehicle-purchase-end-->
+        <!--all_product_con1-->
+        <div class="all_product_con1_wrapper">
+            <div>
+                <h2>Highlights</h2>
+                <p>The New C-Class Sedan의 주요 기능</p>
+                <div class="all_product_con1_list">
+                    <p>
+                        <span>NEW GENERATION C-CLASS</span>
+                        <span>최고급 품격과 역동성 그리고 성능이 하나로. 완벽한 비율 속, 스포티함을 세련되게 재정의하다.</span>
+                    </p>
+                    <ul>
+                        <li>
+                            <a href="#" class="on">1</a>
+                        </li>
+                        <li>
+                            <a href="#">2</a>
+                        </li>
+                        <li>
+                            <a href="#">3</a>
+                        </li>
+                        <li>
+                            <a href="#">4</a>
+                        </li>
+                        <li>
+                            <a href="#">5</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="on">
+                            <div>
+                                <div>LED 고성능 헤드램프</div>
+                                <div>향상된 LED 기술로 탁월한 안전성을 제공합니다. 눈에 띄는 디자인으로 프론트 라이트와 테일 라이트가 낮에는 밝고 밤에는 기술적 우수성을 뽐내며 특별히 더 빛납니다.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>10.25인치 멀티미디어 시스템</div>
+                                <div>고해상도 10.25인치 멀티미디어 시스템 표시창이 적용되어 실내 공간의 품격이 더욱 돋보입니다. 1,920 x 720 픽셀의 선명한 화질로 인포테인먼트 콘텐츠를 즐길 수 있습니다.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>ENERGIZING COMFORT CONTROL</div>
+                                <div>에너자이징 컴포트 컨트롤은 공조장치와 시트의 열선, 통풍, 마사지, 여기에 조명과 음악이 유기적으로 서로 연결되어 트레이닝 프로그램으로 탑승자에게 편안함과 안락함을 제공합니다.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>DYNAMIC SELECT</div>
+                                <div>버튼 작동 만으로 C-Class의 주행모드를 조정할 수 있습니다. 이 시스템을 이용해 엔진, 변속기, 서스펜션 및 스티어링의 특성을 원하는 대로 조정할 수 있습니다.</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>차세대 4기통 디젤 엔진</div>
+                                <div>메르세데스-벤츠의 차세대 디젤 엔진인 OM 654가 C-Class에 최초 적용되었습니다. 기존 엔진 보다 배기량은 줄었지만 효율성, 정숙성, 출력은 크게 향상되었습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//all_product_con1-->
+        <!--all_product_con2-->
+        <div class="all_product_con2_wrapper">
+            <div>
+                <h2>Option List</h2>
+                <p>모델별 기본 사양</p>
+                <div class="all_product_con2_list">
+                    <ul>
+                        <li class="on"><a href="#">Interior</a></li>
+                        <li><a href="#">Exterior</a></li>
+                    </ul>
+                    <div>
+                        <div class="on">
+                            <div>
+                                <ul class="panel_all_product">
+                                    <li class="on all_product_con2_pic1">
+                                        <div></div>
+                                    </li>
+                                    <li class="all_product_con2_pic2">
+                                        <div></div>
+                                    </li>
+                                    <li class="all_product_con2_pic3">
+                                        <div></div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div>
+                                        <a href="#" class="btn_prev_all_product">
+                                            <!--btn_play_2-->
+                                            <p class="btnPlay2">
+                                                <span>circle</span>
+                                                <span>
+                                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                        <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                    fill: none;
+                                                                    stroke: #fff;
+                                                                    stroke-miterlimit: 10;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                        <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                                    </svg>
+                                                </span>
+                                            </p>
+                                            <!--//btn_play2-->
+                                        </a>
+                                        <a href="#" class="btn_next_all_product">
+                                            <!--btn_play_1-->
+                                            <p class="btnPlay1">
+                                                <span>circle</span>
+                                                <span>
+                                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                        <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                    fill: none;
+                                                                    stroke: #fff;
+                                                                    stroke-miterlimit: 10;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                        <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                                    </svg>
+                                                </span>
+                                            </p>
+                                            <!--//btn_play_1-->
+                                        </a>
+                                        <p>Interior</p>
+                                        <p>더욱더 편안하고 안정감 있는 내부의 인테리어</p>
+                                        <div>새로운 C-Class의 내부는 모두 고급스럽고 우아한 미학으로 더욱 향상된 편의성이 편안함과 활력을 제공합니다.</div>
+                                    </div>
+                                </div>
+                                <ul class="navi_all_product">
+                                    <li><a href="#" class="on"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <ul class="panel_all_product_2">
+                                    <li class="on all_product_con2_pic4">
+                                        <div></div>
+                                    </li>
+                                    <li class="all_product_con2_pic5">
+                                        <div></div>
+                                    </li>
+                                    <li class="all_product_con2_pic6">
+                                        <div></div>
+                                    </li>
+                                </ul>
+                                <div>
+                                    <div>
+                                        <a href="#" class="btn_prev_all_product_2">
+                                            <!--btn_play_2-->
+                                            <p class="btnPlay2">
+                                                <span>circle</span>
+                                                <span>
+                                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                        <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                    fill: none;
+                                                                    stroke: #fff;
+                                                                    stroke-miterlimit: 10;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                        <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                                    </svg>
+                                                </span>
+                                            </p>
+                                            <!--//btn_play2-->
+                                        </a>
+                                        <a href="#" class="btn_next_all_product_2">
+                                            <!--btn_play_1-->
+                                            <p class="btnPlay1">
+                                                <span>circle</span>
+                                                <span>
+                                                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                        <defs>
+                                                            <style>
+                                                                .cls-1 {
+                                                                    fill: none;
+                                                                    stroke: #fff;
+                                                                    stroke-miterlimit: 10;
+                                                                }
+                                                            </style>
+                                                        </defs>
+                                                        <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                        <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                                    </svg>
+                                                </span>
+                                            </p>
+                                            <!--//btn_play_1-->
+                                        </a>
+                                        <p>Exterior</p>
+                                        <p>역동적이면서도 현대적인 외관의 자태</p>
+                                        <div>뒤로 갈수록 아래쪽으로 떨어지는 듯한 드로핑 라인과 대조를 이루어 우아한 라인을 자랑합니다.</div>
+                                    </div>
+                                </div>
+                                <ul class="navi_all_product_2">
+                                    <li><a href="#" class="on"></a></li>
+                                    <li><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--all_product_con2-->
+        <!--all_product_con3-->
+        <div class="all_product_con3_wrapper">
+            <div>
+                <h2>Equipment & Accessories</h2>
+                <p>주요 사양 및 옵션</p>
+                <div>
+                    <div>
+                        <div class="all_product_con3_hover">
+                            <div>
+                                <div class="all_product_con3_hover_gradient"></div>
+                            </div>
+                            <div>
+                                <div class="all_product_con3_hover_con">
+                                    <p>Convenience</p>
+                                    <p>새로운 스티어링 휠</p>
+                                    <div class="all_product_con3_hover_con_txt">새로운 스티어링 휠은 크루즈 컨트롤은 물론 액티브 디스턴스 어시스트 디스트로닉을 직접 제어할 수 있도록 합니다. 스티어링 휠의 제어판에 있는 버튼으로 손가락을 수평 및 수직으로 움직여 계기판과 멀티미디어 시스템을 직관적으로 작동할 수 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="all_product_con3_hover">
+                            <div>
+                                <div class="all_product_con3_hover_gradient"></div>
+                            </div>
+                            <div>
+                                <div class="all_product_con3_hover_con">
+                                    <p>Light</p>
+                                    <p>LED 하이퍼포먼스 헤드램프</p>
+                                    <div class="all_product_con3_hover_con_txt">최첨단 LED 기술과 렌즈가 도입되어 야간주행에도 가시성을 확보 하여 안전성을 향상시킵니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_product_con3_hover">
+                            <div>
+                                <div class="all_product_con3_hover_gradient"></div>
+                            </div>
+                            <div>
+                                <div class="all_product_con3_hover_con">
+                                    <p>Connectivity</p>
+                                    <p>커맨드 온라인 </p>
+                                    <div class="all_product_con3_hover_con_txt">10.25인치 대형 고해상도 화면은 물론, 최초로 Full 3D Map이 적용된 내비게이션이 제공됩니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="all_product_con3_hover">
+                            <div>
+                                <div class="all_product_con3_hover_gradient"></div>
+                            </div>
+                            <div>
+                                <div class="all_product_con3_hover_con">
+                                    <p>Suspension</p>
+                                    <p>다이나믹 셀렉트</p>
+                                    <div class="all_product_con3_hover_con_txt">다이내믹 셀렉트를 사용하면, 버튼 작동만으로 C-Class의 주행모드를 조정할 수 있습니다.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="all_product_con3_hover">
+                            <div>
+                                <div class="all_product_con3_hover_gradient"></div>
+                            </div>
+                            <div>
+                                <div class="all_product_con3_hover_con">
+                                    <p>Parking</p>
+                                    <p>능동형 주차 어시스트</p>
+                                    <div class="all_product_con3_hover_con_txt">평행 또는 수직으로 주차를 할 때와 평행 주차가 된 상태에서 빠져나올 때 도움을 줍니다. </div>
+                                </div>
+                            </div>
+                        </div>
 
-        <!--sub-page-bottom-start-->
-        <?php include 'php/wrapper/sub_page/sub_page_bottom.php'; ?>
-        <!--sub-page-bottom-end-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//all_product_con3-->
+        <!--all_product_con4-->
+        <div class="all_product_con4_wrapper">
+            <div>
+                <h2>Option List</h2>
+                <p>모델별 기본 사양</p>
+                <div class="all_product_con4_list">
+                    <ul>
+                        <li class="on">
+                            <a href="#">가솔린</a>
+                        </li>
+                        <li>
+                            <a href="#">디젤</a>
+                        </li>
+                    </ul>
+                    <div>
+                        <div class="on">
+                            <div>
+                                <div>사진1</div>
+                                <p>C 220 d AVANGARDE</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,950cc</li>
+                                    <li>최고출력: 194ps/3,800rpm</li>
+                                    <li>최대토크: 40.8kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 240(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                            <div>
+                                <div>사진2</div>
+                                <p>C 220 d 4MATIC AMG Line</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,950cc</li>
+                                    <li>최고출력: 194ps/3,800rpm</li>
+                                    <li>최대토크: 40.8kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 233(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                            <div>
+                                <div>사진3</div>
+                                <p>C 220 d 4MATIC EXCLUSIVE</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,950cc</li>
+                                    <li>최고출력: 194ps/3,800rpm</li>
+                                    <li>최대토크: 40.8kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 233(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <div>사진2-1</div>
+                                <p>C 350 e</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,991cc</li>
+                                    <li>최고출력: 211ps/3,800rpm</li>
+                                    <li>최대토크: 35.7kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 235(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                            <div>
+                                <div>사진2-2</div>
+                                <p>Lorem Ipsum</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,991cc</li>
+                                    <li>최고출력: 211ps/3,800rpm</li>
+                                    <li>최대토크: 35.7kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 235(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                            <div>
+                                <div>사진2-3</div>
+                                <p>Lorem Ipsum</p>
+                                <ul>
+                                    <li>엔진 배열/실린더수: 직렬/ 4기통</li>
+                                    <li>배기량: 1,991cc</li>
+                                    <li>최고출력: 211ps/3,800rpm</li>
+                                    <li>최대토크: 35.7kg.m/2,800rpm</li>
+                                    <li>압축비 (:1): 15.5</li>
+                                    <li>가속력: 6.9(km/h)</li>
+                                    <li>최고속도: 235(km/h)</li>
+                                </ul>
+                                <a href="">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                    <span>시승신청 하러가기</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//all_product_con4-->
+        <!--all_product_con5-->
+        <div class="all_product_con5_wrapper">
+            <div>
+                <h2>Images and Films</h2>
+                <p>벤츠 스타일의 완벽한 조화를 직접 확인해보세요.</p>
+                <div>
+                    <div>
+                        <p>벤츠의 스포티하면서도 우아한 라인</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>벤츠만의 강인한 이미지</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>안정감있는 내부디자인</p>
+                        <div></div>
+                    </div>
+                    <div>
+                        <p>벤츠, 결코 멈추지 않는 자기혁신</p>
+                        <div class="all_product_con5_hover">
+                            <iframe src="https://www.youtube.com/embed/CLJFat6W76Y" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//all_product_con5-->
+        <!--sub_page_bottom-->
+        <div class="sub_page_bottom_wrapper">
+            <div id="sub_page_bottom">
+                <h2>More Information</h2>
+                <p>더 많은 정보를 알아보세요.</p>
+                <div>
+                    <div class="sub_page_bottom">
+                        <div>
+                            <span class="blind">시승신청 사진</span>
+                        </div>
+                        <div class="sub_page_bottom_hover">
+                            <a href="#">
+                                <!--btn_play_1-->
+                                <p class="btnPlay1">
+                                    <span>circle</span>
+                                    <span>
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                            <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                        </svg>
+                                    </span>
+                                </p>
+                                <!--//btn_play_1-->
+                            </a>
+                        </div>
+                    </div>
+                    <p>시승 신청</p>
+                </div>
+                <div>
+                    <div class="sub_page_bottom">
+                        <div>
+                            <span class="blind">전국 서비스센터 찾기</span>
+                        </div>
+                        <div class="sub_page_bottom_hover">
+                            <a href="#">
+                                <!--btn_play_1-->
+                                <p class="btnPlay1">
+                                    <span>circle</span>
+                                    <span>
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                            <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                        </svg>
+                                    </span>
+                                </p>
+                                <!--//btn_play_1-->
+                            </a>
+                        </div>
+                    </div>
+                    <p>전국 서비스센터 찾기</p>
+                </div>
+                <div>
+                    <div class="sub_page_bottom">
+                        <div>
+                            <span class="blind">딜러검색 사진</span>
+                        </div>
+                        <div class="sub_page_bottom_hover">
+                            <a href="#">
+                                <!--btn_play_1-->
+                                <p class="btnPlay1">
+                                    <span>circle</span>
+                                    <span>
+                                        <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                            <defs>
+                                                <style>
+                                                    .cls-1 {
+                                                        fill: none;
+                                                        stroke: #fff;
+                                                        stroke-miterlimit: 10;
+                                                    }
+                                                </style>
+                                            </defs>
+                                            <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                            <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                        </svg>
+                                    </span>
+                                </p>
+                                <!--//btn_play_1-->
+                            </a>
+                        </div>
+                    </div>
+                    <p>딜러 검색</p>
+                </div>
+            </div>
+        </div>
+        <!--//sub_page_bottom-->
     </div>
-    <!--wrapper-end-->    
+    <!--//wrapper-->
     <!--footer-->
-    <?php include 'php/footer.php'; ?>
+    <div class="footer_wrapper">
+        <div id="footer">
+            <h1></h1>
+            <div>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">쿠키</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">개인정보처리방침(MBFSK) </a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">법적참고사항</a></li>
+                    <li><a href="#">Daimler Privacy Statement</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <ul>
+                    <li>대표번호 : 080-001-1886(벤츠코리아), 1577-2320(벤츠 파이낸셜 코리아)</li>
+                    <li>주소 : 서울 중구 한강대로416 서울스퀘어 </li>
+                    <li>사업자 : 메르세데스-벤츠코리아(주)</li>
+                    <li>대표 : 디미트리스 실라카스 </li>
+                    <li>사업자등록번호 : 220-86-46545</li>
+                </ul>
+                <p>&copy; 위 사이트는 개인 포트폴리오용 사이트이며 본 사이트 모든 저작권은 해당 사에 있음을 명시합니다.</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <select>
+                    <option selected>Family Site</option>
+                    <option>Site 1</option>
+                    <option>Site 2</option>
+                    <option>Site 3</option>
+                </select>
+            </div>
+            <a href="#" class="go_top"></a>
+        </div>
+    </div>
+    <!--//footer-->
 </body>
+
 </html>
