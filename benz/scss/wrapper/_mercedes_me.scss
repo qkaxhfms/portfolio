@@ -1,0 +1,81 @@
+/*magazine_wrapper*/
+.meresedes_me_wrapper{
+    position: relative;
+    padding-top: 0px;
+    padding-bottom: 700px;
+    background-size: cover;
+    >div{
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+
+        /*before content*/
+        &::before{
+            position: absolute;
+            display: block;
+            width:100%;
+            height:100%;
+            content:'';
+            background-color:rgba(0,0,0,0.45);
+        }
+
+        >video{
+            object-fit: cover;
+            top: -80px;
+            left: 0px;
+            width: 100%;
+            height: 700px;
+
+        }
+        >div{
+            position: absolute;
+            width:100%;
+            top:260px;
+            >h2{
+                position: relative;
+                font: 400 48px/60px 'Cardo';
+                color: #fff;
+                text-align: center;
+                &::before{
+                    position: absolute;
+                    bottom:-10px;
+                    content:'';
+                    width:100px;
+                    height:1px;
+                    background-color:#ddd;
+                    left:50%;
+                    transform:translateX(-50%);
+                }
+            }
+            >p{
+                padding-top: 24px;
+                font: 400 16px/30px 'NanumBarunGothic';
+                color: #dedede;
+                letter-spacing: -0.4px;
+                text-align: center;
+            }
+            >a{
+                position: relative;
+                left:-59px;
+                margin:110px auto 0px;
+                display: block;
+                width:58px;
+                height:58px;
+                >span{
+                    position:absolute;
+                    display: block;
+                    top:50%;
+                    transform:translateY(-50%);
+                    left:68px;
+                    color:#fff;
+                    width:120px;
+                }
+            }
+        }
+    }
+
+}

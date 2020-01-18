@@ -1,0 +1,87 @@
+.professional_benz_service_con1_wrapper{
+    >div{
+        width:1170px;
+        margin:0px auto;
+        >h2{
+            font: 400 48px/60px 'Cardo';
+            color: #fff;
+            text-align: center;
+            padding-top: 162px;
+            padding-bottom: 24px;
+        }
+        >p{
+            font: 400 16px/30px 'NanumBarunGothic';
+            color: #dedede;
+            letter-spacing: -0.4px;
+            text-align: center;
+        }
+        >div{
+            padding-top:140px;
+            padding-bottom:130px;
+            >div{
+                float: left;
+                width:31.6%;
+                margin-right:2.6%;
+                background-repeat:no-repeat;
+                background-size:contain;
+
+                /**/
+                &:nth-of-type(1){
+                    background-image:url('../img/professional_benz_service/professional_benz_service_con1_pic1.png');
+                }
+                &:nth-of-type(2){
+                    background-image:url('../img/professional_benz_service/professional_benz_service_con1_pic2.png');
+                    
+                }
+                &:nth-of-type(3){
+                    background-image:url('../img/professional_benz_service/professional_benz_service_con1_pic3.png');
+                    margin-right:0%;
+                }
+
+                /**/
+                >div{
+                    width:91.3%;
+                    margin:0px auto;
+                    padding-top:216px;
+                    >div{
+                        padding:66px 48px 36px 38px; 
+                        background-color:#232323;
+                        >p{
+                            font:400 30px/1.53 'NanumBarunGothic';
+                            color:#fefefe;
+                            letter-spacing:-1.75px;
+                        }
+                        >div{
+                            padding-top:30px;
+                            font:16px/1.88 'NanumBarunGothic';
+                            color:#999;
+                        }
+                        >a{
+                            position: relative;
+                            margin-top:49px;
+                            display: block;
+                            width:58px;
+                            height:58px;
+                            >span{
+                                position:absolute;
+                                display: block;
+                                top:50%;
+                                transform:translateY(-50%);
+                                left:68px;
+                                color:#fff;
+                                width:120px;
+                            }
+                        }
+                    }
+                }
+
+
+
+            }&::after{
+                display: block;
+                content:'';
+                clear:both;
+            }
+        }
+    }
+}

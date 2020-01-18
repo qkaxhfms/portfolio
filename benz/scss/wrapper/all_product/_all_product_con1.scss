@@ -1,0 +1,174 @@
+.all_product_con1_wrapper{
+    >div{
+        width:1170px;
+        margin:0px auto;
+        >h2{
+            font: 400 48px/60px 'Cardo';
+            color: #fff;
+            text-align: center;
+            padding-top: 162px;
+            padding-bottom: 24px;
+        }
+        >p{
+            font: 400 16px/30px 'NanumBarunGothic';
+            color: #dedede;
+            letter-spacing: -0.4px;
+            text-align: center;
+            padding-bottom:140px;
+        }
+        >div{
+            position:relative; 
+            background-image:url('../img/all_product/all_product_con1_bg.png');
+            background-position:bottom center;
+            background-size:cover;
+            >p{
+                z-index:3;
+                position: absolute;
+                width:100%;
+                >span{
+                    display: inline-block;
+                    &:nth-of-type(1){
+                        width:280px;
+                        font:30px/35px 'NanumBarunGothic';
+                        letter-spacing: 0.75px;
+                        color: #fefefe;
+                    }
+                    &:nth-of-type(2){
+                        position:absolute;
+                        padding-left:136px;
+                        font:400 16px/1.88 'NanumBarunGothic';
+                        letter-spacing:-0.4px;
+                        color:#777;
+                    }
+                }
+            }
+            >ul{
+                z-index:3;
+                position:absolute;
+                left:0px;
+                bottom:0px;
+                width:100%;
+                height:500px;
+                background-color:transparent;
+                >li{
+                    transition:0.5s;
+                    position: absolute;
+                    &:nth-child(1){
+                        left:110px;
+                        bottom:224px;
+                    }
+                    &:nth-child(2){
+                        left:472px;
+                        bottom:332px;
+                    }
+                    &:nth-child(3){
+                        left:706px;
+                        bottom:340px;
+                    }
+                    &:nth-child(4){
+                        left:864px;
+                        bottom:218px;
+                    }
+                    &:nth-child(5){
+                        left:1050px;
+                        bottom:176px;
+                    }
+
+                    >a{
+                        display: block;
+                        text-indent:-9999em;
+                        width:50px;
+                        height:50px;
+                        background-size:cover;
+                        background-repeat:no-repeat;
+                        background-image:url('../img/all_product/all_product_con1_btn.png');
+                    }
+
+                    &.on{
+                        transition:2s;
+
+
+                        &:nth-child(1)>a{
+                            background-image:url('../img/all_product/all_product_con1_pic1.png');
+                        }
+                        &:nth-child(2)>a{
+                            background-image:url('../img/all_product/all_product_con1_pic2.png');
+                        }
+                        &:nth-child(3)>a{
+                            background-image:url('../img/all_product/all_product_con1_pic3.png');
+                        }
+                        &:nth-child(4)>a{
+                            background-image:url('../img/all_product/all_product_con1_pic4.png');
+                        }
+                        &:nth-child(5)>a{
+                            background-image:url('../img/all_product/all_product_con1_pic5.png');
+                        }
+
+                        >a{
+                            transform:scale(3.2);
+                            border-radius:100%;
+                            box-sizing:border-box;
+                            border:3px solid rgba(255,255,255,0.3);
+                        }
+                    }
+                }
+            }
+            >div{
+                position:relative;
+                height:624px;
+                >div{
+                    display:none;
+                    position: absolute;
+                    left:0px;
+                    top:0px;
+                    width:100%;
+                    height:100%;
+
+                    >div{
+                        >div{
+                            float:left;
+                            &:nth-of-type(1){
+                                width:400px;
+                                font:30px/35px 'NanumBarunGothic';
+                                letter-spacing: 0.75px;
+                                color: #fefefe;
+                            }
+                            &:nth-of-type(2){
+                                margin-left:74px;
+                                width:690px;
+                                font:400 16px/1.88 'NanumBarunGothic';
+                                letter-spacing:-0.4px;
+                                color:#777;
+                            }
+                        }&::after{
+                            display:block;
+                            content:'';
+                            clear:both;
+                        }
+                    }
+
+                    &.on{
+                        display: block;
+                        z-index:2;
+                    }
+
+                    &:nth-of-type(1){
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                    &:nth-of-type(2){
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                    &:nth-of-type(3){
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                    &:nth-of-type(4){
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                    &:nth-of-type(5){
+                        background-color:rgba(0,0,0,0.8);
+                    }
+                }
+            }
+        }
+    }
+}

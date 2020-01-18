@@ -1,0 +1,92 @@
+
+.sub_page_bottom_wrapper{
+    background-image:url('../img/common/more_information_bg.png');
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position:center center;
+    >div{
+        width:1170px;
+        margin:0px auto;
+        padding-top:126px;
+        padding-bottom:260px;
+        >h2{
+            position: relative;
+            font: 400 48px/60px 'Cardo';
+            color: #fff;
+            text-align: center;
+        }
+        >p{
+            padding-top: 24px;
+            padding-bottom:84px;
+            font: 400 16px/30px 'NanumBarunGothic';
+            color: #dedede;
+            letter-spacing: -0.4px;
+            text-align: center;
+        }
+        >div{
+            float: left;
+            width:31%;
+            height:234px;
+            margin-right:3.5%;
+
+            /*last-of-type*/
+            &:last-of-type{
+                margin-right:0%;
+            }
+
+            >div{
+                position: relative;
+                height:234px;
+                background-color:orange;
+
+                >div{
+                    position: absolute;
+                    width:100%;
+                    height:100%;
+                    left:0px;
+                    top:0px;
+                    background-color:#444;
+                    background-repeat:no-repeat;
+                    background-size:cover;
+                    background-position:center center;
+                    
+                    &:nth-of-type(2){
+                        display: none;
+                        background-color:rgba(0,0,0,0.9);
+                        z-index:1;
+                        >a{
+                            position: absolute;
+                            top:50%;
+                            left:50%;
+                            transform:translate(-50%,-50%);
+                            width:58px;
+                            height:58px;
+                        }
+                    }
+
+                }
+
+            }
+            >p{
+                font:700 20px/60px 'NanumBarunGothic';
+                letter-spacing:-0.5px;
+                color:#dedede;
+
+            }
+        }&::after{
+            display: block;
+            content:'';
+            clear:both;
+        }
+    }
+}
+
+.sub_page_bottom_wrapper > div > div:nth-of-type(1) > div > div:nth-of-type(1){
+    background-image:url('../img/main/more_information_pic1.png');
+}
+.sub_page_bottom_wrapper > div > div:nth-of-type(2) > div > div:nth-of-type(1){
+    background-image:url('../img/main/more_information_pic2.png');
+}
+.sub_page_bottom_wrapper > div > div:nth-of-type(3) > div > div:nth-of-type(1){
+    background-image:url('../img/main/more_information_pic3.png');
+}

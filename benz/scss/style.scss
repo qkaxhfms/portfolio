@@ -1,0 +1,96 @@
+@import 'reset';
+@import url(https://cdn.rawgit.com/openhiun/hangul/14c0f6faa2941116bb53001d6a7dcd5e82300c3f/nanumbarungothic.css);
+@import url('https://fonts.googleapis.com/css?family=Cardo&display=swap');
+
+/*device-width*/
+$pchWid : 1200px;
+$tabletWid : 939px;
+$mobileWid : 539px;
+
+/*body*/
+body{
+    font:700 16px/1.88  'Nanum Barun Gothic','Cardo', sans-serif;
+    letter-spacing: -0.4px;
+    color: #aaa;    
+    background-color:#000;
+}
+/*wrapper*/
+.wrapper{
+    overflow:hidden;
+}
+/*blind*/
+.blind{
+    position: absolute;
+    top:-9999em;
+}
+
+/*main_section*/
+
+/*header*/
+@import 'header';
+
+/*wrapper*/
+@import './wrapper/visual_title';
+@import './wrapper/visual_video';
+@import './wrapper/service_special';
+@import './wrapper/service_customer';
+@import './wrapper/community_membership';
+@import './wrapper/community_advertisement';
+@import './wrapper/overview_news';
+@import './wrapper/mercedes_me';
+@import './wrapper/magazine';
+
+/*visual_title_sub*/
+@import './wrapper/sub_page/sub_page_top';
+@import './wrapper/sub_page/sub_page_bottom';
+
+/*sub-page-vehicle-purchase start*/
+@import './wrapper/vehicle_purchase/vehicle_purchase_con1';
+@import './wrapper/vehicle_purchase/vehicle_purchase_con2';
+@import './wrapper/vehicle_purchase/vehicle_purchase_con3';
+/*sub-page-vehicle-purchase end*/
+
+/*sub-page-new_benz_promotion start*/
+@import './wrapper/new_benz_promotion/new_benz_promotion_con1';
+/*sub-page-new_benz_promotion end*/
+
+/*sub-page-professional-benz-service start*/
+@import './wrapper/professional_benz_service/professional_benz_service_con1';
+@import './wrapper/professional_benz_service/professional_benz_service_con2';
+/*sub-page-vprofessional-benz-service end*/
+
+/*sub-page-benz-history start*/
+@import './wrapper/benz_history/benz_history_con1';
+@import './wrapper/benz_history/benz_history_con2';
+@import './wrapper/benz_history/benz_history_con3';
+@import './wrapper/benz_history/benz_history_con4';
+@import './wrapper/benz_history/benz_history_con5';
+/*sub-page-benz-history end*/
+
+/*sub-page-all-product start*/
+@import './wrapper/all_product/all_product_con1';
+@import './wrapper/all_product/all_product_con2';
+@import './wrapper/all_product/all_product_con3';
+@import './wrapper/all_product/all_product_con4';
+@import './wrapper/all_product/all_product_con5';
+/*sub-page-all-product end*/
+
+/*footer*/
+@import 'footer';
+
+/*common*/
+
+@import './common/btn_play_1';
+@import './common/btn_play_2';
+@import './common/btn_play_3';
+
+/*device-width*/
+/* tablet */
+@media screen and (max-width:$tabletWid) {
+
+}
+
+/* mobile */
+@media screen and (max-width:$mobileWid) {
+
+}

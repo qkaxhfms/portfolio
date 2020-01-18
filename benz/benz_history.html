@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>benz_history</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="https://kit.fontawesome.com/604e7d54b3.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/benz_history.js"></script>
+</head>
+<body>
+    <!--header_wrapper-->
+    <div class="header_wrapper">
+        <!--header-->
+        <div id="header" class="scroll_event">
+            <!--logo-->
+            <h1><a href="index.html"></a></h1>
+            <!--//logo-->
+            <!--gnb-->
+            <ul id="gnb">
+                <li>
+                    <a href="all_product.html">모든제품</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                            <li><a href="#">서비스 상품 안내</a></li>
+                            <li><a href="#">메리스데스-벤츠 순정부품</a></li>
+                            <li><a href="#">모빌리티 솔류션</a></li>
+                            <li><a href="#">맞춤 서비스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="vehicle_purchase.html">구매가이드</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">금융 프로그램</a></li>
+                            <li><a href="#">벤츠 인증 중고차</a></li>
+                            <li><a href="#">임직원 우대 프로그램</a></li>
+                            <li><a href="#">재구매 혜택</a></li>
+                            <li><a href="#">부가서비스 안내</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="professional_benz_service.html">고객서비스</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                            <li><a href="#">서비스 상품안내</a></li>
+                            <li><a href="#">메르세데스-벤츠 순정부품</a></li>
+                            <li><a href="#">모빌리티 솔루션</a></li>
+                            <li><a href="#">맞춤 서비스</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="benz_history.html">회사소개</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">주요 연혁</a></li>
+                            <li><a href="#">경영 철학</a></li>
+                            <li><a href="#">딜러 검색</a></li>
+                            <li><a href="#">공식 서비스 센터</a></li>
+                            <li><a href="#">파이낸셜 서비스 코리아</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <a href="new_benz_promotion.html">프로모션</a>
+                    <div>
+                        <ul>
+                            <li><a href="#">진행중인 이벤트</a></li>
+                            <li><a href="#">공지사항</a></li>
+                            <li><a href="#">AMG Experience</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <!--sns-->
+            <ul id="sns">
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+                <li><a href="#"></a></li>
+            </ul>
+            <!--//sns-->
+            <!--btn_menu-->
+            <a href="#" class="gnb_mega_open">
+                <span>
+                    <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14.94">
+                        <title>Untitled-1</title>
+                        <rect class="cls-1" width="17" height="2" />
+                        <rect class="cls-1" y="6.47" width="17" height="2" />
+                        <rect class="cls-1" y="12.94" width="17" height="2" />
+                    </svg>
+                </span>
+            </a>
+            <!--//btn_menu-->
+        </div>
+        <!--//header-->
+        <!--gnb_mega-->
+        <div class="gnb_mega_wrapper">
+            <ul id="gnb_mega">
+                <li>
+                    <a href="#">모든제품</a>
+                    <ul>
+                        <li><a href="#">전체 모델 알아보기</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">구매가이드</a>
+                    <ul>
+                        <li><a href="#">금융 프로그램</a></li>
+                        <li><a href="#">벤츠 인증 중고차</a></li>
+                        <li><a href="#">임직원 우대 프로그램</a></li>
+                        <li><a href="#">재구매 혜택</a></li>
+                        <li><a href="#">부가서비스 안내</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객서비스</a>
+                    <ul>
+                        <li><a href="#">메르세데스-벤츠 서비스</a></li>
+                        <li><a href="#">서비스 상품안내</a></li>
+                        <li><a href="#">메르세데스-벤츠 순정부품</a></li>
+                        <li><a href="#">모빌리티 솔루션</a></li>
+                        <li><a href="#">맞춤 서비스</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">회사소개</a>
+                    <ul>
+                        <li><a href="#">주요 연혁</a></li>
+                        <li><a href="#">경영 철학</a></li>
+                        <li><a href="#">딜러 검색</a></li>
+                        <li><a href="#">공식 서비스 센터</a></li>
+                        <li><a href="#">파이낸셜 서비스 코리아</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">프로모션</a>
+                    <ul>
+                        <li><a href="#">진행중인 이벤트</a></li>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">AMG Experience</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!--//gnb_mega-->
+    </div>
+    <!--//header-wrapper-->
+    <!--wrapper-->
+    <div class="wrapper">
+        <!--sub_page_top-->
+        <div class="sub_page_top_wrapper sub_benz_history scroll_event">
+            <div class="sub_visual_title">
+                <p>Benz History</p>
+                <ul>
+                    <li>Mercedes-Benz Coperate History</li>
+                    <li>자동차 산업 최고의 순간을 확인하세요</li>
+                </ul>
+                <a href="#">
+                    <!--btn_play_1-->
+                    <p class="btnPlay1">
+                        <span>circle</span>
+                        <span>
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71"><defs><style>.cls-1{fill:none;stroke:#fff;stroke-miterlimit:10;}</style></defs><title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title><polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35"/></svg>
+                        </span>
+                    </p>
+                    <!--//btn_play_1-->
+                    <span>상담하러 가기</span>
+                </a>
+            </div>
+        </div>
+        <!--//sub_page_top-->
+        <!--benz_history_1-->
+        <div class="benz_history_con1_wrapper scroll_event">
+            <div>
+                <h2>Overview</h2>
+                <p>Mercedes-Benz 박물관과 전세계에서 개최되는 다양한 행사</p>
+                <div>
+                    <div>
+                        <p>이벤트 달력</p>
+                        <p>미래의 변화에 대해 준비하고 대비하다.</p>
+                        <div>올해에도 변함 없이 Mercedes-Benz Classic 스타는 전세계에서 그 빛을 발합니다 - 박물관, 전시회 또는 권위있고 역사적인 레이싱 등과 같은 이벤트에서 Mercedes-Benz를 만나보세요. Techno Classica나 Pebble Beach Concours d'Elegance뿐만 아니라 Mille Miglia 또는 Solitude Revivial 등과 같은 이벤트의 일정을 행사 달력에서 확인하세요.</div>
+                    </div>
+                    <div>
+                        <div>사진 1</div>
+                        <div>사진 2</div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <div class="vehicle_purchase_con4_1">
+                            <div>
+                                <span class="blind">시승신청 사진</span>
+                            </div>
+                            <div class="service_customer_hover">
+                                <a href="#">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                </a>
+                            </div>
+                        </div>
+                        <p>디자인</p>
+                    </div>
+                    <div>
+                        <div class="vehicle_purchase_con4_1">
+                            <div>
+                                <span class="blind">전국 서비스센터 찾기</span>
+                            </div>
+                            <div class="service_customer_hover">
+                                <a href="#">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                </a>
+                            </div>
+                        </div>
+                        <p>혁신</p>
+                    </div>
+                    <div>
+                        <div class="vehicle_purchase_con4_1">
+                            <div>
+                                <span class="blind">딜러검색 사진</span>
+                            </div>
+                            <div class="service_customer_hover">
+                                <a href="#">
+                                    <!--btn_play_1-->
+                                    <p class="btnPlay1">
+                                        <span>circle</span>
+                                        <span>
+                                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8.06 14.71">
+                                                <defs>
+                                                    <style>
+                                                        .cls-1 {
+                                                            fill: none;
+                                                            stroke: #fff;
+                                                            stroke-miterlimit: 10;
+                                                        }
+                                                    </style>
+                                                </defs>
+                                                <title>VectorSmartObject_f8c5964d-2337-448e-bc87-b56275eadf97</title>
+                                                <polyline class="cls-1" points="0.35 0.35 7.35 7.35 0.35 14.35" />
+                                            </svg>
+                                        </span>
+                                    </p>
+                                    <!--//btn_play_1-->
+                                </a>
+                            </div>
+                        </div>
+                        <p>프로모션</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//benz_history_1-->
+        <!--benz_history_2-->
+        <div class="benz_history_con2_wrapper scroll_event">
+            <div>
+                <h2>Event Calander</h2>
+                <p>Mercedes-Benz 박물관은 "Cars & Culture"를 표방합니다</p>
+                <div>
+                    <div>
+                        <p>2016</p>
+                        <p>2017</p>
+                        <p>박물관과 전세계에서 개최되는 다양한 행사</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span>2016. 04</span>
+                                    <span>Retro Classics</span>
+                                </p>
+                                <div>사진1</div>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2016. 04</span>
+                                    <span>MB Classic Trackday @ Hockenheim</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2017. 05</span>
+                                    <span>슈투트가르트 오페라 시트 쿠션 콘서트</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2017. 06</span>
+                                    <span>Mercedes-Benz 섬머 콘서트</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2017. 10</span>
+                                    <span>특별 전시회</span>
+                                    <span>"Mercdes-AMG 50년전"</span>
+                                </p>
+                                <div>사진2</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//benz_history_2-->
+        <!--benz_history_3-->
+        <div class="benz_history_con3_wrapper scroll_event">
+            <div>
+                <div>
+                    <p>Striving for Innovations.</p>
+                    <p>자동차의 개척자로서, 쾌적하고 안전하며 자원 친화적인 혁신을 추구합니다.</p>
+                    <div></div>
+                    <p>The best or nothing</p>
+                </div>
+            </div>
+        </div>
+        <!--//benz_history_3-->
+        <!--benz_history_4-->
+        <div class="benz_history_con4_wrapper scroll_event">
+            <div>
+                <div>
+                    <div>
+                        <p>2018</p>
+                        <p>2019</p>
+                        <p>전세계에 수놓은 하이라이트 특별 전시회</p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li>
+                                <p>
+                                    <span>2018. 05</span>
+                                    <span>2018 코리아 카라반 페스티벌</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2018. 07</span>
+                                    <span>Mercedes-Benz Presents 5TARDIUM 2018</span>
+                                </p>
+                                <div>사진1</div>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2018. 07</span>
+                                    <span>쉬즈 메르세데스</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2018. 11</span>
+                                    <span>더 뉴 C-클래스 코리안 프리미어</span>
+                                </p>
+                                <div>사진2</div>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2019. 03</span>
+                                    <span>서울 모터쇼 2019</span>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    <span>2019. 06</span>
+                                    <span>2019 국제 그린카 전시회</span>
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--//benz_history_4-->
+        <!--vehicle_benz_history_con5-->
+        <div class="benz_history_con5_wrapper scroll_event">
+            <div>
+                <ul>
+                    <li>
+                        <div>
+                            <span>2017년 행사</span>
+                            <span class="benz_history_arrow">arrow</span>
+                        </div>
+                        <div>
+                            <div>
+                                <p>전세계에서 개최되는 행사.</p>
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Retro Classics</td>
+                                        <td>2017.03.02 - 03.05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Amelia Island</td>
+                                        <td>2017.03.10 - 03.12</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MB Classic Trackday @ Hockenheim</td>
+                                        <td>2017.03.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Techno Classica</td>
+                                        <td>2017.04.05 - 04.09</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mille Miglia</td>
+                                        <td>2017.05.18 - 05.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MB Mille Miglia Challenge</td>
+                                        <td>2017.05.18 - 05.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Nürburgring Classic</td>
+                                        <td>2017.06.16 - 06.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goodwood Festival of Speed</td>
+                                        <td>2017.06.29 - 07.02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Arlberg Classic Car Rally</td>
+                                        <td>2017.06.29 - 07.02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Silvretta Classic</td>
+                                        <td>2017.07.07 - 07.09</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solitude Revival</td>
+                                        <td>2017.07.21 - 07.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MB Classic Trackday @ Zolder</td>
+                                        <td>2017.08.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Classic Days Schloss Dyck</td>
+                                        <td>2017.08.04 - 08.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pebble Beach Concours d’Elegance</td>
+                                        <td>2017.08.20</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MB Classic Trackday @ Oschersleben</td>
+                                        <td>2017.09.19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MOTORWORLD Classics Berlin</td>
+                                        <td>2017.10.05 - 10.08</td>
+                                    </tr>
+                                </table>                        
+                            </div>
+                            <div>
+                                <p>Mercedes-Benz 박물관의 행사.</p>
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>박물관의 밤</td>
+                                        <td>2017.03.25</td>
+                                    </tr>
+                                    <tr>
+                                        <td>슈투트가르트 오페라 시트 쿠션 콘서트</td>
+                                        <td>2017.05.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>국제 애니메이션 페스티발</td>
+                                        <td>2017.05.02 - 05.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>박물관의 시작</td>
+                                        <td>2017.05.20 - 05.21</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ALL TIME STARS Lounge</td>
+                                        <td>2017.06.13 - 09.10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Cars & Coffee</td>
+                                        <td>매주 일요일(6월부터 9월까지)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mercedes-Benz 섬머 콘서트</td>
+                                        <td>2017.06.29 - 07.02</td>
+                                    </tr>
+                                    <tr>
+                                        <td>슈투트가르트 오페라 가곡의 밤</td>
+                                        <td>2017.07.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Open Air 시네마</td>
+                                        <td>2017.08.17 - 09.03</td>
+                                    </tr>
+                                    <tr>
+                                        <td>슈투트가르트 바흐 아카데미 콘서트</td>
+                                        <td>2017.09.09</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Solitude Revival</td>
+                                        <td>2017.07.21 - 07.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>특별 전시회 "Mercedes-AMG 50년전"</td>
+                                        <td>2017.10.19 - 2018.04.08</td>
+                                    </tr>
+                                </table>                        
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span>2018년 행사</span>
+                            <span class="benz_history_arrow">arrow</span></div>
+                        <div>
+                            <div>
+                                <p>전세계에서 개최되는 행사.</p>
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Retro Classics Stuttgart</td>
+                                        <td>2018.03.01-03.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Techno Classica Essen</td>
+                                        <td>2018.04.10-04.14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mille Miglia</td>
+                                        <td>2018.05.15-05.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Silvretta Classic Rally</td>
+                                        <td>2018.07.04-07.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goodwood Festival of Speed</td>
+                                        <td>2018.07.04-07.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Classic Days Schloss Dyck</td>
+                                        <td>2018.08.02-08.04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pebble Beach Concours d’Elegance</td>
+                                        <td>2018.08.15-08.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hamburg-Berlin-Klassiker</td>
+                                        <td>2018.08.29-08.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoute Grand Prix</td>
+                                        <td>2018.10.10-10.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>London to Brighton Veteran Car Run</td>
+                                        <td>2018.11.30</td>
+                                    </tr>
+                                </table>                        
+                            </div>
+                            <div>
+                                <p>Mercedes-Benz 박물관의 행사.</p>
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>특별 전시회“125 년의 VfB 슈투트가르트”</td>
+                                        <td>2018.05.19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>소셜 미디어의 밤 (한 달에 한 번)</td>
+                                        <td>2018.01.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>별빛 아래에서 살사</td>
+                                        <td>2018.03.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>박물관의 긴 밤</td>
+                                        <td>2018.03.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생방송 라디오 "Bertha Benz"</td>
+                                        <td>2018.05.03-05.05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>메르세데스 벤츠 박물관의 13 번째 생일</td>
+                                        <td>2018.05.19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>영 오페라 슈투트가르트의 방석 콘서트</td>
+                                        <td>2018.06.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여름 라운지</td>
+                                        <td>2018.06.14-09.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>메르세데스 벤츠 썸머콘서트</td>
+                                        <td>2018.07.04-07.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>칸 스타터 후테</td>
+                                        <td>2018.10.24-12.12</td>
+                                    </tr>
+                                </table>                        
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <span>2019년 행사</span>
+                            <span class="benz_history_arrow">arrow</span></div>
+                        <div>
+                            <div>
+                                <p>전세계에서 개최되는 행사.</p>
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Retro Classics Stuttgart</td>
+                                        <td>2019.03.01-03.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Techno Classica Essen</td>
+                                        <td>2019.04.10-04.14</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mille Miglia</td>
+                                        <td>2019.05.15-05.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Silvretta Classic Rally</td>
+                                        <td>2019.07.04-07.06</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Goodwood Festival of Speed</td>
+                                        <td>2019.07.04-07.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Classic Days Schloss Dyck</td>
+                                        <td>2019.08.02-08.04</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pebble Beach Concours d’Elegance</td>
+                                        <td>2019.08.15-08.18</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Hamburg-Berlin-Klassiker</td>
+                                        <td>2019.08.29-08.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Zoute Grand Prix</td>
+                                        <td>2019.10.10-10.31</td>
+                                    </tr>
+                                    <tr>
+                                        <td>London to Brighton Veteran Car Run</td>
+                                        <td>2019.11.30</td>
+                                    </tr>
+                                </table>              
+                            </div>
+                            <div>
+                                <p>Mercedes-Benz 박물관의 행사.</p>                        
+                                <table>
+                                    <tr>
+                                        <th>행사</th>
+                                        <th>날짜</th>
+                                    </tr>
+                                    <tr>
+                                        <td>특별 전시회“126 년의 VfB 슈투트가르트”</td>
+                                        <td>2019.05.19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>소셜 미디어의 밤 (한 달에 한 번)</td>
+                                        <td>2019.01.30</td>
+                                    </tr>
+                                    <tr>
+                                        <td>별빛 아래에서 살사</td>
+                                        <td>2019.03.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>박물관의 긴 밤</td>
+                                        <td>2019.03.23</td>
+                                    </tr>
+                                    <tr>
+                                        <td>생방송 라디오 "Bertha Benz"</td>
+                                        <td>2019.05.03-05.05</td>
+                                    </tr>
+                                    <tr>
+                                        <td>메르세데스 벤츠 박물관의 14 번째 생일</td>
+                                        <td>2019.05.19</td>
+                                    </tr>
+                                    <tr>
+                                        <td>영 오페라 슈투트가르트의 방석 콘서트</td>
+                                        <td>2019.06.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>여름 라운지</td>
+                                        <td>2019.06.14-09.08</td>
+                                    </tr>
+                                    <tr>
+                                        <td>메르세데스 벤츠 썸머콘서트</td>
+                                        <td>2019.07.04-07.07</td>
+                                    </tr>
+                                    <tr>
+                                        <td>칸 스타터 후테</td>
+                                        <td>2019.10.24-12.12</td>
+                                    </tr>
+                                </table>                          
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>   
+        <!--//vehicle_benz_history_con5-->
+    </div>
+    <!--//wrapper-->
+    <!--footer-->
+    <div class="footer_wrapper">
+        <div id="footer">
+            <h1></h1>
+            <div>
+                <ul>
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">쿠키</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">개인정보처리방침(MBFSK) </a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">법적참고사항</a></li>
+                    <li><a href="#">Daimler Privacy Statement</a></li>
+                    <li><a href="#">사이트맵</a></li>
+                </ul>
+                <ul>
+                    <li>대표번호 : 080-001-1886(벤츠코리아), 1577-2320(벤츠 파이낸셜 코리아)</li>
+                    <li>주소 : 서울 중구 한강대로416 서울스퀘어 </li>
+                    <li>사업자 : 메르세데스-벤츠코리아(주)</li>
+                    <li>대표 : 디미트리스 실라카스 </li>
+                    <li>사업자등록번호 : 220-86-46545</li>
+                </ul>
+                <p>&copy; 위 사이트는 개인 포트폴리오용 사이트이며 본 사이트 모든 저작권은 해당 사에 있음을 명시합니다.</p>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+                <select>
+                    <option selected>Family Site</option>
+                    <option>Site 1</option>
+                    <option>Site 2</option>
+                    <option>Site 3</option>
+                </select>
+            </div>
+            <a href="#" class="go_top"></a>
+        </div>
+    </div>
+    <!--//footer-->
+</body>
+</html>
