@@ -1,4 +1,0 @@
-//community
-$(document).ready(function(){
-    
-});
