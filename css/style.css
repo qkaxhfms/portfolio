@@ -1,44 +1,295 @@
-@charset "utf-8";
+/*reset*/
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR|Righteous&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong,
+sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box; }
 
-/*text*/
-h1 {position:fixed; top:0px; left:0px; font-size:100px; z-index:3;}
+:focus {
+  outline: 0; }
 
-#wrap>div {width:100%; position:relative;}
-#box1 {height:700px; background:lightcyan;}
+body {
+  line-height: 1; }
 
-.navi {position:fixed; left:50px; top:50%; transform:translateY(-50%);}
-.navi>li>a { display:block; width:20px; height:20px; border-radius:10px; background:#fff; margin-bottom:20px; transition:0.5s;}
-.navi>li>a.on {width:100px; background:#000;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
 
-/* box2 */
-#box2 {height:600px; background:lightgreen;}
-#box2>p{width:600px; height:200px; position:absolute; top:50%; left:50%; margin-top:-100px; margin-left:-300px; background:#fff; opacity:0; transform:translateY(100px); transition:1s;}
-#box2.on>p{opacity:1; transform:translateY(0px);}
+ol, ul {
+  list-style: none; }
 
-/*box3*/
-#box3 {height:800px; background:orange; perspective:700px;}
-#box3>ul{width:940px; height:300px; position: absolute; top:50%; left:50%; margin-top:-150px; margin-left:-470px;}
-#box3>ul>li{float: left; width:300px; height:300px; background:#fff; margin-right:20px; opacity:0; transform:translateY(100px) rotateY(-180deg); transition:1s;}
-#box3.on>ul>li{opacity:1; transform:translateY(0px) rotateY(0deg);}
-#box3>ul>li:last-child{margin-right:0px;}
+img {
+  max-width: 100%;
+  vertical-align: middle; }
 
-/**/
-#box3>ul>li:nth-of-type(1){transition-delay:0s;}
-#box3>ul>li:nth-of-type(2){transition-delay:0.2s;}
-#box3>ul>li:nth-of-type(3){transition-delay:0.4s;}
+video {
+  min-width: 100%;
+  max-width: 100%; }
 
-/*box4*/
-#box4 {height:1700px; background:violet;}
-.icon{width:500px; height:500px; /* border:1px solid #000; */ position: absolute; top:200px; left:50%; margin-left:-250px;}
-.icon path{
-    fill : transparent;
-    stroke:#000;
-    stroke-width:1px;
-    stroke-dasharray:1540;/*선 기본 간격*/
-    stroke-dashoffset:1540;
-    transition:stroke-dashoffset 1s 0s, fill 1.5s 1.5s;
-}
-#box4.on icon path{
-    stroke-dashoffset:0;
-    fill:rgba(0,0,0,0.5);
-}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  table-layout: fixed;
+  empty-cells: show;
+  text-align: center;
+  word-wrap: break-word; }
+
+caption {
+  overflow: hidden;
+  height: 0;
+  font-size: 1px;
+  line-height: 0; }
+
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+  *margin-left: -7px; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+textarea {
+  resize: vertical;
+  vertical-align: top;
+  overflow: auto; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none; }
+
+a {
+  text-decoration: none; }
+
+strong {
+  font-style: normal; }
+
+em {
+  font-style: normal; }
+
+/*FORM*/
+input, label, select, button, textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1; }
+
+input[type=text], input[type=password], input[type=tel], input[type=search], input[type=email], input[type=time], input[type=month], input[type=date],
+input[type=url], input[type=image], input[type=button], input[type=submit], input[type=reset], input[type=file], input[type=price],
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-border-radious: 0;
+  border-radius: 0;
+  box-sizing: border-box; }
+
+input:focus {
+  outline: 0; }
+
+input, textarea {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box; }
+
+button, input[type=reset], input[type=button], input[type=submit], input[type=checkbox],
+input[type=radio], select {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*Text Inputs*/
+input[type=checkbox], input[type=radio] {
+  width: 13px;
+  height: 13px; }
+
+button {
+  padding: 0;
+  line-height: normal;
+  background: transparent;
+  cursor: pointer; }
+
+button[disabled] {
+  cursor: default; }
+
+select {
+  width: 100%; }
+
+select[multiple] {
+  overflow: auto; }
+
+button, input[type="reset"], input[type="button"], input[type="submit"] {
+  overflow: visible;
+  width: auto; }
+
+[role="button"], input[type="button"], input[type="reset"], input[type="submit"], button {
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  text-align: inherit;
+  background: none;
+  appearance: button;
+  user-select: none; }
+
+[role="button"]:-moz-focusring, input[type="button"]:-moz-focusring, input[type="reset"]:-moz-focusring, input[type="submit"]:-moz-focusring,
+button:-moz-focusring {
+  outline: none; }
+
+[role="button"]:focus, input[type="button"]:focus, input[type="reset"]:focus, input[type="submit"]:focus, button:focus {
+  outline: none; }
+
+::-webkit-search-decoration {
+  display: none; }
+
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none; }
+
+/*chromeframe*/
+.chromeframe {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/*device-width*/
+.wrapper {
+  font: 100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;
+  background: blue; }
+
+#container {
+  margin-left: 90px; }
+  #container > div {
+    height: 800px; }
+    #container > div:nth-of-type(1) {
+      background-color: #111; }
+    #container > div:nth-of-type(2) {
+      background-color: #222; }
+    #container > div:nth-of-type(3) {
+      background-color: #333; }
+    #container > div:nth-of-type(4) {
+      background-color: #444; }
+    #container > div:nth-of-type(5) {
+      background-color: #555; }
+
+/* tablet */
+/* mobile */
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.blind {
+  position: absolute;
+  left: -9999px; }
+
+a {
+  color: #fff; }
+
+/* color*/
+::-webkit-scrollbar {
+  height: 4px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2); }
+
+::-webkit-scrollbar-thumb {
+  background: #fff; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.75); }
+
+/*common*/
+.clearfix::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+/*header*/
+#header {
+  z-index: 100;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #fff; }
+  #header > h1 {
+    position: absolute;
+    transition: 0.25s; }
+    #header > h1 svg path {
+      fill: #2361ad;
+      stroke: #2361ad;
+      transition: 1s; }
+    #header > h1:hover path {
+      stroke-width: 10;
+      fill: #fff; }
+
+#header {
+  width: 90px;
+  height: 100%; }
+  #header > h1 {
+    top: 70px;
+    left: 50%;
+    margin-left: -30px;
+    width: 60px;
+    height: 60px; }
+  #header > div {
+    position: fixed;
+    bottom: 70px;
+    left: 0; }
+    #header > div > div {
+      display: none; }
+    #header > div > ul > li {
+      height: 90px; }
+      #header > div > ul > li.on span {
+        background: #2361ad; }
+      #header > div > ul > li.on path, #header > div > ul > li.on polygon {
+        fill: #fff; }
+      #header > div > ul > li > a {
+        float: left;
+        display: block;
+        width: 90px;
+        height: 90px; }
+        #header > div > ul > li > a > span {
+          display: block;
+          position: relative;
+          z-index: 2;
+          padding: 27px;
+          background: #fff;
+          transition: all 0.75s; }
+          #header > div > ul > li > a > span svg {
+            width: 36px;
+            height: 36px; }
+            #header > div > ul > li > a > span svg path, #header > div > ul > li > a > span svg polygon {
+              fill: #2361ad;
+              stroke: transparent;
+              stroke-dasharray: 2413; }
+      #header > div > ul > li > div {
+        float: left;
+        position: relative;
+        left: -200px;
+        background: #2361ad;
+        padding-left: 26px;
+        width: 174px;
+        line-height: 90px;
+        color: #fff; }
+
+/* tablet */
+/* mobile */
+/* tablet */
+/* mobile */
+
+/*# sourceMappingURL=style.css.map */

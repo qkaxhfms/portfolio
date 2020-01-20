@@ -1,0 +1,114 @@
+/*header*/
+#header{
+    z-index:100;
+    position: fixed;
+    left:0;
+    top:0;
+    background:#fff;
+    //logo
+    >h1{
+        position: absolute;
+        transition:0.25s;
+
+        svg{
+            path{
+                fill:$color-menu-b;
+                stroke:$color-menu-b;
+                transition:1s;
+            }
+        }
+        &:hover{
+            path{
+                stroke-width:10;
+                fill:#fff;
+            }
+        }
+    }
+
+}
+// pc
+#header{
+    width:90px;
+    height:100%;
+    >h1{
+        top:70px;
+        left:50%;
+        margin-left:-30px;
+        width:60px;
+        height:60px;
+
+        // &:hover{
+        //     transform:scale(1.2);
+        // }
+    }
+    >div{
+        position: fixed;
+        bottom:70px;
+        left:0;
+        >div{
+            display: none;
+        }
+        >ul{
+            >li{
+                height:90px;
+                &.on{
+                    span{background:$color-menu-b;}
+
+                    path,polygon{
+                        fill:$color-w;
+                    }
+                }
+
+                >a{
+                    float:left;
+                    display: block;
+                    width:90px;
+                    height:90px;
+                    >span{
+                        display:block;
+                        position: relative;
+                        z-index:2;
+
+                        padding:27px;
+                        background:#fff;
+                        transition:all 0.75s;
+                        svg{
+                            width:36px;
+                            height:36px;
+                            path,polygon{
+                                fill:$color-menu-b;
+                                stroke:transparent;
+                                stroke-dasharray:2413;
+                            }
+                        }
+                    }
+                }
+                >div{
+                    float:left;
+                    position: relative;
+                    left:-200px;
+                    background:$color-menu-b;
+                    padding-left:26px;
+                    width:174px;
+                    line-height:90px;
+                    color:$color-w;
+                }
+            }
+        }
+    }
+}
+
+
+/* tablet */
+@media screen and (max-width:$tablet-width) {
+    #header{}
+    // #mobile-header{display: block;}
+}
+
+/* mobile */
+@media screen and (max-width:$mobile-width) {
+    // #mobile-header > div > ul > li{        
+    //     width: 46%;
+    //     margin: 2%;
+    // }
+}
