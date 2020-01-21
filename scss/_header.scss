@@ -1,15 +1,22 @@
-/*header*/
+// pc
 #header{
     z-index:100;
     position: fixed;
     left:0;
     top:0;
     background:#fff;
+    width:90px;
+    height:100%;
     //logo
     >h1{
         position: absolute;
         transition:0.25s;
-
+        top:70px;
+        left:50%;
+        margin-left:-30px;
+        width:60px;
+        height:60px;
+        //svg
         svg{
             path{
                 fill:$color-menu-b;
@@ -17,92 +24,176 @@
                 transition:1s;
             }
         }
-        &:hover{
+        //hover
+        &:hover{            
+            transform:scale(1.2);
             path{
                 stroke-width:10;
                 fill:#fff;
             }
         }
     }
-
-}
-// pc
-#header{
-    width:90px;
-    height:100%;
-    >h1{
-        top:70px;
-        left:50%;
-        margin-left:-30px;
-        width:60px;
-        height:60px;
-
-        // &:hover{
-        //     transform:scale(1.2);
-        // }
-    }
-    >div{
-        position: fixed;
-        bottom:70px;
+    //btnMobile
+    .btnMobileOpen{display:none;}
+    //dimmed
+    #dimmer{
+        // display:none;
+        z-index:110;
+        position:fixed;
+        background:orange;
+        // opacity:0.5;
+        top:0;
         left:0;
-        >div{
-            display: none;
-        }
-        >ul{
-            >li{
-                height:90px;
-                &.on{
-                    span{background:$color-menu-b;}
+        width:100%;
+        height:100%;
+    }
+}
+//gnb
+#gnb{
+    position: fixed;
+    bottom:70px;
+    left:0;
+    >div{
+        display: none;
+    }
+    >ul{
+        >li{
+            height:90px;
+            &.on{
+                span{background:$color-menu-b;}
 
-                    path,polygon{
-                        fill:$color-w;
-                    }
+                path,polygon{
+                    fill:$color-w;
                 }
+            }
+            //depth1
+            >a{
+                float:left;
+                display: block;
+                width:90px;
+                height:90px;
+                >span{
+                    display:block;
+                    position: relative;
+                    z-index:2;
 
-                >a{
-                    float:left;
-                    display: block;
-                    width:90px;
-                    height:90px;
-                    >span{
-                        display:block;
-                        position: relative;
-                        z-index:2;
-
-                        padding:27px;
-                        background:#fff;
-                        transition:all 0.75s;
-                        svg{
-                            width:36px;
-                            height:36px;
-                            path,polygon{
-                                fill:$color-menu-b;
-                                stroke:transparent;
-                                stroke-dasharray:2413;
-                            }
+                    padding:27px;
+                    background:#fff;
+                    transition:all 0.75s;
+                    svg{
+                        width:36px;
+                        height:36px;
+                        path,polygon{
+                            fill:$color-menu-b;
+                            stroke:transparent;
+                            stroke-dasharray:2413;
                         }
                     }
                 }
-                >div{
-                    float:left;
-                    position: relative;
-                    left:-200px;
-                    background:$color-menu-b;
-                    padding-left:26px;
-                    width:174px;
-                    line-height:90px;
-                    color:$color-w;
-                }
+            }
+            >div{
+                float:left;
+                position: relative;
+                left:-200px;
+                background:$color-menu-b;
+                padding-left:26px;
+                width:174px;
+                line-height:90px;
+                color:$color-w;
             }
         }
     }
 }
+//gnbMobile
+#gnbMobile{
+    z-index:130;
+    position: fixed;
+    top:0;
+    right:0;
+    width:80%;
+    height:100%;
+    background:green;
+    //gnb-mobile-header
+    .gnb-mobile-header{
+        position: relative;
+        background:blue;
+        height:80px;
+        a{
+            position: absolute;
+            top:0;
+            display:block;
+            text-align:center;
+            width:80px;
+            height:80px;
+            font:400 40px/80px 'arial';
+            background:purple;
+            &:first-of-type{
+                left:0;
+                >span{
+                    display:block;
+                    position:relative;
+                    width:100%;
+                    height:100%;
+                    background:red;
+                    >svg{
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+                        transform:translate(-50%,-50%);
+                        width:40px;
+                        background:olive;    
+                    }
 
+                }
+            }
+            &:last-of-type{right:0;}
+        }
+    }
+    .gnb-mobile-content{
+        background:yellow;
+        height:calc(100% - 80px);
+    }
+}
 
 /* tablet */
 @media screen and (max-width:$tablet-width) {
-    #header{}
-    // #mobile-header{display: block;}
+    //header
+    #header{
+        background:green;
+        width:100%;
+        height:80px;
+        //logo
+        >h1{
+            transition:0.25s;
+            top:0;
+            left:0;
+            margin-left:0;
+            width:80px;
+            height:80px;
+            padding:10px;
+            background:yellow;    
+            //hover
+            &:hover{            
+                transform:scale(1);
+            }
+        }
+        //btnMobileOpen
+        .btnMobileOpen{
+            background:yellow;
+            position:absolute;
+            top:0;
+            right:0;
+            display:block;
+            width:80px;
+            height:80px;
+            // background:$color-menu-b;
+            font:400 40px/80px 'arial';
+            color:$color-menu-b;
+            text-align:center;
+        }
+    }
+    //gnb
+    #gnb{display:none;}
 }
 
 /* mobile */

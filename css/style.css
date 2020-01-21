@@ -187,6 +187,10 @@ button:-moz-focusring {
       background-color: #555; }
 
 /* tablet */
+@media screen and (max-width: 939px) {
+  #container {
+    margin-left: 0;
+    margin-top: 80px; } }
 /* mobile */
 .clearfix::after {
   display: block;
@@ -219,75 +223,156 @@ a {
   content: '';
   clear: both; }
 
-/*header*/
 #header {
   z-index: 100;
   position: fixed;
   left: 0;
   top: 0;
-  background: #fff; }
-  #header > h1 {
-    position: absolute;
-    transition: 0.25s; }
-    #header > h1 svg path {
-      fill: #2361ad;
-      stroke: #2361ad;
-      transition: 1s; }
-    #header > h1:hover path {
-      stroke-width: 10;
-      fill: #fff; }
-
-#header {
+  background: #fff;
   width: 90px;
   height: 100%; }
   #header > h1 {
+    position: absolute;
+    transition: 0.25s;
     top: 70px;
     left: 50%;
     margin-left: -30px;
     width: 60px;
     height: 60px; }
-  #header > div {
-    position: fixed;
-    bottom: 70px;
-    left: 0; }
-    #header > div > div {
-      display: none; }
-    #header > div > ul > li {
-      height: 90px; }
-      #header > div > ul > li.on span {
-        background: #2361ad; }
-      #header > div > ul > li.on path, #header > div > ul > li.on polygon {
+    #header > h1 svg path {
+      fill: #2361ad;
+      stroke: #2361ad;
+      transition: 1s; }
+    #header > h1:hover {
+      transform: scale(1.2); }
+      #header > h1:hover path {
+        stroke-width: 10;
         fill: #fff; }
-      #header > div > ul > li > a {
-        float: left;
+  #header .btnMobileOpen {
+    display: none; }
+  #header #dimmer {
+    z-index: 110;
+    position: fixed;
+    background: orange;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+#gnb {
+  position: fixed;
+  bottom: 70px;
+  left: 0; }
+  #gnb > div {
+    display: none; }
+  #gnb > ul > li {
+    height: 90px; }
+    #gnb > ul > li.on span {
+      background: #2361ad; }
+    #gnb > ul > li.on path, #gnb > ul > li.on polygon {
+      fill: #fff; }
+    #gnb > ul > li > a {
+      float: left;
+      display: block;
+      width: 90px;
+      height: 90px; }
+      #gnb > ul > li > a > span {
         display: block;
-        width: 90px;
-        height: 90px; }
-        #header > div > ul > li > a > span {
+        position: relative;
+        z-index: 2;
+        padding: 27px;
+        background: #fff;
+        transition: all 0.75s; }
+        #gnb > ul > li > a > span svg {
+          width: 36px;
+          height: 36px; }
+          #gnb > ul > li > a > span svg path, #gnb > ul > li > a > span svg polygon {
+            fill: #2361ad;
+            stroke: transparent;
+            stroke-dasharray: 2413; }
+    #gnb > ul > li > div {
+      float: left;
+      position: relative;
+      left: -200px;
+      background: #2361ad;
+      padding-left: 26px;
+      width: 174px;
+      line-height: 90px;
+      color: #fff; }
+
+#gnbMobile {
+  z-index: 130;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 80%;
+  height: 100%;
+  background: green; }
+  #gnbMobile .gnb-mobile-header {
+    position: relative;
+    background: blue;
+    height: 80px; }
+    #gnbMobile .gnb-mobile-header a {
+      position: absolute;
+      top: 0;
+      display: block;
+      text-align: center;
+      width: 80px;
+      height: 80px;
+      font: 400 40px/80px 'arial';
+      background: purple; }
+      #gnbMobile .gnb-mobile-header a:first-of-type {
+        left: 0; }
+        #gnbMobile .gnb-mobile-header a:first-of-type > span {
           display: block;
           position: relative;
-          z-index: 2;
-          padding: 27px;
-          background: #fff;
-          transition: all 0.75s; }
-          #header > div > ul > li > a > span svg {
-            width: 36px;
-            height: 36px; }
-            #header > div > ul > li > a > span svg path, #header > div > ul > li > a > span svg polygon {
-              fill: #2361ad;
-              stroke: transparent;
-              stroke-dasharray: 2413; }
-      #header > div > ul > li > div {
-        float: left;
-        position: relative;
-        left: -200px;
-        background: #2361ad;
-        padding-left: 26px;
-        width: 174px;
-        line-height: 90px;
-        color: #fff; }
+          width: 100%;
+          height: 100%;
+          background: red; }
+          #gnbMobile .gnb-mobile-header a:first-of-type > span > svg {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            background: olive; }
+      #gnbMobile .gnb-mobile-header a:last-of-type {
+        right: 0; }
+  #gnbMobile .gnb-mobile-content {
+    background: yellow;
+    height: calc(100% - 80px); }
 
 /* tablet */
+@media screen and (max-width: 939px) {
+  #header {
+    background: green;
+    width: 100%;
+    height: 80px; }
+    #header > h1 {
+      transition: 0.25s;
+      top: 0;
+      left: 0;
+      margin-left: 0;
+      width: 80px;
+      height: 80px;
+      padding: 10px;
+      background: yellow; }
+      #header > h1:hover {
+        transform: scale(1); }
+    #header .btnMobileOpen {
+      background: yellow;
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 80px;
+      height: 80px;
+      font: 400 40px/80px 'arial';
+      color: #2361ad;
+      text-align: center; }
+
+  #gnb {
+    display: none; } }
 /* mobile */
 /* tablet */
 /* mobile */

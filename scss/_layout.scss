@@ -23,6 +23,11 @@ $color-menu-b : #2361ad;
 
 /* tablet */
 @media screen and (max-width:$tablet-width) {
+    //container
+    #container{
+        margin-left:0;
+        margin-top:80px;
+    }
 }
 
 /* mobile */
