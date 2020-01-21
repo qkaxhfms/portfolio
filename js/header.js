@@ -4,8 +4,11 @@ $(document).ready(function(){
     $(window).on('resize',resizeHeader);
 
     function resizeHeader(){
+        //common
         var winW = $(window).width();
         var $header = $('#header');
+
+        //gnbPc
         var $gnb = $header.children('#gnb');
         var $gnbUl = $gnb.children('ul');
         var $gnbLi = $gnbUl.children('li');
@@ -33,7 +36,7 @@ $(document).ready(function(){
             }
         });
 
-
+        //btnMobile
         var $btnMobileOpen = $('.btnMobileOpen');
         var $btnMobileClose = $('.btnMobileClose');
 
@@ -49,21 +52,30 @@ $(document).ready(function(){
         });
 
 
-        
         if(winW>940){
             $('#dimmer').removeClass('on');
             $('#gnbMobile').removeClass('on');
         }
+
     }
 
 
     $('.mobile-list li').on('click',function(e){
         var i = $(this).index();
+
+        //
         $('.mobile-list li').removeClass('on');
         $('.mobile-list li').eq(i).addClass('on');
 
+        //
         $('.mobile-content>div').removeClass('on');
         $('.mobile-content>div').eq(i).addClass('on');
+
+        //
+        $('#dimmer').removeClass('on');
+        $('#gnbMobile').stop().animate({right:'-80%'});
+
+
     });
 
 
