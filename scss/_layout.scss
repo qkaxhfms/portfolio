@@ -8,11 +8,31 @@ $color-menu-b : #2361ad;
 .wrapper{
     font:100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;background:blue;
 }
+
+//common
+// .h100{height:100vh;}
+
 #container{
-    margin-left:90px;
-    
+    margin-left:90px;    
     >div{
         height:800px;
+        &.h100{height:100vh;}
+        >div{
+            padding:50px;
+            height:100%;
+            >div{
+                float:left;
+                width:50%;
+                height:100%;
+                &:first-of-type{background:darkorange;}
+                &:last-of-type{background:rosybrown;}
+            }&::after{
+                display: block;
+                content:'';
+                clear:both;
+            }
+        }
+
         &:nth-of-type(1){background-color:#111;}
         &:nth-of-type(2){background-color:#222;}
         &:nth-of-type(3){background-color:#333;}
@@ -27,6 +47,15 @@ $color-menu-b : #2361ad;
     #container{
         margin-left:0;
         margin-top:80px;
+        >div{
+            >div{
+                padding:20px;
+                >div{
+                    width:100%;
+                    height:auto;
+                }
+            }
+        }
     }
 }
 
