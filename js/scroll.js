@@ -3,6 +3,7 @@ $(document).ready(function(){
     var speed = 1000;
     var posArr = [];
     var len = $('#container>div').length;
+    var mob_line = 80;
 
     for(var i=0; i<len; i++){
         posArr.push(    $('#container>div').eq(i).offset().top    );
