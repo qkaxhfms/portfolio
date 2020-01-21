@@ -260,6 +260,8 @@ a {
     left: 0;
     width: 100%;
     height: 100%; }
+  #header #dimmer.on {
+    display: block; }
 
 #gnb {
   position: fixed;
@@ -303,13 +305,16 @@ a {
       color: #fff; }
 
 #gnbMobile {
+  display: none;
   z-index: 130;
   position: fixed;
   top: 0;
-  right: 0;
+  right: -80%;
   width: 80%;
   height: 100%;
   background: #2361ad; }
+  #gnbMobile.on {
+    display: block; }
   #gnbMobile .gnb-mobile-header {
     position: relative;
     height: 80px; }
@@ -393,7 +398,6 @@ a {
       #header > h1:hover {
         transform: scale(1); }
     #header .btnMobileOpen {
-      background: yellow;
       position: absolute;
       top: 0;
       right: 0;

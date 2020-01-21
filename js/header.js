@@ -9,8 +9,6 @@ $(document).ready(function(){
         var $gnb = $header.children('#gnb');
         var $gnbUl = $gnb.children('ul');
         var $gnbLi = $gnbUl.children('li');
-        var $btnHopen = $('.btn-open');
-        var $btnHclose = $('.btn-close');
 
         //gnbLi mouseenter 
         $gnbLi.on('mouseenter',function(){
@@ -35,8 +33,38 @@ $(document).ready(function(){
             }
         });
 
+
+        var $btnMobileOpen = $('.btnMobileOpen');
+        var $btnMobileClose = $('.btnMobileClose');
+
+        $btnMobileOpen.on('click',function(e){
+            e.preventDefault();
+            $('#dimmer').addClass('on');
+            $('#gnbMobile').addClass('on').stop().animate({right:'0%'});
+        });
+        $btnMobileClose.on('click',function(e){
+            e.preventDefault();
+            $('#dimmer').removeClass('on');
+            $('#gnbMobile').stop().animate({right:'-80%'});
+        });
+
+
+        
+        if(winW>940){
+            $('#dimmer').removeClass('on');
+            $('#gnbMobile').removeClass('on');
+        }
     }
 
+
+    $('.mobile-list li').on('click',function(e){
+        var i = $(this).index();
+        $('.mobile-list li').removeClass('on');
+        $('.mobile-list li').eq(i).addClass('on');
+
+        $('.mobile-content>div').removeClass('on');
+        $('.mobile-content>div').eq(i).addClass('on');
+    });
 
 
 });

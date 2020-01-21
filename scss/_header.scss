@@ -47,6 +47,9 @@
         width:100%;
         height:100%;
     }
+    #dimmer.on{
+        display:block;
+    }
 }
 //gnb
 #gnb{
@@ -106,13 +109,16 @@
 }
 //gnbMobile
 #gnbMobile{
+    display:none;
     z-index:130;
     position: fixed;
     top:0;
-    right:0;
+    right:-80%;
     width:80%;
     height:100%;
     background:$color-menu-b;
+
+    &.on{display:block;}
     //gnb-mobile-header
     .gnb-mobile-header{
         position: relative;
@@ -236,7 +242,7 @@
         }
         //btnMobileOpen
         .btnMobileOpen{
-            background:yellow;
+            // background:yellow;
             position:absolute;
             top:0;
             right:0;
