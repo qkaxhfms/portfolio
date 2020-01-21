@@ -37,11 +37,11 @@
     .btnMobileOpen{display:none;}
     //dimmed
     #dimmer{
-        // display:none;
+        display:none;
         z-index:110;
         position:fixed;
-        background:orange;
-        // opacity:0.5;
+        background:#000;
+        opacity:0.5;
         top:0;
         left:0;
         width:100%;
@@ -112,46 +112,103 @@
     right:0;
     width:80%;
     height:100%;
-    background:green;
+    background:$color-menu-b;
     //gnb-mobile-header
     .gnb-mobile-header{
         position: relative;
-        background:blue;
+        // background:blue;
         height:80px;
         a{
             position: absolute;
             top:0;
             display:block;
-            text-align:center;
-            width:80px;
             height:80px;
-            font:400 40px/80px 'arial';
-            background:purple;
+            line-height:80px;
+            // background:purple;
             &:first-of-type{
                 left:0;
+                font-size:20px;
+                // padding:0 24px;
+                width:27.8%;
+                padding-left:12px;
                 >span{
                     display:block;
                     position:relative;
                     width:100%;
                     height:100%;
                     background:red;
-                    >svg{
-                        position:absolute;
-                        top:50%;
-                        left:50%;
-                        transform:translate(-50%,-50%);
-                        width:40px;
-                        background:olive;    
-                    }
 
                 }
             }
-            &:last-of-type{right:0;}
+            &:last-of-type{
+                text-align:center;
+                width:80px;
+                right:0;
+            }
         }
     }
     .gnb-mobile-content{
-        background:yellow;
+        background:#222;
         height:calc(100% - 80px);
+        >div{
+            float:left;
+            height:100%;
+            &:first-of-type{
+                width:27.8%;
+                background:$color-menu-b;
+                ul{
+                    li{
+                        &.on{
+                            a{
+                                background:#fff;
+                                color:$color-menu-b;
+                            }
+                        }
+                        a{
+                            display: block;
+                            height:60px;
+                            line-height:60px;
+                            padding-left:12px;
+                            background-color:$color-menu-b;
+                            color:#fff;
+                        }
+
+
+                    }
+                }
+            }
+            &:last-of-type{
+                position:relative;
+                width:72.2%;
+                // background:#ccc;
+                >div{
+                    position:absolute;
+                    display:none;
+                    width:100%;
+                    height:100%;
+                    background:#fff;
+                    >div{
+                        padding:0 12px;
+                        background:#fff;
+                        >p{
+                            line-height:60px;
+                            color:$color-menu-b;
+                            border-bottom:1px solid $color-menu-b;
+                            box-sizing:border-box;
+                        }
+                        >div{
+                            padding:12px 0;
+                            color:$color-menu-b;
+                            font:400 14px/22px 'Noto Sans KR';
+                        }
+                    }
+
+                    &.on{
+                        display:block;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -159,7 +216,7 @@
 @media screen and (max-width:$tablet-width) {
     //header
     #header{
-        background:green;
+        // background:green;
         width:100%;
         height:80px;
         //logo
@@ -171,7 +228,7 @@
             width:80px;
             height:80px;
             padding:10px;
-            background:yellow;    
+            // background:yellow;    
             //hover
             &:hover{            
                 transform:scale(1);
