@@ -16,16 +16,16 @@ $color-menu-b : #2361ad;
     margin-left:90px;    
     >div{
         height:800px;
-        &.h100{height:100vh;}
+        // &.h100{height:100vh;}
         >div{
             padding:50px;
             height:100%;
             >div{
                 float:left;
-                width:50%;
-                height:100%;
-                &:first-of-type{background:darkorange;}
-                &:last-of-type{background:rosybrown;}
+                // width:50%;
+                // height:100%;
+                // &:first-of-type{background:darkorange;}
+                // &:last-of-type{background:rosybrown;}
             }&::after{
                 display: block;
                 content:'';
@@ -50,10 +50,10 @@ $color-menu-b : #2361ad;
         >div{
             >div{
                 padding:20px;
-                >div{
-                    width:100%;
-                    height:auto;
-                }
+                // >div{
+                //     width:100%;
+                //     height:auto;
+                // }
             }
         }
     }

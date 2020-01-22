@@ -175,19 +175,11 @@ button:-moz-focusring {
   margin-left: 90px; }
   #container > div {
     height: 800px; }
-    #container > div.h100 {
-      height: 100vh; }
     #container > div > div {
       padding: 50px;
       height: 100%; }
       #container > div > div > div {
-        float: left;
-        width: 50%;
-        height: 100%; }
-        #container > div > div > div:first-of-type {
-          background: darkorange; }
-        #container > div > div > div:last-of-type {
-          background: rosybrown; }
+        float: left; }
       #container > div > div::after {
         display: block;
         content: '';
@@ -209,10 +201,7 @@ button:-moz-focusring {
     margin-left: 0;
     margin-top: 80px; }
     #container > div > div {
-      padding: 20px; }
-      #container > div > div > div {
-        width: 100%;
-        height: auto; } }
+      padding: 20px; } }
 /* mobile */
 .clearfix::after {
   display: block;
