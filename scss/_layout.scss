@@ -128,12 +128,79 @@ $color-menu-b : #2361ad;
         >div{
             >div{
                 padding:20px;
-                // >div{
-                //     width:100%;
-                //     height:auto;
-                // }
             }
         }
+    }
+    //info
+    .info{
+        //container-inner
+        .container-inner{
+            >div{
+                position: relative;
+                
+                &:first-of-type{
+                    width:32.7%;
+                    //inner-title
+                    .inner-title{
+                        position: relative;
+                        padding-bottom:30px;
+
+                        &::after{
+                            // border-bottom:;
+                            z-index: 10;
+                            position: absolute;
+                            display: block;
+                            left: 0;
+                            bottom: 0;
+                            content: '';
+                            width: 100%;
+                            margin-left: 80px;
+                            height: 2px;
+                            background: linear-gradient(135deg, #fff 25%, $color-menu-b 45%, transparent);
+                        }
+                        p{
+                            font-weight: 100;
+                            font-size: 2.95em;
+                            color: #fff;
+                            font-family: 'Righteous';
+                            letter-spacing: -0.005em;
+                        }
+                    }
+                    //inner-sub
+                    .inner-sub{
+                        padding-top:14px;
+                        font-family: 'Lato';
+                        font-weight: 400;
+                        font-size: 1.02em;
+                        letter-spacing: 0.8em;
+                    }            
+                }
+                &:last-of-type{
+                    width:67.3%;
+                    >div{height:600px;}
+                    .inner-letter{
+                        position: absolute;
+                        text-align: center;
+                        left:0;
+                        top:0;
+                        width:100%;
+                        height:100%;
+                        svg{
+                            height:600px;
+                            transform:rotate(-30deg);
+                        }
+                    }
+                }
+                >div{
+                    position: absolute;
+                    width:100%;
+                    background:yellow;
+                    top:50%;
+                    transform:translateY(-50%);
+                }
+            }
+        }
+
     }
 }
 
