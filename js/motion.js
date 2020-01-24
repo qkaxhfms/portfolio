@@ -6,33 +6,37 @@ $(document).ready(function(){
     function resizeMotion(){
         var winW = $(window).width(); 
 
-        if(winW > 940){          
+        if(winW > 940){        
+            delayIntro();  
         }else{
-            delayIntro();
+            $('.inner-letter.letter-1').addClass('change-svg change-stroke change-fill letter-move');
         }
         function delayIntro(){
             setTimeout(function(){
-                
-            },600);
+                $('.inner-letter.letter-1').addClass('change-svg');
+            },0);
             setTimeout(function(){
-            },1200);        
+                $('.inner-letter.letter-1').addClass('change-stroke');
+            },1500);
             setTimeout(function(){
-            },3600);        
+                $('.inner-letter.letter-1').addClass('change-fill');
+            },4500);
             setTimeout(function(){
-            },3700);
+                $('.inner-letter.letter-1').addClass('letter-move');
+            },4800);
             setTimeout(function(){
-            },3800);     
+                $('.inner-letter.letter-2').addClass('change-svg');
+            },5000);
             setTimeout(function(){
-            },4400);     
+                $('.inner-letter.letter-2').addClass('change-stroke');
+            },6500);
             setTimeout(function(){
-            },4200);     
+                $('.inner-letter.letter-2').addClass('letter-move');
+            },9500);
+            setTimeout(function(){
+                $('.inner-letter.letter-2').addClass('change-fill');
+            },9800);
         }
     }
-
-
-    //나타난다
-    //칠해진다
-    //벌어진다
-
 
 });

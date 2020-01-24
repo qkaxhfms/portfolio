@@ -58,18 +58,26 @@ $color-menu-b : #2361ad;
 .inner-sub{padding-top:14px;font-family: 'Lato';font-weight: 400;font-size: 1.02em;letter-spacing: 0.8em;color:#fff;}       
 .inner-letter{position: absolute;text-align: center;left:0;top:0;width:100%;height:100%;}
 
-.inner-letter.letter-1{z-index:5;}
-.inner-letter.letter-2{z-index:3;}
-.inner-letter svg{height:600px;transform:rotate(-30deg);stroke-dashoffset:2760;stroke-dasharray:2760;fill:transprent;}
+.inner-letter.letter-1{z-index:5; transition:3s;}
+.inner-letter.letter-2{z-index:3; transition:3s;}
+.inner-letter svg{height:600px;transform:rotate(-30deg);stroke-dashoffset:2760;stroke-dasharray:2760;stroke:transparent;}
 
-.inner-letter.letter-1 svg{stroke:transparent;fill:transparent;}
-.inner-letter.letter-2 svg{stroke:transparent;fill:transparent;}
+.inner-letter.letter-1 svg{transition:5s;stroke:transparent;fill:transparent;}
+.inner-letter.letter-2 svg{transition:5s;stroke:transparent;fill:transparent;}
 
 // motion
 .inner-letter.on{}
 .inner-letter.change-opacity{}
-.inner-letter.letter-1.change-svg svg{stroke:#fff;fill:#fff;}
-.inner-letter.letter-2.change-svg svg{stroke:$color-menu-b;fill:$color-menu-b;}
+//step-1
+.inner-letter.letter-1.change-svg svg{stroke:#fff;}
+.inner-letter.letter-2.change-svg svg{stroke:$color-menu-b;}
+//step-2
+.inner-letter.letter-1.change-stroke svg{stroke-dashoffset:0;}
+.inner-letter.letter-2.change-stroke svg{stroke-dashoffset:0;}
+//step-3
+.inner-letter.letter-1.change-fill svg{fill:#fff;}
+.inner-letter.letter-2.change-fill svg{fill:$color-menu-b;}
+//step-4
 .inner-letter.letter-1.letter-move{top:-3.3%;}
 .inner-letter.letter-2.letter-move{top:3.3%;}
 

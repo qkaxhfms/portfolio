@@ -295,32 +295,46 @@ button:-moz-focusring {
   height: 100%; }
 
 .inner-letter.letter-1 {
-  z-index: 5; }
+  z-index: 5;
+  transition: 3s; }
 
 .inner-letter.letter-2 {
-  z-index: 3; }
+  z-index: 3;
+  transition: 3s; }
 
 .inner-letter svg {
   height: 600px;
   transform: rotate(-30deg);
   stroke-dashoffset: 2760;
   stroke-dasharray: 2760;
-  fill: transprent; }
+  stroke: transparent; }
 
 .inner-letter.letter-1 svg {
+  transition: 5s;
   stroke: transparent;
   fill: transparent; }
 
 .inner-letter.letter-2 svg {
+  transition: 5s;
   stroke: transparent;
   fill: transparent; }
 
 .inner-letter.letter-1.change-svg svg {
-  stroke: #fff;
-  fill: #fff; }
+  stroke: #fff; }
 
 .inner-letter.letter-2.change-svg svg {
-  stroke: #2361ad;
+  stroke: #2361ad; }
+
+.inner-letter.letter-1.change-stroke svg {
+  stroke-dashoffset: 0; }
+
+.inner-letter.letter-2.change-stroke svg {
+  stroke-dashoffset: 0; }
+
+.inner-letter.letter-1.change-fill svg {
+  fill: #fff; }
+
+.inner-letter.letter-2.change-fill svg {
   fill: #2361ad; }
 
 .inner-letter.letter-1.letter-move {
