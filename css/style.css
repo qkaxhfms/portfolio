@@ -197,7 +197,6 @@ button:-moz-focusring {
 
 .container-inner {
   padding: 50px;
-  height: 100%;
   /*background:green;*/
   background: url("../img/bg_main.jpg"); }
 
@@ -213,11 +212,6 @@ button:-moz-focusring {
 .container-inner.fl > div {
   height: 100%; }
 
-.container-inner.fl::after {
-  display: block;
-  content: '';
-  clear: both; }
-
 .container-inner.fl > div {
   float: left; }
 
@@ -226,6 +220,14 @@ button:-moz-focusring {
 
 .container-inner > div.content-right {
   /*background:rosybrown;*/ }
+
+.info .container-inner::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.info .container-inner {
+  height: 100%; }
 
 .info .container-inner > div {
   position: relative; }

@@ -27,13 +27,13 @@ $color-menu-b : #2361ad;
 #container .contact{background-color:#555; height:600px;}
 
 //container-inner
-.container-inner{padding:50px;height:100%;/*background:green;*/background:url('../img/bg_main.jpg');}
+.container-inner{padding:50px;/*background:green;*/background:url('../img/bg_main.jpg');}
 .container-inner::after{display:block;content:'';clear:both;}
 
 .container-inner>div{/*background:blue;*//*height:100%;*/}
 .container-inner.fl>div{height:100%;}
 
-.container-inner.fl::after{display:block;content:'';clear:both;}
+// .container-inner.fl::after{display:block;content:'';clear:both;}
 .container-inner.fl>div{float:left;}
 
 .container-inner>div.content-left{/*background:orange;*/}
@@ -42,7 +42,8 @@ $color-menu-b : #2361ad;
 
 //info
 .info{}
-.info .container-inner{}
+.info .container-inner::after{display:block;content:'';clear:both;}
+.info .container-inner{height:100%;}
 .info .container-inner>div{position: relative;}
 .info .container-inner>div>div{position: absolute;width:100%;top:50%;transform:translateY(-50%);}
 .info .container-inner>div:first-of-type>div{/*background:yellow;*/}
