@@ -181,14 +181,7 @@ button:-moz-focusring {
   background-color: #111; }
 
 #container .about {
-  background-color: #222;
-  height: 600px; }
-
-#container .about .container-inner > div.content-left {
-  background: blueviolet; }
-
-#container .about .container-inner > div.content-right {
-  background: chartreuse; }
+  background-color: #222; }
 
 #container .skill {
   background-color: #333;
@@ -215,6 +208,9 @@ button:-moz-focusring {
 
 .container-inner > div {
   /*background:blue;*/
+  /*height:100%;*/ }
+
+.container-inner.fl > div {
   height: 100%; }
 
 .container-inner.fl::after {
@@ -255,6 +251,34 @@ button:-moz-focusring {
 .info .container-inner > div:last-of-type > div {
   height: 600px; }
 
+.about .container-inner > div:last-of-type > div {
+  padding-left: 15px; }
+
+.content-about::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.content-about {
+  background: #ddd; }
+
+.content-about > div {
+  float: left;
+  width: 25%;
+  height: 400px; }
+
+.content-about > div:nth-of-type(1) {
+  background: #111; }
+
+.content-about > div:nth-of-type(2) {
+  background: #222; }
+
+.content-about > div:nth-of-type(3) {
+  background: #333; }
+
+.content-about > div:nth-of-type(4) {
+  background: #444; }
+
 .inner-title {
   position: relative;
   padding-bottom: 30px; }
@@ -285,6 +309,12 @@ button:-moz-focusring {
   font-size: 1.02em;
   letter-spacing: 0.8em;
   color: #fff; }
+
+.inner-sub.ft-k {
+  font-family: 'Noto Sans KR';
+  font-weight: 400;
+  font-size: 1.02em;
+  letter-spacing: 0.8em; }
 
 .inner-letter {
   position: absolute;
