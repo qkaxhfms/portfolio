@@ -35,7 +35,7 @@ table {
   border-spacing: 0;
   table-layout: fixed;
   empty-cells: show;
-  text-align: center;
+  /*text-align:center;*/
   word-wrap: break-word; }
 
 caption {
@@ -176,10 +176,6 @@ button:-moz-focusring {
 
 #container {
   margin-left: 90px; }
-
-#container .skill {
-  background-color: #333;
-  height: 600px; }
 
 #container .project {
   background-color: #444;
@@ -353,6 +349,41 @@ button:-moz-focusring {
     transform: scale(0.9); }
   50% {
     transform: scale(1); } }
+.skill {
+  background-color: #333; }
+
+.skill .container-inner > div:last-of-type > div {
+  margin-top: 80px; }
+  .skill .container-inner > div:last-of-type > div::after {
+    display: block;
+    content: '';
+    clear: both; }
+  .skill .container-inner > div:last-of-type > div > div {
+    float: left;
+    width: 50%; }
+    .skill .container-inner > div:last-of-type > div > div:first-of-type {
+      padding-right: 20px; }
+    .skill .container-inner > div:last-of-type > div > div:last-of-type {
+      padding-left: 20px; }
+    .skill .container-inner > div:last-of-type > div > div table {
+      width: 100%;
+      margin: 40px 0; }
+      .skill .container-inner > div:last-of-type > div > div table th, .skill .container-inner > div:last-of-type > div > div table td {
+        text-align: left; }
+      .skill .container-inner > div:last-of-type > div > div table thead th {
+        font-size: 1.2em;
+        padding-bottom: 12px;
+        color: #fff; }
+      .skill .container-inner > div:last-of-type > div > div table tbody {
+        border-top: 1px solid #fff; }
+        .skill .container-inner > div:last-of-type > div > div table tbody th {
+          width: 30%;
+          padding-top: 8px; }
+        .skill .container-inner > div:last-of-type > div > div table tbody th, .skill .container-inner > div:last-of-type > div > div table tbody td {
+          font-family: 'Noto Sans KR';
+          line-height: 1.82em;
+          color: #fff; }
+
 .inner-title {
   position: relative;
   padding-bottom: 30px; }
@@ -494,7 +525,21 @@ button:-moz-focusring {
     .about .container-inner > div:last-of-type > div > div > div:last-of-type {
       margin-right: 0; }
     .about .container-inner > div:last-of-type > div > div > div > h2 {
-      line-height: 80px; } }
+      line-height: 80px; }
+
+  .skill .container-inner > div:last-of-type > div {
+    margin-top: 80px; }
+    .skill .container-inner > div:last-of-type > div::after {
+      display: block;
+      content: '';
+      clear: both; }
+    .skill .container-inner > div:last-of-type > div > div {
+      float: left;
+      width: 100%; }
+      .skill .container-inner > div:last-of-type > div > div:first-of-type {
+        padding-right: 0; }
+      .skill .container-inner > div:last-of-type > div > div:last-of-type {
+        padding-left: 0; } }
 /* mobile */
 .clearfix::after {
   display: block;

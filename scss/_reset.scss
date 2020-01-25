@@ -9,7 +9,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{di
 ol,ul{list-style:none;}
 img{max-width:100%;vertical-align:middle;}
 video{min-width:100%;max-width:100%;}
-table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;empty-cells:show;text-align:center;word-wrap:break-word;}
+table{width:100%;border-collapse:collapse;border-spacing:0;table-layout:fixed;empty-cells:show;/*text-align:center;*/word-wrap:break-word;}
 caption{overflow:hidden;height:0;font-size:1px;line-height:0;}
 legend{border:0;padding:0;white-space:normal;*margin-left:-7px;}
 fieldset{border:0;margin:0;padding:0;}
