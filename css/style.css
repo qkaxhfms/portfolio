@@ -169,16 +169,13 @@ button:-moz-focusring {
 /*device-width*/
 .wrapper {
   font: 100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;
-  background: blue; }
+  background: yellow; }
 
 .h100 {
   height: 100vh; }
 
 #container {
   margin-left: 90px; }
-
-#container .info {
-  background-color: #111; }
 
 #container .about {
   background-color: #222; }
@@ -197,29 +194,7 @@ button:-moz-focusring {
 
 .container-inner {
   padding: 50px;
-  /*background:green;*/
-  background: url("../img/bg_main.jpg"); }
-
-.container-inner::after {
-  display: block;
-  content: '';
-  clear: both; }
-
-.container-inner > div {
-  /*background:blue;*/
-  /*height:100%;*/ }
-
-.container-inner.fl > div {
-  height: 100%; }
-
-.container-inner.fl > div {
-  float: left; }
-
-.container-inner > div.content-left {
-  /*background:orange;*/ }
-
-.container-inner > div.content-right {
-  /*background:rosybrown;*/ }
+  /*background:url('../img/bg_main.jpg');*/ }
 
 .info .container-inner::after {
   display: block;
@@ -227,10 +202,13 @@ button:-moz-focusring {
   clear: both; }
 
 .info .container-inner {
-  height: 100%; }
+  height: 100%;
+  background-color: #111; }
 
 .info .container-inner > div {
-  position: relative; }
+  position: relative;
+  float: left;
+  height: 100%; }
 
 .info .container-inner > div > div {
   position: absolute;
@@ -255,31 +233,6 @@ button:-moz-focusring {
 
 .about .container-inner > div:last-of-type > div {
   padding-left: 15px; }
-
-.content-about::after {
-  display: block;
-  content: '';
-  clear: both; }
-
-.content-about {
-  background: #ddd; }
-
-.content-about > div {
-  float: left;
-  width: 25%;
-  height: 400px; }
-
-.content-about > div:nth-of-type(1) {
-  background: #111; }
-
-.content-about > div:nth-of-type(2) {
-  background: #222; }
-
-.content-about > div:nth-of-type(3) {
-  background: #333; }
-
-.content-about > div:nth-of-type(4) {
-  background: #444; }
 
 .inner-title {
   position: relative;
@@ -376,6 +329,43 @@ button:-moz-focusring {
   top: 3.3%; }
 
 /* tablet */
+@media screen and (max-width: 939px) {
+  .info.h100 {
+    height: calc(100vh - 80px); }
+
+  #container {
+    margin-left: 0;
+    margin-top: 80px; }
+
+  .container-inner {
+    padding: 0 20px; }
+
+  .info .container-inner::after {
+    display: none; }
+
+  .info .container-inner {
+    background-color: #333; }
+
+  .info .container-inner > div {
+    float: initial; }
+
+  .inner-letter {
+    opacity: 0.24; }
+
+  .info .container-inner {
+    position: relative; }
+
+  .info .container-inner > div {
+    position: absolute;
+    left: 5%; }
+
+  .info .container-inner > div:first-of-type {
+    width: 90%;
+    z-index: 20; }
+
+  .info .container-inner > div:last-of-type {
+    width: 90%;
+    z-index: 10; } }
 /* mobile */
 .clearfix::after {
   display: block;
