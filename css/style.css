@@ -177,10 +177,6 @@ button:-moz-focusring {
 #container {
   margin-left: 90px; }
 
-#container .project {
-  background-color: #444;
-  height: 600px; }
-
 #container .contact {
   background-color: #555;
   height: 600px; }
@@ -384,6 +380,48 @@ button:-moz-focusring {
           line-height: 1.82em;
           color: #fff; }
 
+.project {
+  background-color: #222; }
+
+.project .container-inner > div:first-of-type {
+  position: relative; }
+
+.project .container-inner > div:first-of-type ul {
+  position: absolute;
+  right: 0;
+  top: 40px; }
+
+.project .container-inner > div:first-of-type ul li {
+  float: left;
+  padding-left: 20px; }
+
+.project .container-inner > div:first-of-type ul li a {
+  display: block; }
+
+.project .container-inner > div:last-of-type > div > div {
+  margin-top: 80px; }
+
+.project .container-inner > div:last-of-type > div > div::after {
+  display: block;
+  content: '';
+  clear: both; }
+
+.project .container-inner > div:last-of-type > div > div > div {
+  float: left;
+  width: 25%;
+  padding: 12px; }
+
+.project .container-inner > div:last-of-type > div > div > div > div {
+  position: relative;
+  height: 400px;
+  background: #fff; }
+
+.project .container-inner > div:last-of-type > div > div > div > div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
 .inner-title {
   position: relative;
   padding-bottom: 30px; }
@@ -539,7 +577,31 @@ button:-moz-focusring {
       .skill .container-inner > div:last-of-type > div > div:first-of-type {
         padding-right: 0; }
       .skill .container-inner > div:last-of-type > div > div:last-of-type {
-        padding-left: 0; } }
+        padding-left: 0; }
+
+  .project .container-inner > div:first-of-type ul li {
+    float: left;
+    padding-left: 20px; }
+
+  .project .container-inner > div:first-of-type ul li:first-child {
+    padding-left: 0; }
+
+  .project .container-inner > div:first-of-type ul {
+    position: absolute;
+    right: none;
+    left: 0;
+    top: 250px; }
+
+  .project .container-inner > div:last-of-type > div > div > div {
+    float: left;
+    width: 33.333333%;
+    padding: 6px; }
+
+  .project .container-inner > div:last-of-type > div > div > div > div {
+    height: 120px; }
+
+  .project .container-inner > div:last-of-type > div > div > div > div img {
+    width: 100px; } }
 /* mobile */
 .clearfix::after {
   display: block;
