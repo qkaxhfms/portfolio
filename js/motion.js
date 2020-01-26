@@ -35,7 +35,6 @@ function delayIntro(){
     }
     
 }
-
 // console.log(delayIntro)
 window.onload = function() {
     delayIntro();

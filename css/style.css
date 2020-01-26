@@ -175,14 +175,12 @@ button:-moz-focusring {
   height: 100vh; }
 
 #container {
-  margin-left: 90px; }
+  margin-left: 90px;
+  background: url("../img/bg_main.jpg");
+  background-size: 100% 100%; }
 
 .container-inner {
-  padding: 50px;
-  /*background:url('../img/bg_main.jpg');*/ }
-
-.info {
-  background-color: #222; }
+  padding: 50px; }
 
 .info .container-inner::after {
   display: block;
@@ -213,7 +211,7 @@ button:-moz-focusring {
   height: 600px; }
 
 .about {
-  background-color: #222; }
+  padding: 180px 0; }
 
 .about .container-inner > div:last-of-type > div > div::after {
   display: block;
@@ -232,7 +230,10 @@ button:-moz-focusring {
   margin-right: 2.666666%;
   color: #2361ad;
   min-height: 360px;
-  background: #fff; }
+  background: #fff;
+  transform: translateY(100px) rotateY(180deg);
+  opacity: 0;
+  transition: all 0.8s; }
   .about .container-inner > div:last-of-type > div > div > div:last-of-type {
     margin-right: 0; }
   .about .container-inner > div:last-of-type > div > div > div > h2 {
@@ -270,6 +271,10 @@ button:-moz-focusring {
       font-weight: 100;
       font-size: 1.12em;
       line-height: 1.65em; }
+
+.about.on .container-inner > div:last-of-type > div > div > div {
+  transform: translateY(0) rotateY(0deg);
+  opacity: 1; }
 
 .svg-motion {
   animation-duration: 2s;
@@ -342,7 +347,7 @@ button:-moz-focusring {
   50% {
     transform: scale(1); } }
 .skill {
-  background-color: #333; }
+  padding: 180px 0; }
 
 .skill .container-inner > div:last-of-type > div {
   margin-top: 80px; }
@@ -375,9 +380,6 @@ button:-moz-focusring {
           font-family: 'Noto Sans KR';
           line-height: 1.82em;
           color: #fff; }
-
-.project {
-  background-color: #222; }
 
 .project .container-inner > div:first-of-type {
   position: relative; }
@@ -418,9 +420,6 @@ button:-moz-focusring {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-.contact {
-  background-color: #222; }
-
 .contact .container-inner::after {
   display: block;
   content: '';
@@ -443,11 +442,35 @@ button:-moz-focusring {
 .contact .container-inner > div:first-of-type {
   width: 36.7%; }
 
+.contact .container-inner > div:first-of-type > div > div:last-of-type {
+  margin-top: 20px;
+  margin-top: 150px; }
+  .contact .container-inner > div:first-of-type > div > div:last-of-type > p {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 20px; }
+  .contact .container-inner > div:first-of-type > div > div:last-of-type > ul li {
+    font-size: 18px;
+    line-height: 30px;
+    color: #fff; }
+
 .contact .container-inner > div:last-of-type {
   width: 63.3%; }
 
-.content-contact table th, .content-contact table td {
-  color: #fff; }
+.content-contact form::after {
+  display: block;
+  content: '';
+  clear: both; }
+.content-contact table {
+  float: left;
+  text-align: left; }
+  .content-contact table:first-of-type {
+    width: 30%; }
+  .content-contact table:last-of-type {
+    margin-left: 20px;
+    width: calc(70% - 20px); }
+  .content-contact table th, .content-contact table td {
+    color: #fff; }
 .content-contact th {
   font-weight: 100;
   font-size: 1.85em;
@@ -469,27 +492,24 @@ button:-moz-focusring {
   margin-bottom: 18px; }
   .content-contact dl dd:last-of-type {
     margin-bottom: 0; }
-.content-contact .message {
-  position: relative;
-  vertical-align: top; }
 .content-contact textarea {
-  position: absolute;
   display: block;
-  margin-left: 20px;
-  width: calc(100% - 20px);
-  height: 100%;
+  width: 100%;
+  height: 314px;
   background: blue;
   background: #fff;
   border: 2px solid #2361ad; }
+.content-contact .button-content {
+  padding-top: 20px; }
 .content-contact button {
-  margin-top: 20px;
   display: block;
   width: 100%;
   line-height: 50px;
   font-size: 22px;
   text-align: center;
   background: #2361ad;
-  color: #fff; }
+  color: #fff;
+  transition: 0.5s; }
   .content-contact button:hover {
     background: #fff;
     color: #2361ad; }
@@ -627,6 +647,9 @@ button:-moz-focusring {
     width: 90%;
     z-index: 10; }
 
+  .about {
+    padding: 0; }
+
   .about .container-inner > div:last-of-type > div > div > div {
     width: 100%;
     margin-right: 0;
@@ -636,6 +659,9 @@ button:-moz-focusring {
       margin-right: 0; }
     .about .container-inner > div:last-of-type > div > div > div > h2 {
       line-height: 80px; }
+
+  .skill {
+    padding: 0; }
 
   .skill .container-inner > div:last-of-type > div {
     margin-top: 80px; }
@@ -673,7 +699,47 @@ button:-moz-focusring {
     height: 120px; }
 
   .project .container-inner > div:last-of-type > div > div > div > div img {
-    width: 100px; } }
+    width: 100px; }
+
+  .contact {
+    height: auto; }
+
+  .contact .container-inner {
+    height: auto; }
+
+  .contact .container-inner > div {
+    position: static;
+    float: none;
+    height: auto; }
+
+  .contact .container-inner > div > div {
+    position: static;
+    width: auto;
+    top: none;
+    transform: none; }
+
+  .contact .container-inner > div:first-of-type {
+    width: 100%; }
+
+  .contact .container-inner > div:first-of-type > div > div:last-of-type {
+    margin-top: 40px;
+    margin-bottom: 40px; }
+
+  .contact .container-inner > div:last-of-type {
+    width: 100%; }
+
+  .content-contact form::after {
+    display: block;
+    content: '';
+    clear: both; }
+  .content-contact table {
+    float: left; }
+    .content-contact table:first-of-type {
+      width: 100%; }
+    .content-contact table:last-of-type {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%; } }
 /* mobile */
 .clearfix::after {
   display: block;

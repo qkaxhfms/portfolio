@@ -11,28 +11,29 @@ $(document).ready(function(){
         //gnbPc
         var $gnb = $header.children('#gnb');
         var $gnbUl = $gnb.children('ul');
-        var $gnbLi = $gnbUl.children('li');
+        // var $gnbLi = $gnbUl.children('li');
+        var $gnbLi = $gnbUl.find('a');
 
         //gnbLi mouseenter 
         $gnbLi.on('mouseenter',function(){
-            $(this).addClass('on');
+            $(this).parent('li').addClass('on');
             if(winW > 940){
-                $(this).children('div').stop().animate({
+                $(this).parent('li').children('div').stop().animate({
                     'left':'0'
                 },400); 
             }else{
-                $(this).children('div').stop().animate();
+                $(this).parent('li').children('div').stop().animate();
             }
         });
         //gnbLi mouseleave
         $gnbLi.on('mouseleave',function(){
-            $(this).removeClass('on');            
+            $(this).parent('li').removeClass('on');            
             if(winW > 940){
-                $(this).children('div').stop().animate({
+                $(this).parent('li').children('div').stop().animate({
                     'left':'-200'
                 },200);
             }else{
-                $(this).children('div').stop().animate();
+                $(this).parent('li').children('div').stop().animate();
             }
         });
 
