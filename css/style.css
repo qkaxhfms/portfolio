@@ -231,7 +231,9 @@ button:-moz-focusring {
   text-align: center;
   color: #fff;
   padding: 70px 84px;
-  background: #2361ad; }
+  transform: translateY(100px) rotateY(180deg);
+  opacity: 0;
+  transition: all 0.8s; }
   .about .container-inner > div:last-of-type > div > div > div > div {
     position: relative;
     width: 100px;
@@ -260,6 +262,10 @@ button:-moz-focusring {
     .about .container-inner > div:last-of-type > div > div > div > dl dd {
       font-weight: 100;
       font-size: 14px; }
+
+.about.on .container-inner > div:last-of-type > div > div > div {
+  transform: translateY(0) rotateY(0deg);
+  opacity: 1; }
 
 .svg-motion {
   animation-duration: 2s;
@@ -465,8 +471,7 @@ button:-moz-focusring {
   background: #fff;
   border-top: 2px solid #2361ad;
   border-bottom: 2px solid #2361ad;
-  display: block;
-  color: #fff; }
+  display: block; }
 .content-contact dl dt {
   font-size: 24px; }
 .content-contact dl dd {
