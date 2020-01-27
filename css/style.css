@@ -169,7 +169,7 @@ button:-moz-focusring {
 /*device-width*/
 .wrapper {
   font: 100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;
-  background: yellow; }
+  background: #2361ad; }
 
 .h100 {
   height: 100vh; }
@@ -224,57 +224,42 @@ button:-moz-focusring {
   perspective: 700px; }
 
 .about .container-inner > div:last-of-type > div > div > div {
-  position: relative;
   float: left;
-  width: 23%;
-  margin-right: 2.666666%;
+  width: 25%;
   color: #2361ad;
   min-height: 360px;
-  background: #fff;
-  transform: translateY(100px) rotateY(180deg);
-  opacity: 0;
-  transition: all 0.8s; }
-  .about .container-inner > div:last-of-type > div > div > div:last-of-type {
-    margin-right: 0; }
-  .about .container-inner > div:last-of-type > div > div > div > h2 {
-    font-family: 'Righteous';
-    font-weight: 100;
-    font-size: 2.42em;
-    line-height: 120px;
-    color: #fff;
-    background: #2361ad; }
+  text-align: center;
+  color: #fff;
+  padding: 70px 84px;
+  background: #2361ad; }
   .about .container-inner > div:last-of-type > div > div > div > div {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 120px;
-    height: 120px; }
+    position: relative;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background: #fff;
+    margin: 20px auto; }
     .about .container-inner > div:last-of-type > div > div > div > div > div {
       position: absolute;
-      top: 30px;
-      left: 30px;
-      width: 60px;
-      height: 60px; }
+      top: 25px;
+      left: 25px;
+      width: 50px;
+      height: 50px; }
       .about .container-inner > div:last-of-type > div > div > div > div > div svg {
         width: 100%;
         height: 100%;
-        fill: #fff; }
+        fill: #2361ad; }
+  .about .container-inner > div:last-of-type > div > div > div > p {
+    font-family: 'Righteous';
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 22px; }
   .about .container-inner > div:last-of-type > div > div > div > dl {
-    font-family: 'Noto Sans KR';
-    letter-spacing: -0.05em;
-    margin-top: 12px; }
-    .about .container-inner > div:last-of-type > div > div > div > dl dt {
-      font-weight: 700;
-      font-size: 1.23em;
-      padding-bottom: 14px; }
+    font: 700 15px/1.37 'Noto SansKR';
+    letter-spacing: -0.05em; }
     .about .container-inner > div:last-of-type > div > div > div > dl dd {
       font-weight: 100;
-      font-size: 1.12em;
-      line-height: 1.65em; }
-
-.about.on .container-inner > div:last-of-type > div > div > div {
-  transform: translateY(0) rotateY(0deg);
-  opacity: 1; }
+      font-size: 14px; }
 
 .svg-motion {
   animation-duration: 2s;
@@ -294,8 +279,8 @@ button:-moz-focusring {
       transform: rotate(0deg);
       transform-origin: 84% 72%; }
     .svg-stand > svg:last-of-type {
-      right: 0;
-      bottom: -15px;
+      right: 1px;
+      bottom: -10px;
       width: 70%; }
 
 .svg-ball {
@@ -315,10 +300,6 @@ button:-moz-focusring {
 .svg-grow {
   animation-timing-function: linear;
   animation-name: grow; }
-  .svg-grow path {
-    fill: none; }
-    .svg-grow path:last-of-type {
-      fill: #fff; }
 
 @keyframes open {
   0%, 100% {
@@ -611,11 +592,11 @@ button:-moz-focusring {
 /* tablet */
 @media screen and (max-width: 939px) {
   .info.h100 {
-    height: calc(100vh - 80px); }
+    height: calc(100vh - 50px); }
 
   #container {
     margin-left: 0;
-    margin-top: 80px; }
+    margin-top: 50px; }
 
   .container-inner {
     padding: 40px 20px; }
@@ -654,11 +635,8 @@ button:-moz-focusring {
     width: 100%;
     margin-right: 0;
     margin-bottom: 20px;
-    min-height: auto; }
-    .about .container-inner > div:last-of-type > div > div > div:last-of-type {
-      margin-right: 0; }
-    .about .container-inner > div:last-of-type > div > div > div > h2 {
-      line-height: 80px; }
+    min-height: auto;
+    padding: 50px 30px; }
 
   .skill {
     padding: 0; }
@@ -866,27 +844,26 @@ a {
     display: block; }
   #gnbMobile .gnb-mobile-header {
     position: relative;
-    height: 80px; }
+    height: 50px; }
     #gnbMobile .gnb-mobile-header a {
       position: absolute;
       top: 0;
       display: block;
-      height: 80px;
-      line-height: 80px; }
+      height: 50px;
+      line-height: 50px; }
       #gnbMobile .gnb-mobile-header a:first-of-type {
         left: 0;
-        font-size: 20px;
+        font-size: 18px;
         width: 27.8%;
         padding-left: 12px; }
         #gnbMobile .gnb-mobile-header a:first-of-type > span {
           display: block;
           position: relative;
           width: 100%;
-          height: 100%;
-          background: red; }
+          height: 100%; }
       #gnbMobile .gnb-mobile-header a:last-of-type {
         text-align: center;
-        width: 80px;
+        width: 50px;
         right: 0; }
   #gnbMobile .gnb-mobile-content {
     background: #222;
@@ -902,8 +879,8 @@ a {
           color: #2361ad; }
         #gnbMobile .gnb-mobile-content > div:first-of-type ul li a {
           display: block;
-          height: 60px;
-          line-height: 60px;
+          height: 40px;
+          line-height: 40px;
           padding-left: 12px;
           background-color: #2361ad;
           color: #fff; }
@@ -920,7 +897,7 @@ a {
             padding: 0 12px;
             background: #fff; }
             #gnbMobile .gnb-mobile-content > div:last-of-type > div > div > p {
-              line-height: 60px;
+              line-height: 40px;
               color: #2361ad;
               border-bottom: 1px solid #2361ad;
               box-sizing: border-box; }
@@ -935,14 +912,14 @@ a {
 @media screen and (max-width: 939px) {
   #header {
     width: 100%;
-    height: 80px; }
+    height: 50px; }
     #header > h1 {
       transition: 0.25s;
       top: 0;
       left: 0;
       margin-left: 0;
-      width: 80px;
-      height: 80px;
+      width: 50px;
+      height: 50px;
       padding: 10px; }
       #header > h1:hover {
         transform: scale(1); }
@@ -951,9 +928,10 @@ a {
       top: 0;
       right: 0;
       display: block;
-      width: 80px;
-      height: 80px;
-      font: 400 40px/80px 'arial';
+      width: 50px;
+      height: 50px;
+      font-size: 24px;
+      line-height: 50px;
       color: #2361ad;
       text-align: center; }
 

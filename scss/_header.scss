@@ -79,7 +79,6 @@
                     display:block;
                     position: relative;
                     z-index:2;
-
                     padding:27px;
                     background:#fff;
                     transition:all 0.75s;
@@ -124,18 +123,16 @@
     .gnb-mobile-header{
         position: relative;
         // background:blue;
-        height:80px;
+        height:50px;
         a{
             position: absolute;
             top:0;
             display:block;
-            height:80px;
-            line-height:80px;
-            // background:purple;
+            height:50px;
+            line-height:50px;
             &:first-of-type{
                 left:0;
-                font-size:20px;
-                // padding:0 24px;
+                font-size:18px;
                 width:27.8%;
                 padding-left:12px;
                 >span{
@@ -143,13 +140,12 @@
                     position:relative;
                     width:100%;
                     height:100%;
-                    background:red;
 
                 }
             }
             &:last-of-type{
                 text-align:center;
-                width:80px;
+                width:50px;
                 right:0;
             }
         }
@@ -173,8 +169,8 @@
                         }
                         a{
                             display: block;
-                            height:60px;
-                            line-height:60px;
+                            height:40px;
+                            line-height:40px;
                             padding-left:12px;
                             background-color:$color-menu-b;
                             color:#fff;
@@ -198,7 +194,7 @@
                         padding:0 12px;
                         background:#fff;
                         >p{
-                            line-height:60px;
+                            line-height:40px;
                             color:$color-menu-b;
                             border-bottom:1px solid $color-menu-b;
                             box-sizing:border-box;
@@ -225,17 +221,16 @@
     #header{
         // background:green;
         width:100%;
-        height:80px;
+        height:50px;
         //logo
         >h1{
             transition:0.25s;
             top:0;
             left:0;
             margin-left:0;
-            width:80px;
-            height:80px;
+            width:50px;
+            height:50px;
             padding:10px;
-            // background:yellow;    
             //hover
             &:hover{            
                 transform:scale(1);
@@ -248,10 +243,10 @@
             top:0;
             right:0;
             display:block;
-            width:80px;
-            height:80px;
-            // background:$color-menu-b;
-            font:400 40px/80px 'arial';
+            width:50px;
+            height:50px;
+            font-size:24px;
+            line-height:50px;
             color:$color-menu-b;
             text-align:center;
         }
