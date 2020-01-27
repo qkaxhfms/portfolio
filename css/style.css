@@ -220,7 +220,6 @@ button:-moz-focusring {
 
 .about .container-inner > div:nth-of-type(2) > div > div {
   margin-top: 80px;
-  /*background:green;*/
   perspective: 700px; }
 
 .about .container-inner > div:nth-of-type(2) > div > div > div {
@@ -408,8 +407,12 @@ button:-moz-focusring {
   padding: 12px; }
 
 .project .container-inner > div:last-of-type > div > div > div > div {
+  height: 400px; }
+
+.project .container-inner > div:last-of-type > div > div > div > div > a {
   position: relative;
-  height: 400px;
+  display: block;
+  height: 100%;
   background: #fff; }
 
 .project .container-inner > div:last-of-type > div > div > div > div img {
