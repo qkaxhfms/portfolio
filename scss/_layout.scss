@@ -263,24 +263,52 @@ $color-menu-b : #2361ad;
 
 //project
 .project{
-    // background:url('../img/bg_main.jpg');
-    // background-color:#222;
+    .container-inner{
+        >div{
+            &:first-of-type{
+                position: relative;
+                ul{
+                    position:absolute;
+                    right:0;
+                    top:40px;
+                    li{
+                        float:left;
+                        padding-left:20px;
+                        a{
+                            display: block;
+                        }
+                    }
+                }
+            }
+            &:last-of-type{}
+            >div{
+                >div::after{display:block;content:'';clear:both;}
+                >div{
+                    margin-top:80px;
+                    >div{
+                        float:left;width:25%;padding:12px;
+                        >div{
+                            height:400px;
+                            >a{
+                                position:relative;
+                                display:block;
+                                height:100%;
+                                background:#fff;
+                            }
+                            img{
+                                position: absolute;
+                                top:50%;
+                                left:50%;
+                                transform:translate(-50%,-50%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
-.project .container-inner{}
-.project .container-inner>div{}
-.project .container-inner>div:first-of-type{position: relative;}
-.project .container-inner>div:first-of-type ul{position:absolute;right:0;top:40px;}
-.project .container-inner>div:first-of-type ul li{float:left;padding-left:20px;}
-.project .container-inner>div:first-of-type ul li a{display: block;}
-.project .container-inner>div:last-of-type{}
 
-.project .container-inner>div:last-of-type>div{}
-.project .container-inner>div:last-of-type>div>div{margin-top:80px;}
-.project .container-inner>div:last-of-type>div>div::after{display:block;content:'';clear:both;}
-.project .container-inner>div:last-of-type>div>div>div{float:left;width:25%;padding:12px;}
-.project .container-inner>div:last-of-type>div>div>div>div{height:400px;}
-.project .container-inner>div:last-of-type>div>div>div>div>a{position:relative;display:block;height:100%;background:#fff;}
-.project .container-inner>div:last-of-type>div>div>div>div img{position: absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
 
 //contact
 .contact{
@@ -434,9 +462,9 @@ $color-menu-b : #2361ad;
     }
 
     //info
-    .info .container-inner::after{display: none;}
     .info{
         &.h100{height:calc(100vh - 50px);}
+        .container-inner::after{display: none;}
         .container-inner{
             position:relative;
             >div{
@@ -482,13 +510,47 @@ $color-menu-b : #2361ad;
         }
     }
 
-    //project    
-    .project .container-inner>div:first-of-type ul li{float:left;padding-left:20px;}
-    .project .container-inner>div:first-of-type ul li:first-child{padding-left:0;}
-    .project .container-inner>div:first-of-type ul{position:absolute;right:none;left:0;top:250px;}
-    .project .container-inner>div:last-of-type>div>div>div{float:left;width:33.333333%;padding:6px;}
-    .project .container-inner>div:last-of-type>div>div>div>div{height:120px;}
-    .project .container-inner>div:last-of-type>div>div>div>div img{width:100px;}
+    //project
+    .project{
+        .container-inner{
+            >div{
+                &:first-of-type{
+                    ul{
+                        position: absolute;
+                        right:none;
+                        left:0;
+                        top:250px;
+                        li{
+                            float:left;
+                            padding-left:20px;
+                            &:first-child{padding:0;}
+                        }
+                    }
+                }
+                &:last-of-type{
+                    >div{
+                        >div{
+                            >div{
+                                float:left;
+                                width:33.333333%;
+                                padding:6px;
+                                >div{
+                                    height:120px;
+                                    img{width:100px;}
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    // .project .container-inner>div:first-of-type ul li{float:left;padding-left:20px;}
+    // .project .container-inner>div:first-of-type ul li:first-child{padding-left:0;}
+    // .project .container-inner>div:first-of-type ul{position:absolute;right:none;left:0;top:250px;}
+    // .project .container-inner>div:last-of-type>div>div>div{float:left;width:33.333333%;padding:6px;}
+    // .project .container-inner>div:last-of-type>div>div>div>div{height:120px;}
+    // .project .container-inner>div:last-of-type>div>div>div>div img{width:100px;}
 
     //contact
     .contact{height:auto;}
