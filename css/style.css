@@ -476,6 +476,8 @@ button:-moz-focusring {
   font-weight: 100;
   font-size: 1.85em;
   padding-bottom: 20px; }
+.content-contact br {
+  display: none; }
 .content-contact label {
   width: 100%; }
 .content-contact input[type="text"] {
