@@ -19,8 +19,10 @@ $color-menu-b-l : #238dad;
 ::-webkit-scrollbar-thumb:hover{background:rgba(255,255,255,0.75);}
 /*common*/
 .clearfix::after{display: block; content:''; clear:both;}
-@import 'header';
 
+// @import 'info';
+@import 'header';
+// @import 'info';
 /* tablet */
 @media screen and (max-width:$tablet-width) {
 
