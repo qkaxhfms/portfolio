@@ -205,55 +205,52 @@ button:-moz-focusring {
 
 .about {
   padding: 180px 0; }
-
-.about .container-inner > div:nth-of-type(2) > div > div::after {
-  display: block;
-  content: '';
-  clear: both; }
-
-.about .container-inner > div:nth-of-type(2) > div > div {
-  margin-top: 80px;
-  perspective: 700px; }
-
-.about .container-inner > div:nth-of-type(2) > div > div > div {
-  float: left;
-  width: 20%;
-  color: #2361ad;
-  min-height: 360px;
-  text-align: center;
-  color: #fff;
-  padding: 70px 16px;
-  transform: translateY(100px) rotateY(180deg);
-  opacity: 0;
-  transition: all 0.8s; }
-  .about .container-inner > div:nth-of-type(2) > div > div > div > div {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
-    background: #fff;
-    margin: 20px auto; }
-    .about .container-inner > div:nth-of-type(2) > div > div > div > div > div {
-      position: absolute;
-      top: 25px;
-      left: 25px;
-      width: 50px;
-      height: 50px; }
-      .about .container-inner > div:nth-of-type(2) > div > div > div > div > div svg {
-        width: 100%;
-        height: 100%;
-        fill: #2361ad; }
-  .about .container-inner > div:nth-of-type(2) > div > div > div > p {
-    font-family: 'Righteous';
-    font-weight: 100;
-    font-size: 16px;
-    line-height: 22px; }
-  .about .container-inner > div:nth-of-type(2) > div > div > div > dl {
-    font: 700 15px/1.37 'Noto SansKR';
-    letter-spacing: -0.05em; }
-    .about .container-inner > div:nth-of-type(2) > div > div > div > dl dd {
-      font-weight: 100;
-      font-size: 14px; }
+  .about .container-inner > div:nth-of-type(2) > div > div::after {
+    display: block;
+    content: '';
+    clear: both; }
+  .about .container-inner > div:nth-of-type(2) > div > div {
+    margin-top: 80px;
+    perspective: 700px; }
+    .about .container-inner > div:nth-of-type(2) > div > div > div {
+      float: left;
+      width: 20%;
+      color: #2361ad;
+      min-height: 360px;
+      text-align: center;
+      color: #fff;
+      padding: 70px 16px;
+      transform: translateY(100px) rotateY(180deg);
+      opacity: 0;
+      transition: all 0.8s; }
+      .about .container-inner > div:nth-of-type(2) > div > div > div > div {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        background: #fff;
+        margin: 20px auto; }
+        .about .container-inner > div:nth-of-type(2) > div > div > div > div > div {
+          position: absolute;
+          top: 25px;
+          left: 25px;
+          width: 50px;
+          height: 50px; }
+          .about .container-inner > div:nth-of-type(2) > div > div > div > div > div svg {
+            width: 100%;
+            height: 100%;
+            fill: #2361ad; }
+      .about .container-inner > div:nth-of-type(2) > div > div > div > p {
+        font-family: 'Righteous';
+        font-weight: 100;
+        font-size: 16px;
+        line-height: 22px; }
+      .about .container-inner > div:nth-of-type(2) > div > div > div > dl {
+        font: 700 15px/1.37 'Noto SansKR';
+        letter-spacing: -0.05em; }
+        .about .container-inner > div:nth-of-type(2) > div > div > div > dl dd {
+          font-weight: 100;
+          font-size: 14px; }
 
 .about.on .container-inner > div:nth-of-type(2) > div > div > div {
   transform: translateY(0) rotateY(0deg);
@@ -340,36 +337,35 @@ button:-moz-focusring {
     transform: scale(1); } }
 .skill {
   padding: 180px 0; }
-
-.skill .container-inner > div:last-of-type > div {
-  margin-top: 80px; }
-  .skill .container-inner > div:last-of-type > div::after {
-    display: block;
-    content: '';
-    clear: both; }
-  .skill .container-inner > div:last-of-type > div > div {
-    float: left;
-    width: 50%; }
-    .skill .container-inner > div:last-of-type > div > div:first-of-type {
-      padding-right: 20px; }
-    .skill .container-inner > div:last-of-type > div > div:last-of-type {
-      padding-left: 20px; }
-    .skill .container-inner > div:last-of-type > div > div table {
-      width: 100%;
-      margin: 40px 0; }
-      .skill .container-inner > div:last-of-type > div > div table th, .skill .container-inner > div:last-of-type > div > div table td {
-        text-align: left; }
-      .skill .container-inner > div:last-of-type > div > div table thead th {
-        font: 400 22px/1.37 'Righteous';
-        padding-bottom: 12px;
-        color: #fff; }
-      .skill .container-inner > div:last-of-type > div > div table tbody {
-        border-top: 1px solid #fff; }
-        .skill .container-inner > div:last-of-type > div > div table tbody th {
-          width: 30%; }
-        .skill .container-inner > div:last-of-type > div > div table tbody th, .skill .container-inner > div:last-of-type > div > div table tbody td {
-          font: 400 14px/2.14 'Noto Sans KR';
+  .skill .container-inner > div:last-of-type > div {
+    margin-top: 80px; }
+    .skill .container-inner > div:last-of-type > div::after {
+      display: block;
+      content: '';
+      clear: both; }
+    .skill .container-inner > div:last-of-type > div > div {
+      float: left;
+      width: 50%; }
+      .skill .container-inner > div:last-of-type > div > div:first-of-type {
+        padding-right: 20px; }
+      .skill .container-inner > div:last-of-type > div > div:last-of-type {
+        padding-left: 20px; }
+      .skill .container-inner > div:last-of-type > div > div table {
+        width: 100%;
+        margin: 40px 0; }
+        .skill .container-inner > div:last-of-type > div > div table th, .skill .container-inner > div:last-of-type > div > div table td {
+          text-align: left; }
+        .skill .container-inner > div:last-of-type > div > div table thead th {
+          font: 400 22px/1.37 'Righteous';
+          padding-bottom: 12px;
           color: #fff; }
+        .skill .container-inner > div:last-of-type > div > div table tbody {
+          border-top: 1px solid #fff; }
+          .skill .container-inner > div:last-of-type > div > div table tbody th {
+            width: 30%; }
+          .skill .container-inner > div:last-of-type > div > div table tbody th, .skill .container-inner > div:last-of-type > div > div table tbody td {
+            font: 400 14px/2.14 'Noto Sans KR';
+            color: #fff; }
 
 .project .container-inner > div:first-of-type {
   position: relative; }
@@ -603,9 +599,6 @@ button:-moz-focusring {
 
 /* tablet */
 @media screen and (max-width: 939px) {
-  .info.h100 {
-    height: calc(100vh - 50px); }
-
   #container {
     margin-left: 0;
     margin-top: 50px; }
@@ -615,6 +608,8 @@ button:-moz-focusring {
   .info .container-inner::after {
     display: none; }
 
+  .info.h100 {
+    height: calc(100vh - 50px); }
   .info .container-inner {
     position: relative; }
     .info .container-inner > div {
@@ -632,30 +627,28 @@ button:-moz-focusring {
 
   .about {
     padding: 0; }
-
-  .about .container-inner > div:nth-of-type(2) > div > div > div {
-    width: 100%;
-    margin-right: 0;
-    margin-bottom: 20px;
-    min-height: auto;
-    padding: 50px 30px; }
+    .about .container-inner > div:nth-of-type(2) > div > div > div {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      min-height: auto;
+      padding: 50px 30px; }
 
   .skill {
     padding: 0; }
-
-  .skill .container-inner > div:last-of-type > div {
-    margin-top: 80px; }
-    .skill .container-inner > div:last-of-type > div::after {
-      display: block;
-      content: '';
-      clear: both; }
-    .skill .container-inner > div:last-of-type > div > div {
-      float: left;
-      width: 100%; }
-      .skill .container-inner > div:last-of-type > div > div:first-of-type {
-        padding-right: 0; }
-      .skill .container-inner > div:last-of-type > div > div:last-of-type {
-        padding-left: 0; }
+    .skill .container-inner > div:last-of-type > div {
+      margin-top: 80px; }
+      .skill .container-inner > div:last-of-type > div::after {
+        display: block;
+        content: '';
+        clear: both; }
+      .skill .container-inner > div:last-of-type > div > div {
+        float: left;
+        width: 100%; }
+        .skill .container-inner > div:last-of-type > div > div:first-of-type {
+          padding-right: 0; }
+        .skill .container-inner > div:last-of-type > div > div:last-of-type {
+          padding-left: 0; }
 
   .project .container-inner > div:first-of-type ul li {
     float: left;
