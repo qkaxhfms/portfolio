@@ -18,30 +18,50 @@ $color-menu-b : #2361ad;
     margin-left:90px;
     background:url('../img/bg_main.jpg');
     background-size:100% 100%;
+    
+    //container-inner
+    .container-inner{padding:50px;}
 }
-#container>div{}
-#container>div.h100{}
 
 //layout
 
-//container-inner
-.container-inner{padding:50px;}
 
 
 //info
 .info{
-    // background:url('../img/bg_main.jpg');
-    // background-color:#222;
+
+    .container-inner::after{display:block;content:'';clear:both;}
+    .container-inner{
+        height:100%;
+        >div{
+            position:relative;
+            float:left;
+            height:100%;
+
+            &:first-of-type{width:36.7%;}
+            &:last-of-type{width:63.3%;
+                >div{
+                    height:600px;
+                }
+            }
+
+            >div{
+                position: absolute;
+                width:100%;
+                top:50%;
+                transform:translateY(-50%);
+            }
+        }
+    }
 }
-.info .container-inner::after{display:block;content:'';clear:both;}
-.info .container-inner{height:100%;}
-.info .container-inner>div{position:relative;float:left;height:100%;}
-.info .container-inner>div>div{position: absolute;width:100%;top:50%;transform:translateY(-50%);}
-.info .container-inner>div:first-of-type>div{}
-.info .container-inner>div:last-of-type>div{}
-.info .container-inner>div:first-of-type{width:36.7%;}
-.info .container-inner>div:last-of-type{width:63.3%;}
-.info .container-inner>div:last-of-type>div{height:600px;}
+// .info .container-inner{height:100%;}
+// .info .container-inner>div{}
+// .info .container-inner>div>div{}
+// .info .container-inner>div:first-of-type>div{}
+// .info .container-inner>div:last-of-type>div{}
+// .info .container-inner>div:first-of-type{width:36.7%;}
+// .info .container-inner>div:last-of-type{width:63.3%;}
+// .info .container-inner>div:last-of-type>div{height:600px;}
 
 //about
 .about{
@@ -321,7 +341,6 @@ $color-menu-b : #2361ad;
         padding-bottom:20px;
         
     }
-    br{display:none;}
     label{width:100%;}
     input[type="text"]{
         width:100%;
@@ -416,8 +435,14 @@ $color-menu-b : #2361ad;
 @media screen and (max-width:$tablet-width) {
     //container  
     .info.h100{height:calc(100vh - 50px);}
-    #container{margin-left:0;margin-top:50px;}
-    .container-inner{padding:40px 20px;}    
+    #container{
+        margin-left:0;
+        margin-top:50px;
+        //container-inner
+        .container-inner{
+            padding:40px 20px;
+        }
+    }
     .info .container-inner::after{display: none;}
     .info .container-inner{/*background-color:#333;*/}
     .info .container-inner>div{float:initial;}

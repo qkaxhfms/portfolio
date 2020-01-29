@@ -178,37 +178,30 @@ button:-moz-focusring {
   margin-left: 90px;
   background: url("../img/bg_main.jpg");
   background-size: 100% 100%; }
-
-.container-inner {
-  padding: 50px; }
+  #container .container-inner {
+    padding: 50px; }
 
 .info .container-inner::after {
   display: block;
   content: '';
   clear: both; }
-
 .info .container-inner {
   height: 100%; }
-
-.info .container-inner > div {
-  position: relative;
-  float: left;
-  height: 100%; }
-
-.info .container-inner > div > div {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.info .container-inner > div:first-of-type {
-  width: 36.7%; }
-
-.info .container-inner > div:last-of-type {
-  width: 63.3%; }
-
-.info .container-inner > div:last-of-type > div {
-  height: 600px; }
+  .info .container-inner > div {
+    position: relative;
+    float: left;
+    height: 100%; }
+    .info .container-inner > div:first-of-type {
+      width: 36.7%; }
+    .info .container-inner > div:last-of-type {
+      width: 63.3%; }
+      .info .container-inner > div:last-of-type > div {
+        height: 600px; }
+    .info .container-inner > div > div {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%); }
 
 .about {
   padding: 180px 0; }
@@ -476,8 +469,6 @@ button:-moz-focusring {
   font-weight: 100;
   font-size: 1.85em;
   padding-bottom: 20px; }
-.content-contact br {
-  display: none; }
 .content-contact label {
   width: 100%; }
 .content-contact input[type="text"] {
@@ -618,9 +609,8 @@ button:-moz-focusring {
   #container {
     margin-left: 0;
     margin-top: 50px; }
-
-  .container-inner {
-    padding: 40px 20px; }
+    #container .container-inner {
+      padding: 40px 20px; }
 
   .info .container-inner::after {
     display: none; }
