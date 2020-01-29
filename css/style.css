@@ -169,14 +169,14 @@ button:-moz-focusring {
 /*device-width*/
 .wrapper {
   font: 100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;
-  background: #2361ad; }
+  background: #2361ad;
+  background: linear-gradient(#274972, #2361ad); }
 
 .h100 {
   height: 100vh; }
 
 #container {
   margin-left: 90px;
-  background: url("../img/bg_main.jpg");
   background-size: 100% 100%; }
   #container .container-inner {
     padding: 50px; }
@@ -301,14 +301,20 @@ button:-moz-focusring {
   animation-name: grow; }
 
 @keyframes open {
-  0%, 100% {
+  0%,
+    100% {
     transform: rotate(-5deg); }
-  20%, 80% {
+  20%,
+    80% {
     transfrom: rotate(0deg); }
   50% {
     transform: rotate(-30deg); } }
 @keyframes bounce {
-  0%, 20%, 50%, 80% ,100% {
+  0%,
+    20%,
+    50%,
+    80%,
+    100% {
     transform: translateY(0) scale(1.2); }
   40% {
     transform: translateY(-30px); }
@@ -320,18 +326,25 @@ button:-moz-focusring {
   to {
     transform: rotate(360deg); } }
 @keyframes shake {
-  10%, 90% {
+  10%,
+    90% {
     transform: translate3d(-1px, 0, 0); }
-  20%, 80% {
+  20%,
+    80% {
     transform: translate3d(2px, 0, 0); }
-  30%, 50%, 70% {
+  30%,
+    50%,
+    70% {
     transform: translate3d(-4px, 0, 0); }
-  40%, 60% {
+  40%,
+    60% {
     transform: translate3d(4px, 0, 0); } }
 @keyframes grow {
-  0%, 100% {
+  0%,
+    100% {
     transform: scale(0.8); }
-  10%, 90% {
+  10%,
+    90% {
     transform: scale(0.9); }
   50% {
     transform: scale(1); } }
@@ -353,7 +366,8 @@ button:-moz-focusring {
       .skill .container-inner > div:last-of-type > div > div table {
         width: 100%;
         margin: 40px 0; }
-        .skill .container-inner > div:last-of-type > div > div table th, .skill .container-inner > div:last-of-type > div > div table td {
+        .skill .container-inner > div:last-of-type > div > div table th,
+        .skill .container-inner > div:last-of-type > div > div table td {
           text-align: left; }
         .skill .container-inner > div:last-of-type > div > div table thead th {
           font: 400 22px/1.37 'Righteous';
@@ -363,7 +377,8 @@ button:-moz-focusring {
           border-top: 1px solid #fff; }
           .skill .container-inner > div:last-of-type > div > div table tbody th {
             width: 30%; }
-          .skill .container-inner > div:last-of-type > div > div table tbody th, .skill .container-inner > div:last-of-type > div > div table tbody td {
+          .skill .container-inner > div:last-of-type > div > div table tbody th,
+          .skill .container-inner > div:last-of-type > div > div table tbody td {
             font: 400 14px/2.14 'Noto Sans KR';
             color: #fff; }
 
@@ -444,7 +459,8 @@ button:-moz-focusring {
   .content-contact table:last-of-type {
     margin-left: 20px;
     width: calc(70% - 20px); }
-  .content-contact table th, .content-contact table td {
+  .content-contact table th,
+  .content-contact table td {
     color: #fff; }
 .content-contact th {
   font-weight: 100;
@@ -491,25 +507,23 @@ button:-moz-focusring {
 .inner-title {
   position: relative;
   padding-bottom: 30px; }
-
-.inner-title::after {
-  z-index: 10;
-  position: absolute;
-  display: block;
-  left: 0;
-  bottom: 0;
-  content: '';
-  width: 100%;
-  margin-left: 44px;
-  height: 2px;
-  background: linear-gradient(135deg, #fff 25%, #2361ad 45%, transparent); }
-
-.inner-title p {
-  font-weight: 100;
-  font-size: 2.95em;
-  color: #fff;
-  font-family: 'Righteous';
-  letter-spacing: -0.005em; }
+  .inner-title::after {
+    z-index: 10;
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    margin-left: 44px;
+    height: 2px;
+    background: linear-gradient(135deg, #fff 25%, #2361ad 45%, transparent); }
+  .inner-title p {
+    font-weight: 100;
+    font-size: 2.95em;
+    color: #fff;
+    font-family: 'Righteous';
+    letter-spacing: -0.005em; }
 
 .inner-sub {
   padding-top: 14px;
@@ -518,12 +532,11 @@ button:-moz-focusring {
   font-size: 1.02em;
   letter-spacing: 0.8em;
   color: #fff; }
-
-.inner-sub.ft-k {
-  font-family: 'Noto Sans KR';
-  font-weight: 400;
-  font-size: 1.02em;
-  letter-spacing: -0.08em; }
+  .inner-sub.ft-k {
+    font-family: 'Noto Sans KR';
+    font-weight: 400;
+    font-size: 1.02em;
+    letter-spacing: -0.08em; }
 
 .inner-letter {
   position: absolute;
@@ -532,55 +545,42 @@ button:-moz-focusring {
   top: 0;
   width: 100%;
   height: 100%; }
-
-.inner-letter.letter-1 {
-  z-index: 5;
-  transition: 3s; }
-
-.inner-letter.letter-2 {
-  z-index: 3;
-  transition: 3s; }
-
-.inner-letter svg {
-  height: 600px;
-  transform: rotate(-30deg);
-  stroke-dashoffset: 2760;
-  stroke-dasharray: 2760;
-  stroke: transparent; }
-
-.inner-letter.letter-1 svg {
-  transition: 5s;
-  stroke: transparent;
-  fill: transparent; }
-
-.inner-letter.letter-2 svg {
-  transition: 5s;
-  stroke: transparent;
-  fill: transparent; }
-
-.inner-letter.letter-1.change-svg svg {
-  stroke: #fff; }
-
-.inner-letter.letter-2.change-svg svg {
-  stroke: #2361ad; }
-
-.inner-letter.letter-1.change-stroke svg {
-  stroke-dashoffset: 0; }
-
-.inner-letter.letter-2.change-stroke svg {
-  stroke-dashoffset: 0; }
-
-.inner-letter.letter-1.change-fill svg {
-  fill: #fff; }
-
-.inner-letter.letter-2.change-fill svg {
-  fill: #2361ad; }
-
-.inner-letter.letter-1.letter-move {
-  top: -3.3%; }
-
-.inner-letter.letter-2.letter-move {
-  top: 3.3%; }
+  .inner-letter.letter-1 {
+    z-index: 5;
+    transition: 3s; }
+    .inner-letter.letter-1 svg {
+      transition: 5s;
+      stroke: transparent;
+      fill: transparent; }
+    .inner-letter.letter-1.change-svg svg {
+      stroke: #fff; }
+    .inner-letter.letter-1.change-stroke svg {
+      stroke-dashoffset: 0; }
+    .inner-letter.letter-1.change-fill svg {
+      fill: #fff; }
+    .inner-letter.letter-1.letter-move {
+      top: -3.3%; }
+  .inner-letter.letter-2 {
+    z-index: 3;
+    transition: 3s; }
+    .inner-letter.letter-2 svg {
+      transition: 5s;
+      stroke: transparent;
+      fill: transparent; }
+    .inner-letter.letter-2.change-svg svg {
+      stroke: #2361ad; }
+    .inner-letter.letter-2.change-stroke svg {
+      stroke-dashoffset: 0; }
+    .inner-letter.letter-2.change-fill svg {
+      fill: #2361ad; }
+    .inner-letter.letter-2.letter-move {
+      top: 3.3%; }
+  .inner-letter svg {
+    height: 600px;
+    transform: rotate(-30deg);
+    stroke-dashoffset: 2760;
+    stroke-dasharray: 2760;
+    stroke: transparent; }
 
 /* tablet */
 @media screen and (max-width: 939px) {
@@ -655,30 +655,24 @@ button:-moz-focusring {
 
   .contact {
     height: auto; }
-
-  .contact .container-inner {
-    height: auto; }
-
-  .contact .container-inner > div {
-    position: static;
-    float: none;
-    height: auto; }
-
-  .contact .container-inner > div > div {
-    position: static;
-    width: auto;
-    top: none;
-    transform: none; }
-
-  .contact .container-inner > div:first-of-type {
-    width: 100%; }
-
-  .contact .container-inner > div:first-of-type > div > div:last-of-type {
-    margin-top: 40px;
-    margin-bottom: 40px; }
-
-  .contact .container-inner > div:last-of-type {
-    width: 100%; }
+    .contact .container-inner {
+      height: auto; }
+      .contact .container-inner > div {
+        position: static;
+        float: none;
+        height: auto; }
+        .contact .container-inner > div:first-of-type {
+          width: 100%; }
+          .contact .container-inner > div:first-of-type > div > div:last-of-type {
+            margin-top: 40px;
+            margin-bottom: 40px; }
+        .contact .container-inner > div:last-of-type {
+          width: 100%; }
+        .contact .container-inner > div > div {
+          position: static;
+          width: auto;
+          top: none;
+          transform: none; }
 
   .content-contact form::after {
     display: block;
