@@ -644,14 +644,16 @@ button:-moz-focusring {
       padding-left: 20px; }
       .project .container-inner > div:first-of-type ul li:first-child {
         padding: 0; }
-  .project .container-inner > div:last-of-type > div > div > div {
-    float: left;
-    width: 33.333333%;
-    padding: 6px; }
-    .project .container-inner > div:last-of-type > div > div > div > div {
-      height: 120px; }
-      .project .container-inner > div:last-of-type > div > div > div > div img {
-        width: 100px; }
+  .project .container-inner > div:last-of-type > div > div {
+    min-height: 396px; }
+    .project .container-inner > div:last-of-type > div > div > div {
+      float: left;
+      width: 33.333333%;
+      padding: 6px; }
+      .project .container-inner > div:last-of-type > div > div > div > div {
+        height: 120px; }
+        .project .container-inner > div:last-of-type > div > div > div > div img {
+          width: 100px; }
 
   .contact {
     height: auto; }
