@@ -405,38 +405,32 @@ button:-moz-focusring {
   display: block;
   content: '';
   clear: both; }
-
 .contact .container-inner {
   height: 100%; }
-
-.contact .container-inner > div {
-  position: relative;
-  float: left;
-  height: 100%; }
-
-.contact .container-inner > div > div {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  transform: translateY(-50%); }
-
-.contact .container-inner > div:first-of-type {
-  width: 36.7%; }
-
-.contact .container-inner > div:first-of-type > div > div:last-of-type {
-  margin-top: 20px;
-  margin-top: 150px; }
-  .contact .container-inner > div:first-of-type > div > div:last-of-type > p {
-    font-size: 24px;
-    color: #fff;
-    margin-bottom: 20px; }
-  .contact .container-inner > div:first-of-type > div > div:last-of-type > ul li {
-    font-size: 18px;
-    line-height: 30px;
-    color: #fff; }
-
-.contact .container-inner > div:last-of-type {
-  width: 63.3%; }
+  .contact .container-inner > div {
+    position: relative;
+    float: left;
+    height: 100%; }
+    .contact .container-inner > div:first-of-type {
+      width: 36.7%; }
+      .contact .container-inner > div:first-of-type > div > div:last-of-type {
+        margin-top: 20px;
+        margin-top: 150px; }
+        .contact .container-inner > div:first-of-type > div > div:last-of-type > p {
+          font-size: 24px;
+          color: #fff;
+          margin-bottom: 20px; }
+        .contact .container-inner > div:first-of-type > div > div:last-of-type > ul li {
+          font-size: 18px;
+          line-height: 30px;
+          color: #fff; }
+    .contact .container-inner > div:last-of-type {
+      width: 63.3%; }
+    .contact .container-inner > div > div {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%); }
 
 .content-contact form::after {
   display: block;
