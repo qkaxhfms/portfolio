@@ -1,0 +1,53 @@
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic|Roboto&display=swap');
+
+/*common*/
+a{text-decoration:none; color:#000;}
+img{border:0;}
+body{
+    font:400 14px/1.37 'Roboto','Nanum Gothic', sans-serif;
+    letter-spacing:-0.845px;
+}
+
+/*header*/
+#header{position: fixed;width:100%;top:0;left:0;background:#222;}
+.header-inner{position: relative;height:50px;}
+/*logo*/
+#logo{position: absolute;left:0;top:0;width:80px;height:50px;font:700 18px/50px 'Roboto';text-align: center;}
+#logo a{display: block;color:#fff;}
+/*btnOpen*/
+#btnOpen{position: absolute;right:0;top:0;width:50px;height:50px;padding:12px;}
+#btnOpen span{display: block;margin:4px 0;height:4px;background:#fff;}
+
+
+
+/*container*/
+#container{margin-top:50px;background:#ccc;}
+
+/*visual*/
+.visual{}
+.visual h2{padding:120px 10px 80px;font:700 22px/1.3 'NanumGothic';letter-spacing:-1.94px;}
+
+/*listbox*/
+.listBox{}
+.listBox ul{}
+.listBox li{text-align: center;font:700 22px/180px 'NanumGothic';}
+.listBox li:nth-child(1){background:#333;}
+.listBox li:nth-child(2){background:#444;}
+.listBox li:nth-child(3){background:#555;}
+.listBox li a{display: block;color:#fff;}
+
+/*footer*/
+#footer{padding-top:30px;}
+#footer>div{text-align: center;}
+
+/*footer-info*/
+.footer-info{}
+.footer-info ul{border-top:1px solid #eee; border-bottom:1px solid #eee; padding:10px 0;}
+.footer-info li{position: relative; display: inline-block;padding:0 10px;font:400 14px/28px;color:#333;}
+.footer-info li::after{position: absolute; right:0; top:50%; transform:translateY(-50%); display: block; content:''; width:1px; height:10px; background:#333;}
+.footer-info li:last-of-type::after{display: none;}
+
+/*footer-description*/
+.footer-description{}
+.footer-description p{padding:10px 0; background:#333;color:#fff;}
