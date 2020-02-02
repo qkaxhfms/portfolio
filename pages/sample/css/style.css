@@ -16,8 +16,8 @@ body{
 #logo{position: absolute;left:0;top:0;width:80px;height:50px;font:700 18px/50px 'Roboto';text-align: center;}
 #logo a{display: block;color:#fff;}
 /*btnOpen*/
-#btnOpen{position: absolute;right:0;top:0;width:50px;height:50px;padding:12px;}
-#btnOpen span{display: block;margin:4px 0;height:4px;background:#fff;}
+#btnOpen{position: absolute;right:0;top:0;width:50px;height:50px;}
+#btnOpen span{display: block;line-height:50px;font-size:20px;text-align:center;color:#fff;}
 
 
 
