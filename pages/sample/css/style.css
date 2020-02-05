@@ -10,8 +10,8 @@ body{
 }
 
 /*header*/
-#header{position: fixed;width:100%;top:0;left:0;background:#222;}
-.header-inner{position: relative;height:50px;}
+header{position: fixed;width:100%;top:0;left:0;background:#222;}
+.header-inner{position: relative;height:60px;}
 /*logo*/
 #logo{position: absolute;left:0;top:0;width:80px;height:50px;font:700 18px/50px 'Roboto';text-align: center;}
 #logo a{display: block;color:#fff;}
