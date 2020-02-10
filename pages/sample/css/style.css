@@ -13,11 +13,11 @@ body{
 header{position: fixed;width:100%;top:0;left:0;background:#222;}
 .header-inner{position: relative;height:60px;}
 /*logo*/
-#logo{position: absolute;left:0;top:0;width:80px;height:50px;font:700 18px/50px 'Roboto';text-align: center;}
+#logo{position: absolute;left:0;top:0;width:80px;height:60px;font:700 18px/60px 'Roboto';text-align: center;}
 #logo a{display: block;color:#fff;}
 /*btnOpen*/
 #btnOpen{position: absolute;right:0;top:0;width:50px;height:50px;}
-#btnOpen span{display: block;line-height:50px;font-size:20px;text-align:center;color:#fff;}
+#btnOpen span{display: block;line-height:60px;font-size:20px;text-align:center;color:#fff;}
 
 
 
