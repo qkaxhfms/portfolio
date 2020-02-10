@@ -9,6 +9,7 @@
     <title>pf_travel_sign_up_page</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/modal.css">
     <script src="https://kit.fontawesome.com/164552570a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -16,24 +17,62 @@
     <div id="container">
         <!--container-content-->
         <div class="modal-container">
-            <div id="signUp" class="modal">  
-                <form class="modal-content" action="" method="">          
-                <div class="form-inner">
-                    <label for="modalId">ID</label>
-                    <input type="text" placeholder="Enter ID" id="modalId">          
-                    <label for="modalPw">Password</label>
-                    <input type="password" placeholder="Enter Password" id="modalPw">
-                    <label>
-                    <input type="checkbox" checked="checked" name="remember">로그인 상태 유지
-                    </label>                  
-                    <button type="submit">Login</button>
+            <!--modal-->
+            <div id="signUp" class="modal">
+                <div class="modal-inner">
+                    <form class="modal-content" action="" method="">          
+                        <div class="form-inner">
+                            <!--form-id-->
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="modalId">ID</label>
+                                    <input type="text" placeholder="Enter ID" id="modalId">
+                                </div>
+                            </div>
+                            <!--//form-id-->
+                            <!--form-id-->
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <label for="modalPw">PW</label>
+                                    <input type="password" placeholder="Enter Password" id="modalPw">
+                                </div>
+                            </div>
+                            <!--//form-pw-->
+                            <!--form-login-->
+                            <div class="form-login">
+                                <a href="javascript;">아이디찾기</a>
+                                <a href="javascript;">비밀번호찾기</a>
+                            </div>
+                            <!--//form-login-->
+                            <!--form-check-->
+                            <div class="form-check">
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember">로그인 상태 유지
+                                </label>    
+                            </div>            
+                            <!--//form-login-check-->
+                            <!--btn-login-->
+                            <div class="btn-login">
+                                <button type="submit">LOGIN</button>
+                            </div>
+                            <!--//btn-login-->
+                        </div>
+                        <p>다른 로그인 방식을 선택해 주세요</p>
+                        <!--btn-social-->
+                        <div class="btn-social">
+                            <button>KAKAO</button>
+                            <button>NAVER</button>
+                        </div>
+                        <!--//btn-social-->
+                        <!--box-question--->
+                        <div class="box-question">
+                            <a href="javascript;">아직도 회원이 아니신가요?</a>
+                        </div>
+                        <!--//box-question--->
+                    </form>
                 </div>
-                <p>다른 로그인 방식을 선택해 주세요</p>
-                <button>KAKAO</button>
-                <button>NAVER</button>
-                <a href="javascript;">아직도 회원이 아니신가요?</a>
-                </form>
             </div>
+            <!--//modal-->
         </div>
     </div>
 </body>
