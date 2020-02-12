@@ -20,6 +20,8 @@ button:hover{color:#fff;background:#222;}
 
 /*form-content*/
 .form-check{margin:10px 0;}
+.form-gender{display: flex; margin:10px 0;}
+.form-gender>div:first-of-type{margin-right:10px;}
 .form-login{text-align:right;margin-top:12px;}
 .form-login>a{margin-left:8px;}
 .btn-login > button{background:#2e8bff;}
@@ -32,4 +34,7 @@ button:hover{color:#fff;background:#222;}
 .ad-question{margin-top:8px;}
 
 
-/*change*/
+.ad-agreement{margin:40px 0;}
+.ad-agreement>p{margin:12px 0;}
+.ad-agreement>ul>li{margin:12px 0;}
+.ad-agreement>ul>li>div:first-of-type{margin-bottom:8px;}
