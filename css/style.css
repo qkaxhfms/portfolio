@@ -185,6 +185,7 @@ button:-moz-focusring {
   display: block;
   content: '';
   clear: both; }
+
 .info .container-inner {
   height: 100%; }
   .info .container-inner > div {
@@ -302,52 +303,57 @@ button:-moz-focusring {
 
 @keyframes open {
   0%,
-    100% {
+  100% {
     transform: rotate(-5deg); }
   20%,
-    80% {
+  80% {
     transfrom: rotate(0deg); }
   50% {
     transform: rotate(-30deg); } }
+
 @keyframes bounce {
   0%,
-    20%,
-    50%,
-    80%,
-    100% {
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0) scale(1.2); }
   40% {
     transform: translateY(-30px); }
   60% {
     transform: translateY(-20px); } }
+
 @keyframes rotate {
   from {
     transform: rotate(0deg); }
   to {
     transform: rotate(360deg); } }
+
 @keyframes shake {
   10%,
-    90% {
+  90% {
     transform: translate3d(-1px, 0, 0); }
   20%,
-    80% {
+  80% {
     transform: translate3d(2px, 0, 0); }
   30%,
-    50%,
-    70% {
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0); }
   40%,
-    60% {
+  60% {
     transform: translate3d(4px, 0, 0); } }
+
 @keyframes grow {
   0%,
-    100% {
+  100% {
     transform: scale(0.8); }
   10%,
-    90% {
+  90% {
     transform: scale(0.9); }
   50% {
     transform: scale(1); } }
+
 .skill {
   padding: 180px 0; }
   .skill .container-inner > div:last-of-type > div {
@@ -393,10 +399,12 @@ button:-moz-focusring {
       padding-left: 20px; }
       .project .container-inner > div:first-of-type ul li a {
         display: block; }
+
 .project .container-inner > div > div > div::after {
   display: block;
   content: '';
   clear: both; }
+
 .project .container-inner > div > div > div {
   margin-top: 80px; }
   .project .container-inner > div > div > div > div {
@@ -420,6 +428,7 @@ button:-moz-focusring {
   display: block;
   content: '';
   clear: both; }
+
 .contact .container-inner {
   height: 100%; }
   .contact .container-inner > div {
@@ -451,6 +460,7 @@ button:-moz-focusring {
   display: block;
   content: '';
   clear: both; }
+
 .content-contact table {
   float: left;
   text-align: left; }
@@ -462,12 +472,15 @@ button:-moz-focusring {
   .content-contact table th,
   .content-contact table td {
     color: #fff; }
+
 .content-contact th {
   font-weight: 100;
   font-size: 1.85em;
   padding-bottom: 20px; }
+
 .content-contact label {
   width: 100%; }
+
 .content-contact input[type="text"] {
   width: 100%;
   height: 40px;
@@ -476,12 +489,15 @@ button:-moz-focusring {
   border-top: 2px solid #2361ad;
   border-bottom: 2px solid #2361ad;
   display: block; }
+
 .content-contact dl dt {
   font-size: 24px; }
+
 .content-contact dl dd {
   margin-bottom: 18px; }
   .content-contact dl dd:last-of-type {
     margin-bottom: 0; }
+
 .content-contact textarea {
   display: block;
   width: 100%;
@@ -489,8 +505,10 @@ button:-moz-focusring {
   background: blue;
   background: #fff;
   border: 2px solid #2361ad; }
+
 .content-contact .button-content {
   padding-top: 20px; }
+
 .content-contact button {
   display: block;
   width: 100%;
@@ -589,7 +607,6 @@ button:-moz-focusring {
     margin-top: 50px; }
     #container .container-inner {
       padding: 40px 20px; }
-
   .info.h100 {
     height: calc(100vh - 50px); }
   .info .container-inner::after {
@@ -608,7 +625,6 @@ button:-moz-focusring {
         z-index: 10; }
   .info .inner-letter {
     opacity: 0.24; }
-
   .about {
     padding: 0; }
     .about .container-inner > div:nth-of-type(2) > div > div > div {
@@ -617,7 +633,6 @@ button:-moz-focusring {
       margin-bottom: 20px;
       min-height: auto;
       padding: 50px 30px; }
-
   .skill {
     padding: 0; }
     .skill .container-inner > div:last-of-type > div {
@@ -633,7 +648,6 @@ button:-moz-focusring {
           padding-right: 0; }
         .skill .container-inner > div:last-of-type > div > div:last-of-type {
           padding-left: 0; }
-
   .project .container-inner > div:first-of-type ul {
     position: absolute;
     right: none;
@@ -654,7 +668,6 @@ button:-moz-focusring {
         height: 120px; }
         .project .container-inner > div:last-of-type > div > div > div > div img {
           width: 100px; }
-
   .contact {
     height: auto; }
     .contact .container-inner {
@@ -675,7 +688,6 @@ button:-moz-focusring {
           width: auto;
           top: none;
           transform: none; }
-
   .content-contact form::after {
     display: block;
     content: '';
@@ -688,10 +700,11 @@ button:-moz-focusring {
       margin-left: 0;
       margin-top: 20px;
       width: 100%; } }
+
 /* mobile */
 .clearfix::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 
 .blind {
@@ -717,7 +730,7 @@ a {
 /*common*/
 .clearfix::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 
 #header {
@@ -904,11 +917,9 @@ a {
       line-height: 50px;
       color: #2361ad;
       text-align: center; }
-
   #gnb {
     display: none; } }
+
 /* mobile */
 /* tablet */
 /* mobile */
-
-/*# sourceMappingURL=style.css.map */
