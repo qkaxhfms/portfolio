@@ -1,0 +1,264 @@
+// pc
+#header{
+    z-index:100;
+    position: fixed;
+    left:0;
+    top:0;
+    background:#fff;
+    width:90px;
+    height:100%;
+    //logo
+    >h1{
+        position: absolute;
+        transition:0.25s;
+        top:70px;
+        left:50%;
+        margin-left:-30px;
+        width:60px;
+        height:60px;
+        //svg
+        svg{
+            path{
+                fill:$color-menu-b;
+                stroke:$color-menu-b;
+                transition:1s;
+            }
+        }
+        //hover
+        &:hover{            
+            transform:scale(1.2);
+            path{
+                stroke-width:10;
+                fill:#fff;
+            }
+        }
+    }
+    //btnMobile
+    .btnMobileOpen{display:none;}
+    //dimmed
+    #dimmer{
+        display:none;
+        z-index:110;
+        position:fixed;
+        background:#000;
+        opacity:0.5;
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+    }
+    #dimmer.on{
+        display:block;
+    }
+}
+//gnb
+#gnb{
+    position: fixed;
+    bottom:70px;
+    left:0;
+    >div{
+        display: none;
+    }
+    >ul{
+        >li{
+            height:90px;
+            &.on{
+                span{background:$color-menu-b;}
+
+                path,polygon{
+                    fill:$color-w;
+                }
+            }
+            //depth1
+            >a{
+                float:left;
+                display: block;
+                width:90px;
+                height:90px;
+                >span{
+                    display:block;
+                    position: relative;
+                    z-index:2;
+                    padding:27px;
+                    background:#fff;
+                    transition:all 0.75s;
+                    svg{
+                        width:36px;
+                        height:36px;
+                        path,polygon{
+                            fill:$color-menu-b;
+                            stroke:transparent;
+                            stroke-dasharray:2413;
+                        }
+                    }
+                }
+            }
+            >div{
+                float:left;
+                position: relative;
+                left:-200px;
+                background:$color-menu-b;
+                padding-left:26px;
+                width:174px;
+                line-height:90px;
+                color:$color-w;
+            }
+        }
+    }
+}
+//gnbMobile
+#gnbMobile{
+    display:none;
+    z-index:130;
+    position: fixed;
+    top:0;
+    right:-80%;
+    width:80%;
+    height:100%;
+    background:$color-menu-b;
+
+    &.on{display:block;}
+    
+    //gnb-mobile-header
+    .gnb-mobile-header{
+        position: relative;
+        // background:blue;
+        height:50px;
+        a{
+            position: absolute;
+            top:0;
+            display:block;
+            height:50px;
+            line-height:50px;
+            &:first-of-type{
+                left:0;
+                font-size:18px;
+                width:27.8%;
+                padding-left:12px;
+                >span{
+                    display:block;
+                    position:relative;
+                    width:100%;
+                    height:100%;
+
+                }
+            }
+            &:last-of-type{
+                text-align:center;
+                width:50px;
+                right:0;
+            }
+        }
+    }
+    .gnb-mobile-content{
+        background:#222;
+        height:calc(100% - 80px);
+        >div{
+            float:left;
+            height:100%;
+            &:first-of-type{
+                width:27.8%;
+                background:$color-menu-b;
+                ul{
+                    li{
+                        &.on{
+                            a{
+                                background:#fff;
+                                color:$color-menu-b;
+                            }
+                        }
+                        a{
+                            display: block;
+                            height:40px;
+                            line-height:40px;
+                            padding-left:12px;
+                            background-color:$color-menu-b;
+                            color:#fff;
+                        }
+
+
+                    }
+                }
+            }
+            &:last-of-type{
+                position:relative;
+                width:72.2%;
+                // background:#ccc;
+                >div{
+                    position:absolute;
+                    display:none;
+                    width:100%;
+                    height:100%;
+                    background:#fff;
+                    >div{
+                        padding:0 12px;
+                        background:#fff;
+                        >p{
+                            line-height:40px;
+                            color:$color-menu-b;
+                            border-bottom:1px solid $color-menu-b;
+                            box-sizing:border-box;
+                        }
+                        >div{
+                            padding:12px 0;
+                            color:$color-menu-b;
+                            font:400 14px/22px 'Noto Sans KR';
+                        }
+                    }
+
+                    &.on{
+                        display:block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* tablet */
+@media screen and (max-width:$tablet-width) {
+    //header
+    #header{
+        // background:green;
+        width:100%;
+        height:50px;
+        //logo
+        >h1{
+            transition:0.25s;
+            top:0;
+            left:0;
+            margin-left:0;
+            width:50px;
+            height:50px;
+            padding:10px;
+            //hover
+            &:hover{            
+                transform:scale(1);
+            }
+        }
+        //btnMobileOpen
+        .btnMobileOpen{
+            // background:yellow;
+            position:absolute;
+            top:0;
+            right:0;
+            display:block;
+            width:50px;
+            height:50px;
+            font-size:24px;
+            line-height:50px;
+            color:$color-menu-b;
+            text-align:center;
+        }
+    }
+    //gnb
+    #gnb{display:none;}
+}
+
+/* mobile */
+@media screen and (max-width:$mobile-width) {
+    // #mobile-header > div > ul > li{        
+    //     width: 46%;
+    //     margin: 2%;
+    // }
+}

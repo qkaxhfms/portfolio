@@ -1,0 +1,53 @@
+@import "reset";
+@import "common";
+@import "layout";
+@import "header";
+@import "info";
+@import "about";
+@import "skill";
+@import "project";
+@import "contact";
+@import "svg_motion";
+@import url("https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR|Righteous&display=swap");
+
+// common
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.blind {
+  position: absolute;
+  left: -9999px;
+}
+a {
+  color: #fff;
+}
+
+// scroll-bar
+::-webkit-scrollbar {
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+}
+::-webkit-scrollbar-thumb {
+  background: #fff;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.75);
+}
+/*common*/
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+
+/* tablet */
+@media screen and (max-width: $tablet-width) {
+}
+
+/* mobile */
+@media screen and (max-width: $mobile-width) {
+}
