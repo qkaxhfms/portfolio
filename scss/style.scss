@@ -1,6 +1,7 @@
 @import "reset";
 @import "layout";
 @import "info";
+@import "header";
 
 @import url("https://fonts.googleapis.com/css?family=Lato|Noto+Sans+KR|Righteous&display=swap");
 
@@ -17,11 +18,6 @@
 a {
   color: #fff;
 }
-
-/* color*/
-$color-w: #fff;
-$color-menu-b: #2361ad;
-$color-menu-b-l: #238dad;
 
 // scroll-bar
 ::-webkit-scrollbar {
@@ -43,9 +39,6 @@ $color-menu-b-l: #238dad;
   clear: both;
 }
 
-// @import 'info';
-@import "header";
-// @import 'info';
 /* tablet */
 @media screen and (max-width: $tablet-width) {
 }

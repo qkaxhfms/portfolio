@@ -168,7 +168,7 @@ button:-moz-focusring {
 
 /*device-width*/
 .wrapper {
-  font: 100 18px/1.3 'Righteous', 'Lato', 'Noto Sans KR', sans-serif;
+  font: 100 18px/1.3 "Righteous", "Lato", "Noto Sans KR", sans-serif;
   background: #2361ad;
   background: linear-gradient(#274972, #2361ad); }
 
@@ -183,7 +183,7 @@ button:-moz-focusring {
 
 .info .container-inner::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 .info .container-inner {
   height: 100%; }
@@ -207,7 +207,7 @@ button:-moz-focusring {
   padding: 180px 0; }
   .about .container-inner > div:nth-of-type(2) > div > div::after {
     display: block;
-    content: '';
+    content: "";
     clear: both; }
   .about .container-inner > div:nth-of-type(2) > div > div {
     margin-top: 80px;
@@ -241,12 +241,12 @@ button:-moz-focusring {
             height: 100%;
             fill: #2361ad; }
       .about .container-inner > div:nth-of-type(2) > div > div > div > p {
-        font-family: 'Righteous';
+        font-family: "Righteous";
         font-weight: 100;
         font-size: 16px;
         line-height: 22px; }
       .about .container-inner > div:nth-of-type(2) > div > div > div > dl {
-        font: 700 15px/1.37 'Noto SansKR';
+        font: 700 15px/1.37 "Noto SansKR";
         letter-spacing: -0.05em; }
         .about .container-inner > div:nth-of-type(2) > div > div > div > dl dd {
           font-weight: 100;
@@ -302,19 +302,19 @@ button:-moz-focusring {
 
 @keyframes open {
   0%,
-    100% {
+  100% {
     transform: rotate(-5deg); }
   20%,
-    80% {
+  80% {
     transfrom: rotate(0deg); }
   50% {
     transform: rotate(-30deg); } }
 @keyframes bounce {
   0%,
-    20%,
-    50%,
-    80%,
-    100% {
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0) scale(1.2); }
   40% {
     transform: translateY(-30px); }
@@ -327,24 +327,24 @@ button:-moz-focusring {
     transform: rotate(360deg); } }
 @keyframes shake {
   10%,
-    90% {
+  90% {
     transform: translate3d(-1px, 0, 0); }
   20%,
-    80% {
+  80% {
     transform: translate3d(2px, 0, 0); }
   30%,
-    50%,
-    70% {
+  50%,
+  70% {
     transform: translate3d(-4px, 0, 0); }
   40%,
-    60% {
+  60% {
     transform: translate3d(4px, 0, 0); } }
 @keyframes grow {
   0%,
-    100% {
+  100% {
     transform: scale(0.8); }
   10%,
-    90% {
+  90% {
     transform: scale(0.9); }
   50% {
     transform: scale(1); } }
@@ -354,7 +354,7 @@ button:-moz-focusring {
     margin-top: 80px; }
     .skill .container-inner > div:last-of-type > div::after {
       display: block;
-      content: '';
+      content: "";
       clear: both; }
     .skill .container-inner > div:last-of-type > div > div {
       float: left;
@@ -370,7 +370,7 @@ button:-moz-focusring {
         .skill .container-inner > div:last-of-type > div > div table td {
           text-align: left; }
         .skill .container-inner > div:last-of-type > div > div table thead th {
-          font: 400 22px/1.37 'Righteous';
+          font: 400 22px/1.37 "Righteous";
           padding-bottom: 12px;
           color: #fff; }
         .skill .container-inner > div:last-of-type > div > div table tbody {
@@ -379,7 +379,7 @@ button:-moz-focusring {
             width: 30%; }
           .skill .container-inner > div:last-of-type > div > div table tbody th,
           .skill .container-inner > div:last-of-type > div > div table tbody td {
-            font: 400 14px/2.14 'Noto Sans KR';
+            font: 400 14px/2.14 "Noto Sans KR";
             color: #fff; }
 
 .project .container-inner > div:first-of-type {
@@ -395,7 +395,7 @@ button:-moz-focusring {
         display: block; }
 .project .container-inner > div > div > div::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 .project .container-inner > div > div > div {
   margin-top: 80px; }
@@ -418,7 +418,7 @@ button:-moz-focusring {
 
 .contact .container-inner::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 .contact .container-inner {
   height: 100%; }
@@ -449,7 +449,7 @@ button:-moz-focusring {
 
 .content-contact form::after {
   display: block;
-  content: '';
+  content: "";
   clear: both; }
 .content-contact table {
   float: left;
@@ -513,7 +513,7 @@ button:-moz-focusring {
     display: block;
     left: 0;
     bottom: 0;
-    content: '';
+    content: "";
     width: 100%;
     margin-left: 44px;
     height: 2px;
@@ -522,18 +522,18 @@ button:-moz-focusring {
     font-weight: 100;
     font-size: 2.95em;
     color: #fff;
-    font-family: 'Righteous';
+    font-family: "Righteous";
     letter-spacing: -0.005em; }
 
 .inner-sub {
   padding-top: 14px;
-  font-family: 'Lato';
+  font-family: "Lato";
   font-weight: 400;
   font-size: 1.02em;
   letter-spacing: 0.8em;
   color: #fff; }
   .inner-sub.ft-k {
-    font-family: 'Noto Sans KR';
+    font-family: "Noto Sans KR";
     font-weight: 400;
     font-size: 1.02em;
     letter-spacing: -0.08em; }
@@ -624,7 +624,7 @@ button:-moz-focusring {
       margin-top: 80px; }
       .skill .container-inner > div:last-of-type > div::after {
         display: block;
-        content: '';
+        content: "";
         clear: both; }
       .skill .container-inner > div:last-of-type > div > div {
         float: left;
@@ -678,7 +678,7 @@ button:-moz-focusring {
 
   .content-contact form::after {
     display: block;
-    content: '';
+    content: "";
     clear: both; }
   .content-contact table {
     float: left; }
@@ -689,37 +689,6 @@ button:-moz-focusring {
       margin-top: 20px;
       width: 100%; } }
 /* mobile */
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-.blind {
-  position: absolute;
-  left: -9999px; }
-
-a {
-  color: #fff; }
-
-/* color*/
-::-webkit-scrollbar {
-  height: 4px; }
-
-::-webkit-scrollbar-track {
-  background: rgba(255, 255, 255, 0.2); }
-
-::-webkit-scrollbar-thumb {
-  background: #fff; }
-
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.75); }
-
-/*common*/
-.clearfix::after {
-  display: block;
-  content: "";
-  clear: both; }
-
 #header {
   z-index: 100;
   position: fixed;
@@ -908,6 +877,36 @@ a {
   #gnb {
     display: none; } }
 /* mobile */
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+.blind {
+  position: absolute;
+  left: -9999px; }
+
+a {
+  color: #fff; }
+
+::-webkit-scrollbar {
+  height: 4px; }
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2); }
+
+::-webkit-scrollbar-thumb {
+  background: #fff; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.75); }
+
+/*common*/
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
 /* tablet */
 /* mobile */
 
