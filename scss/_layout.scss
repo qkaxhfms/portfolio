@@ -10,8 +10,10 @@ $color-menu-b-l: #238dad;
 // layout
 .wrapper {
   font: 100 18px/1.3 "Righteous", "Lato", "Noto Sans KR", sans-serif;
-  background: $color-menu-b;
+  //   background: $color-menu-b;
   background: linear-gradient($color-menu-db, $color-menu-b, $color-menu-db);
+  background-image: url("../img/bg_main.jpg");
+  background-size: cover;
 }
 
 .h100 {
