@@ -1,0 +1,216 @@
+//contact
+.contact {
+  .container-inner::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  .container-inner {
+    height: 100%;
+
+    > div {
+      &:first-of-type {
+        width: 36.7%;
+
+        > div {
+          > div {
+            &:last-of-type {
+              margin-top: 20px;
+              margin-top: 150px;
+
+              > p {
+                font-size: 24px;
+                color: #fff;
+                margin-bottom: 20px;
+              }
+
+              > ul {
+                li {
+                  font-size: 18px;
+                  line-height: 30px;
+                  color: #fff;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      &:last-of-type {
+        width: 63.3%;
+      }
+
+      position: relative;
+      float: left;
+      height: 100%;
+
+      > div {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+// contact-contact
+.content-contact {
+  form::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+
+  table {
+    float: left;
+    text-align: left;
+
+    &:first-of-type {
+      width: 30%;
+    }
+
+    &:last-of-type {
+      margin-left: 20px;
+      width: calc(70% - 20px);
+    }
+
+    th,
+    td {
+      color: #fff;
+    }
+  }
+
+  th {
+    font-weight: 100;
+    font-size: 1.85em;
+    padding-bottom: 20px;
+  }
+
+  label {
+    width: 100%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    border-top: 2px solid $color-menu-b;
+    border-bottom: 2px solid $color-menu-b;
+    display: block;
+  }
+
+  dl {
+    dt {
+      font-size: 24px;
+    }
+
+    dd {
+      margin-bottom: 18px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    height: 314px;
+    background: blue;
+    background: #fff;
+    border: 2px solid $color-menu-b;
+  }
+
+  .button-content {
+    padding-top: 20px;
+  }
+
+  button {
+    display: block;
+    width: 100%;
+    line-height: 50px;
+    font-size: 22px;
+    text-align: center;
+    background: $color-menu-b;
+    color: #fff;
+    transition: 0.5s;
+
+    &:hover {
+      background: #fff;
+      color: $color-menu-b;
+    }
+  }
+}
+
+/* tablet */
+@media screen and (max-width: $tablet-width) {
+  //contact
+  .contact {
+    height: auto;
+
+    .container-inner {
+      height: auto;
+
+      > div {
+        &:first-of-type {
+          width: 100%;
+
+          > div {
+            > div {
+              &:last-of-type {
+                margin-top: 40px;
+                margin-bottom: 40px;
+              }
+            }
+          }
+        }
+
+        &:last-of-type {
+          width: 100%;
+        }
+
+        position: static;
+        float: none;
+        height: auto;
+
+        > div {
+          position: static;
+          width: auto;
+          top: none;
+          transform: none;
+        }
+      }
+    }
+  }
+
+  // contact-contact
+  .content-contact {
+    form::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+
+    table {
+      float: left;
+
+      &:first-of-type {
+        width: 100%;
+      }
+
+      &:last-of-type {
+        margin-left: 0;
+        margin-top: 20px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* mobile */
+@media screen and (max-width: $mobile-width) {
+}
