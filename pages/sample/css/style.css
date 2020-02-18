@@ -102,17 +102,29 @@ header{
     font-size:22px;
     font-weight:bold;
 }
-#gnb .depth2{
-    display: none;
-    padding-top:10px;
-    background:orange;
+#gnb .open-menu{
+    /* transition:max-height 0.25s ease-out;  */
+    background: steelblue;
+    /* display: none; */
+    /* max-height:500px; */
+    /* overflow:hidden; */
+  
+    /* padding-top:10px; */
+    /* background:orange; */
 }
-#gnb .depth2>li{
+#gnb .active .open-menu{
+    /* display: block; */
+    /* max-height:500px;
+    transition:max-height 1.25s ease-in; */
+    /* padding-top:10px; */
+    /* background:orange; */
+}
+#gnb .open-menu>li{
     line-height:30px;
 }
-#gnb .depth2>li>a{
-    display: block;
-    background:blue;
+#gnb .open-menu>li>a{
+    /* display: block; */
+    /* background:blue; */
 }
 
 #container{
