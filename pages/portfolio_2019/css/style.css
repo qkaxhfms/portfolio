@@ -643,11 +643,6 @@ button:-moz-focusring {
         display: block;
         height: 100%;
         background: #fff; }
-      .project .container-inner > div > div > div > div > div img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
 
 /* tablet */
 @media screen and (max-width: 939px) {
@@ -668,9 +663,7 @@ button:-moz-focusring {
       width: 33.333333%;
       padding: 6px; }
       .project .container-inner > div:last-of-type > div > div > div > div {
-        height: 120px; }
-        .project .container-inner > div:last-of-type > div > div > div > div img {
-          width: 100px; } }
+        height: 120px; } }
 /* mobile */
 .contact .container-inner::after {
   display: block;
