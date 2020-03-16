@@ -1,0 +1,106 @@
+@charset 'utf-8';
+/* layout */
+
+/* header */
+header{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#555;
+}
+header .header-inner{
+    position: relative;
+    height:80px;
+    background:#333;
+}
+/* containers */
+header .header-inner h1{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:20px;
+    width:120px;
+    height:60px;
+    background:#ccc;
+}
+header .header-inner nav{
+    position: absolute;
+    background:#ccc;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+
+header .header-inner nav::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+header .header-inner nav li{
+    float: left;
+}
+
+header .header-inner nav li a{
+    display: block;
+    padding:0 12px;
+}
+
+header .header-inner nav li{
+    
+}
+
+header .header-inner .btn-search{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#container{background:#333;}
+#container>section{
+    background:yellow;
+}
+
+#container .visual{
+    background:yellow;
+    height:100vh;
+}
+
+#container .about{
+    background:black;
+    height:880px;
+}
+
+#container .business{
+    background:white;
+    height:650px;
+}
+
+#container .fixed{
+    background:gray;
+    height:370px;
+}
+
+#container .product{
+    background:blue;
+    height:810px;
+}
+
+#container .news{
+    background:purple;
+    height:750px;
+}
+
+/* footer */
