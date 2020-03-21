@@ -57,49 +57,56 @@ header .header-inner .btn-search{
     right:20px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* container */
 #container{background:#333;}
 #container>section{
-    background:yellow;
+    background:#e9e;
+}
+#container>section>.inner::after{
+    display: block;
+    content:'';
+    clear:both;
+}
+#container>section>.inner{
+    background:#ccc;
+}
+#container>section>.inner.devide>.content-wrapper{
+    background:#e5e;
+    float: left;
 }
 
+
+
+
+
+/* 영역별 css */
 #container .visual{
-    background:yellow;
+    background:#999;
     height:100vh;
 }
 
 #container .about{
-    background:black;
+    background:#888;
     height:880px;
 }
 
 #container .business{
-    background:white;
+    background:#777;
     height:650px;
 }
 
 #container .fixed{
-    background:gray;
+    background:#666;
     height:370px;
 }
 
 #container .product{
-    background:blue;
+    background:#555;
     height:810px;
 }
 
 #container .news{
-    background:purple;
+    background:#444;
     height:750px;
 }
 

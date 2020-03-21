@@ -1,17 +1,30 @@
 @charset 'utf-8';
 /* google font */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Raleway&display=swap');
+
 /*devide file*/
 @import url("all.css");
 @import url("layout.css");
 
+/* common */
 a {
     text-decoration: none;
     color: #000;
   }
 body {
-    font: 400 18px/1.37 "Raleway", "Noto Sans KR", "Noto Sans",sans-serif;
+    font: 400 18px/1.37 "Noto Sans KR","Raleway", "Noto Sans",sans-serif;
     letter-spacing: -0.025px;
+    color:#a8a8a8;
+}
+
+/* 공통 */
+.blind{
+    position: absolute;
+    left:-9999em;
+    color:transparent;
+}
+.bold{
+    font-weight:700;
 }
 
 /* scrollbar */
