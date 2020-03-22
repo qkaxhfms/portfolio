@@ -63,10 +63,10 @@ header .header-inner .btn-search{
     clear:both;
 }
 #container>section>.inner{
-    background:#ccc;
+    /* background:#ccc; */
 }
 #container>section>.inner.devide>.content-wrapper{
-    background:#e5e;
+    /* background:#e5e; */
     float: left;
 }
 
@@ -135,16 +135,34 @@ header .header-inner .btn-search{
 
 /* about */
 #container .about{
-    background:#888;
-    height:880px;
+    position: relative;
+    background:#fff;
+}
+.about::before{
+    position: absolute;
+    content:'';
+    top:0;
+    left:0;
+    width:78.125%;
+    height:740px;
+    background:#33342f;
 }
 
 .about > .inner{
+    position: relative;
     width:1400px;
     margin:0 auto;
+    padding:174px 0 200px;
 }
+
+
+
 .about .content-wrapper{
     width:50%;
+}
+.about .content-wrapper:first-of-type{
+    position: relative;
+
 }
 
 .about .content-wrapper .category .inner{
@@ -152,50 +170,91 @@ header .header-inner .btn-search{
 
 }
 .about .content-wrapper .category::after{
-    display: block;
-    content:"";
-    clear:both;
 }
 .about .content-wrapper .category>.inner{
-    float: left;
+    /* float: left; */
+    position: relative;
+    width:1020px;
+    height:340px;
 }
 
-.about .content-wrapper .category>.inner:last-of-type{
-    position: relative;
-    left:330px;
-    top:-340px;
-    width:660px;
-    height:660px;
-}
-.about .content-wrapper .category>.inner:last-of-type>div{
+.about .content-wrapper .category>.inner>div{
     position: absolute;
 }
+.about .content-wrapper .category>.inner>div:nth-of-type(1){
+    top:0;
+    left:0;
+}
 
-.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(1){
-    top:0;
-    left:0;
-    /* bottom:0; */
-    /* left:300px; */
+.about .content-wrapper .category>.inner>div:nth-of-type(2) a{
+    background:#fdf71d;
 }
-.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(2){
-    top:0;
-    left:50%;
-    /* right:0; */
-    /* bottom:0; */
-    /* position: absolute; */
-}
-.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(3){
-    top:50%;
-    left:0;
-    /* right:0; */
-    /* top:0; */
-}
-.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(4){
+.about .content-wrapper .category>.inner>div:nth-of-type(2) a p{
+    position: absolute;
     top:50%;
     left:50%;
-    /* right:0; */
-    /* top:0; */
+    transform:translate(-50%,-50%);
+    text-align: center;
 }
+.about .content-wrapper .category>.inner>div:nth-of-type(2) a img{
+    width:33px;
+    margin-bottom:8px;
+}
+.about .content-wrapper .category>.inner>div:nth-of-type(2) a span{
+    display: block;
+    font:100 21px/24px 'Raleway';
+}
+
+.about .content-wrapper .category>.inner>div:nth-of-type(2) a{
+}
+
+.about .content-wrapper .category>.inner>div:nth-of-type(3) a{
+    background:#33342f;
+}
+
+.about .content-wrapper .category>.inner>div:nth-of-type(5) a{
+    background:#ff212c;
+}
+
+.about .content-wrapper .category>.inner>div:nth-of-type(2),
+
+.about .content-wrapper .category>.inner>div:nth-of-type(3),
+
+.about .content-wrapper .category>.inner>div:nth-of-type(4),
+
+.about .content-wrapper .category>.inner>div:nth-of-type(5){
+    top:0;
+    left:33.333333%;
+}
+
+.about .content-wrapper .category>.inner>div:nth-of-type(3),
+
+.about .content-wrapper .category>.inner>div:nth-of-type(4),
+
+.about .content-wrapper .category>.inner>div:nth-of-type(5){
+    opacity:0;
+}
+
+
+/* move */
+.about .content-wrapper .category>.inner>div:nth-of-type(3).move{
+    opacity:1;
+    top:0;
+    left:66.666666%;    
+}
+.about .content-wrapper .category>.inner>div:nth-of-type(4).move{
+    opacity:1;
+    top:340px;
+    left:33.333333%;    
+}
+.about .content-wrapper .category>.inner>div:nth-of-type(5).move{
+    opacity:1;
+    top:340px;
+    left:66.666666%;        
+}
+.about .content-wrapper .category>.inner{
+}
+
 
 .about .content-wrapper .category a{
     display: block;
@@ -203,6 +262,10 @@ header .header-inner .btn-search{
     height:320px;
     background:#ccc;
     margin:10px;
+}
+.about .content-wrapper .category a img{
+    width:100%;
+    height:100%;
 }
 .about .content-wrapper .title{
     
@@ -224,7 +287,7 @@ header .header-inner .btn-search{
 .about .title p{
     font:32px/41px 'Noto Sans KR';
     color:#fff;
-    margin:50px 0 30px;
+    margin:35px 0 -3px;
 }
 
 
@@ -236,14 +299,21 @@ header .header-inner .btn-search{
 
 
 .about .content-wrapper .content-inner{
-    background:green;
+    /* background:green; */
 }
 
 
 
-
-
-
+/* .bg{
+    width: 100%;
+    height: 100%;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(-100%,-100%,0);
+    transition: all 0.3s;
+} */
 
 
 
