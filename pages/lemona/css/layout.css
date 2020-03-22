@@ -133,21 +133,123 @@ header .header-inner .btn-search{
     background-size:100% 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+/* about */
 #container .about{
     background:#888;
     height:880px;
 }
+
+.about > .inner{
+    width:1400px;
+    margin:0 auto;
+}
+.about .content-wrapper{
+    width:50%;
+}
+
+.about .content-wrapper .category .inner{
+
+
+}
+.about .content-wrapper .category::after{
+    display: block;
+    content:"";
+    clear:both;
+}
+.about .content-wrapper .category>.inner{
+    float: left;
+}
+
+.about .content-wrapper .category>.inner:last-of-type{
+    position: relative;
+    left:330px;
+    top:-340px;
+    width:660px;
+    height:660px;
+}
+.about .content-wrapper .category>.inner:last-of-type>div{
+    position: absolute;
+}
+
+.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(1){
+    top:0;
+    left:0;
+    /* bottom:0; */
+    /* left:300px; */
+}
+.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(2){
+    top:0;
+    left:50%;
+    /* right:0; */
+    /* bottom:0; */
+    /* position: absolute; */
+}
+.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(3){
+    top:50%;
+    left:0;
+    /* right:0; */
+    /* top:0; */
+}
+.about .content-wrapper .category>.inner:last-of-type>div:nth-of-type(4){
+    top:50%;
+    left:50%;
+    /* right:0; */
+    /* top:0; */
+}
+
+.about .content-wrapper .category a{
+    display: block;
+    width:320px;
+    height:320px;
+    background:#ccc;
+    margin:10px;
+}
+.about .content-wrapper .title{
+    
+
+}
+.about .title{
+    bottom:0;
+    padding-bottom:24px;
+}
+.about .title span{
+    display: block;
+    font:100 62px/65px 'Raleway';
+    color:#a8a8a8;
+}
+.about .title span.bold{
+    font-weight:700;
+    color:#fff;
+}
+.about .title p{
+    font:32px/41px 'Noto Sans KR';
+    color:#fff;
+    margin:50px 0 30px;
+}
+
+
+
+
+
+
+
+
+
+.about .content-wrapper .content-inner{
+    background:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 #container .business{
     background:#777;
