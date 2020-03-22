@@ -3,6 +3,7 @@
 
 /* header */
 header{
+    z-index:100;
     position: fixed;
     top:0;
     left:0;
@@ -31,7 +32,6 @@ header .header-inner nav{
     left:50%;
     transform:translate(-50%,-50%);
 }
-
 header .header-inner nav::after{
     display: block;
     content:'';
@@ -40,16 +40,13 @@ header .header-inner nav::after{
 header .header-inner nav li{
     float: left;
 }
-
 header .header-inner nav li a{
     display: block;
     padding:0 12px;
 }
-
 header .header-inner nav li{
     
 }
-
 header .header-inner .btn-search{
     position: absolute;
     top:50%;
@@ -75,15 +72,71 @@ header .header-inner .btn-search{
     float: left;
 }
 
-
-
-
-
 /* 영역별 css */
 #container .visual{
     background:#999;
     height:100vh;
 }
+.visual .inner{height:100%;}
+.visual .content-wrapper{height:100%;}
+.visual .content-wrapper .content-inner{
+    /* height:100%; */
+    background:green;
+}
+
+.visual .content-wrapper .content-inner:first-of-type{
+    /* height:100%; */
+    background:#fdf71d;
+    height:66.2%;
+    position: relative;
+}
+.visual .content-wrapper .content-inner:first-of-type .title{
+
+    /* background:#000; */
+    position: absolute;
+    width:100%;
+    bottom:0;
+    padding-left:13.54%;
+}
+.visual .content-wrapper .content-inner:last-of-type{
+    /* height:100%; */
+    background:gray;
+    height:33.8%;
+    background:url('../img/visual/bg_visual_1.png') no-repeat center bottom;
+    background-attachment:fixed;
+    background-size:cover;
+}
+.visual .content-wrapper .content-inner:last-of-type .content{
+    /* height:100%; */
+    padding-top:22px;
+    padding-left:13.64%;/*  */
+}
+
+.btn-more{
+    margin-top:46px;
+    display: inline-block;
+    padding:0 73px;
+    background:#33342f;
+    color:#fff;
+}
+
+.btn-more button{
+    color:#fff;
+    font:400 12px/60px 'Noto Sans KR';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #container .about{
     background:#888;
@@ -111,3 +164,14 @@ header .header-inner .btn-search{
 }
 
 /* footer */
+.title{
+    padding-bottom:24px;
+}
+.title span{
+    display: block;
+    font:100 100px/126px 'Raleway';
+    color:#33342f;
+}
+.title span.bold{
+    font-weight:700;
+}

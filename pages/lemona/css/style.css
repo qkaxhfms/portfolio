@@ -12,7 +12,7 @@ a {
     color: #000;
   }
 body {
-    font: 400 18px/1.37 "Noto Sans KR","Raleway", "Noto Sans",sans-serif;
+    font: 400 18px/2.11em "Noto Sans KR","Raleway", "Noto Sans",sans-serif;
     letter-spacing: -0.025px;
     color:#a8a8a8;
 }
