@@ -290,8 +290,13 @@ header .header-inner .btn-search{
     margin:35px 0 -3px;
 }
 
-
-
+.business{
+    text-align: center;
+}
+.business .title h2{
+    font:100 30px/40px 'Raleway';
+    letter-spacing:1.048em;
+}
 
 
 
