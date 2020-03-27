@@ -371,6 +371,21 @@ header .header-inner .btn-search{
 
 }
 
+.product{
+    /* height:792px; */
+    text-align: center;
+    padding:208px 0 260px;
+    /* background:blue; */
+    background:#fff;
+}
+.product .title{
+    margin-bottom:100px;
+}
+.product .title h2{
+    font:100 30px/40px 'Raleway';
+    letter-spacing:1.048em;
+}
+
 
 /* .bg{
     width: 100%;
