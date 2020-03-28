@@ -372,38 +372,75 @@ header .header-inner .btn-search{
 }
 
 .product{
-    /* height:792px; */
-    text-align: center;
-    /* background:blue; */
     background:#fff;
-    padding:190px 0 180px;
+    padding:190px 0 140px;
 }
 .product .title{
-    margin-bottom:80px;
+    text-align: center;
+    margin-bottom:92px;
 }
 .product .title h2{
     font:100 30px/40px 'Raleway';
     letter-spacing:1.048em;
-    /* padding-bottom:80px; */
 }
-.product .content{
-    background:green;
+.product .inner{
+    width:1400px;
+    margin:0 auto;
+}
 
-  }
+
+.product .content{}
 .product .swiper-container-product{
     height:100%;
-    /* height:480px; */
-    background:blue;
 }
 .product .swiper-container{
     height:100%;
-    /* background:yellow; */
 }
 .product .swiper-slide{
-    height:400px;
+    height:460px;
+}
+.product .slider-content a{
+    display: block;
+}
+.product .slider-content .img{
+    position: relative;
+    background:#fff;
+    -webkit-box-shadow:inset 0px 0px 4px 1px rgba(0,0,0,0.04);
+    -moz-box-shadow:inset 0px 0px 4px 1px rgba(0,0,0,0.04);
+    box-shadow:inset 0px 0px 4px 1px rgba(0,0,0,0.04);
+    border:1px solid #f7f7f7;
+}
+.product .slider-content .img img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);    
+}
+.product .slider-content .description{
+    margin-top:35px;
+}
+.product .slider-content .description h3{
+    font:700 18/32px 'Noto Sans KR';
+}
+.product .slider-content .description p{
+    font:400 16px/22px 'Noto Sans KR';
+    color:#fb3f46;
+}
+.product .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+    right: -50px;
+    left: auto;
+}
+.product .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
+    left: -50px;
+    right: auto;
+}
+.product .swiper-pagination-bullet-active{
+    background:red;
 }
 
-
+.product .swiper-pagination-product{
+    text-align: center;
+}
 
 #container .business{
 
