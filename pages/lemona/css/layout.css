@@ -374,33 +374,34 @@ header .header-inner .btn-search{
 .product{
     /* height:792px; */
     text-align: center;
-    padding:208px 0 260px;
     /* background:blue; */
     background:#fff;
+    padding:190px 0 180px;
 }
 .product .title{
-    margin-bottom:100px;
+    margin-bottom:80px;
 }
 .product .title h2{
     font:100 30px/40px 'Raleway';
     letter-spacing:1.048em;
+    /* padding-bottom:80px; */
 }
+.product .content{
+    background:green;
 
-
-/* .bg{
-    width: 100%;
-    height: 100%;
-    background: red;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(-100%,-100%,0);
-    transition: all 0.3s;
-} */
-
-
-
-
+  }
+.product .swiper-container-product{
+    height:100%;
+    /* height:480px; */
+    background:blue;
+}
+.product .swiper-container{
+    height:100%;
+    /* background:yellow; */
+}
+.product .swiper-slide{
+    height:400px;
+}
 
 
 
@@ -409,13 +410,13 @@ header .header-inner .btn-search{
 }
 
 #container .fixed{
-    background:#666;
+    /* background:#666; */
     height:370px;
 }
 
 #container .product{
-    background:#555;
-    height:810px;
+    /* background:#555; */
+    /* height:810px; */
 }
 
 #container .news{
