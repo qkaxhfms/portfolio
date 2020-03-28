@@ -76,10 +76,10 @@
 - product pc 영역 작성
 - slider swiper로 제작
 
-11. news 영역 작업 [2020.03.28]
+11. news,info,footer 영역 작업 [2020.03.29]
 
 - news 영역 작업
-- news pc 영역 작성
+- news, info, footer pc 영역 작성
 - slider swiper로 제작
 
 [ ] 2020.03.22 ~ 2020.03.28 메인 및 서브페이지 css 작성 (퍼블리싱)
