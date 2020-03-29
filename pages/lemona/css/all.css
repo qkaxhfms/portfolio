@@ -62,7 +62,7 @@ input[readonly],select[readonly],textarea{readonly},input[disable],select[disabl
     outline:0 none;
 }
 input[type="text"],input[type="password"]{
-    width:calc(100% - 20px);
+    width:100%;
     background:#fff;
 }
 

@@ -8,12 +8,16 @@ header{
     top:0;
     left:0;
     width:100%;
-    background:#555;
 }
 header .header-inner{
     position: relative;
     height:80px;
-    background:#333;
+    box-sizing:border-box;
+}
+
+header.on .header-inner{
+    background:#fdf71d;
+    border-bottom:1px solid #555555;
 }
 /* containers */
 header .header-inner h1{
@@ -22,12 +26,20 @@ header .header-inner h1{
     transform:translateY(-50%);
     left:20px;
     width:120px;
-    height:60px;
-    background:#ccc;
+    height:80px;
+}
+header .header-inner a{
+    display:block;
+    position:relative;
+    height:100%;
+}
+header .header-inner img{
+    position: absolute;
+    top:50%;
+    transform:translateY(-50%);
 }
 header .header-inner nav{
     position: absolute;
-    background:#ccc;
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
@@ -43,21 +55,52 @@ header .header-inner nav li{
 header .header-inner nav li a{
     display: block;
     padding:0 12px;
+    font:700 16px/80px 'Raleway';
+    letter-spacing:0.08em;
+    color:#555555;
 }
 header .header-inner nav li{}
-header .header-inner .btn-search{
+
+header .search-container {
     position: absolute;
+    right:20px;
     top:50%;
     transform:translateY(-50%);
-    right:20px;
+    width:270px;
 }
+  
+header input[type=text] {
+    width:calc(100% - 50px);
+    background:transparent;
+    border:transparent;    
+}
+
+header .search-container button {
+    position: absolute;
+    right:0;
+    top:0;
+    font:400 16px/40px 'Noto Sans KR';
+    border: none;
+    cursor: pointer;
+    width:40px;
+    height:40px;
+    text-align:center;
+    color:rgba(255, 33, 44, 0.3);
+}
+  
+header .search-container button:hover {
+    color:rgb(255, 33, 44, 1);
+}
+
+header form::before{background-color:rgb(255, 33, 44, 1);}
+header form.on::before{width:100%;}
+header form::after{background-color:rgba(255, 33, 44, 0.3);}
+
 
 /* container */
 #container{
-    /* background:#333; */
 }
 #container>section{
-    /* background:#e9e; */
 }
 #container>section>.inner::after{
     display: block;
@@ -68,7 +111,6 @@ header .header-inner .btn-search{
     /* background:#ccc; */
 }
 #container>section>.inner.devide>.content-wrapper{
-    /* background:#e5e; */
     float: left;
 }
 
