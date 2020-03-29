@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+/* google font */
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Raleway&display=swap");
+
+// import
+@import "all";
+@import "layout";
+
+/* common */
+a {
+  text-decoration: none;
+  color: #000;
+}
+body {
+  font: 400 18px/2.11em "Noto Sans KR", "Raleway", "Noto Sans", sans-serif;
+  letter-spacing: -0.025px;
+  color: #a8a8a8;
+}
+
+.blind {
+  position: absolute;
+  left: -9999em;
+  color: transparent;
+}
+.bold {
+  font-weight: 700;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fdf71d;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #33342f;
+  border-radius: 10px;
+}
