@@ -16,6 +16,7 @@ $lemonablack: rgb(51, 52, 47);
 @import "visual";
 @import "about";
 @import "business";
+@import "bg_middle";
 @import "product";
 @import "news";
 /* common */
@@ -36,6 +37,29 @@ body {
 }
 .bold {
   font-weight: 700;
+}
+
+// btn-more
+.btn-more {
+  margin-top: 46px;
+  display: inline-block;
+
+  &:hover button {
+    background-size: 100% 100%;
+  }
+
+  button {
+    padding: 0 73px;
+    background: linear-gradient(
+      90deg,
+      rgb(51, 52, 47) 50%,
+      rgba(253, 247, 29, 0.25)
+    );
+    transition: 0.5s;
+    background-size: 200% 100%;
+    color: #fff;
+    font: 400 12px/60px "Noto Sans KR";
+  }
 }
 
 /* scrollbar */

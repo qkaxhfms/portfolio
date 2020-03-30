@@ -1,0 +1,30 @@
+@charset 'utf-8';
+/* bg_middle */
+.bg_middle {
+  height: 370px;
+  .title {
+    position: relative;
+    text-align: center;
+    font: 100 36px/370px "Raleway";
+    letter-spacing: 1.048em;
+    color: #fff;
+  }
+  > .inner {
+    position: relative;
+    height: 370px;
+    background: url("../img/bg/bg_fixed.png") no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      content: "";
+      background: rgba(0, 0, 0, 0.8);
+    }
+  }
+}

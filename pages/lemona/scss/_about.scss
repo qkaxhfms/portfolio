@@ -2,7 +2,7 @@
 /* about */
 .about {
   position: relative;
-  overflow: hidden;
+  // overflow-x: hidden;
 
   //   title
   .title {
@@ -62,6 +62,7 @@
           left: 0;
         }
         &:nth-of-type(2) {
+          z-index: 20;
           a {
             background: #fdf71d;
             p {
@@ -106,6 +107,7 @@
         &:nth-of-type(4),
         &:nth-of-type(5) {
           opacity: 0;
+          transition: 0.5s;
         }
 
         // move
@@ -113,16 +115,19 @@
           opacity: 1;
           top: 0;
           left: 66.666666%;
+          transition-delay: 0.3s;
         }
         &:nth-of-type(4).move {
           opacity: 1;
           top: 340px;
           left: 33.333333%;
+          transition-delay: 0.5s;
         }
         &:nth-of-type(5).move {
           opacity: 1;
           top: 340px;
           left: 66.666666%;
+          transition-delay: 0.7s;
         }
       }
     }
@@ -146,3 +151,9 @@
 }
 .about .content-wrapper .title {
 }
+
+// @media (min-width: 1920px) {
+//   .about {
+//     width: 100%;
+//   }
+// }
