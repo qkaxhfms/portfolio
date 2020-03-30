@@ -447,12 +447,14 @@ header {
       background-color: rgba(255, 33, 44, 0.3); }
 
 /* container */
-#container section .inner::after {
-  display: block;
-  content: "";
-  clear: both; }
-#container section .inner.devide .content-wrapper {
-  float: left; }
+#container {
+  overflow-x: hidden; }
+  #container section .inner::after {
+    display: block;
+    content: "";
+    clear: both; }
+  #container section .inner.devide .content-wrapper {
+    float: left; }
 
 .bottom {
   background: #33342f; }
