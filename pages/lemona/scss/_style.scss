@@ -1,5 +1,10 @@
 @charset 'utf-8';
 
+// font-color
+$lemonablood: rgba(255, 33, 44, 1);
+$lemonared: rgba(255, 33, 44, 0.3);
+$lemonablack: rgb(51, 52, 47);
+
 /* google font */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Raleway&display=swap");
 
@@ -7,6 +12,12 @@
 @import "all";
 @import "layout";
 
+// main
+@import "visual";
+@import "about";
+@import "business";
+@import "product";
+@import "news";
 /* common */
 a {
   text-decoration: none;

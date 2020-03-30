@@ -1,0 +1,122 @@
+@charset 'utf-8';
+/* news */
+.news {
+  width: 1400px;
+  margin: 0 auto 142px;
+  //title
+  .title {
+    margin-top: 88px;
+    span {
+      display: block;
+      font: 100 62px/65px "Raleway";
+      color: #33342f;
+      &.bold {
+        font-weight: 700;
+      }
+    }
+    p {
+      font: 14px/1.37 "Noto Sans KR";
+      color: #8e8e8e;
+      margin-top: 28px;
+    }
+  }
+  .content-wrapper {
+    &:first-of-type {
+      width: 25%;
+      position: relative;
+      z-index: 11;
+    }
+    &:last-of-type {
+      width: 75%;
+    }
+  }
+  //swiper-container-news
+  .swiper-container-news {
+    position: relative;
+    height: 100%;
+  }
+  .swiper-container {
+    height: 100%;
+  }
+  .swiper-slide {
+    background: #fff;
+  }
+
+  .swiper-button-next,
+  .swiper-container-news .swiper-button-prev,
+  .swiper-button-prev,
+  .swiper-container-news .swiper-button-next {
+    width: 65px;
+    height: 65px;
+    background: #fff;
+    -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f7f7f7;
+  }
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 0;
+    background: url("../img/ico/ico_arrow01.png") no-repeat center center;
+    width: 100%;
+    height: 100%;
+  }
+  .swiper-button-next::after {
+    transform: rotate(180deg);
+  }
+  .swiper-button-next,
+  .swiper-container-news .swiper-button-prev {
+    z-index: 20;
+    right: auto;
+    left: 0;
+    bottom: 0;
+    top: auto;
+  }
+
+  .swiper-button-prev,
+  .swiper-container-news .swiper-button-next {
+    z-index: 20;
+    left: 73px;
+    right: auto;
+    bottom: 0;
+    top: auto;
+  }
+  .slider-content .description {
+    min-height: 520px;
+    padding: 95px 20px;
+    -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+    border: 1px solid #f7f7f7;
+  }
+  .description {
+    h3 {
+      font: 700 24px/30px "Noto Sans KR";
+      color: #33342f;
+    }
+    p {
+      font: 700 14px/21px "Noto Sans KR";
+      color: #a8a8a8;
+    }
+    .con {
+      margin-top: 17px;
+    }
+    .date {
+      margin-top: 40px;
+      font: 700 13px/21px "Noto Sans KR";
+      color: #33342f;
+    }
+
+    &:hover .btn_more a {
+      transform: rotate(90deg);
+    }
+    .btn-more {
+      margin-top: 49px;
+      text-align: center;
+      a {
+        display: block;
+        transition: 1s;
+      }
+    }
+  }
+}

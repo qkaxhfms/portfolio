@@ -1,0 +1,54 @@
+@charset 'utf-8';
+/* visual */
+.visual {
+  height: 100vh;
+
+  //title
+  .title {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding-left: 13.54%;
+    padding-bottom: 24px;
+    span {
+      display: block;
+      font: 100 100px/126px "Raleway";
+      color: #33342f;
+      &.bold {
+        font-weight: 700;
+      }
+    }
+  }
+
+  //inner
+  .inner {
+    height: 100%;
+  }
+  //content-wrapper
+  .content-wrapper {
+    height: 100%;
+
+    // content-inner
+    .content-inner {
+      //first-of-type
+      &:first-of-type {
+        background: #fdf71d;
+        height: 66.2%;
+        position: relative;
+      }
+      //last-of-type
+      &:last-of-type {
+        background: gray;
+        height: 33.8%;
+        background: url("../img/visual/bg_visual_1.png") no-repeat center bottom;
+        background-attachment: fixed;
+        background-size: cover;
+
+        .content {
+          padding-top: 22px;
+          padding-left: 13.64%;
+        }
+      }
+    }
+  }
+}

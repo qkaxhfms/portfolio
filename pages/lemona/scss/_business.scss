@@ -1,0 +1,36 @@
+@charset 'utf-8';
+/* business */
+.business {
+  .inner {
+    width: 1400px;
+    margin: 0 auto;
+
+    dl {
+      float: left;
+      width: 33.333333%;
+    }
+    dt {
+      img {
+        width: 70px;
+      }
+    }
+    dd {
+      font: 400 18px/32px "Noto Sans KR";
+      letter-spacing: -0.025em;
+      color: #a8a8a8;
+
+      &:first-of-type {
+        font: 700 22px/40px "Raleway";
+        letter-spacing: 0.26em;
+        color: #33342f;
+        margin: 31px 0 4px;
+      }
+    }
+
+    &::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+  }
+}
