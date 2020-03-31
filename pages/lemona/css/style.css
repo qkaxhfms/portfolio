@@ -403,11 +403,29 @@ header {
       header .header-inner nav li {
         float: left; }
         header .header-inner nav li a {
+          position: relative;
           display: block;
-          padding: 0 12px;
+          margin: 0 12px;
           font: 700 16px/80px "Raleway";
           letter-spacing: 0.08em;
-          color: #555555; }
+          color: #555555;
+          transition: 0.5s; }
+          header .header-inner nav li a::after {
+            content: "";
+            height: 2px;
+            width: 0%;
+            background: #33342f;
+            position: absolute;
+            display: block;
+            bottom: 20px;
+            left: 0;
+            transition: 0.5s; }
+          header .header-inner nav li a.on {
+            color: #ff212c;
+            box-sizing: border-box; }
+            header .header-inner nav li a.on::after {
+              width: 100%;
+              background: #ff212c; }
       header .header-inner nav::after {
         display: block;
         content: "";
@@ -428,7 +446,7 @@ header {
         width: 40px;
         height: 40px;
         text-align: center;
-        color: rgba(255, 33, 44, 0.3);
+        color: #33342f;
         transition: 0.5s; }
         header .header-inner .search-container button:hover {
           color: #ff212c; }
@@ -444,7 +462,7 @@ header {
       width: 100%;
       background-color: #ff212c; }
     header .header-inner form::after {
-      background-color: rgba(255, 33, 44, 0.3); }
+      background-color: #33342f; }
 
 /* container */
 #container section .inner::after {

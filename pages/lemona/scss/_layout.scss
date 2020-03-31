@@ -52,12 +52,38 @@ header {
 
       li {
         float: left;
+
         a {
+          position: relative;
           display: block;
-          padding: 0 12px;
+          margin: 0 12px;
           font: 700 16px/80px "Raleway";
           letter-spacing: 0.08em;
           color: #555555;
+          transition: 0.5s;
+
+          &::after {
+            content: "";
+            height: 2px;
+            width: 0%;
+            background: $lemonablack;
+            position: absolute;
+            display: block;
+            bottom: 20px;
+            left: 0;
+            transition: 0.5s;
+          }
+
+          &.on {
+            // background: $lemonared;
+            color: $lemonablood;
+            box-sizing: border-box;
+
+            &::after {
+              width: 100%;
+              background: $lemonablood;
+            }
+          }
         }
       }
 
@@ -86,7 +112,8 @@ header {
         width: 40px;
         height: 40px;
         text-align: center;
-        color: rgba(255, 33, 44, 0.3);
+        // color: rgba(255, 33, 44, 0.3);
+        color: $lemonablack;
         transition: 0.5s;
 
         // hover
@@ -118,7 +145,7 @@ header {
         background-color: $lemonablood;
       }
       &::after {
-        background-color: $lemonared;
+        background-color: $lemonablack;
       }
     }
   }
