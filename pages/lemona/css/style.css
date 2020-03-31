@@ -666,7 +666,8 @@ header {
 
 /* about */
 .about {
-  position: relative; }
+  position: relative;
+  overflow-x: hidden; }
   .about .title {
     bottom: 0;
     padding-bottom: 24px; }
