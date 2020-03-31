@@ -36,8 +36,8 @@
 
   > .inner {
     position: relative;
-    width: 1400px;
-    margin: 0 auto;
+    // width: 1400px;
+    // margin: 0 auto;
     padding: 174px 0 200px;
   }
 
@@ -45,18 +45,23 @@
     width: 50%;
     &:first-of-type {
       position: relative;
+      padding-left: 13.64%;
+    }
+    &:last-of-type {
+      padding-left: 24px;
     }
   }
 
   .category {
     //   inner
     .inner {
-      /* float: left; */
       position: relative;
-      width: 1020px;
-      height: 340px;
+      width: 100%;
       > div {
         position: absolute;
+        padding: 10px;
+        width: 33.333333%;
+        height: 50%;
         &:nth-of-type(1) {
           top: 0;
           left: 0;
@@ -74,7 +79,7 @@
             }
             img {
               width: 33px;
-              margin-bottom: 8px;
+              // margin-bottom: 8px;
             }
             span {
               display: block;
@@ -119,13 +124,13 @@
         }
         &:nth-of-type(4).move {
           opacity: 1;
-          top: 340px;
+          top: 50%;
           left: 33.333333%;
           transition-delay: 0.5s;
         }
         &:nth-of-type(5).move {
           opacity: 1;
-          top: 340px;
+          top: 50%;
           left: 66.666666%;
           transition-delay: 0.7s;
         }
@@ -133,10 +138,10 @@
     }
     a {
       display: block;
-      width: 320px;
-      height: 320px;
+      width: 100%;
+      height: 100%;
       background: #ccc;
-      margin: 10px;
+      // margin: 10px;
       img {
         width: 100%;
         height: 100%;

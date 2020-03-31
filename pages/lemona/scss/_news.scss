@@ -107,16 +107,17 @@
       color: #33342f;
     }
 
-    &:hover .btn_more a {
-      transform: rotate(90deg);
-    }
-    .btn-more {
+    .btn_more {
       margin-top: 49px;
       text-align: center;
       a {
         display: block;
         transition: 1s;
       }
+    }
+
+    &:hover .btn_more a {
+      transform: rotate(90deg);
     }
   }
 }
