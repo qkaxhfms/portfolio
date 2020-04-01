@@ -381,6 +381,7 @@ header {
     background: transparent;
     transition: all 0.5s; }
     header .header-inner h1 {
+      z-index: 130;
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
@@ -395,6 +396,32 @@ header {
           position: absolute;
           top: 50%;
           transform: translateY(-50%); }
+    header .header-inner .btn-open {
+      display: none;
+      z-index: 110;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      right: 0;
+      top: 0; }
+      header .header-inner .btn-open a {
+        display: block;
+        color: #33342f;
+        font: 400 22px/60px "Arial";
+        text-align: center; }
+    header .header-inner .btn-close {
+      display: none;
+      z-index: 130;
+      position: absolute;
+      width: 60px;
+      height: 60px;
+      right: 0;
+      top: 0; }
+      header .header-inner .btn-close a {
+        display: block;
+        color: #33342f;
+        font: 400 22px/60px "Arial";
+        text-align: center; }
     header .header-inner nav {
       position: absolute;
       top: 50%;
@@ -474,163 +501,200 @@ header {
 
 .bottom {
   background: #33342f; }
+  .bottom .title {
+    margin-top: 88px; }
+    .bottom .title span {
+      display: block;
+      font: 100 62px/65px "Raleway";
+      color: #33342f; }
+      .bottom .title span.bold {
+        font-weight: 700;
+        display: inline-block; }
+  .bottom .inner {
+    margin: 0 auto;
+    background: #333; }
+    .bottom .inner .content-wrapper {
+      float: left;
+      width: 50%; }
+      .bottom .inner .content-wrapper:first-of-type {
+        position: relative;
+        background: #fdf71d; }
+        .bottom .inner .content-wrapper:first-of-type::before {
+          position: absolute;
+          display: block;
+          top: -59px;
+          clear: both;
+          width: 100%;
+          height: 59px;
+          background: #fdf71d;
+          content: ""; }
+        .bottom .inner .content-wrapper:first-of-type::after {
+          display: block;
+          content: "";
+          clear: both; }
+        .bottom .inner .content-wrapper:first-of-type .content-inner {
+          float: right;
+          width: 72.91666666%; }
+    .bottom .inner::after {
+      display: block;
+      content: "";
+      clear: both; }
+  .bottom .swiper-container-info {
+    position: relative;
+    height: 100%; }
+  .bottom .swiper-container {
+    height: 100%; }
+  .bottom .swiper-slide {
+    height: 240px; }
+    .bottom .swiper-slide .description h3 {
+      font: 700 18px/25px "Noto Sans KR";
+      color: #33342f;
+      margin-top: 66px;
+      margin-bottom: 20px; }
+    .bottom .swiper-slide .description p {
+      font: 400 16px/28px "Noto Sans KR";
+      color: #8e8e8e; }
+    .bottom .swiper-slide .description .date {
+      margin-top: 20px;
+      font: 700 13px/21px "Noto Sans KR";
+      color: #33342f; }
+  .bottom .swiper-button-prev::after,
+  .bottom .swiper-button-next::after {
+    font-size: 0;
+    background: url("../img/ico/ico_arrow01.png") no-repeat center center;
+    width: 100%;
+    height: 100%; }
+  .bottom .swiper-button-next::after {
+    transform: rotate(180deg); }
+  .bottom .swiper-button-next,
+  .bottom .swiper-button-prev,
+  .bottom .swiper-button-prev,
+  .bottom .swiper-button-next {
+    width: 65px;
+    height: 65px;
+    background: #33342f;
+    -webkit-box-shadow: inset 0px 0px 4px 1px rgba(251, 52, 47, 0.54);
+    -moz-box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
+    box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
+    border: 1px solid #33342f; }
+  .bottom .swiper-button-prev {
+    z-index: 20;
+    left: auto;
+    right: 65px;
+    bottom: 0;
+    top: auto; }
+  .bottom .swiper-button-next {
+    z-index: 20;
+    right: 0;
+    left: auto;
+    bottom: 0;
+    top: auto; }
+  .bottom footer {
+    position: relative;
+    width: 72.91666666%; }
+    .bottom footer .inner {
+      padding: 108px 110px 0; }
+      .bottom footer .inner h2 {
+        font: 700 18px/30px "Noto Sans KR";
+        color: #ffffff; }
+      .bottom footer .inner li {
+        font: 400 14px/28px "Noto Sans KR";
+        color: #bfbebe; }
+        .bottom footer .inner li a {
+          color: #ccc; }
+    .bottom footer .description {
+      margin: 197px 0 0 110px;
+      font: 100 14px/33px "Raleway";
+      color: #bfbebe; }
+      .bottom footer .description span {
+        font: 700 14px/33px "Raleway";
+        color: #fff; }
+    .bottom footer .gotoTop {
+      position: absolute;
+      width: 88px;
+      height: 88px;
+      background: #fdf71d;
+      right: -88px;
+      top: -60px; }
+      .bottom footer .gotoTop a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: transparent;
+        background: url("../img/ico/ico_arrow01.png") no-repeat center center;
+        transform: rotate(90deg); }
 
-.bottom .inner {
-  margin: 0 auto;
-  background: #333; }
-
-.bottom .inner::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-.bottom .inner > .content-wrapper {
-  float: left;
-  width: 50%; }
-
-.bottom .content-wrapper:first-of-type::before {
-  position: absolute;
-  display: block;
-  top: -59px;
-  clear: both;
-  width: 100%;
-  height: 59px;
-  background: #fdf71d;
-  content: ""; }
-
-.bottom .content-wrapper:first-of-type::after {
-  display: block;
-  content: "";
-  clear: both; }
-
-.bottom .content-wrapper:first-of-type {
-  position: relative;
-  background: #fdf71d; }
-
-.bottom .content-wrapper:first-of-type > .content-inner {
-  float: right;
-  width: 700px; }
-
-.bottom .content-wrapper:last-of-type {
-  width: 700px; }
-
-.bottom .title {
-  margin-top: 88px; }
-
-.bottom .title span {
-  display: block;
-  font: 100 62px/65px "Raleway";
-  color: #33342f; }
-
-.bottom .title span.bold {
-  font-weight: 700;
-  display: inline-block; }
-
-.bottom .swiper-container-info {
-  position: relative;
-  height: 100%; }
-
-.bottom .swiper-container {
-  height: 100%; }
-
-.bottom .swiper-slide {
-  height: 240px; }
-
-.bottom .swiper-slide .description h3 {
-  font: 700 18px/25px "Noto Sans KR";
-  color: #33342f;
-  margin-top: 66px;
-  margin-bottom: 20px; }
-
-.bottom .swiper-slide .description p {
-  font: 400 16px/28px "Noto Sans KR";
-  color: #8e8e8e; }
-
-.bottom .description .date {
-  margin-top: 20px;
-  font: 700 13px/21px "Noto Sans KR";
-  color: #33342f; }
-
-.bottom .swiper-button-next,
-.swiper-container-rtl .swiper-button-prev,
-.bottom .swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  width: 65px;
-  height: 65px;
-  background: #33342f;
-  -webkit-box-shadow: inset 0px 0px 4px 1px rgba(251, 52, 47, 0.54);
-  -moz-box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
-  box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
-  border: 1px solid #33342f; }
-
-.bottom .swiper-button-prev::after,
-.bottom .swiper-button-next::after {
-  font-size: 0;
-  background: url("../img/ico/ico_arrow01.png") no-repeat center center;
-  width: 100%;
-  height: 100%; }
-
-.bottom .swiper-button-next::after {
-  transform: rotate(180deg); }
-
-.bottom .swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  z-index: 20;
-  right: 0;
-  left: auto;
-  bottom: 0;
-  top: auto; }
-
-.bottom .swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  z-index: 20;
-  left: auto;
-  right: 65px;
-  bottom: 0;
-  top: auto; }
-
-.bottom footer {
-  position: relative; }
-
-.bottom footer .inner {
-  padding: 108px 110px 0; }
-
-.bottom footer .inner h2 {
-  font: 700 18px/30px "Noto Sans KR";
-  color: #ffffff; }
-
-.bottom footer .inner li {
-  font: 400 14px/28px "Noto Sans KR";
-  color: #bfbebe; }
-
-.bottom footer .inner li a {
-  color: #ccc; }
-
-.bottom footer .description {
-  margin: 197px 0 0 110px;
-  font: 100 14px/33px "Raleway";
-  color: #bfbebe; }
-
-.bottom footer .description span {
-  font: 700 14px/33px "Raleway";
-  color: #fff; }
-
-.bottom .gotoTop {
-  position: absolute;
-  width: 88px;
-  height: 88px;
-  background: #fdf71d;
-  right: -88px;
-  top: -60px; }
-
-.bottom .gotoTop a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  color: transparent;
-  background: url("../img/ico/ico_arrow01.png") no-repeat center center;
-  transform: rotate(90deg); }
-
+@media screen and (max-width: 939px) {
+  /* header */
+  header .header-inner {
+    height: 60px; }
+    header .header-inner h1 {
+      height: 60px; }
+    header .header-inner .btn-open {
+      display: block; }
+    header .header-inner .btn-close {
+      display: block; }
+    header .header-inner nav {
+      z-index: 120;
+      position: absolute;
+      background: #fdf71d;
+      top: 0;
+      left: 100%;
+      width: 100%;
+      height: 100vh;
+      transform: translateY(0%); }
+      header .header-inner nav .inner {
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%); }
+      header .header-inner nav li {
+        width: 100%;
+        text-align: center; }
+        header .header-inner nav li a {
+          margin: 0;
+          font: 700 16px/80px "Raleway"; }
+          header .header-inner nav li a::after {
+            height: 100%;
+            background: #fdf71d;
+            bottom: 0;
+            transition: 0.5s; }
+          header .header-inner nav li a.on {
+            text-indent: 2em;
+            color: #ff212c;
+            box-sizing: border-box; }
+            header .header-inner nav li a.on::after {
+              width: 5%;
+              background: #ff212c; }
+      header .header-inner nav.on {
+        display: none; }
+    header .header-inner .search-container {
+      display: none;
+      z-index: 130;
+      right: 0;
+      top: 120px;
+      transform: translateY(0%);
+      width: 100%;
+      transition: 0.5s; }
+      header .header-inner .search-container button {
+        right: 0;
+        top: 0;
+        font: 400 22px/60px "Noto Sans KR";
+        width: 60px;
+        height: 60px; }
+      header .header-inner .search-container input[type="text"] {
+        width: calc(100% - 70px);
+        height: 60px; }
+      header .header-inner .search-container.on {
+        display: block; }
+    header .header-inner form::before {
+      background-color: #ff212c; }
+    header .header-inner form.on::before {
+      width: 100%;
+      background-color: #ff212c; }
+    header .header-inner form::after {
+      background-color: #33342f; } }
 /* visual */
 .visual {
   height: 100vh; }

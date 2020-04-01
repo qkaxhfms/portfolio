@@ -1,9 +1,16 @@
 @charset 'utf-8';
 
+// device width
+$pchWid: 1200px;
+$tabletWid: 939px;
+$mobileWid: 539px;
+
 // font-color
+$lemonawhite: rgb(255, 255, 255);
 $lemonablood: rgba(255, 33, 44, 1);
 $lemonared: rgba(255, 33, 44, 0.3);
 $lemonablack: rgb(51, 52, 47);
+$lemonayellow: rgb(253, 247, 29);
 
 /* google font */
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans|Noto+Sans+KR|Raleway&display=swap");
