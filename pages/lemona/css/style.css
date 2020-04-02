@@ -945,10 +945,10 @@ header {
       margin-bottom: 50px; }
       .business .title h2 {
         font: 100 18px/24px "Raleway";
-        letter-spacing: 1.048em; }
+        letter-spacing: 0.348em; }
     .business .inner {
-      margin: 0 auto;
-      width: 100%; }
+      width: 100%;
+      margin: 0 auto; }
       .business .inner dl {
         float: left;
         width: 100%;
@@ -1020,23 +1020,23 @@ header {
     height: 460px; }
   .product .swiper-content a {
     display: block; }
-  .product .swiper-content .img {
+  .product .img {
     position: relative;
     background: #fff;
     -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
     -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
     box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
     border: 1px solid #f7f7f7; }
-    .product .swiper-content .img img {
+    .product .img img {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%); }
-  .product .swiper-content .description {
+  .product .description {
     margin-top: 35px; }
-    .product .swiper-content .description h3 {
+    .product .description h3 {
       font: 700 18/32px "Noto Sans KR"; }
-    .product .swiper-content .description p {
+    .product .description p {
       font: 400 16px/22px "Noto Sans KR";
       color: #fb3f46; }
   .product .swiper-button-next,
@@ -1051,7 +1051,59 @@ header {
     background: rgba(255, 33, 44, 0.3); }
   .product .swiper-pagination-product {
     text-align: center; }
+  .product .swiper-pagination-clickable .swiper-pagination-bullet {
+    background: rgba(255, 33, 44, 0.3); }
 
+@media screen and (max-width: 939px) {
+  /* product */
+  .product {
+    padding: 95px 0 70px; }
+    .product .title {
+      text-align: center;
+      margin-bottom: 92px; }
+      .product .title h2 {
+        font: 100 18px/24px "Raleway";
+        letter-spacing: 0.348em; }
+    .product .inner {
+      width: 100%;
+      margin: 0 auto; }
+    .product .swiper-slide {
+      height: 460px; }
+    .product .slider-content a {
+      display: block; }
+    .product .img {
+      position: relative;
+      background: #fff;
+      -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+      -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+      box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
+      border: 1px solid #f7f7f7; }
+      .product .img img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); }
+    .product .description {
+      margin-top: 35px; }
+      .product .description h3 {
+        font: 700 18/32px "Noto Sans KR"; }
+      .product .description p {
+        font: 400 16px/22px "Noto Sans KR";
+        color: #fb3f46; }
+    .product .swiper-button-next,
+    .product .swiper-container-rtl .swiper-button-prev {
+      right: -50px;
+      left: auto; }
+    .product .swiper-button-prev,
+    .product .swiper-container-rtl .swiper-button-next {
+      left: -50px;
+      right: auto; }
+    .product .swiper-pagination-bullet-active {
+      background: rgba(255, 33, 44, 0.3); }
+    .product .swiper-pagination-product {
+      text-align: center; }
+    .product .swiper-pagination-clickable .swiper-pagination-bullet {
+      background: rgba(255, 33, 44, 0.3); } }
 /* news */
 .news {
   width: 1400px;
