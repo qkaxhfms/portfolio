@@ -1,4 +1,5 @@
 @charset 'utf-8';
+
 /* bg_middle */
 .bg_middle {
   height: 370px;
@@ -31,6 +32,17 @@
 
 // tablet
 @media screen and (max-width: $tabletWid) {
+  /* bg_middle */
+  .bg_middle {
+    height: 120px;
+    .title {
+      font: 100 14px/120px "Raleway";
+      letter-spacing: 0.748em;
+    }
+    > .inner {
+      height: 120px;
+    }
+  }
 }
 
 // mobile

@@ -1,4 +1,5 @@
 @charset 'utf-8';
+
 /* business */
 .business {
   text-align: center;
@@ -47,6 +48,54 @@
 
 // tablet
 @media screen and (max-width: $tabletWid) {
+  /* business */
+  .business {
+    // text-align: center;
+    padding: 72px 0 85px;
+    // title
+    .title {
+      margin-bottom: 50px;
+      h2 {
+        font: 100 18px/24px "Raleway";
+        letter-spacing: 1.048em;
+      }
+    }
+    .inner {
+      // width: 1400px;
+      margin: 0 auto;
+      width: 100%;
+
+      dl {
+        float: left;
+        // width: 33.333333%;
+        width: 100%;
+        padding: 24px 0;
+      }
+      dt {
+        img {
+          width: 40px;
+        }
+      }
+      dd {
+        font: 400 14px/20px "Noto Sans KR";
+        // letter-spacing: -0.025em;
+        // color: #a8a8a8;
+
+        &:first-of-type {
+          font: 700 18px/26px "Raleway";
+          letter-spacing: 0.26em;
+          color: #33342f;
+          margin: 15px 0 4px;
+        }
+      }
+
+      &::after {
+        display: block;
+        content: "";
+        clear: both;
+      }
+    }
+  }
 }
 
 // mobile
