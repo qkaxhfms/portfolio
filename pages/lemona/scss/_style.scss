@@ -85,3 +85,24 @@ body {
   background-color: #33342f;
   border-radius: 10px;
 }
+
+// tablet
+@media screen and (max-width: $tabletWid) {
+  // btn-more
+  .btn-more {
+    margin-top: 23px;
+    display: inline-block;
+
+    &:hover button {
+      background-size: 100% 100%;
+    }
+
+    button {
+      padding: 0 36px;
+      font: 400 12px/40px "Noto Sans KR";
+    }
+  }
+}
+// mobile
+@media screen and (max-width: $mobileWid) {
+}

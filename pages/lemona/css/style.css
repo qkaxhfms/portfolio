@@ -728,6 +728,30 @@ header {
         padding-top: 22px;
         padding-left: 13.64%; }
 
+@media screen and (max-width: 939px) {
+  /* visual */
+  .visual {
+    height: 100vh; }
+    .visual .title {
+      padding-left: 20px;
+      padding-bottom: 12px; }
+      .visual .title span {
+        display: block;
+        font: 100 36px/50px "Raleway"; }
+    .visual .inner {
+      font: 400 14px/24px "Noto Sans KR"; }
+      .visual .inner br {
+        display: none; }
+    .visual .content-wrapper {
+      height: 100%; }
+      .visual .content-wrapper .content-inner:first-of-type {
+        height: 59.2%; }
+      .visual .content-wrapper .content-inner:last-of-type {
+        height: 40.8%; }
+        .visual .content-wrapper .content-inner:last-of-type .content {
+          padding-top: 12px;
+          padding-left: 20px;
+          padding-right: 20px; } }
 /* about */
 .about {
   position: relative;
@@ -1068,5 +1092,15 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: #33342f;
   border-radius: 10px; }
+
+@media screen and (max-width: 939px) {
+  .btn-more {
+    margin-top: 23px;
+    display: inline-block; }
+    .btn-more:hover button {
+      background-size: 100% 100%; }
+    .btn-more button {
+      padding: 0 36px;
+      font: 400 12px/40px "Noto Sans KR"; } }
 
 /*# sourceMappingURL=style.css.map */

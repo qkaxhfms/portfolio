@@ -52,3 +52,55 @@
     }
   }
 }
+
+// tablet
+@media screen and (max-width: $tabletWid) {
+  /* visual */
+  .visual {
+    height: 100vh;
+
+    //title
+    .title {
+      padding-left: 20px;
+      padding-bottom: 12px;
+      span {
+        display: block;
+        font: 100 36px/50px "Raleway";
+      }
+    }
+
+    //inner
+    .inner {
+      font: 400 14px/24px "Noto Sans KR";
+      br {
+        display: none;
+      }
+    }
+    //content-wrapper
+    .content-wrapper {
+      height: 100%;
+
+      // content-inner
+      .content-inner {
+        //first-of-type
+        &:first-of-type {
+          height: 59.2%;
+        }
+        //last-of-type
+        &:last-of-type {
+          height: 40.8%;
+
+          .content {
+            padding-top: 12px;
+            padding-left: 20px;
+            padding-right: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// mobile
+@media screen and (max-width: $mobileWid) {
+}
