@@ -848,6 +848,64 @@ header {
       width: 100%;
       height: 100%; }
 
+@media screen and (max-width: 939px) {
+  /* about */
+  .about {
+    position: relative;
+    overflow-x: auto; }
+    .about .title {
+      padding-bottom: 12px; }
+      .about .title span {
+        font: 100 36px/42px "Raleway"; }
+      .about .title p {
+        font: 22px/36px "Noto Sans KR";
+        margin: 17px 0 -1px; }
+    .about::before {
+      width: 100%;
+      height: 100%; }
+    .about > .inner {
+      position: relative;
+      padding: 63px 0 50px;
+      font: 400 14px/24px "Noto Sans KR"; }
+      .about > .inner br {
+        display: none; }
+    .about .content-wrapper:first-of-type {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px; }
+    .about .content-wrapper:last-of-type {
+      width: 100%;
+      margin-top: 22px;
+      padding-left: 15px;
+      padding-left: 15px; }
+    .about .category .inner {
+      position: relative;
+      width: 100%; }
+      .about .category .inner > div {
+        position: absolute;
+        padding: 5px;
+        width: 33.333333%; }
+        .about .category .inner > div:nth-of-type(2) a p {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          text-align: center; }
+        .about .category .inner > div:nth-of-type(2) a img {
+          width: 17px; }
+        .about .category .inner > div:nth-of-type(2) a span {
+          display: block;
+          font: 100 12px/20px "Raleway"; }
+        .about .category .inner > div:nth-of-type(3) a {
+          background: white; }
+    .about .category a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: #ccc; }
+      .about .category a img {
+        width: 100%;
+        height: 100%; } }
 /* business */
 .business {
   text-align: center;
