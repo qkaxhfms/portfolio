@@ -124,6 +124,33 @@
 
 // tablet
 @media screen and (max-width: $tabletWid) {
+  /* news */
+  .news {
+    width: 100%;
+    margin: 0 auto 142px;
+    //title
+    .title {
+      margin-top: 44px;
+      span {
+        font: 100 36px/42px "Raleway";
+      }
+      p {
+        font: 14px/1.37 "Noto Sans KR";
+        margin-top: 14px;
+      }
+    }
+    .content-wrapper {
+      &:first-of-type {
+        width: 100%;
+        margin-bottom: 22px;
+        padding: 0 20px;
+      }
+      &:last-of-type {
+        width: 100%;
+        padding: 0 20px;
+      }
+    }
+  }
 }
 
 // mobile

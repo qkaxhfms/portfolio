@@ -694,7 +694,105 @@ header {
       width: 100%;
       background-color: #ff212c; }
     header .header-inner form::after {
-      background-color: #33342f; } }
+      background-color: #33342f; }
+
+  .bottom {
+    background: #33342f; }
+    .bottom .title {
+      margin-top: 44px; }
+      .bottom .title span {
+        font: 100 36px/42px "Raleway"; }
+    .bottom .inner {
+      margin: 0 auto;
+      background: #333; }
+      .bottom .inner .content-wrapper {
+        float: left; }
+        .bottom .inner .content-wrapper:first-of-type {
+          width: 80%;
+          position: relative; }
+          .bottom .inner .content-wrapper:first-of-type .content-inner {
+            width: 100%;
+            padding-left: 20px; }
+        .bottom .inner .content-wrapper:last-of-type {
+          width: 100%; }
+    .bottom .swiper-container-info {
+      position: relative;
+      height: 100%; }
+    .bottom .swiper-container {
+      height: 100%; }
+    .bottom .swiper-slide {
+      height: 180px; }
+      .bottom .swiper-slide .description h3 {
+        font: 700 16px/22px "Noto Sans KR";
+        margin-top: 33px;
+        margin-bottom: 10px; }
+      .bottom .swiper-slide .description p {
+        font: 400 14px/18px "Noto Sans KR"; }
+      .bottom .swiper-slide .description .date {
+        margin-top: 10px;
+        font: 700 13px/21px "Noto Sans KR"; }
+    .bottom .swiper-button-prev::after,
+    .bottom .swiper-button-next::after {
+      font-size: 0;
+      background: url("../img/ico/ico_arrow01.png") no-repeat center center;
+      width: 100%;
+      height: 100%; }
+    .bottom .swiper-button-next::after {
+      transform: rotate(180deg); }
+    .bottom .swiper-button-next,
+    .bottom .swiper-button-prev,
+    .bottom .swiper-button-prev,
+    .bottom .swiper-button-next {
+      width: 65px;
+      height: 65px;
+      background: #33342f;
+      -webkit-box-shadow: inset 0px 0px 4px 1px rgba(251, 52, 47, 0.54);
+      -moz-box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
+      box-shadow: inset 0px 0px 4px 1px rgba(51, 52, 47, 0.54);
+      border: 1px solid #33342f; }
+    .bottom .swiper-button-prev {
+      z-index: 20;
+      left: auto;
+      right: 65px;
+      bottom: 0;
+      top: auto; }
+    .bottom .swiper-button-next {
+      z-index: 20;
+      right: 0;
+      left: auto;
+      bottom: 0;
+      top: auto; }
+    .bottom footer {
+      width: 100%; }
+      .bottom footer .inner {
+        padding: 54px 20px 0; }
+        .bottom footer .inner h2 {
+          font: 700 18px/30px "Noto Sans KR";
+          color: #ffffff; }
+        .bottom footer .inner li {
+          font: 400 14px/28px "Noto Sans KR";
+          color: #bfbebe; }
+          .bottom footer .inner li a {
+            color: #ccc; }
+      .bottom footer .description {
+        margin: 20px 0 20px 20px;
+        font: 100 14px/33px "Raleway";
+        color: #bfbebe; }
+        .bottom footer .description span {
+          font: 700 14px/33px "Raleway";
+          color: #fff; }
+      .bottom footer .gotoTop {
+        width: 44px;
+        height: 44px;
+        top: -30px;
+        right: 0; }
+        .bottom footer .gotoTop a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          color: transparent;
+          background: url("../img/ico/ico_arrow01.png") no-repeat center center;
+          transform: rotate(90deg); } }
 /* visual */
 .visual {
   height: 100vh; }
@@ -1012,12 +1110,6 @@ header {
   .product .inner {
     width: 1400px;
     margin: 0 auto; }
-  .product .swiper-container-product {
-    height: 100%; }
-  .product .swiper-container {
-    height: 100%; }
-  .product .swiper-slide {
-    height: 460px; }
   .product .swiper-content a {
     display: block; }
   .product .img {
@@ -1033,9 +1125,9 @@ header {
       left: 50%;
       transform: translate(-50%, -50%); }
   .product .description {
-    margin-top: 35px; }
+    margin: 35px 0 50px; }
     .product .description h3 {
-      font: 700 18/32px "Noto Sans KR"; }
+      font: 700 18px/32px "Noto Sans KR"; }
     .product .description p {
       font: 400 16px/22px "Noto Sans KR";
       color: #fb3f46; }
@@ -1060,50 +1152,23 @@ header {
     padding: 95px 0 70px; }
     .product .title {
       text-align: center;
-      margin-bottom: 92px; }
+      margin-bottom: 46px; }
       .product .title h2 {
         font: 100 18px/24px "Raleway";
         letter-spacing: 0.348em; }
     .product .inner {
       width: 100%;
       margin: 0 auto; }
-    .product .swiper-slide {
-      height: 460px; }
-    .product .slider-content a {
-      display: block; }
-    .product .img {
-      position: relative;
-      background: #fff;
-      -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      border: 1px solid #f7f7f7; }
-      .product .img img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); }
+    .product .content {
+      padding: 0 20px; }
     .product .description {
-      margin-top: 35px; }
-      .product .description h3 {
-        font: 700 18/32px "Noto Sans KR"; }
-      .product .description p {
-        font: 400 16px/22px "Noto Sans KR";
-        color: #fb3f46; }
-    .product .swiper-button-next,
-    .product .swiper-container-rtl .swiper-button-prev {
-      right: -50px;
-      left: auto; }
-    .product .swiper-button-prev,
-    .product .swiper-container-rtl .swiper-button-next {
-      left: -50px;
-      right: auto; }
-    .product .swiper-pagination-bullet-active {
-      background: rgba(255, 33, 44, 0.3); }
-    .product .swiper-pagination-product {
+      margin: 18px 0 25px;
       text-align: center; }
-    .product .swiper-pagination-clickable .swiper-pagination-bullet {
-      background: rgba(255, 33, 44, 0.3); } }
+      .product .description h3 {
+        font: 700 16px/24px "Noto Sans KR"; }
+      .product .description p {
+        font: 400 14px/18px "Noto Sans KR";
+        color: #fb3f46; } }
 /* news */
 .news {
   width: 1400px;
@@ -1194,6 +1259,25 @@ header {
   .news .description:hover .btn_more a {
     transform: rotate(90deg); }
 
+@media screen and (max-width: 939px) {
+  /* news */
+  .news {
+    width: 100%;
+    margin: 0 auto 142px; }
+    .news .title {
+      margin-top: 44px; }
+      .news .title span {
+        font: 100 36px/42px "Raleway"; }
+      .news .title p {
+        font: 14px/1.37 "Noto Sans KR";
+        margin-top: 14px; }
+    .news .content-wrapper:first-of-type {
+      width: 100%;
+      margin-bottom: 22px;
+      padding: 0 20px; }
+    .news .content-wrapper:last-of-type {
+      width: 100%;
+      padding: 0 20px; } }
 /* common */
 a {
   text-decoration: none;

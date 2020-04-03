@@ -19,13 +19,13 @@
   .content {
   }
   .swiper-container-product {
-    height: 100%;
+    // height: 100%;
   }
   .swiper-container {
-    height: 100%;
+    // height: 100%;
   }
   .swiper-slide {
-    height: 460px;
+    // height: 460px;
   }
 
   .swiper-content {
@@ -49,9 +49,9 @@
     }
   }
   .description {
-    margin-top: 35px;
+    margin: 35px 0 50px;
     h3 {
-      font: 700 18/32px "Noto Sans KR";
+      font: 700 18px/32px "Noto Sans KR";
     }
     p {
       font: 400 16px/22px "Noto Sans KR";
@@ -88,7 +88,7 @@
     //title
     .title {
       text-align: center;
-      margin-bottom: 92px;
+      margin-bottom: 46px;
       h2 {
         font: 100 18px/24px "Raleway";
         letter-spacing: 0.348em;
@@ -100,68 +100,19 @@
       margin: 0 auto;
     }
     .content {
-    }
-    .swiper-container-product {
-      // height: 100%;
-    }
-    .swiper-container {
-      // height: 100%;
-    }
-    .swiper-slide {
-      height: 460px;
+      padding: 0 20px;
     }
 
-    .slider-content {
-      a {
-        display: block;
-        // height: 240px;
-      }
-    }
-    .img {
-      position: relative;
-      // width: 100%;
-      // height: 240px;
-      background: #fff;
-      -webkit-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      -moz-box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      box-shadow: inset 0px 0px 4px 1px rgba(0, 0, 0, 0.04);
-      border: 1px solid #f7f7f7;
-      //img
-      img {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    }
     .description {
-      margin-top: 35px;
+      margin: 18px 0 25px;
+      text-align: center;
       h3 {
-        font: 700 18/32px "Noto Sans KR";
+        font: 700 16px/24px "Noto Sans KR";
       }
       p {
-        font: 400 16px/22px "Noto Sans KR";
+        font: 400 14px/18px "Noto Sans KR";
         color: #fb3f46;
       }
-    }
-    .swiper-button-next,
-    .swiper-container-rtl .swiper-button-prev {
-      right: -50px;
-      left: auto;
-    }
-    .swiper-button-prev,
-    .swiper-container-rtl .swiper-button-next {
-      left: -50px;
-      right: auto;
-    }
-    .swiper-pagination-bullet-active {
-      background: $lemonared;
-    }
-    .swiper-pagination-product {
-      text-align: center;
-    }
-    .swiper-pagination-clickable .swiper-pagination-bullet {
-      background: $lemonared;
     }
   }
 }
