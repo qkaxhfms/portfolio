@@ -115,26 +115,6 @@
           opacity: 0;
           transition: 0.5s;
         }
-
-        // move
-        &:nth-of-type(3).move {
-          opacity: 1;
-          top: 0;
-          left: 66.666666%;
-          transition-delay: 0.3s;
-        }
-        &:nth-of-type(4).move {
-          opacity: 1;
-          top: 50%;
-          left: 33.333333%;
-          transition-delay: 0.5s;
-        }
-        &:nth-of-type(5).move {
-          opacity: 1;
-          top: 50%;
-          left: 66.666666%;
-          transition-delay: 0.7s;
-        }
       }
     }
     a {
@@ -148,6 +128,29 @@
         height: 100%;
       }
     }
+  }
+}
+
+/* about motion */
+.about.on .category .inner > div {
+  // move
+  &:nth-of-type(3) {
+    opacity: 1;
+    top: 0;
+    left: 66.666666%;
+    transition-delay: 0.3s;
+  }
+  &:nth-of-type(4) {
+    opacity: 1;
+    top: 50%;
+    left: 33.333333%;
+    transition-delay: 0.5s;
+  }
+  &:nth-of-type(5) {
+    opacity: 1;
+    top: 50%;
+    left: 66.666666%;
+    transition-delay: 0.7s;
   }
 }
 
