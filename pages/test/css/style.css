@@ -1,0 +1,220 @@
+@charset "utf-8";
+
+body{}
+
+/* test-font */
+*{margin:0;padding:0;}
+ul,ol,li{list-style:none;}
+/* list-font */
+.list-font{}
+.list-font h2{
+    font-size:30px;
+    margin:16px 0 14px;
+}
+.list-font>li{
+    box-sizing:border-box;
+    font-size:18px;
+    line-height:1.37em;
+    margin:4px 0;
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+
+
+
+.ga1_thin{
+    font-family:'GothicA1-Thin';
+    font-weight:100;
+}
+.ga1_extra_light{
+    font-family:'GothicA1-Extra-light';
+    font-weight:200;
+}
+.ga1_light{
+    font-family:'GothicA1-Light';
+    font-weight:300;
+}
+.ga1_regular{
+    font-family:'GothicA1-Regular';
+    font-weight:400;
+}
+.ga1_medium{
+    font-family:'GothicA1-Medium';
+    font-weight:500;
+}
+.ga1_semi_bold{
+    font-family:'GothicA1-Semi-bold';
+    font-weight:600;
+}
+.ga1_bold{
+    font-family:'GothicA1-Bold';
+    font-weight:700;
+}
+.ga1_extra_bold{
+    font-family:'GothicA1-Extra-bold';
+    font-weight:800;
+}
+.ga1_black{
+    font-family:'GothicA1-Black';
+    font-weight:900;
+}
+
+
+.rhd1_regular{
+    font-family:'RedHatDisplay-Regular';
+    font-weight:400;
+}
+.rhd1_regular_light{
+    font-family:'RedHatDisplay-italic';
+    font-weight:400;
+}
+.rhd1_medium{
+    font-family:'RedHatDisplay-Medium';
+    font-weight:500;
+}
+.rhd1_medium_italic{
+    font-family:'RedHatDisplay-Medium-italic';
+    font-weight:500;
+}
+.rhd1_bold{
+    font-family:'RedHatDisplay-Bold';
+    font-weight:700;
+}
+.rhd1_bold_italic{
+    font-family:'RedHatDisplay-Bold-italic';
+    font-weight:700;
+}
+.rhd1_black{
+    font-family:'RedHatDisplay-Black';
+    font-weight:900;
+}
+.rhd1_black_italic{
+    font-family:'RedHatDisplay-Black-italic';
+    font-weight:900;
+}
+
+
+
+
+/* Gothic A1 */
+@font-face {
+    font-family:'GothicA1-Thin';
+    font-style:normal;
+    font-weight:100;
+    src:local("☺"),
+        url(../font/GothicA1-Thin.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Extra-light';
+    font-style:normal;
+    font-weight:200;
+    src:local("☺"),
+        url(../font/GothicA1-ExtraLight.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Light';
+    font-style:normal;
+    font-weight:300;
+    src:local("☺"),
+        url(../font/GothicA1-Light.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Regular';
+    font-style:normal;
+    font-weight:400;
+    src:local("☺"),
+        url(../font/GothicA1-Regular.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Medium';
+    font-style:normal;
+    font-weight:500;
+    src:local("☺"),
+        url(../font/GothicA1-Medium.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Semi-bold';
+    font-style:normal;
+    font-weight:600;
+    src:local("☺"),
+        url(../font/GothicA1-SemiBold.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Bold';
+    font-style:normal;
+    font-weight:700;
+    src:local("☺"),
+        url(../font/GothicA1-Bold.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Extra-bold';
+    font-style:normal;
+    font-weight:800;
+    src:local("☺"),
+        url(../font/GothicA1-ExtraBold.ttf) format('truetype')
+}
+@font-face {
+    font-family:'GothicA1-Black';
+    font-style:normal;
+    font-weight:900;
+    src:local("☺"),
+        url(../font/GothicA1-Black.ttf) format('truetype')
+}
+
+/* Red Hat Display */
+@font-face {
+    font-family:'RedHatDisplay-Regular';
+    font-style:normal;
+    font-weight:400;
+    src:local("☺"),
+        url(../font/GothicA1-Regular.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-italic';
+    font-style:normal;
+    font-weight:400;
+    src:local("☺"),
+        url(../font/RedHatDisplay-Italic.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Medium-italic';
+    font-style:normal;
+    font-weight:500;
+    src:local("☺"),
+        url(../font/RedHatDisplay-MediumItalic.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Medium';
+    font-style:normal;
+    font-weight:500;
+    src:local("☺"),
+        url(../font/RedHatDisplay-Medium.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Bold-italic';
+    font-style:normal;
+    font-weight:700;
+    src:local("☺"),
+        url(../font/RedHatDisplay-BoldItalic.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Bold';
+    font-style:normal;
+    font-weight:700;
+    src:local("☺"),
+        url(../font/RedHatDisplay-Bold.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Black-italic';
+    font-style:normal;
+    font-weight:900;
+    src:local("☺"),
+        url(../font/RedHatDisplay-BlackItalic.ttf) format('truetype')
+}
+@font-face {
+    font-family:'RedHatDisplay-Black';
+    font-style:normal;
+    font-weight:900;
+    src:local("☺"),
+        url(../font/RedHatDisplay-Black.ttf) format('truetype')
+}
