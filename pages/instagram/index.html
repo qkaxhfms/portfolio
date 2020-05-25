@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram</title>
+    <link rel="stylesheet" href="common.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            var token = "IGQVJVQWUxdXVsdW45LUpMZATZA6SzFkWjRiWlNkWnV4VWhMQzFoNHZAyZAzNFWnQ0SXZAEY1p1OTVDblkzTHBkdHBmSzEwRTJoRlhaQWFoSnlONzNndDZAIXzY3TV9nYU8wMS1OZAHhFU1V3";
+
+            $.ajax({
+                url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
+                dataType: "jsonp"// CORS 
+            }).done(function (data) {
+                console.log(data);
+                window.data = data;
+                var list = "";
+                $.each(data.data, function (i, v) { // each문 반복문 돌림 -> data.data i-> index , v -> value
+                    list += "<div class='instagram-box'>";
+                    list += "<a href='" + v.permalink + "' target='_blank' style='background:url(" + v.media_url + ") no-repeat center center;''>";
+                    list += "<p>" + v.caption + "</p>";
+                    list += "</a>";
+                    list += "</div>";
+                });
+                $('.playon-instagarm').append(list);
+            }).fail(function () {
+                console.log("fail");
+            });
+        });
+    </script>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .playon-instagarm {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .instagram-box {
+        float: left;
+        width: 20%;
+    }
+
+    .instagram-box a {
+        display: block;
+        width: 100%;
+        background-size: cover !important;
+        position: relative;
+        text-decoration: none;
+        padding-top: 100%;
+    }
+
+    .instagram-box a::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #000;
+        opacity: 0;
+        width: 100%;
+        height: 100%;
+        transition: ease-in-out all .3s;
+    }
+
+    .instagram-box a:hover::before {
+        opacity: .7;
+        transition: ease-in-out all .3s;
+    }
+
+    .instagram-box>a>p {
+        box-sizing: border-box;
+        padding: 20px 40px;
+        width: 100%;
+        color: white;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        z-index: 11;
+        transition: ease-in-out all .3s;
+    }
+
+    .instagram-box a:hover p {
+        opacity: 1;
+        transition: ease-in-out all .3s;
+
+    }
+</style>
+</head>
+
+<body>
+<div class="wrap">
+    <h2>Instagram API Test</h2>
+    <div class="playon-instagarm"></div>
+</div>
+</body>
+</html>
