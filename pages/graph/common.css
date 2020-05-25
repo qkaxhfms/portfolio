@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+*{margin:0;padding:0;}
+ul,li,ol{list-style:none;}
+a{text-decoration:none;}
+
+/**/
+.list-box{margin-bottom:40px;}
+.list-box ul{display: table;table-layout: fixed;width:100%;}
+.list-box li{display:table-cell;height:120px;background:#ccc;}
+
+/* graph */
+.graph-wrap{position: relative;height:600px;background:#fff;}
+.graph-bg{z-index:1;position: absolute;width:72%;height:100%;left:14%;}
+.graph-bg{}
+.graph-bg ul{width:100%;height:100%;}
+.graph-bg ul li{position: relative; box-sizing:border-box;border-bottom:1px solid #000;}
+.graph-bg ul li>div{position: absolute;left:-68px;bottom:-12px;}
+.graph-bg ul li>div:after{display: block;content:'';clear:both;}
+.graph-bg ul li>div>span{display: inline-block;float: left;}
+.graph-bg ul li>div>span.val{font-size:11px;color:#222;}
+
+/* graph-chart */
+.graph-chart{position: absolute;z-index:5;width:72%;left:14%;height:100%;}
+
+.graph-chart .inner{height:100%;}
+
+.graph-chart .charts{height:100%;display:table;table-layout:fixed;width:100%;}
+.graph-chart .charts>.inner{display:table-cell;padding:0 10px;}
+.graph-chart .chart{height:100%;}
+.graph-chart .chart>.inner{}
+.graph-chart .chart ul{width:100%;height:100%;display:table;table-layout:fixed;}
+.graph-chart .chart li{height:100%;display:table-cell;padding:0 4px;}
+.graph-chart .chart li .inner{position:relative;}
+.graph-chart .chart li span{position: absolute; bottom:0;left:0; display: block; width:100%;}
+.graph-chart .chart p{text-align: center;}
+
+.graph-chart .chart li.type1 span{background-color:#c2f;}
+.graph-chart .chart li.type2 span{background-color:#caf;}
+.graph-chart .chart li.type3 span{background-color:#6cd;}
+.graph-chart .chart li.type4 span{background-color:#4bc;}
+.graph-chart .chart li.type5 span{background-color:#12f;}
+.graph-chart .chart li.type6 span{background-color:#33b;}
+
+
+
+
+
+
+
+
+.graph-list{
+    position: absolute;
+    display: none;
+}
