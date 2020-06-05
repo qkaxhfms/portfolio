@@ -29,6 +29,7 @@ $(document).ready(function(){
             list += "<p>" + v.caption + "</p>";
             list += "</a>";
             list += "</div>";
+            list += "</div>";
         });
         $('.container').append(list);
     }).fail(function () {
