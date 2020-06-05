@@ -9,7 +9,7 @@ $(document).ready(function(){
 
     $.ajax({
         url: "https://graph.instagram.com/me/media?access_token=" + token + "&fields=id,caption,media_type,media_url,thumbnail_url,permalink",
-        dataType: "jsonp"// CORS 
+        dataType: "jsonp",// CORS 
         complete: function(){
             var $grid = $('.container').isotope({
                 itemSelector:'.item',
