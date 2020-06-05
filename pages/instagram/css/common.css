@@ -105,6 +105,7 @@ button {
 .item6{height:180px;}
 .item7{height:400px;}
 
+.instagram-box a{display: block;}
 
 @media screen and (min-width:1400px) and (max-width:1599px){
     .item{width:20%;}
