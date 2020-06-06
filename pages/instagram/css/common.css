@@ -66,19 +66,6 @@ button {
     box-shadow:3px 3px 10px rgba(0,0,0,0.3);
 }
 
-.rnb{}
-.rnb .search{}
-.rnb form{
-    width:340px;
-    border-radius:4px;
-    box-shadow:3px 3px 10px rgba(0,0,0,0.3);
-}
-.rnb form::after{display:block;content:'';clear:both;}
-.rnb form input{width:140px;float:left;}
-.rnb form .btn{width:100px;font-weight:700;color:#fff;float:left;}
-
-
-
 .container{
     width:100%;
 }
@@ -86,7 +73,8 @@ button {
 .item{
     width:16.666666%;
     float:left;
-    box-sizing:border-box;padding:10px;
+    box-sizing:border-box;
+    padding:10px;
 }
 
 .item>div{
@@ -96,14 +84,56 @@ button {
     border-radius:6px;
     box-shadow:5px 5px 16px rgba(0,0,0,0.1);
 }
+.item>div a{
+    display: block;
+    background-size: cover !important;
+}
 
-.item1{height:200px;}
-.item2{height:180px;}
-.item3{height:250px;}
-.item4{height:320px;}
-.item5{height:150px;}
-.item6{height:180px;}
-.item7{height:400px;}
+.instagram-box a {
+    display: block;
+    width: 100%;
+    background-size: cover !important;
+    position: relative;
+    text-decoration: none;
+    height:200px;
+}
+
+.instagram-box a::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    transition: ease-in-out all .3s;
+}
+
+.instagram-box a:hover::before {
+    opacity: .7;
+    transition: ease-in-out all .3s;
+}
+
+.instagram-box>a>p {
+    box-sizing: border-box;
+    padding: 20px 40px;
+    width: 100%;
+    color: white;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    z-index: 11;
+    transition: ease-in-out all .3s;
+}
+
+.instagram-box a:hover p {
+    opacity: 1;
+    transition: ease-in-out all .3s;
+}
 
 .instagram-box a{display: block;}
 
