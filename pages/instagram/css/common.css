@@ -6,46 +6,30 @@ ul,ol,li{list-style:none;}
 a{outline:0;text-decoration:none;}
 body{background:#efefef;}
 .wrap{width:100%;padding:20px;box-sizing:border-box;}
-input[type="text"] {
-    padding: 0 10px;
-    width: 100%;
-    font-size: 12px;
-    line-height: normal;
-    caret-color: #444;
-    color: #444;
-    height: 50px;
-    border-top-width: initial;
-    border-bottom-width: initial;
-    border-right-width: initial;
-    border-left-width: initial;
-    box-sizing: border-box;
-    border-top-color: initial;
-    border-bottom-color: initial;
-    border-right-color: initial;
-    border-left-color: initial;
-    text-decoration: none;
-    border-style: none;
-    border-image: initial;
-    outline: none;
-    /* font-family: "Noto Sans KR";
-    font-family: "RedHatDisplay-Medium", "GothicA1-Medium";
-    font-weight: 500; */
-    background: transparent;
-    border-bottom: 1px solid #444;
+form{
+    margin-bottom:10px;
+    display: flow-root;
 }
-  
-button {
-    width: 100%;
-    /* font-family: "RedHatDisplay-Medium", "GothicA1-Medium";
-    font-weight: 500; */
-    background-color: #444;
-    line-height:50px;
+form #addTxt,form #bth{
+    float:left;
+    display: block;
+}
+form #addTxt{
+    margin-left:10px;
+    padding:5px 10px;
+    font-size:1rem;
+}
+
+form #btn{
+    width:70px;
+    height:32px;
+    margin-left:10px;
+    background-color:#444;
+    color:#FFF;
+    border:none;
     cursor: pointer;
-    border-width: 0;
-    border-style: none;
-    border-color: initial;
-    border-image: initial;
-    text-align: center;
+    font-weight: bold;
+    border-radius: 4px;
 }
 
 
