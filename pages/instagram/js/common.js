@@ -25,14 +25,14 @@ $(document).ready(function () {
             });
         }
     }).done(function (data) {
-        console.log(data);
-        window.data = data;
+        console.log(data);//중요
+        window.data = data;//찍어보려고 넣음
         var list = "";
 
         $.each(data.data, function (i, v) {
             list += "<div class='item'>";
             list += "<div class='instagram-box'>";
-            list += "<a href='" + v.permalink + "' target='_blank' style='background:url(" + v.media_url + ") no-repeat center center;''>";
+            list += "<a href='" + v.permalink + "' target='_blank' style='background:url(" + v.media_url + ") no-repeat center center;'>";
             list += "<p>" + v.caption + "</p>";
             list += "</a>";
             list += "</div>";
@@ -50,6 +50,16 @@ $(document).ready(function () {
         $(".instagram-box").map(function (i, v) {
             $(v).find("a").css("height", random(150, 350) + "px");
         });
+        
+        // var i = [1,2,3,4,5,6,7];
+        // i.map(function(i,v)){
+        //     console.log(v);
+        // }
+        // 1
+        // 2
+        // 3
+        // 4
+
 
     }).fail(function () {
         console.log("fail");
