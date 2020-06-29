@@ -1,0 +1,250 @@
+@charset "utf-8";
+/*main*/
+/*header*/
+header {
+  width: 960px;
+  margin: 3rem auto;
+  display: flex;
+  align-items: center;
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+  a {
+    float: left;
+    width: 120px;
+  }
+  .logo {
+    padding-right: 50px;
+    svg {
+      fill: $colorBl;
+    }
+  }
+  nav {
+    float: left;
+    ul {
+      li {
+        &.on a::before {
+          background: $colorBl;
+        }
+        display: block;
+        &:hover {
+          a {
+            color: $colorBl;
+            &::before {
+              background: $colorBl;
+            }
+          }
+        }
+        a {
+          padding-left: 1.54rem;
+          position: relative;
+          display: block;
+          color: $colorBl;
+          margin-bottom: 0.5em;
+          text-decoration: none;
+          line-height: 1.111;
+          transition: color 0.04s;
+          font-family: "RedHatDisplay-Medium";
+          font-weight: 500;
+          font-size: 0.85rem;
+          letter-spacing: -0.0175rem;
+          &::before {
+            position: absolute;
+            left: 3px;
+            top: 2px;
+            content: "";
+            box-sizing: border-box;
+            display: inline-block;
+            width: 0.85rem;
+            height: 0.85rem;
+            border: 1px solid $colorBl;
+            transition: 0.04s;
+          }
+        }
+      }
+    }
+  }
+}
+// main
+main {
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+}
+// footer
+footer {
+  margin-top: 3.5rem;
+  background: $colorBl;
+  color: $colorW1;
+  > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    a {
+      display: block;
+    }
+    .sns {
+      display: inline-block;
+      margin-left: 2rem;
+      font-size: 2rem;
+      color: #fff;
+      vertical-align: middle;
+    }
+  }
+}
+
+h1 {
+  margin-top: 4.44444445rem;
+  margin-bottom: 5.5555555556rem;
+}
+// intro
+.intro {
+  .tits1 {
+    margin: 0 0 1.5rem;
+  }
+}
+// profile
+.profile {
+  margin-top: 3.5rem;
+  table {
+    text-align: left;
+    tr {
+      th,
+      td {
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+      }
+      th {
+        font-family: "GothicA1-Bold";
+        font-weight: 700;
+      }
+      td,
+      a {
+        font-family: "GothicA1-Medium";
+        font-weight: 500;
+        color: $colorBK2;
+      }
+    }
+  }
+}
+// career
+.career {
+  margin-top: 3.5rem;
+  dl {
+  }
+  dt,
+  dd {
+    line-height: 1.5rem;
+  }
+  dt {
+    margin-top: 1.5rem;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  dd {
+    margin-left: 1rem;
+    font-size: 0.84rem;
+  }
+}
+// academic
+.academic {
+  margin-top: 3.5rem;
+  dl {
+  }
+  dt,
+  dd {
+    line-height: 1.5rem;
+  }
+  dt {
+    margin-top: 1.5rem;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  dd {
+    margin-left: 1rem;
+    font-size: 0.84rem;
+  }
+}
+// skill
+.skill {
+  margin-top: 3.5rem;
+  dl {
+  }
+  dt,
+  dd {
+    line-height: 1.5rem;
+  }
+  dt {
+    margin: 1.5rem 0;
+    font-family: "GothicA1-Medium";
+    font-weight: 500;
+    font-size: 1rem;
+  }
+  dd {
+    margin-left: 2rem;
+    ul,
+    li {
+      list-style: disc;
+    }
+  }
+}
+// skilled
+.skilled {
+  margin-top: 3.5rem;
+  .tits1 {
+    margin: 0 0 1.5rem;
+  }
+  .txts1 {
+    margin-top: 3.5rem;
+  }
+  article {
+    > dl {
+      > dt,
+      > dd {
+      }
+      > dt {
+        margin: 1.5rem 0 0.2rem;
+        font-family: "GothicA1-Bold";
+        font-weight: 700;
+        font-size: 1rem;
+      }
+      > dd {
+        margin-left: 1rem;
+      }
+      dd {
+        color: $colorBK2;
+        font-size: 0.84rem;
+        line-height: 1.5rem;
+      }
+      .period {
+        font-size: 0.72rem;
+        line-height: 1.25rem;
+      }
+      .link a {
+        font-size: 0.85rem;
+      }
+    }
+  }
+}
+//write
+.write {
+  margin-top: 3.5rem;
+  .txts1 {
+  }
+}
+// 939
+@media screen and (max-width: $Wid939) {
+  header {
+    width: auto;
+    padding: 0 20px;
+  }
+  main {
+    width: auto;
+    padding: 0 20px;
+  }
+}
