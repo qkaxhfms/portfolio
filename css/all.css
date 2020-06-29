@@ -197,10 +197,10 @@ header {
     clear: both; }
   header a {
     float: left;
-    width: 120px; }
-  header .logo {
-    padding-right: 50px; }
-    header .logo svg {
+    width: 90px; }
+  header #logo {
+    padding-right: 40px; }
+    header #logo svg {
       fill: #014df9; }
   header nav {
     float: left; }
@@ -354,6 +354,14 @@ h1 {
 .write {
   margin-top: 3.5rem; }
 
+body.change .profile table tr td,
+body.change .profile table tr a {
+  color: #888; }
+body.change .period {
+  color: #ccc; }
+body.change .work {
+  color: #888; }
+
 @media screen and (max-width: 939px) {
   header {
     width: auto;
@@ -403,6 +411,10 @@ body {
 
 .work {
   color: #312f30; }
+
+body.change {
+  background: #000;
+  color: #fff; }
 
 @media screen and (max-width: 939px) {
   .description {

@@ -41,8 +41,6 @@ body {
   font-family: "GothicA1-Regular", "RedHatDisplay-Regular", sans-serif;
   font-weight: 400;
   font-size: 1rem;
-  // background: $colorBK1;
-  // color: $colorW1;
 }
 
 .tits1 {
@@ -67,6 +65,12 @@ body {
 }
 .work {
   color: $colorBK2;
+}
+
+//change
+body.change {
+  background: $colorBK1;
+  color: $colorW1;
 }
 // 939
 @media screen and (max-width: $Wid939) {

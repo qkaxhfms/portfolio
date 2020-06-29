@@ -13,10 +13,10 @@ header {
   }
   a {
     float: left;
-    width: 120px;
+    width: 90px;
   }
-  .logo {
-    padding-right: 50px;
+  #logo {
+    padding-right: 40px;
     svg {
       fill: $colorBl;
     }
@@ -237,6 +237,28 @@ h1 {
   .txts1 {
   }
 }
+
+//change
+body.change {
+  // profile
+  .profile {
+    table {
+      tr {
+        td,
+        a {
+          color: $colorG2;
+        }
+      }
+    }
+  }
+  .period {
+    color: $colorG1;
+  }
+  .work {
+    color: $colorG2;
+  }
+}
+
 // 939
 @media screen and (max-width: $Wid939) {
   header {
