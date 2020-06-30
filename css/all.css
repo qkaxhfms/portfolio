@@ -230,6 +230,11 @@ header {
     float: left; }
     header nav ul li {
       display: block; }
+      header nav ul li:first-child a {
+        margin-top: 2px; }
+      header nav ul li:last-child a {
+        margin-top: 2px;
+        margin-bottom: 0; }
       header nav ul li a {
         padding-left: 1.54rem;
         position: relative;
@@ -289,7 +294,7 @@ footer {
       vertical-align: middle; }
 
 h1 {
-  margin-top: 4.44444445rem;
+  margin-top: 7.44444445rem;
   margin-bottom: 5.5555555556rem; }
 
 .intro .tits1 {
