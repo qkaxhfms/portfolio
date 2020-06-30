@@ -2,6 +2,7 @@
 /*main*/
 /*header*/
 header {
+  position: relative;
   width: 960px;
   margin: 3rem auto;
   display: flex;
@@ -11,12 +12,13 @@ header {
     content: "";
     clear: both;
   }
-  a {
-    float: left;
-    width: 90px;
-  }
+  // a {
+  //   width: 90px;
+  // }
   #logo {
-    padding-right: 40px;
+    width: 46px;
+    float: left;
+    margin-right: 40px;
     svg {
       fill: $colorBl;
     }
@@ -25,18 +27,7 @@ header {
     float: left;
     ul {
       li {
-        &.on a::before {
-          background: $colorBl;
-        }
         display: block;
-        &:hover {
-          a {
-            color: $colorBl;
-            &::before {
-              background: $colorBl;
-            }
-          }
-        }
         a {
           padding-left: 1.54rem;
           position: relative;
@@ -48,24 +39,39 @@ header {
           transition: color 0.04s;
           font-family: "RedHatDisplay-Medium";
           font-weight: 500;
-          font-size: 0.85rem;
+          font-size: 1rem;
           letter-spacing: -0.0175rem;
-          &::before {
+          span {
             position: absolute;
             left: 3px;
-            top: 2px;
-            content: "";
-            box-sizing: border-box;
-            display: inline-block;
-            width: 0.85rem;
-            height: 0.85rem;
-            border: 1px solid $colorBl;
-            transition: 0.04s;
+            svg {
+              fill: $colorBl;
+            }
           }
+        }
+        &.resume span {
+          width: 12px;
+        }
+        &.portfolio span {
+          width: 12px;
         }
       }
     }
   }
+  #change {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+    width: 20px;
+    svg {
+      fill: $colorBl;
+      transition: 0.2s;
+    }
+  }
+}
+.change #change svg {
+  transform: rotate(180deg);
 }
 // main
 main {

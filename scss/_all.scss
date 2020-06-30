@@ -72,6 +72,57 @@ body.change {
   background: $colorBK1;
   color: $colorW1;
 }
+
+/* Gothic A1 */
+@font-face {
+  font-family: "GothicA1-Light";
+  font-style: normal;
+  font-weight: 300;
+  src: local("☺"), url(../font/GothicA1-Light.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothicA1-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("☺"), url(../font/GothicA1-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothicA1-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("☺"), url(../font/GothicA1-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothicA1-Semi-bold";
+  font-style: normal;
+  font-weight: 600;
+  src: local("☺"), url(../font/GothicA1-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "GothicA1-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("☺"), url(../font/GothicA1-Bold.ttf) format("truetype");
+}
+/* Red Hat Display */
+@font-face {
+  font-family: "RedHatDisplay-Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: local("☺"), url(../font/GothicA1-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RedHatDisplay-Medium";
+  font-style: normal;
+  font-weight: 500;
+  src: local("☺"), url(../font/RedHatDisplay-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RedHatDisplay-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype");
+}
 // 939
 @media screen and (max-width: $Wid939) {
   //content-inner

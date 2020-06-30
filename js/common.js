@@ -1,5 +1,5 @@
 window.onload = () => {
-    document.getElementById("logo").addEventListener("click", logoClick);
+    document.getElementById("change").addEventListener("click", logoClick);
     function logoClick(){
         document.querySelector("body").classList.toggle('change');
     }
