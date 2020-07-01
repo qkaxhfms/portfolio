@@ -113,6 +113,9 @@ footer {
 h1 {
   margin-top: 7.44444445rem;
   margin-bottom: 5.5555555556rem;
+  br {
+    display: none;
+  }
 }
 // intro
 .intro {
@@ -282,5 +285,14 @@ body.change {
   main {
     width: auto;
     padding: 0 20px;
+  }
+}
+
+// 719
+@media screen and (max-width: $Wid719) {
+  h1 {
+    br {
+      display: block;
+    }
   }
 }

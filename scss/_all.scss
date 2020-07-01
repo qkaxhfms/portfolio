@@ -40,13 +40,14 @@ $colorBK2: #312f30;
 body {
   font-family: "GothicA1-Regular", "RedHatDisplay-Regular", sans-serif;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .tits1 {
   font-family: "GothicA1-Medium";
   font-weight: 500;
   font-size: 2rem;
+  line-height: 1.2;
 }
 .txts1 {
   font-family: "GothicA1-Bold";
@@ -126,6 +127,9 @@ body.change {
 // 939
 @media screen and (max-width: $Wid939) {
   //content-inner
+  body {
+    font-size: 0.9rem;
+  }
   .description {
     padding-right: 0;
   }
