@@ -187,6 +187,26 @@ h1 {
     font-size: 0.84rem;
   }
 }
+// education
+.education {
+  margin-top: 3.5rem;
+  dl {
+  }
+  dt,
+  dd {
+    line-height: 1.5rem;
+  }
+  dt {
+    margin-top: 1.5rem;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  dd {
+    margin-left: 1rem;
+    font-size: 0.84rem;
+  }
+}
 // skill
 .skill {
   margin-top: 3.5rem;

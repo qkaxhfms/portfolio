@@ -347,6 +347,20 @@ h1 {
     margin-left: 1rem;
     font-size: 0.84rem; }
 
+.education {
+  margin-top: 3.5rem; }
+  .education dt,
+  .education dd {
+    line-height: 1.5rem; }
+  .education dt {
+    margin-top: 1.5rem;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
+    font-size: 1rem; }
+  .education dd {
+    margin-left: 1rem;
+    font-size: 0.84rem; }
+
 .skill {
   margin-top: 3.5rem; }
   .skill dt,
