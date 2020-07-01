@@ -127,9 +127,7 @@ body.change {
 // 939
 @media screen and (max-width: $Wid939) {
   //content-inner
-  body {
-    font-size: 0.9rem;
-  }
+
   .description {
     padding-right: 0;
   }
@@ -137,4 +135,7 @@ body.change {
 
 // 719
 @media screen and (max-width: $Wid719) {
+  body {
+    font-size: 0.9rem;
+  }
 }

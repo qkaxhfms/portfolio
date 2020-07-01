@@ -498,10 +498,10 @@ body.change {
   font-weight: 700;
   src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype"); }
 @media screen and (max-width: 939px) {
-  body {
-    font-size: 0.9rem; }
-
   .description {
     padding-right: 0; } }
+@media screen and (max-width: 719px) {
+  body {
+    font-size: 0.9rem; } }
 
 /*# sourceMappingURL=all.css.map */
