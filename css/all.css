@@ -684,6 +684,9 @@ body.change {
     body {
         font-size: 0.9rem;
     }
+    .description br{
+        display:none;
+    }
 }
 
 /*# sourceMappingURL=all.css.map */
