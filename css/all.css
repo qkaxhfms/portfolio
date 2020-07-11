@@ -513,6 +513,10 @@ h1 br {
     line-height: 1.5rem;
 }
 
+.change .skilled article > dl dd {
+    color: #888;
+}
+
 .skilled article > dl .period {
     font-size: 0.72rem;
     line-height: 1.25rem;
