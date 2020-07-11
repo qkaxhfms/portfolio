@@ -199,7 +199,7 @@ em {
 
 /*scrollbar*/
 ::-webkit-scrollbar {
-    transition: 0.2s;
+    transition: all 0.3s;
     width: 16px;
     background-color: #fff;
 }
@@ -209,7 +209,7 @@ em {
 }
 
 ::-webkit-scrollbar-thumb {
-    transition: 0.2s;
+    transition: all 0.3s;
     background-color: #014df9;
     border: 4px solid #fff;
 }
