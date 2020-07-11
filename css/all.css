@@ -238,7 +238,7 @@ em {
 /*header*/
 header {
     position: relative;
-    width: 960px;
+    width: 940px;
     margin: 3rem auto;
     display: flex;
     align-items: center;
@@ -327,7 +327,7 @@ header #change svg {
 }
 
 main {
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     padding-bottom: 5rem;
 }
@@ -677,6 +677,7 @@ body.change {
     font-weight: 700;
     src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype");
 }
+
 
 @media screen and (max-width: 939px) {
     .description {
