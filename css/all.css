@@ -219,6 +219,14 @@ em {
   font-style: normal;
   font-weight: 700;
   src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype"); }
+/*change*/
+.change #change {
+  background: #111; }
+  .change #change span {
+    left: 18px; }
+.change .skilled article > dl > dd {
+  color: #888; }
+
 /*header*/
 header {
   position: relative;
@@ -292,11 +300,6 @@ header {
       height: 24px;
       background: #014df9;
       box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.25); }
-
-.change #change {
-  background: #111; }
-  .change #change span {
-    left: 18px; }
 
 /*main*/
 main {

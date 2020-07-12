@@ -1,5 +1,21 @@
 @charset "utf-8";
 
+/*change*/
+.change {
+    #change {
+        background: #111;
+
+        span {
+            left: 18px;
+        }
+    }
+
+    .skilled article>dl>dd {
+        color: $colorG2;
+    }
+
+}
+
 /*header*/
 header {
     position: relative;
@@ -106,13 +122,6 @@ header {
 
 }
 
-.change #change {
-    background: #111;
-
-    span {
-        left: 18px;
-    }
-}
 
 /*main*/
 main {
@@ -159,7 +168,7 @@ h1 {
         a {
             font-family: "GothicA1-Medium";
             font-weight: 500;
-            color: #312f30;
+            color: $colorBK2;
         }
     }
 }
@@ -306,7 +315,7 @@ h1 {
 
             >dd {
                 margin-left: 1rem;
-                color: #312f30;
+                color: $colorBK2;
                 font-size: 0.84rem;
                 line-height: 1.5rem;
             }
