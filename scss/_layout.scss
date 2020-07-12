@@ -21,7 +21,7 @@ header {
         margin-right: 40px;
 
         svg {
-            fill: #014df9;
+            fill: $colorBl;
         }
     }
 
@@ -37,7 +37,7 @@ header {
                     padding-left: 1.54rem;
                     position: relative;
                     display: block;
-                    color: #014df9;
+                    color: $colorBl;
                     margin-bottom: 0.5em;
                     text-decoration: none;
                     line-height: 1.111;
@@ -52,7 +52,7 @@ header {
                         left: 3px;
 
                         svg {
-                            fill: #014df9;
+                            fill: $colorBl;
                         }
                     }
                 }
@@ -74,20 +74,6 @@ header {
         }
     }
 
-    // change
-    // #change {
-    //     position: absolute;
-    //     right: 20px;
-    //     top: 50%;
-    //     margin-top: -10px;
-    //     width: 20px;
-
-    //     svg {
-    //         fill: #014df9;
-    //         transition: 0.2s;
-    //     }
-    // }
-
     #change {
         position: absolute;
         right: 20px;
@@ -96,28 +82,23 @@ header {
         width: 40px;
         padding: 0 8px;
         height: 20px;
-        // border-radius: 15px;
-        background: #bdc3c7;
-        box-sizing: border-box;
-        transition: all 0.4s;
+        background: #ecf0f1;
+        transition: all 0.3s;
         font-family: "RedHatDisplay-Medium";
         font-weight: 500;
         font-size: 0.75rem;
         line-height: 1.68rem;
         color: $colorBl;
-        border: 1px solid #bdc3c7;
 
         span {
-            transition: all 0.4s;
+            transition: all 0.3s;
             position: absolute;
-            left: -5px;
-            top: -5px;
+            left: -2px;
+            top: -2px;
             display: block;
-            width: 28px;
-            height: 28px;
-            background: #ecf0f1;
-            box-sizing: border-box;
-            border: 1px solid #ecf0f1;
+            width: 24px;
+            height: 24px;
+            background: $colorBl;
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.25);
 
         }
@@ -126,13 +107,10 @@ header {
 }
 
 .change #change {
-    background: #2969ff;
-    border: 1px solid #2969ff;
+    background: #111;
 
     span {
-        left: 15px;
-        background: #014df9;
-        border: 1px solid #014df9;
+        left: 18px;
     }
 }
 
@@ -305,7 +283,7 @@ h1 {
             &.description-detail {
                 dl {
                     dd {
-                        color: #888;
+                        color: $colorG2;
                     }
 
                     .period {
@@ -345,8 +323,8 @@ h1 {
 /*footer*/
 footer {
     margin-top: 3.5rem;
-    background: #014df9;
-    color: #fff;
+    background: $colorBl;
+    color: $colorW1;
 
     >div {
         display: flex;
@@ -360,7 +338,7 @@ footer {
             display: inline-block;
             margin-left: 2rem;
             font-size: 2rem;
-            color: #fff;
+            color: $colorW1;
             vertical-align: middle;
         }
     }
