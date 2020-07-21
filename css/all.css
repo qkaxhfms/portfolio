@@ -220,10 +220,9 @@ em {
   font-weight: 700;
   src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype"); }
 /*change*/
-.change #change {
-  background: #111; }
-  .change #change span {
-    left: 18px; }
+.change #btnSwitch {
+  transform: rotateY(90deg);
+  opacity: 1; }
 .change .skilled article > dl > dd {
   color: #888; }
 
@@ -275,31 +274,48 @@ header {
       header nav ul li:last-child a {
         margin-top: 2px;
         margin-bottom: 0; }
-  header #change {
+  header .btnWrap {
     position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -10px;
-    width: 40px;
-    padding: 0 8px;
-    height: 20px;
-    background: #ecf0f1;
-    transition: all 0.3s;
+    perspective: 150px;
+    width: 30px;
+    height: 30px;
+    right: 20px; }
+  header #btnSwitch {
+    border-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    transition: ease-in 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    line-height: 1.66rem;
+    background: transparent;
     font-family: "RedHatDisplay-Medium";
     font-weight: 500;
-    font-size: 0.75rem;
-    line-height: 1.68rem;
-    color: #014df9; }
-    header #change span {
-      transition: all 0.3s;
+    font-size: 1rem;
+    line-height: 1.68rem; }
+    header #btnSwitch::before, header #btnSwitch::after {
+      left: 0;
+      top: 0;
       position: absolute;
-      left: -2px;
-      top: -2px;
-      display: block;
-      width: 24px;
-      height: 24px;
-      background: #014df9;
-      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.25); }
+      width: 100%;
+      height: 100%;
+      border-width: 2px;
+      border-style: solid; }
+    header #btnSwitch::before {
+      content: 'W';
+      color: #014df9;
+      border-color: #014df9;
+      background: #000;
+      transform: translateX(-15px) rotateY(95deg); }
+    header #btnSwitch::after {
+      content: 'B';
+      color: #000;
+      border-color: #000;
+      background: #fff;
+      transform: translateZ(15px); }
 
 /*main*/
 main {

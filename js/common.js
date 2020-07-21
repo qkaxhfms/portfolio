@@ -1,6 +1,6 @@
 window.onload = () => {
-    document.getElementById("change").addEventListener("click", logoClick);
+    document.getElementById("btnSwitch").addEventListener("click", logoClick);
     function logoClick(){
-        document.querySelector("body").classList.toggle('change');
+        document.querySelector("body").classList.toggle("change");
     }
 }

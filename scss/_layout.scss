@@ -2,18 +2,15 @@
 
 /*change*/
 .change {
-    #change {
-        background: #111;
 
-        span {
-            left: 18px;
-        }
+    #btnSwitch {
+        transform: rotateY(90deg);
+        opacity: 1;
     }
 
     .skilled article>dl>dd {
         color: $colorG2;
     }
-
 }
 
 /*header*/
@@ -90,38 +87,73 @@ header {
         }
     }
 
-    #change {
+    .btnWrap {
         position: absolute;
+        perspective: 150px;
+        width: 30px;
+        height: 30px;
+        // border: 1px solid red;
         right: 20px;
-        top: 50%;
-        margin-top: -10px;
-        width: 40px;
-        padding: 0 8px;
-        height: 20px;
-        background: #ecf0f1;
-        transition: all 0.3s;
-        font-family: "RedHatDisplay-Medium";
-        font-weight: 500;
-        font-size: 0.75rem;
-        line-height: 1.68rem;
-        color: $colorBl;
 
-        span {
-            transition: all 0.3s;
-            position: absolute;
-            left: -2px;
-            top: -2px;
-            display: block;
-            width: 24px;
-            height: 24px;
-            background: $colorBl;
-            box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.25);
 
-        }
+
     }
 
-}
+    #btnSwitch {
+        border-color: transparent;
+        outline: none;
+        box-sizing: border-box;
+        transition: ease-in 0.2s;
+        transform-style: preserve-3d;
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        line-height: 1.66rem;
+        background: transparent;
+        font-family: "RedHatDisplay-Medium";
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.68rem;
 
+        &::before,
+        &::after {
+            left: 0;
+            top: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-width: 2px;
+            border-style: solid;
+        }
+
+        &::before {
+            content: 'W';
+            color: $colorBl;
+            border-color: $colorBl;
+            background: #000;
+            transform: translateX(-15px) rotateY(95deg);
+        }
+
+        &::after {
+            content: 'B';
+            color: #000;
+            border-color: #000;
+            background: #fff;
+            transform: translateZ(15px);
+        }
+
+    }
+
+
+    // #btnSwitch::before {}
+
+    // #btnSwitch::after {}
+
+    // #btnSwitch.active::after {
+    //     background: transparent;
+    // }
+}
 
 /*main*/
 main {
@@ -319,7 +351,6 @@ h1 {
                 font-size: 0.84rem;
                 line-height: 1.5rem;
             }
-
         }
     }
 }
@@ -382,6 +413,4 @@ footer {
     h1 br {
         display: block;
     }
-
-
 }
