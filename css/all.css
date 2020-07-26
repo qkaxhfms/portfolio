@@ -244,6 +244,11 @@ header {
     float: left;
     margin-right: 40px; }
     header #logo svg {
+      fill: #014df9;
+      fill: #000;
+      transition: 0.2s; }
+    header #logo:hover svg {
+      fill: #000;
       fill: #014df9; }
   header nav {
     float: left; }
@@ -253,20 +258,24 @@ header {
         padding-left: 1.54rem;
         position: relative;
         display: block;
-        color: #014df9;
+        color: #000;
         margin-bottom: 0.5em;
         text-decoration: none;
         line-height: 1.111;
-        transition: color 0.04s;
+        transition: color 0.2s;
         font-family: "RedHatDisplay-Medium";
         font-weight: 500;
         font-size: 1rem;
         letter-spacing: -0.0175rem; }
+        header nav ul li a.on, header nav ul li a:hover {
+          color: #014df9; }
+          header nav ul li a.on span svg, header nav ul li a:hover span svg {
+            fill: #014df9; }
         header nav ul li a span {
           position: absolute;
           left: 3px; }
           header nav ul li a span svg {
-            fill: #014df9; }
+            fill: #000; }
       header nav ul li.resume span, header nav ul li.portfolio span {
         width: 12px; }
       header nav ul li:first-child a {
@@ -330,7 +339,9 @@ h1 {
 
 /*intro*/
 .intro .tits1 {
-  margin: 0 0 1.5rem; }
+  margin: 0 0 1.5rem;
+  margin-top: 7.44444445rem;
+  margin-bottom: 1.5rem; }
 
 /*profile*/
 .profile {
@@ -366,35 +377,7 @@ h1 {
     font-size: 0.84rem; }
 
 /*academic*/
-.academic {
-  margin-top: 3.5rem; }
-  .academic dl dt,
-  .academic dl dd {
-    line-height: 1.5rem; }
-  .academic dl dt {
-    margin-top: 1.5rem;
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
-    font-size: 1rem; }
-  .academic dl dd {
-    margin-left: 1rem;
-    font-size: 0.84rem; }
-
 /*education*/
-.education {
-  margin-top: 3.5rem; }
-  .education dt,
-  .education dd {
-    line-height: 1.5rem; }
-  .education dt {
-    margin-top: 1.5rem;
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
-    font-size: 1rem; }
-  .education dd {
-    margin-left: 1rem;
-    font-size: 0.84rem; }
-
 /*skill*/
 .skill {
   margin-top: 3.5rem; }
@@ -477,10 +460,7 @@ footer {
 /*해상도 719*/
 @media screen and (max-width: 719px) {
   body {
-    font-size: 0.9rem; }
-
-  h1 br {
-    display: block; } }
+    font-size: 0.9rem; } }
 body {
   transition: background 0.3s;
   font-family: "GothicA1-Regular", "RedHatDisplay-Regular", sans-serif;

@@ -2,7 +2,6 @@
 
 /*change*/
 .change {
-
     #btnSwitch {
         transform: rotateY(90deg);
         opacity: 1;
@@ -35,6 +34,13 @@ header {
 
         svg {
             fill: $colorBl;
+            fill: $colorBK1;
+            transition: 0.2s;
+        }
+
+        &:hover svg {
+            fill: $colorBK1;
+            fill: $colorBl;
         }
     }
 
@@ -50,22 +56,33 @@ header {
                     padding-left: 1.54rem;
                     position: relative;
                     display: block;
-                    color: $colorBl;
+                    color: $colorBK1;
                     margin-bottom: 0.5em;
                     text-decoration: none;
                     line-height: 1.111;
-                    transition: color 0.04s;
+                    transition: color 0.2s;
                     font-family: "RedHatDisplay-Medium";
                     font-weight: 500;
                     font-size: 1rem;
                     letter-spacing: -0.0175rem;
+
+                    &.on,
+                    &:hover {
+                        color: $colorBl;
+
+                        span {
+                            svg {
+                                fill: $colorBl;
+                            }
+                        }
+                    }
 
                     span {
                         position: absolute;
                         left: 3px;
 
                         svg {
-                            fill: $colorBl;
+                            fill: $colorBK1;
                         }
                     }
                 }
@@ -94,9 +111,6 @@ header {
         height: 30px;
         // border: 1px solid red;
         right: 20px;
-
-
-
     }
 
     #btnSwitch {
@@ -130,28 +144,18 @@ header {
             content: 'W';
             color: $colorBl;
             border-color: $colorBl;
-            background: #000;
+            background: $colorBK1;
             transform: translateX(-15px) rotateY(95deg);
         }
 
         &::after {
             content: 'B';
-            color: #000;
-            border-color: #000;
-            background: #fff;
+            color: $colorBK1;
+            border-color: $colorBK1;
+            background: $colorW1;
             transform: translateZ(15px);
         }
-
     }
-
-
-    // #btnSwitch::before {}
-
-    // #btnSwitch::after {}
-
-    // #btnSwitch.active::after {
-    //     background: transparent;
-    // }
 }
 
 /*main*/
@@ -173,6 +177,8 @@ h1 {
 /*intro*/
 .intro .tits1 {
     margin: 0 0 1.5rem;
+    margin-top: 7.44444445rem;
+    margin-bottom: 1.5rem;
 }
 
 /*profile*/
@@ -230,51 +236,50 @@ h1 {
 }
 
 /*academic*/
-.academic {
-    margin-top: 3.5rem;
+// .academic {
+//   margin-top: 3.5rem;
 
-    dl {
+//   dl {
+//     dt,
+//     dd {
+//       line-height: 1.5rem;
+//     }
 
-        dt,
-        dd {
-            line-height: 1.5rem;
-        }
+//     dt {
+//       margin-top: 1.5rem;
+//       font-family: "GothicA1-Bold";
+//       font-weight: 700;
+//       font-size: 1rem;
+//     }
 
-        dt {
-            margin-top: 1.5rem;
-            font-family: "GothicA1-Bold";
-            font-weight: 700;
-            font-size: 1rem;
-        }
-
-        dd {
-            margin-left: 1rem;
-            font-size: 0.84rem;
-        }
-    }
-}
+//     dd {
+//       margin-left: 1rem;
+//       font-size: 0.84rem;
+//     }
+//   }
+// }
 
 /*education*/
-.education {
-    margin-top: 3.5rem;
+// .education {
+//   margin-top: 3.5rem;
 
-    dt,
-    dd {
-        line-height: 1.5rem;
-    }
+//   dt,
+//   dd {
+//     line-height: 1.5rem;
+//   }
 
-    dt {
-        margin-top: 1.5rem;
-        font-family: "GothicA1-Bold";
-        font-weight: 700;
-        font-size: 1rem;
-    }
+//   dt {
+//     margin-top: 1.5rem;
+//     font-family: "GothicA1-Bold";
+//     font-weight: 700;
+//     font-size: 1rem;
+//   }
 
-    dd {
-        margin-left: 1rem;
-        font-size: 0.84rem;
-    }
-}
+//   dd {
+//     margin-left: 1rem;
+//     font-size: 0.84rem;
+//   }
+// }
 
 /*skill*/
 .skill {
@@ -409,7 +414,7 @@ footer {
         font-size: 0.9rem;
     }
 
-    h1 br {
-        display: block;
-    }
+    // h1 br {
+    //     display: block;
+    // }
 }
