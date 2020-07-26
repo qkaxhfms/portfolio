@@ -220,11 +220,22 @@ em {
   font-weight: 700;
   src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype"); }
 /*change*/
-.change #btnSwitch {
-  transform: rotateY(90deg);
-  opacity: 1; }
-.change .skilled article > dl > dd {
-  color: #888; }
+.change {
+  /*logo*/ }
+  .change #btnSwitch {
+    transform: rotateY(90deg);
+    opacity: 1; }
+  .change #logo svg {
+    fill: #014df9;
+    transition: 0.2s; }
+  .change #logo:hover svg {
+    fill: #fff; }
+  .change nav ul li a {
+    color: #fff; }
+    .change nav ul li a span svg {
+      fill: #fff; }
+  .change .skilled article > dl > dd {
+    color: #888; }
 
 /*header*/
 header {
@@ -244,11 +255,9 @@ header {
     float: left;
     margin-right: 40px; }
     header #logo svg {
-      fill: #014df9;
       fill: #000;
       transition: 0.2s; }
     header #logo:hover svg {
-      fill: #000;
       fill: #014df9; }
   header nav {
     float: left; }
@@ -302,7 +311,7 @@ header {
     background: transparent;
     font-family: "RedHatDisplay-Medium";
     font-weight: 500;
-    font-size: 0.5rem;
+    font-size: 1rem;
     line-height: 1.68rem; }
     header #btnSwitch::before, header #btnSwitch::after {
       left: 0;

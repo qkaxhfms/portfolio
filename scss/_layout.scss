@@ -7,6 +7,37 @@
         opacity: 1;
     }
 
+    /*logo*/
+    #logo {
+
+        svg {
+            fill: $colorBl;
+            transition: 0.2s;
+        }
+
+        &:hover svg {
+            fill: $colorW1;
+        }
+    }
+
+    nav {
+        ul {
+            li {
+                a {
+                    color: $colorW1;
+
+                    span {
+
+                        svg {
+                            fill: $colorW1;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+
     .skilled article>dl>dd {
         color: $colorG2;
     }
@@ -33,13 +64,11 @@ header {
         margin-right: 40px;
 
         svg {
-            fill: $colorBl;
             fill: $colorBK1;
             transition: 0.2s;
         }
 
         &:hover svg {
-            fill: $colorBK1;
             fill: $colorBl;
         }
     }
@@ -109,7 +138,6 @@ header {
         perspective: 150px;
         width: 30px;
         height: 30px;
-        // border: 1px solid red;
         right: 20px;
     }
 
@@ -126,7 +154,7 @@ header {
         background: transparent;
         font-family: "RedHatDisplay-Medium";
         font-weight: 500;
-        font-size: 0.5rem;
+        font-size: 1rem;
         line-height: 1.68rem;
 
         &::before,
