@@ -3,4 +3,5 @@ window.onload = () => {
     function logoClick(){
         document.querySelector("body").classList.toggle("change");
     }
+    
 }

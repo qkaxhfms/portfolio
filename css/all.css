@@ -322,13 +322,13 @@ header {
       border-width: 2px;
       border-style: solid; }
     header #btnSwitch::before {
-      content: 'W';
+      content: "W";
       color: #014df9;
       border-color: #014df9;
       background: #000;
       transform: translateX(-15px) rotateY(95deg); }
     header #btnSwitch::after {
-      content: 'B';
+      content: "B";
       color: #000;
       border-color: #000;
       background: #fff;
