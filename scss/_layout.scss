@@ -35,7 +35,7 @@
     }
   }
 
-  .skilled article>dl>dd {
+  .skilled article > dl > dd {
     color: $colorG2;
   }
 }
@@ -95,7 +95,6 @@ header {
           &:hover {
             color: $colorBl;
           }
-
         }
 
         &.resume span,
@@ -133,11 +132,11 @@ header {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: transparent;
     font-family: "RedHatDisplay-Medium";
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.68rem;
+    background: transparent;
 
     &::before,
     &::after {
@@ -198,7 +197,8 @@ h1 {
   table {
     text-align: left;
 
-    tr {}
+    tr {
+    }
 
     th,
     td {
@@ -221,7 +221,6 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
-
     dt,
     dd {
       line-height: 1.5rem;
@@ -243,7 +242,6 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
-
     dt,
     dd {
       line-height: 1.5rem;
@@ -281,7 +279,6 @@ h1 {
   }
 
   article {
-
     #btnMore {
       padding-left: 0.25rem;
       display: inline-block;
@@ -297,7 +294,6 @@ h1 {
     }
 
     dl {
-
       margin-left: 0.8rem;
 
       dt,
@@ -350,13 +346,63 @@ h1 {
   margin-top: 3.5rem;
 }
 
+#btnTop {
+  opacity: 0;
+  position: fixed;
+  bottom: 140px;
+  right: -100px;
+  transition: 0.4s;
+
+  &.on {
+    right: 20px;
+    opacity: 1;
+  }
+
+  button {
+    border-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    transition: ease-in 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #fff;
+    font-family: "RedHatDisplay-Medium";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.68rem;
+    border: 1px solid $colorBl;
+
+    &:hover {
+      background: $colorBl;
+      &::before {
+        border-color: #fff;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      left: 50%;
+      top: 0.9rem;
+      transform: translateX(-50%) rotate(45deg);
+      border-left: 1px solid $colorBl;
+      border-top: 1px solid $colorBl;
+    }
+  }
+}
+
 /*footer*/
 footer {
   margin-top: 3.5rem;
   background: $colorBl;
   color: $colorW1;
 
-  >div {
+  > div {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -366,8 +412,8 @@ footer {
 
     a {
       display: inline-block;
-      margin-left: 2rem;
-      font-size: 2rem;
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
       color: $colorW1;
       vertical-align: middle;
     }
@@ -387,7 +433,7 @@ footer {
   }
 
   footer {
-    >div {
+    > div {
       padding: 50px 20px;
       width: auto;
     }

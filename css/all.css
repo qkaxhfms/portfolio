@@ -300,11 +300,11 @@ header {
     display: inline-block;
     width: 100%;
     height: 100%;
-    background: transparent;
     font-family: "RedHatDisplay-Medium";
     font-weight: 500;
     font-size: 1rem;
-    line-height: 1.68rem; }
+    line-height: 1.68rem;
+    background: transparent; }
     header #btnSwitch::before, header #btnSwitch::after {
       left: 0;
       top: 0;
@@ -440,6 +440,46 @@ h1 {
 .write {
   margin-top: 3.5rem; }
 
+#btnTop {
+  opacity: 0;
+  position: fixed;
+  bottom: 140px;
+  right: -100px;
+  transition: 0.4s; }
+  #btnTop.on {
+    right: 20px;
+    opacity: 1; }
+  #btnTop button {
+    border-color: transparent;
+    outline: none;
+    box-sizing: border-box;
+    transition: ease-in 0.2s;
+    transform-style: preserve-3d;
+    position: relative;
+    display: inline-block;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: #fff;
+    font-family: "RedHatDisplay-Medium";
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.68rem;
+    border: 1px solid #014df9; }
+    #btnTop button:hover {
+      background: #014df9; }
+      #btnTop button:hover::before {
+        border-color: #fff; }
+    #btnTop button::before {
+      position: absolute;
+      content: "";
+      width: 0.6rem;
+      height: 0.6rem;
+      left: 50%;
+      top: 0.9rem;
+      transform: translateX(-50%) rotate(45deg);
+      border-left: 1px solid #014df9;
+      border-top: 1px solid #014df9; }
+
 /*footer*/
 footer {
   margin-top: 3.5rem;
@@ -454,8 +494,8 @@ footer {
     margin: 0 auto; }
     footer > div a {
       display: inline-block;
-      margin-left: 2rem;
-      font-size: 2rem;
+      margin-left: 0.5rem;
+      font-size: 1.2rem;
       color: #fff;
       vertical-align: middle; }
 
