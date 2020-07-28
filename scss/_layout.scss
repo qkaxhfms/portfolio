@@ -79,7 +79,6 @@ header {
         display: block;
 
         a {
-          padding-left: 1.54rem;
           position: relative;
           display: block;
           color: $colorBK1;
@@ -95,22 +94,8 @@ header {
           &.on,
           &:hover {
             color: $colorBl;
-
-            span {
-              svg {
-                fill: $colorBl;
-              }
-            }
           }
 
-          span {
-            position: absolute;
-            left: 3px;
-
-            svg {
-              fill: $colorBK1;
-            }
-          }
         }
 
         &.resume span,
@@ -221,11 +206,7 @@ h1 {
       padding-bottom: 1.5rem;
     }
 
-    th {
-      font-family: "GothicA1-Bold";
-      font-weight: 700;
-    }
-
+    th,
     td,
     a {
       font-family: "GothicA1-Medium";
@@ -300,6 +281,17 @@ h1 {
   }
 
   article {
+
+    #btnMore {
+      padding-left: 0.25rem;
+      display: inline-block;
+      background: transparent;
+      border: 0;
+      font-family: "GothicA1-Bold";
+      font-weight: 700;
+      color: $colorBl;
+    }
+
     p {
       margin: 1.5rem 0 0.75rem;
     }
@@ -327,20 +319,29 @@ h1 {
       }
     }
 
+    .build {
+      display: inline-block;
+      padding: 0 0.22rem;
+      color: $colorBl;
+
+      &.red {
+        color: $colorRl;
+      }
+    }
+
     .kosa {
-      position: relative;
       display: inline-block;
       padding: 0 0.22rem;
       background: #eee;
     }
 
-    // .listCon {
-    //   display: none;
+    .listSlide {
+      display: none;
 
-    //   &.on {
-    //     display: block;
-    //   }
-    // }
+      &.on {
+        display: block;
+      }
+    }
   }
 }
 

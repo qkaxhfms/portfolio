@@ -264,7 +264,6 @@ header {
     header nav ul li {
       display: block; }
       header nav ul li a {
-        padding-left: 1.54rem;
         position: relative;
         display: block;
         color: #000;
@@ -278,13 +277,6 @@ header {
         letter-spacing: -0.0175rem; }
         header nav ul li a.on, header nav ul li a:hover {
           color: #014df9; }
-          header nav ul li a.on span svg, header nav ul li a:hover span svg {
-            fill: #014df9; }
-        header nav ul li a span {
-          position: absolute;
-          left: 3px; }
-          header nav ul li a span svg {
-            fill: #000; }
       header nav ul li.resume span, header nav ul li.portfolio span {
         width: 12px; }
       header nav ul li:first-child a {
@@ -361,9 +353,7 @@ h1 {
     .profile table td {
       font-size: 1rem;
       padding-bottom: 1.5rem; }
-    .profile table th {
-      font-family: "GothicA1-Bold";
-      font-weight: 700; }
+    .profile table th,
     .profile table td,
     .profile table a {
       font-family: "GothicA1-Medium";
@@ -407,6 +397,14 @@ h1 {
     margin: 0 0 1.5rem; }
   .skilled .txts1 {
     margin-top: 3.5rem; }
+  .skilled article #btnMore {
+    padding-left: 0.25rem;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
+    color: #014df9; }
   .skilled article p {
     margin: 1.5rem 0 0.75rem; }
   .skilled article dl {
@@ -423,11 +421,20 @@ h1 {
       color: #312f30;
       font-size: 0.84rem;
       margin-bottom: 0.55rem; }
+  .skilled article .build {
+    display: inline-block;
+    padding: 0 0.22rem;
+    color: #014df9; }
+    .skilled article .build.red {
+      color: #f90101; }
   .skilled article .kosa {
-    position: relative;
     display: inline-block;
     padding: 0 0.22rem;
     background: #eee; }
+  .skilled article .listSlide {
+    display: none; }
+    .skilled article .listSlide.on {
+      display: block; }
 
 /*write*/
 .write {

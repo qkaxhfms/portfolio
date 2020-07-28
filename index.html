@@ -8,7 +8,7 @@
 <title>Resume_2020</title>
 <link rel="icon" href="img/logo_minsang.png">
 <link rel="stylesheet" href="css/all.css">
-<script src="https://kit.fontawesome.com/17cac2d3ef.js" crossorigin="anonymous"></script>
+<script src="js/jquery-1.12.3.min.js"></script>
 <script src="js/common.js"></script>
 
 </head>
@@ -25,25 +25,10 @@
         <nav>
             <ul>
                 <li class="resume">
-                    <a href="index.html" class="on" target="_blank">
-                        <span>
-                            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="file" class="svg-inline--fa fa-file fa-w-12" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24- 24V160H248c-13.2 0- 24-10.8- 24- 24zm160-14.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z"></path></svg>
-                        </span>
-                        Resume
-                    </a>
+                    <a href="index.html" class="on" target="_blank">Resume</a>
                 </li>
                 <li class="portfolio">
-                    <a href="http://testminsang.iwinv.net/" target="_blank">
-                        <span>
-                            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                            viewBox="0 0 224 227" style="enable-background:new 0 0 224 227;" xml:space="preserve">
-                            <polygon points="0,0 0,1 0,38 0,189 0,227 38,227 150,227 150,189 38,189 38,38 186,38 186,149.5 224,149.5 224,38 224,1.5 224,0 
-                                "/>
-                            <rect x="186" y="189" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -3 413)" width="38" height="38"/>
-                        </svg>
-                        </span>
-                        Portfolio
-                    </a>
+                    <a href="http://testminsang.iwinv.net/" target="_blank">Portfolio</a>
                 </li>
             </ul>
         </nav>
@@ -63,7 +48,6 @@
         <section class="career">
             <h2 class="txts1 fcB1">경력사항</h2>
             <dl>
-
                 <dt class="period">2019.09 - 현재</dt>
                 <dd>
                     <p class="company">FUZ</p>
@@ -92,33 +76,34 @@
             <h3 class="txts1 fcB1">참여 프로젝트</h3>
             <p class="description">참여했던 프로젝트 이력입니다. 다양한 형태의 웹사이트와 모바일 웹, 반응형 웹 그리고 웹 접근성 프로젝트까지 참여한 경험을 가지고 있습니다. </p>
             <article>
-                <p>2019 - 2020</p>
+                <p>2019 - 2020
+                    <button type="button" id="btnMore">더보기</button>
+                </p>
                 <dl>
-                    <dt>국카몰(KB카드 직영쇼핑몰) 신규구축</dt>
+                    <dt>국카몰(KB카드 직영쇼핑몰) <span class="build">신규구축</span></dt>
                     <dd>2020.04 - 2020.07 <span class="kosa">KOSA</span></dd>
 
-                    <dt>신원몰 이커머스 통합 플랫폼 신규구축</dt>
+                    <dt>신원몰 이커머스 통합 플랫폼 <span class="build">신규구축</span></dt>
                     <dd>2020.03 - 2020.04 <span class="kosa">KOSA</span></dd>
 
-                    <dt>OK저축은행 모바일뱅킹 신규구축</dt>
+                    <dt>OK저축은행 모바일뱅킹 <span class="build">신규구축</span></dt>
                     <dd>2019.11 - 2020.03 <span class="kosa">KOSA</span></dd>
 
                     <div class="listSlide">
-                        <button type="button" id="btnMore">...more</button>
                         <div class="listCon">
-                            <dt>광주은행 모바일뱅킹 고도화작업</dt>
+                            <dt>광주은행 모바일뱅킹 <span class="build red">고도화</span></dt>
                             <dd>2019.10 - 2019.10 <span class="kosa">KOSA</span></dd>
 
-                            <dt>코드넘버4 웹사이트 신규구축</dt>
+                            <dt>코드넘버4 웹사이트 <span class="build">신규구축</span></dt>
                             <dd>2019.06 - 2019.08 <span class="kosa">KOSA</span></dd>
 
-                            <dt>드림치과의원 웹사이트 신규구축</dt>
+                            <dt>드림치과의원 웹사이트 <span class="build">신규구축</span></dt>
                             <dd>2019.04 - 2019.08 <span class="kosa">KOSA</span></dd>
 
-                            <dt>붙임머리아인 웹사이트 신규구축</dt>
+                            <dt>붙임머리아인 웹사이트 <span class="build">신규구축</span></dt>
                             <dd>2019.03 - 2019.05 <span class="kosa">KOSA</span></dd>
 
-                            <dt>더바름치과 웹사이트 신규구축</dt>
+                            <dt>더바름치과 웹사이트 <span class="build">신규구축</span></dt>
                             <dd>2018.12 - 2019.03 <span class="kosa">KOSA</span></dd>
                         </div>
                     </div>
@@ -126,13 +111,13 @@
 
                 <p>2018 - 2019</p>
                 <dl>
-                    <dt>코드넘버4 랭킹관리조회프로그램 신규구축</dt>
+                    <dt>코드넘버4 랭킹관리조회프로그램 <span class="build">신규구축</span></dt>
                     <dd>2018.10 - 2018.12 <span class="kosa">KOSA</span></dd>
 
-                    <dt>미유펫 동물병원 웹사이트 신규구축</dt>
+                    <dt>미유펫 동물병원 웹사이트 <span class="build">신규구축</span></dt>
                     <dd>2018.09 - 2018.12 <span class="kosa">KOSA</span></dd>
 
-                    <dt>코드넘버4 OX퀴즈 프로그램 신규구축</dt>
+                    <dt>코드넘버4 OX퀴즈 프로그램 <span class="build">신규구축</span></dt>
                     <dd>2018.09 - 2018.10 <span class="kosa">KOSA</span></dd>
 
                 </dl>
