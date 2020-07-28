@@ -31,13 +31,17 @@ body {
         background: #000;
         color: $colorW1;
 
-        .period {
+        .company {
             color: $colorG1;
         }
 
         /*work*/
         .work {
-            color: $colorG2;
+            ul {
+                li {
+                    color: $colorG2;
+                }
+            }
         }
 
         /*profile*/
@@ -85,17 +89,32 @@ body {
 .description {
     padding-right: 200px;
     line-height: 1.5rem;
-    margin: 0 0 1.5rem;
-
-
+    margin: 0 0 0.15rem;
 }
 
-.period {
-    color: #888;
+.company {
+    color: #222;
+    font-family: "GothicA1-Medium";
+    font-weight: 400;
+    font-size: 0.9rem;
 }
 
 .work {
-    color: #312f30;
+    ul {
+        li {
+            position: relative;
+            padding-left: 0.8rem;
+            color: #312f30;
+
+            &::before {
+                position: absolute;
+                display: block;
+                left: 0;
+                top: 0;
+                content: '-';
+            }
+        }
+    }
 }
 
 /*scrollbar*/

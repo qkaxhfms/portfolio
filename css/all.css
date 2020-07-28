@@ -377,16 +377,11 @@ h1 {
   .career dl dd {
     line-height: 1.5rem; }
   .career dl dt {
-    margin-top: 1.5rem;
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
-    font-size: 1rem; }
+    margin: 1.5rem 0 0.75rem; }
   .career dl dd {
-    margin-left: 1rem;
+    margin-left: 0.8rem;
     font-size: 0.84rem; }
 
-/*academic*/
-/*education*/
 /*skill*/
 .skill {
   margin-top: 3.5rem; }
@@ -412,23 +407,27 @@ h1 {
     margin: 0 0 1.5rem; }
   .skilled .txts1 {
     margin-top: 3.5rem; }
-  .skilled article > dl.description-detail dl dd {
-    color: #888; }
-  .skilled article > dl.description-detail dl .period {
-    font-size: 0.72rem;
-    line-height: 1.25rem; }
-  .skilled article > dl.description-detail dl .link a {
-    font-size: 0.85rem; }
-  .skilled article > dl > dt {
-    margin: 1.5rem 0 0.2rem;
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
-    font-size: 1rem; }
-  .skilled article > dl > dd {
-    margin-left: 1rem;
-    color: #312f30;
-    font-size: 0.84rem;
-    line-height: 1.5rem; }
+  .skilled article p {
+    margin: 1.5rem 0 0.75rem; }
+  .skilled article dl {
+    margin-left: 0.8rem; }
+    .skilled article dl dt,
+    .skilled article dl dd {
+      line-height: 1.5rem; }
+    .skilled article dl dt {
+      color: #222;
+      font-family: "GothicA1-Medium";
+      font-weight: 400;
+      font-size: 0.9rem; }
+    .skilled article dl dd {
+      color: #312f30;
+      font-size: 0.84rem;
+      margin-bottom: 0.55rem; }
+  .skilled article .kosa {
+    position: relative;
+    display: inline-block;
+    padding: 0 0.22rem;
+    background: #eee; }
 
 /*write*/
 .write {
@@ -480,9 +479,9 @@ body {
     color: #fff;
     /*work*/
     /*profile*/ }
-    body.change .period {
+    body.change .company {
       color: #ccc; }
-    body.change .work {
+    body.change .work ul li {
       color: #888; }
     body.change .profile tr td,
     body.change .profile tr a {
@@ -513,13 +512,24 @@ body {
 .description {
   padding-right: 200px;
   line-height: 1.5rem;
-  margin: 0 0 1.5rem; }
+  margin: 0 0 0.15rem; }
 
-.period {
-  color: #888; }
+.company {
+  color: #222;
+  font-family: "GothicA1-Medium";
+  font-weight: 400;
+  font-size: 0.9rem; }
 
-.work {
+.work ul li {
+  position: relative;
+  padding-left: 0.8rem;
   color: #312f30; }
+  .work ul li::before {
+    position: absolute;
+    display: block;
+    left: 0;
+    top: 0;
+    content: '-'; }
 
 /*scrollbar*/
 ::-webkit-scrollbar {
