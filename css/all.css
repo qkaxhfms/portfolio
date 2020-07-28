@@ -488,10 +488,21 @@ body {
     /*profile*/ }
     body.change .company {
       color: #ccc; }
+    body.change .description {
+      color: #ccc; }
+    body.change .skill li {
+      color: #ccc; }
+    body.change .skilled article dl dt {
+      color: #ccc; }
     body.change .work ul li {
-      color: #888; }
+      color: #ccc; }
+    body.change .profile tr th,
     body.change .profile tr td,
     body.change .profile tr a {
+      color: #ccc; }
+    body.change .kosa {
+      background: transparent;
+      border: 1px solid #888;
       color: #888; }
 
 /*font-color*/

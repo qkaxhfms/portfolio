@@ -36,11 +36,23 @@ body {
             color: $colorG1;
         }
 
+        .description {
+            color: #ccc;
+        }
+
+        .skill li {
+            color: #ccc;
+        }
+
+        .skilled article dl dt {
+            color: #ccc;
+        }
+
         /*work*/
         .work {
             ul {
                 li {
-                    color: $colorG2;
+                    color: #ccc;
                 }
             }
         }
@@ -49,11 +61,18 @@ body {
         .profile {
             tr {
 
+                th,
                 td,
                 a {
-                    color: $colorG2;
+                    color: #ccc;
                 }
             }
+        }
+
+        .kosa {
+            background: transparent;
+            border: 1px solid #888;
+            color: #888;
         }
     }
 
