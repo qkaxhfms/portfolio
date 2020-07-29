@@ -7,15 +7,19 @@ $Wid1200: 1200px;
 $Wid939: 939px;
 $Wid719: 719px;
 $Wid539: 539px;
+$Wid389: 389px;
 
 // device color
 $colorW1: #fff;
 $colorG1: #ccc;
 $colorG2: #888;
+$colorG3: #eee;
 $colorBl: #014df9;
 $colorRl: #f90101;
 $colorBK1: #000;
 $colorBK2: #312f30;
+$colorBK3: #222;
+$colorTR: transparent;
 
 // seperate
 @import "reset";
@@ -29,50 +33,24 @@ body {
     font-size: 16px;
 
     &.change {
-        background: #000;
+        background: $colorBK1;
         color: $colorW1;
 
-        .company {
+        .company,
+        .description,
+        .skill li,
+        .skilled article dl dt,
+        .work ul li,
+        .profile tr th,
+        .profile tr td,
+        .profile tr a {
             color: $colorG1;
         }
 
-        .description {
-            color: #ccc;
-        }
-
-        .skill li {
-            color: #ccc;
-        }
-
-        .skilled article dl dt {
-            color: #ccc;
-        }
-
-        /*work*/
-        .work {
-            ul {
-                li {
-                    color: #ccc;
-                }
-            }
-        }
-
-        /*profile*/
-        .profile {
-            tr {
-
-                th,
-                td,
-                a {
-                    color: #ccc;
-                }
-            }
-        }
-
         .kosa {
-            background: transparent;
-            border: 1px solid #888;
-            color: #888;
+            background: $colorTR;
+            border: 1px solid $colorG2;
+            color: $colorG2;
         }
     }
 
@@ -113,7 +91,7 @@ body {
 }
 
 .company {
-    color: #222;
+    color: $colorBK3;
     font-family: "GothicA1-Medium";
     font-weight: 400;
     font-size: 0.9rem;
@@ -124,7 +102,7 @@ body {
         li {
             position: relative;
             padding-left: 0.8rem;
-            color: #312f30;
+            color: $colorBK2;
 
             &::before {
                 position: absolute;
@@ -176,8 +154,7 @@ body {
     color: $colorW1;
 }
 
-/*해상도 939*/
-@media screen and (max-width: 939px) {
+@media screen and (max-width: $Wid939) {
 
     .description {
         padding-right: 0;
@@ -186,9 +163,22 @@ body {
 
 }
 
-/*해상도 719*/
-@media screen and (max-width: 719px) {
+@media screen and (max-width: $Wid719) {
+    body {
+        font-size: 0.9rem;
+    }
+
     .description br {
         display: none;
+    }
+}
+
+@media screen and (max-width: $Wid389) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    .tits1 {
+        font-size: 1.8rem;
     }
 }

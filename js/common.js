@@ -16,8 +16,7 @@ window.onload = () => {
     $(window).on('scroll',function(){
         var scroll = $(this).scrollTop();
 
-        if(scroll > 1000){
-            console.log("dsdfsd");
+        if(scroll > 100){
             $('#btnTop').addClass("on");
         }else{
             $('#btnTop').removeClass("on");
@@ -26,6 +25,14 @@ window.onload = () => {
         $('#btnTop').on('click',function(){
             $('html,body').stop().animate({ scrollTop: 0},220);
         });
+
+        if(scroll > 1){
+            $('header').addClass("scroll");
+        }else{
+            $('header').removeClass("scroll");
+        }
+
+
     });
 
 }

@@ -174,8 +174,7 @@ em {
   font-style: normal; }
 
 * {
-  scrollbar-width: thin;
-  scrollbar-color: blue orange; }
+  scrollbar-width: thin; }
 
 /* Gothic A1 */
 @font-face {
@@ -222,10 +221,18 @@ em {
 /*change*/
 .change {
   /*logo*/ }
+  .change header.scroll {
+    background: #000; }
   .change #btnSwitch {
     transform: rotateY(90deg);
     opacity: 1;
     color: #014df9; }
+  .change #btnTop button {
+    background: #000; }
+    .change #btnTop button:hover {
+      border-color: #000; }
+      .change #btnTop button:hover::before {
+        border-color: #000; }
   .change #logo svg {
     fill: #014df9;
     transition: 0.2s; }
@@ -240,13 +247,22 @@ em {
 
 /*header*/
 header {
-  position: relative;
-  width: 940px;
-  margin: 3rem auto;
-  display: flex;
-  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 3rem 0;
+  width: 100%;
   /*logo*/
   /*nav*/ }
+  header .inner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; }
+  header.scroll {
+    background: #fff; }
   header::after {
     display: block;
     content: "";
@@ -263,12 +279,13 @@ header {
   header nav {
     float: left; }
     header nav ul li {
-      display: block; }
+      float: left;
+      display: block;
+      padding-right: 1.5rem; }
       header nav ul li a {
         position: relative;
         display: block;
         color: #000;
-        margin-bottom: 0.5em;
         text-decoration: none;
         transition: color 0.2s;
         font-family: "RedHatDisplay-Medium";
@@ -277,11 +294,10 @@ header {
         letter-spacing: -0.0175rem; }
         header nav ul li a.on, header nav ul li a:hover {
           color: #014df9; }
-      header nav ul li.resume span, header nav ul li.portfolio span {
-        width: 12px; }
-      header nav ul li:last-child a {
-        margin-top: 2px;
-        margin-bottom: 0; }
+    header nav ul::after {
+      display: block;
+      content: '';
+      clear: both; }
   header .btnWrap {
     position: absolute;
     perspective: 150px;
@@ -327,7 +343,7 @@ header {
 /*main*/
 main {
   width: 940px;
-  margin: 0 auto;
+  margin: 13.5rem auto 0;
   padding-bottom: 5rem; }
 
 h1 {
@@ -338,9 +354,7 @@ h1 {
 
 /*intro*/
 .intro .tits1 {
-  margin: 0 0 1.5rem;
-  margin-top: 7.44444445rem;
-  margin-bottom: 1.5rem; }
+  margin: 0 0 1.5rem; }
 
 /*profile*/
 .profile {
@@ -419,12 +433,10 @@ h1 {
       color: #312f30;
       font-size: 0.84rem;
       margin-bottom: 0.55rem; }
-  .skilled article .build {
+  .skilled article .build.red {
     display: inline-block;
     padding: 0 0.22rem;
-    color: #014df9; }
-    .skilled article .build.red {
-      color: #f90101; }
+    color: #f90101; }
   .skilled article .kosa {
     display: inline-block;
     padding: 0 0.22rem;
@@ -436,17 +448,22 @@ h1 {
 
 /*write*/
 .write {
-  margin-top: 3.5rem; }
+  margin-top: 3.5rem;
+  margin-bottom: 2.5rem; }
 
 #btnTop {
   opacity: 0;
-  position: fixed;
-  bottom: 140px;
-  right: -100px;
-  transition: 0.4s; }
+  display: block;
+  text-align: right;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 20px;
+  transition: 0.2s;
+  overflow-x: hidden; }
   #btnTop.on {
-    right: 20px;
     opacity: 1; }
+    #btnTop.on button {
+      transform: translateX(0); }
   #btnTop button {
     border-color: transparent;
     outline: none;
@@ -462,9 +479,11 @@ h1 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.68rem;
-    border: 2px solid #014df9; }
+    border: 2px solid #014df9;
+    transform: translateX(40px); }
     #btnTop button:hover {
-      background: #014df9; }
+      background: #014df9;
+      border-color: #fff; }
       #btnTop button:hover::before {
         border-color: #fff; }
     #btnTop button::before {
@@ -480,28 +499,30 @@ h1 {
 
 /*footer*/
 footer {
-  margin-top: 3.5rem;
+  margin-top: 1rem;
+  position: relative;
   background: #014df9;
   color: #fff; }
-  footer > div {
+  footer .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 50px 0;
     width: 940px;
     margin: 0 auto; }
-    footer > div a {
+    footer .inner a {
       display: inline-block;
-      margin-left: 0.5rem;
-      font-size: 1.2rem;
+      margin-left: 1.1rem;
+      font-size: 2rem;
       color: #fff;
       vertical-align: middle; }
 
-/*해상도 939*/
 @media screen and (max-width: 939px) {
   header {
-    width: auto;
-    padding: 0 20px; }
+    padding: 1rem 0; }
+    header .inner {
+      width: 100%;
+      padding: 0 20px; }
     header #logo {
       width: 32px; }
 
@@ -509,13 +530,12 @@ footer {
     width: auto;
     padding: 0 20px; }
 
-  footer > div {
+  footer .inner {
     padding: 50px 20px;
-    width: auto; } }
-/*해상도 719*/
-@media screen and (max-width: 719px) {
-  body {
-    font-size: 0.9rem; } }
+    width: auto; }
+    footer .inner a {
+      margin: 0 0.6rem;
+      font-size: 1.2rem; } }
 body {
   transition: background 0.3s;
   font-family: "GothicA1-Regular", "RedHatDisplay-Regular", sans-serif;
@@ -523,19 +543,12 @@ body {
   font-size: 16px; }
   body.change {
     background: #000;
-    color: #fff;
-    /*work*/
-    /*profile*/ }
-    body.change .company {
-      color: #ccc; }
-    body.change .description {
-      color: #ccc; }
-    body.change .skill li {
-      color: #ccc; }
-    body.change .skilled article dl dt {
-      color: #ccc; }
-    body.change .work ul li {
-      color: #ccc; }
+    color: #fff; }
+    body.change .company,
+    body.change .description,
+    body.change .skill li,
+    body.change .skilled article dl dt,
+    body.change .work ul li,
     body.change .profile tr th,
     body.change .profile tr td,
     body.change .profile tr a {
@@ -620,14 +633,21 @@ body {
   background: #014df9;
   color: #fff; }
 
-/*해상도 939*/
 @media screen and (max-width: 939px) {
   .description {
     padding-right: 0;
     font-size: 0.9rem; } }
-/*해상도 719*/
 @media screen and (max-width: 719px) {
+  body {
+    font-size: 0.9rem; }
+
   .description br {
     display: none; } }
+@media screen and (max-width: 389px) {
+  body {
+    font-size: 0.75rem; }
+
+  .tits1 {
+    font-size: 1.8rem; } }
 
 /*# sourceMappingURL=all.css.map */

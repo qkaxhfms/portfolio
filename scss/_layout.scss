@@ -2,10 +2,26 @@
 
 /*change*/
 .change {
+  header.scroll {
+    background: $colorBK1;
+  }
+
   #btnSwitch {
     transform: rotateY(90deg);
     opacity: 1;
     color: $colorBl;
+  }
+
+  #btnTop button {
+    background: $colorBK1;
+
+    &:hover {
+      border-color: $colorBK1;
+
+      &::before {
+        border-color: $colorBK1;
+      }
+    }
   }
 
   /*logo*/
@@ -36,18 +52,31 @@
     }
   }
 
-  .skilled article > dl > dd {
+  .skilled article>dl>dd {
     color: $colorG2;
   }
 }
 
 /*header*/
 header {
-  position: relative;
-  width: 940px;
-  margin: 3rem auto;
-  display: flex;
-  align-items: center;
+  z-index: 1000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 3rem 0;
+  width: 100%;
+
+  .inner {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+  }
+
+  &.scroll {
+    background: $colorW1;
+  }
 
   &::after {
     display: block;
@@ -77,15 +106,15 @@ header {
 
     ul {
       li {
+        float: left;
         display: block;
+        padding-right: 1.5rem;
 
         a {
           position: relative;
           display: block;
           color: $colorBK1;
-          margin-bottom: 0.5em;
           text-decoration: none;
-          // height: 1.111rem;
           transition: color 0.2s;
           font-family: "RedHatDisplay-Medium";
           font-weight: 500;
@@ -97,20 +126,12 @@ header {
             color: $colorBl;
           }
         }
+      }
 
-        &.resume span,
-        &.portfolio span {
-          width: 12px;
-        }
-
-        &:first-child a {
-          // margin-top: 2px;
-        }
-
-        &:last-child a {
-          margin-top: 2px;
-          margin-bottom: 0;
-        }
+      &::after {
+        display: block;
+        content: '';
+        clear: both;
       }
     }
   }
@@ -171,7 +192,7 @@ header {
 /*main*/
 main {
   width: 940px;
-  margin: 0 auto;
+  margin: 13.5rem auto 0;
   padding-bottom: 5rem;
 }
 
@@ -187,8 +208,6 @@ h1 {
 /*intro*/
 .intro .tits1 {
   margin: 0 0 1.5rem;
-  margin-top: 7.44444445rem;
-  margin-bottom: 1.5rem;
 }
 
 /*profile*/
@@ -198,8 +217,7 @@ h1 {
   table {
     text-align: left;
 
-    tr {
-    }
+    tr {}
 
     th,
     td {
@@ -222,6 +240,7 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
+
     dt,
     dd {
       line-height: 1.5rem;
@@ -243,6 +262,7 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
+
     dt,
     dd {
       line-height: 1.5rem;
@@ -303,33 +323,29 @@ h1 {
       }
 
       dt {
-        color: #222;
+        color: $colorBK3;
         font-family: "GothicA1-Medium";
         font-weight: 400;
         font-size: 0.9rem;
       }
 
       dd {
-        color: #312f30;
+        color: $colorBK2;
         font-size: 0.84rem;
         margin-bottom: 0.55rem;
       }
     }
 
-    .build {
+    .build.red {
       display: inline-block;
       padding: 0 0.22rem;
-      color: $colorBl;
-
-      &.red {
-        color: $colorRl;
-      }
+      color: $colorRl;
     }
 
     .kosa {
       display: inline-block;
       padding: 0 0.22rem;
-      background: #eee;
+      background: $colorG3;
     }
 
     .listSlide {
@@ -345,18 +361,25 @@ h1 {
 /*write*/
 .write {
   margin-top: 3.5rem;
+  margin-bottom: 2.5rem;
 }
 
 #btnTop {
   opacity: 0;
-  position: fixed;
-  bottom: 140px;
-  right: -100px;
-  transition: 0.4s;
+  display: block;
+  text-align: right;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 20px;
+  transition: 0.2s;
+  overflow-x: hidden;
 
   &.on {
-    right: 20px;
     opacity: 1;
+
+    button {
+      transform: translateX(0);
+    }
   }
 
   button {
@@ -369,17 +392,20 @@ h1 {
     display: inline-block;
     width: 2.4rem;
     height: 2.4rem;
-    background: #fff;
+    background: $colorW1;
     font-family: "RedHatDisplay-Medium";
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.68rem;
     border: 2px solid $colorBl;
+    transform: translateX(40px);
 
     &:hover {
       background: $colorBl;
+      border-color: $colorW1;
+
       &::before {
-        border-color: #fff;
+        border-color: $colorW1;
       }
     }
 
@@ -399,11 +425,12 @@ h1 {
 
 /*footer*/
 footer {
-  margin-top: 3.5rem;
+  margin-top: 1rem;
+  position: relative;
   background: $colorBl;
   color: $colorW1;
 
-  > div {
+  .inner {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -413,19 +440,24 @@ footer {
 
     a {
       display: inline-block;
-      margin-left: 0.5rem;
-      font-size: 1.2rem;
+      margin-left: 1.1rem;
+      font-size: 2rem;
       color: $colorW1;
       vertical-align: middle;
     }
   }
 }
 
-/*해상도 939*/
-@media screen and (max-width: 939px) {
+
+@media screen and (max-width: $Wid939) {
   header {
-    width: auto;
-    padding: 0 20px;
+    padding: 1rem 0;
+
+    .inner {
+      width: 100%;
+      padding: 0 20px;
+    }
+
     #logo {
       width: 32px;
     }
@@ -437,16 +469,14 @@ footer {
   }
 
   footer {
-    > div {
+    .inner {
       padding: 50px 20px;
       width: auto;
-    }
-  }
-}
 
-/*해상도 719*/
-@media screen and (max-width: 719px) {
-  body {
-    font-size: 0.9rem;
+      a {
+        margin: 0 0.6rem;
+        font-size: 1.2rem;
+      }
+    }
   }
 }
