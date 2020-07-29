@@ -5,6 +5,7 @@
   #btnSwitch {
     transform: rotateY(90deg);
     opacity: 1;
+    color: $colorBl;
   }
 
   /*logo*/
@@ -84,7 +85,7 @@ header {
           color: $colorBK1;
           margin-bottom: 0.5em;
           text-decoration: none;
-          line-height: 1.111;
+          // height: 1.111rem;
           transition: color 0.2s;
           font-family: "RedHatDisplay-Medium";
           font-weight: 500;
@@ -103,7 +104,7 @@ header {
         }
 
         &:first-child a {
-          margin-top: 2px;
+          // margin-top: 2px;
         }
 
         &:last-child a {
@@ -120,23 +121,27 @@ header {
     width: 30px;
     height: 30px;
     right: 20px;
+    box-sizing: border-box;
   }
 
   #btnSwitch {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     border-color: transparent;
     outline: none;
     box-sizing: border-box;
     transition: ease-in 0.2s;
     transform-style: preserve-3d;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    font-family: "RedHatDisplay-Medium";
-    font-weight: 500;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
     font-size: 1rem;
-    line-height: 1.68rem;
+    line-height: 1.65rem;
+    color: $colorBK1;
     background: transparent;
+    word-wrap: break-word;
 
     &::before,
     &::after {
@@ -150,18 +155,14 @@ header {
     }
 
     &::before {
-      content: "W";
-      color: $colorBl;
+      content: "\f0c9";
       border-color: $colorBl;
-      background: $colorBK1;
       transform: translateX(-15px) rotateY(95deg);
     }
 
     &::after {
-      content: "B";
-      color: $colorBK1;
+      content: "\f0c9";
       border-color: $colorBK1;
-      background: $colorW1;
       transform: translateZ(15px);
     }
   }
@@ -373,7 +374,7 @@ h1 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.68rem;
-    border: 1px solid $colorBl;
+    border: 2px solid $colorBl;
 
     &:hover {
       background: $colorBl;
@@ -390,8 +391,8 @@ h1 {
       left: 50%;
       top: 0.9rem;
       transform: translateX(-50%) rotate(45deg);
-      border-left: 1px solid $colorBl;
-      border-top: 1px solid $colorBl;
+      border-left: 2px solid $colorBl;
+      border-top: 2px solid $colorBl;
     }
   }
 }
@@ -425,6 +426,9 @@ footer {
   header {
     width: auto;
     padding: 0 20px;
+    #logo {
+      width: 32px;
+    }
   }
 
   main {

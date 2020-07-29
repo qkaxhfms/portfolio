@@ -224,7 +224,8 @@ em {
   /*logo*/ }
   .change #btnSwitch {
     transform: rotateY(90deg);
-    opacity: 1; }
+    opacity: 1;
+    color: #014df9; }
   .change #logo svg {
     fill: #014df9;
     transition: 0.2s; }
@@ -269,7 +270,6 @@ header {
         color: #000;
         margin-bottom: 0.5em;
         text-decoration: none;
-        line-height: 1.111;
         transition: color 0.2s;
         font-family: "RedHatDisplay-Medium";
         font-weight: 500;
@@ -279,8 +279,6 @@ header {
           color: #014df9; }
       header nav ul li.resume span, header nav ul li.portfolio span {
         width: 12px; }
-      header nav ul li:first-child a {
-        margin-top: 2px; }
       header nav ul li:last-child a {
         margin-top: 2px;
         margin-bottom: 0; }
@@ -289,22 +287,26 @@ header {
     perspective: 150px;
     width: 30px;
     height: 30px;
-    right: 20px; }
+    right: 20px;
+    box-sizing: border-box; }
   header #btnSwitch {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
     border-color: transparent;
     outline: none;
     box-sizing: border-box;
     transition: ease-in 0.2s;
     transform-style: preserve-3d;
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    font-family: "RedHatDisplay-Medium";
-    font-weight: 500;
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
     font-size: 1rem;
-    line-height: 1.68rem;
-    background: transparent; }
+    line-height: 1.65rem;
+    color: #000;
+    background: transparent;
+    word-wrap: break-word; }
     header #btnSwitch::before, header #btnSwitch::after {
       left: 0;
       top: 0;
@@ -314,16 +316,12 @@ header {
       border-width: 2px;
       border-style: solid; }
     header #btnSwitch::before {
-      content: "W";
-      color: #014df9;
+      content: "\f0c9";
       border-color: #014df9;
-      background: #000;
       transform: translateX(-15px) rotateY(95deg); }
     header #btnSwitch::after {
-      content: "B";
-      color: #000;
+      content: "\f0c9";
       border-color: #000;
-      background: #fff;
       transform: translateZ(15px); }
 
 /*main*/
@@ -464,7 +462,7 @@ h1 {
     font-weight: 500;
     font-size: 1rem;
     line-height: 1.68rem;
-    border: 1px solid #014df9; }
+    border: 2px solid #014df9; }
     #btnTop button:hover {
       background: #014df9; }
       #btnTop button:hover::before {
@@ -477,8 +475,8 @@ h1 {
       left: 50%;
       top: 0.9rem;
       transform: translateX(-50%) rotate(45deg);
-      border-left: 1px solid #014df9;
-      border-top: 1px solid #014df9; }
+      border-left: 2px solid #014df9;
+      border-top: 2px solid #014df9; }
 
 /*footer*/
 footer {
@@ -504,6 +502,8 @@ footer {
   header {
     width: auto;
     padding: 0 20px; }
+    header #logo {
+      width: 32px; }
 
   main {
     width: auto;
