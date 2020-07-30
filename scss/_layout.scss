@@ -2,13 +2,7 @@
 
 /*change*/
 .change {
-  header.scroll {
-
-    // background: $colorBK1;
-    nav {
-      background: Red;
-    }
-  }
+  header.scroll {}
 
   #btnTop button {
     background: $colorBK1;
@@ -47,6 +41,10 @@
     }
   }
 
+  .project article>dl>dt {
+    color: $colorG1;
+  }
+
   .project article>dl>dd {
     color: $colorG2;
   }
@@ -72,7 +70,6 @@ header {
 
   &.scroll {
 
-    // background: $colorW1;
     nav {
       transform: rotate(-90deg);
     }
@@ -93,12 +90,12 @@ header {
     margin-right: 20px;
 
     svg {
-      fill: $colorBK1;
+      fill: $colorBl;
       transition: 0.2s;
     }
 
     &:hover svg {
-      fill: $colorBl;
+      fill: $colorBK1;
     }
   }
 

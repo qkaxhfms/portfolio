@@ -221,8 +221,6 @@ em {
 /*change*/
 .change {
   /*logo*/ }
-  .change header.scroll nav {
-    background: Red; }
   .change #btnTop button {
     background: #000; }
     .change #btnTop button:hover {
@@ -239,6 +237,8 @@ em {
       fill: #fff; }
   .change nav ul li {
     color: #fff; }
+  .change .project article > dl > dt {
+    color: #ccc; }
   .change .project article > dl > dd {
     color: #888; }
 
@@ -272,10 +272,10 @@ header {
     height: 40px;
     margin-right: 20px; }
     header #logo svg {
-      fill: #000;
+      fill: #014df9;
       transition: 0.2s; }
     header #logo:hover svg {
-      fill: #014df9; }
+      fill: #000; }
   header nav {
     transition: 0.2s;
     transform-origin: 85% 10px; }
