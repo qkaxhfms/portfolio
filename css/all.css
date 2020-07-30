@@ -242,7 +242,7 @@ em {
     color: #fff; }
     .change nav ul li a span svg {
       fill: #fff; }
-  .change .skilled article > dl > dd {
+  .change .project article > dl > dd {
     color: #888; }
 
 /*header*/
@@ -402,48 +402,49 @@ h1 {
     list-style: disc;
     font-size: 0.9rem; }
 
-/*skilled*/
-.skilled {
+/*project*/
+.project {
   margin-top: 3.5rem; }
-  .skilled .tits1 {
+  .project .tits1 {
     margin: 0 0 1.5rem; }
-  .skilled .txts1 {
+  .project .txts1 {
     margin-top: 3.5rem; }
-  .skilled article #btnMore {
-    padding-left: 0.25rem;
-    display: inline-block;
-    background: transparent;
-    border: 0;
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
-    color: #014df9; }
-  .skilled article p {
+  .project article p {
     margin: 1.5rem 0 0.75rem; }
-  .skilled article dl {
+  .project article dl {
     margin-left: 0.8rem; }
-    .skilled article dl dt,
-    .skilled article dl dd {
+    .project article dl dt,
+    .project article dl dd {
       line-height: 1.5rem; }
-    .skilled article dl dt {
+    .project article dl dt {
       color: #222;
       font-family: "GothicA1-Medium";
       font-weight: 400;
       font-size: 0.9rem; }
-    .skilled article dl dd {
+    .project article dl dd {
       color: #312f30;
       font-size: 0.84rem;
       margin-bottom: 0.55rem; }
-  .skilled article .build.red {
+  .project article .build.red {
     display: inline-block;
     padding: 0 0.22rem;
     color: #f90101; }
-  .skilled article .kosa {
+  .project article .kosa {
     display: inline-block;
     padding: 0 0.22rem;
-    background: #eee; }
-  .skilled article .listSlide {
+    background: #eee;
+    color: #888; }
+  .project article .file-short,
+  .project article .btnMore {
+    padding-left: 0.25rem;
+    display: inline-block;
+    background: transparent;
+    border: 0;
+    color: #014df9;
+    font-size: 0.75rem; }
+  .project article .listSlide {
     display: none; }
-    .skilled article .listSlide.on {
+    .project article .listSlide.on {
       display: block; }
 
 /*write*/

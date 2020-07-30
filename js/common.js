@@ -7,7 +7,7 @@ window.onload = () => {
         document.querySelector("body").classList.toggle("change");
     }
 
-    $('#btnMore').on('click',function(){
+    $('.btnMore').on('click',function(){
         $('.listSlide').stop().slideToggle(200);
     })
 

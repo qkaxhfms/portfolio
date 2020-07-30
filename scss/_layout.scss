@@ -52,7 +52,7 @@
     }
   }
 
-  .skilled article>dl>dd {
+  .project article>dl>dd {
     color: $colorG2;
   }
 }
@@ -287,8 +287,8 @@ h1 {
   }
 }
 
-/*skilled*/
-.skilled {
+/*project*/
+.project {
   margin-top: 3.5rem;
 
   .tits1 {
@@ -300,15 +300,6 @@ h1 {
   }
 
   article {
-    #btnMore {
-      padding-left: 0.25rem;
-      display: inline-block;
-      background: transparent;
-      border: 0;
-      font-family: "GothicA1-Bold";
-      font-weight: 700;
-      color: $colorBl;
-    }
 
     p {
       margin: 1.5rem 0 0.75rem;
@@ -342,10 +333,22 @@ h1 {
       color: $colorRl;
     }
 
+
     .kosa {
       display: inline-block;
       padding: 0 0.22rem;
       background: $colorG3;
+      color: $colorG2;
+    }
+
+    .file-short,
+    .btnMore {
+      padding-left: 0.25rem;
+      display: inline-block;
+      background: transparent;
+      border: 0;
+      color: $colorBl;
+      font-size: 0.75rem;
     }
 
     .listSlide {
