@@ -223,21 +223,20 @@ em {
   /*logo*/ }
   .change header.scroll {
     background: #000; }
-  .change #btnSwitch {
-    transform: rotateY(90deg);
-    opacity: 1;
-    color: #014df9; }
   .change #btnTop button {
     background: #000; }
     .change #btnTop button:hover {
       border-color: #000; }
       .change #btnTop button:hover::before {
         border-color: #000; }
-  .change #logo svg {
-    fill: #014df9;
-    transition: 0.2s; }
-  .change #logo:hover svg {
-    fill: #fff; }
+  .change #btnSwitch {
+    color: #fff; }
+  .change #logo {
+    opacity: 1; }
+    .change #logo svg {
+      fill: #014df9; }
+    .change #logo:hover svg {
+      fill: #fff; }
   .change nav ul li a {
     color: #fff; }
     .change nav ul li a span svg {
@@ -268,9 +267,11 @@ header {
     content: "";
     clear: both; }
   header #logo {
-    width: 46px;
+    display: block;
     float: left;
-    margin-right: 40px; }
+    width: 40px;
+    height: 40px;
+    margin-right: 20px; }
     header #logo svg {
       fill: #000;
       transition: 0.2s; }
@@ -305,40 +306,6 @@ header {
     height: 30px;
     right: 20px;
     box-sizing: border-box; }
-  header #btnSwitch {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border-color: transparent;
-    outline: none;
-    box-sizing: border-box;
-    transition: ease-in 0.2s;
-    transform-style: preserve-3d;
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1rem;
-    line-height: 1.65rem;
-    color: #000;
-    background: transparent;
-    word-wrap: break-word; }
-    header #btnSwitch::before, header #btnSwitch::after {
-      left: 0;
-      top: 0;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-width: 2px;
-      border-style: solid; }
-    header #btnSwitch::before {
-      content: "\f0c9";
-      border-color: #014df9;
-      transform: translateX(-15px) rotateY(95deg); }
-    header #btnSwitch::after {
-      content: "\f0c9";
-      border-color: #000;
-      transform: translateZ(15px); }
 
 /*main*/
 main {
@@ -525,7 +492,8 @@ footer {
       width: 100%;
       padding: 0 20px; }
     header #logo {
-      width: 32px; }
+      width: 32px;
+      height: 32px; }
 
   main {
     width: auto;

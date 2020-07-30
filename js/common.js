@@ -1,11 +1,18 @@
 window.onload = () => {
 
-    const btnSwitch = document.querySelector("#btnSwitch");
-    btnSwitch.addEventListener("click", logoClick);
+    const btnLogo = document.querySelector("#logo");
+    btnLogo.addEventListener("click", logoClick);
 
     function logoClick(){
         document.querySelector("body").classList.toggle("change");
     }
+
+    // const btnSwitch = document.querySelector("#btnSwitch");
+    // btnSwitch.addEventListener("click", switchClick);
+
+    // function switchClick(){
+    //     document.querySelector("#btnSwitch").classList.toggle("rotate");
+    // }
 
     $('.btnMore').on('click',function(){
         $('.listSlide').stop().slideToggle(200);
