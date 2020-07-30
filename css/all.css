@@ -221,8 +221,8 @@ em {
 /*change*/
 .change {
   /*logo*/ }
-  .change header.scroll {
-    background: #000; }
+  .change header.scroll nav {
+    background: Red; }
   .change #btnTop button {
     background: #000; }
     .change #btnTop button:hover {
@@ -237,10 +237,8 @@ em {
       fill: #014df9; }
     .change #logo:hover svg {
       fill: #fff; }
-  .change nav ul li a {
+  .change nav ul li {
     color: #fff; }
-    .change nav ul li a span svg {
-      fill: #fff; }
   .change .project article > dl > dd {
     color: #888; }
 
@@ -259,9 +257,10 @@ header {
     width: 940px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
     align-items: center; }
-  header.scroll {
-    background: #fff; }
+  header.scroll nav {
+    transform: rotate(-90deg); }
   header::after {
     display: block;
     content: "";
@@ -278,27 +277,16 @@ header {
     header #logo:hover svg {
       fill: #014df9; }
   header nav {
-    float: left; }
+    transition: 0.2s;
+    transform-origin: 85% 10px; }
     header nav ul li {
-      float: left;
-      display: block;
-      padding-right: 1.5rem; }
-      header nav ul li a {
-        position: relative;
-        display: block;
-        color: #000;
-        text-decoration: none;
-        transition: color 0.2s;
-        font-family: "RedHatDisplay-Medium";
-        font-weight: 500;
-        font-size: 1rem;
-        letter-spacing: -0.0175rem; }
-        header nav ul li a.on, header nav ul li a:hover {
-          color: #014df9; }
-    header nav ul::after {
-      display: block;
-      content: '';
-      clear: both; }
+      transition: color 0.2s;
+      font-family: "RedHatDisplay-Medium";
+      font-weight: 500;
+      font-size: 1rem;
+      letter-spacing: -0.0175rem; }
+      header nav ul li.on, header nav ul li:hover {
+        color: #014df9; }
   header .btnWrap {
     position: absolute;
     perspective: 150px;
