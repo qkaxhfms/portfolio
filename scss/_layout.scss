@@ -58,6 +58,7 @@ header {
   top: 0;
   padding: 3rem 0;
   width: 100%;
+  transition: all 0.2s;
 
   .inner {
     position: relative;
@@ -89,6 +90,7 @@ header {
     margin-right: 20px;
     margin-top: 0;
     margin-bottom: 0;
+    transition: all 0.2s;
 
     span {
       display: block;
@@ -97,6 +99,10 @@ header {
     svg {
       fill: $colorBl;
       transition: 0.2s;
+    }
+
+    &.bgTr {
+      opacity: 0;
     }
 
     &:hover svg {
@@ -462,7 +468,7 @@ footer {
 
   main {
     width: auto;
-    padding: 0 20px;
+    padding: 0 40px 0 20px;
   }
 
   footer {

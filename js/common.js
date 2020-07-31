@@ -25,8 +25,10 @@ window.onload = () => {
 
         if(scroll > 100){
             $('#btnTop').addClass("on");
+            $('#logo').addClass("bgTr");
         }else{
             $('#btnTop').removeClass("on");
+            $('#logo').removeClass("bgTr");
         }
 
         $('#btnTop').on('click',function(){

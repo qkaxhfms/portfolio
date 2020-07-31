@@ -250,6 +250,7 @@ header {
   top: 0;
   padding: 3rem 0;
   width: 100%;
+  transition: all 0.2s;
   /*logo*/
   /*nav*/ }
   header .inner {
@@ -271,12 +272,15 @@ header {
     height: 40px;
     margin-right: 20px;
     margin-top: 0;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    transition: all 0.2s; }
     header #logo span {
       display: block; }
     header #logo svg {
       fill: #0057ff;
       transition: 0.2s; }
+    header #logo.bgTr {
+      opacity: 0; }
     header #logo:hover svg {
       fill: #000; }
   header nav {
@@ -488,7 +492,7 @@ footer {
 
   main {
     width: auto;
-    padding: 0 20px; }
+    padding: 0 40px 0 20px; }
 
   footer .inner {
     padding: 50px 20px;
