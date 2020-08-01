@@ -294,13 +294,6 @@ header {
       letter-spacing: -0.0175rem; }
       header nav ul li.on, header nav ul li:hover {
         color: #0057ff; }
-  header .btnWrap {
-    position: absolute;
-    perspective: 150px;
-    width: 30px;
-    height: 30px;
-    right: 20px;
-    box-sizing: border-box; }
 
 /*main*/
 main {
