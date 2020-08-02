@@ -525,6 +525,9 @@ body {
 .fcG2 {
   color: #888; }
 
+.fz085 {
+  font-size: 0.85rem; }
+
 .tits1 {
   font-family: "GothicA1-Medium";
   font-weight: 500;
@@ -532,8 +535,8 @@ body {
   line-height: 1.2; }
 
 .txts1 {
-  font-family: "GothicA1-Medium";
-  font-weight: 500;
+  font-family: "GothicA1-Bold";
+  font-weight: 700;
   font-size: 1rem;
   margin: 0 0 1.5rem; }
 
