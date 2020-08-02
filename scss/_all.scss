@@ -70,6 +70,10 @@ body {
     color: $colorG2;
 }
 
+.fz085 {
+    font-size: 0.85rem;
+}
+
 .tits1 {
     font-family: "GothicA1-Medium";
     font-weight: 500;
@@ -78,10 +82,11 @@ body {
 }
 
 .txts1 {
-    font-family: "GothicA1-Medium";
-    font-weight: 500;
+    font-family: "GothicA1-Bold";
+    font-weight: 700;
     font-size: 1rem;
     margin: 0 0 1.5rem;
+    // text-shadow: 2px 2px #bdd3ff;
 }
 
 .description {
