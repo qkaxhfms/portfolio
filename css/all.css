@@ -437,7 +437,7 @@ h1 {
   transition: ease-in 0.2s; }
   #btnTop.on {
     opacity: 1;
-    right: 10px; }
+    right: 20px; }
   #btnTop.fixed {
     position: absolute;
     bottom: auto;
