@@ -277,6 +277,7 @@ header {
     header #logo span {
       display: block; }
     header #logo svg {
+      height: 40px;
       fill: #0057ff;
       transition: 0.2s; }
     header #logo.bgTr {
@@ -393,6 +394,7 @@ h1 {
     font-size: 0.75rem; }
   .project article .btnMore,
   .project article .file-short {
+    cursor: pointer;
     position: relative;
     padding-left: 0.25rem;
     display: inline-block;
@@ -425,35 +427,28 @@ h1 {
   margin-bottom: 2.5rem; }
 
 #btnTop {
-  opacity: 0;
   display: block;
   text-align: right;
-  position: -webkit-sticky;
-  position: sticky;
-  transform: translateX(20px);
-  transition: 0.2s;
-  overflow-x: hidden; }
+  position: fixed;
+  width: 2.4rem;
+  height: 2.4rem;
+  bottom: 20px;
+  right: -40px;
+  transition: ease-in 0.2s; }
   #btnTop.on {
-    opacity: 1; }
-    #btnTop.on button {
-      transform: translateX(0); }
+    opacity: 1;
+    right: 10px; }
+  #btnTop.fixed {
+    position: absolute;
+    bottom: auto;
+    top: -20px; }
   #btnTop button {
-    border-color: transparent;
     outline: none;
-    box-sizing: border-box;
-    transition: ease-in 0.2s;
-    transform-style: preserve-3d;
-    position: relative;
-    display: inline-block;
-    width: 2.4rem;
-    height: 2.4rem;
-    background: #fff;
-    font-family: "RedHatDisplay-Medium";
-    font-weight: 500;
-    font-size: 1rem;
-    line-height: 1.68rem;
     border: 2px solid #0057ff;
-    transform: translateX(40px); }
+    transition: ease-in 0.2s;
+    width: 100%;
+    height: 100%;
+    background: #fff; }
     #btnTop button:hover {
       background: #0057ff;
       border-color: #fff; }
@@ -499,6 +494,8 @@ footer {
     header #logo {
       width: 32px;
       height: 32px; }
+      header #logo svg {
+        height: 32px; }
 
   #main {
     width: auto;

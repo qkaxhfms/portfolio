@@ -2,10 +2,19 @@ $(document).ready(function() {
 
     $('.btnMore').on('click',function(){
         $('.listSlide').stop().slideToggle(200);
-    })
+    });
 
     $(window).on('scroll',function(){
+
         var scroll = $(this).scrollTop();
+        var footerHeight = $("footer").offset().top;
+        console.log(footerHeight);
+
+        if(scroll > 1500){
+            $('#btnTop').addClass("fixed");
+        }else{
+            $('#btnTop').removeClass("fixed");
+        }
 
         if(scroll > 100){
             $('#btnTop').addClass("on");
