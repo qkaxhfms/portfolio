@@ -296,7 +296,7 @@ header {
         color: #0057ff; }
 
 /*main*/
-main {
+#main {
   width: 940px;
   margin: 13.5rem auto 0;
   padding-bottom: 5rem; }
@@ -384,19 +384,35 @@ h1 {
     display: inline-block;
     padding: 0 0.22rem;
     color: #f90101; }
-  .project article .kosa {
+  .project article .btnGray {
     display: inline-block;
     padding: 0 0.22rem;
     background: #eee;
-    color: #888; }
-  .project article .file-short,
-  .project article .btnMore {
+    color: #888;
+    font-size: 0.75rem; }
+  .project article .btnMore,
+  .project article .file-short {
+    position: relative;
     padding-left: 0.25rem;
     display: inline-block;
     background: transparent;
     border: 0;
     color: #0057ff;
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    line-height: 0.82rem; }
+    .project article .btnMore:hover::after,
+    .project article .file-short:hover::after {
+      width: 80%; }
+    .project article .btnMore::after,
+    .project article .file-short::after {
+      position: absolute;
+      left: 10%;
+      bottom: 0;
+      content: '';
+      width: 0;
+      height: 1px;
+      background: #0057ff;
+      transition: all 0.2s; }
   .project article .listSlide {
     display: none; }
     .project article .listSlide.on {
@@ -483,7 +499,7 @@ footer {
       width: 32px;
       height: 32px; }
 
-  main {
+  #main {
     width: auto;
     padding: 0 40px 0 20px; }
 
@@ -510,7 +526,7 @@ body {
     body.change .profile tr td,
     body.change .profile tr a {
       color: #ccc; }
-    body.change .kosa {
+    body.change .btnGray {
       background: transparent;
       border: 1px solid #888;
       color: #888; }
@@ -535,8 +551,8 @@ body {
   line-height: 1.2; }
 
 .txts1 {
-  font-family: "GothicA1-Bold";
-  font-weight: 700;
+  font-family: "GothicA1-Medium";
+  font-weight: 500;
   font-size: 1rem;
   margin: 0 0 1.5rem; }
 

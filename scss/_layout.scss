@@ -134,7 +134,7 @@ header {
 }
 
 /*main*/
-main {
+#main {
   width: 940px;
   margin: 13.5rem auto 0;
   padding-bottom: 5rem;
@@ -278,21 +278,65 @@ h1 {
     }
 
 
-    .kosa {
+    // .file-short {
+    //   display: inline-block;
+    //   padding: 0 0.22rem;
+    //   background: $colorBGl;
+    //   color: $colorBl;
+    //   font-size: 0.75rem;
+
+    //   &:hover::after {
+    //     width: 80%;
+    //   }
+
+    //   &::after {
+    //     position: absolute;
+    //     left: 10%;
+    //     bottom: 0;
+    //     content: '';
+    //     width: 0;
+    //     height: 1px;
+    //     background: $colorBl;
+    //     transition: all 0.2s;
+
+    //   }
+    // }
+
+    .btnGray {
       display: inline-block;
       padding: 0 0.22rem;
       background: $colorG3;
       color: $colorG2;
+      font-size: 0.75rem;
     }
 
-    .file-short,
-    .btnMore {
+    .btnMore,
+    .file-short {
+      position: relative;
       padding-left: 0.25rem;
       display: inline-block;
       background: transparent;
       border: 0;
       color: $colorBl;
       font-size: 0.75rem;
+      line-height: 0.82rem;
+
+      &:hover::after {
+        width: 80%;
+      }
+
+      &::after {
+        position: absolute;
+        left: 10%;
+        bottom: 0;
+        content: '';
+        width: 0;
+        height: 1px;
+        background: $colorBl;
+        transition: all 0.2s;
+
+      }
+
     }
 
     .listSlide {
@@ -411,7 +455,7 @@ footer {
     }
   }
 
-  main {
+  #main {
     width: auto;
     padding: 0 40px 0 20px;
   }

@@ -15,6 +15,7 @@ $colorG1: #ccc;
 $colorG2: #888;
 $colorG3: #eee;
 $colorBl: #0057ff;
+$colorBGl: #eff4ff;
 $colorRl: #f90101;
 $colorBK1: #000;
 $colorBK2: #312f30;
@@ -47,7 +48,7 @@ body {
             color: $colorG1;
         }
 
-        .kosa {
+        .btnGray {
             background: $colorTR;
             border: 1px solid $colorG2;
             color: $colorG2;
@@ -82,8 +83,8 @@ body {
 }
 
 .txts1 {
-    font-family: "GothicA1-Bold";
-    font-weight: 700;
+    font-family: "GothicA1-Medium";
+    font-weight: 500;
     font-size: 1rem;
     margin: 0 0 1.5rem;
     // text-shadow: 2px 2px #bdd3ff;
