@@ -11,7 +11,6 @@
 <script src="https://kit.fontawesome.com/17cac2d3ef.js" crossorigin="anonymous"></script>
 <script src="js/jquery-1.12.3.min.js"></script>
 <script src="js/common.js"></script>
-<script src="js/common_jQuery.js"></script>
 
 </head>
 <body>
@@ -202,10 +201,10 @@
         </section>
     </div>
     <footer>
-        <div id="btnTop">
-            <button type="button"></button>
-        </div>
         <div class="inner">
+            <div id="btnTop">
+                <button type="button"></button>
+            </div>
             <div>&copy; Minsang Kwak</div>
             <div>
                 <a href="https://github.com/qkaxhfms" class="sns" target="_blank">
@@ -218,6 +217,14 @@
         </div>
     </footer>
     <script>
+
+    const btnLogo = document.querySelector("#logo");
+    btnLogo.addEventListener("click", logoClick);
+
+    function logoClick(){
+        document.querySelector("body").classList.toggle("change");
+    }
+
     var message = new Array(); 
     
     message[0] = "Portfolio"; 

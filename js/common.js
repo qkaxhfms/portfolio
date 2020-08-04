@@ -1,11 +1,41 @@
-window.onload = function() {
+$(document).ready(function() {
 
-    const btnLogo = document.querySelector("#logo");
-    btnLogo.addEventListener("click", logoClick);
+    $('.btnMore').on('click',function(){
+        $('.listSlide').stop().slideToggle(200);
+    });
 
-    function logoClick(){
-        document.querySelector("body").classList.toggle("change");
-    }
+    $(window).on('scroll',function(){
 
-}
+        var scroll = $(this).scrollTop();
+        var footerHeight = $("footer").offset().top;
+        console.log(footerHeight);
+
+        if(scroll > 1500){
+            $('#btnTop').addClass("fixed");
+        }else{
+            $('#btnTop').removeClass("fixed");
+        }
+
+        if(scroll > 100){
+            $('#btnTop').addClass("on");
+            $('#logo').addClass("bgTr");
+        }else{
+            $('#btnTop').removeClass("on");
+            $('#logo').removeClass("bgTr");
+        }
+
+        $('#btnTop').on('click',function(){
+            $('html,body').stop().animate({ scrollTop: 0},220);
+        });
+
+        if(scroll > 1){
+            $('header').addClass("scroll");
+        }else{
+            $('header').removeClass("scroll");
+        }
+
+
+    });
+
+});
 
