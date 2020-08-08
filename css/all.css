@@ -293,8 +293,6 @@ header {
       font-weight: 500;
       font-size: 1rem;
       letter-spacing: -0.0175rem; }
-      header nav ul li.on, header nav ul li:hover {
-        color: #0057ff; }
 
 /*main*/
 #main {
@@ -549,10 +547,21 @@ body {
   line-height: 1.2; }
 
 .txts1 {
+  position: relative;
   font-family: "GothicA1-Medium";
   font-weight: 500;
   font-size: 1rem;
-  margin: 0 0 1.5rem; }
+  margin: 0 0 1.5rem;
+  display: inline-block; }
+  .txts1::before {
+    position: absolute;
+    top: -8px;
+    left: -6px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-top: 4px solid #0057ff;
+    border-left: 4px solid #0057ff; }
 
 .description {
   padding-right: 200px;

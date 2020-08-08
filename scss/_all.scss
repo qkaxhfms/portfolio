@@ -83,11 +83,23 @@ body {
 }
 
 .txts1 {
+    position: relative;
     font-family: "GothicA1-Medium";
     font-weight: 500;
     font-size: 1rem;
     margin: 0 0 1.5rem;
-    // text-shadow: 2px 2px #bdd3ff;
+    display: inline-block;
+
+    &::before {
+        position: absolute;
+        top: -8px;
+        left: -6px;
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-top: 4px solid $colorBl;
+        border-left: 4px solid $colorBl;
+    }
 }
 
 .description {

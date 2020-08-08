@@ -123,11 +123,6 @@ header {
         font-weight: 500;
         font-size: 1rem;
         letter-spacing: -0.0175rem;
-
-        &.on,
-        &:hover {
-          color: $colorBl;
-        }
       }
     }
   }
