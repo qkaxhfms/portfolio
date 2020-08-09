@@ -160,6 +160,10 @@ h1 {
 
     tr {}
 
+    th {
+      font-weight: 400;
+    }
+
     th,
     td {
       font-size: 1rem;
@@ -169,8 +173,6 @@ h1 {
     th,
     td,
     a {
-      font-family: "GothicA1-Medium";
-      font-weight: 500;
       color: $colorBK2;
     }
   }

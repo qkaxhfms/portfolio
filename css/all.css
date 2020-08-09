@@ -316,6 +316,8 @@ h1 {
   margin-top: 3.5rem; }
   .profile table {
     text-align: left; }
+    .profile table th {
+      font-weight: 400; }
     .profile table th,
     .profile table td {
       font-size: 1rem;
@@ -323,8 +325,6 @@ h1 {
     .profile table th,
     .profile table td,
     .profile table a {
-      font-family: "GothicA1-Medium";
-      font-weight: 500;
       color: #312f30; }
 
 /*career*/

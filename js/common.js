@@ -8,7 +8,7 @@ $(document).ready(function() {
 
         var scroll = $(this).scrollTop();
 
-        if(scroll > 1600 ){
+        if(scroll > 1700 ){
             $('#btnTop').addClass("fixed");
         }else{
             $('#btnTop').removeClass("fixed");
