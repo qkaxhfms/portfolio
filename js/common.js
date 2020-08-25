@@ -7,8 +7,9 @@ $(document).ready(function() {
     $(window).on('scroll',function(){
 
         var scroll = $(this).scrollTop();
+        var footerHeight = $('footer').offset().top;
 
-        if(scroll > 1700 ){
+        if(scroll > footerHeight/2 ){
             $('#btnTop').addClass("fixed");
         }else{
             $('#btnTop').removeClass("fixed");
