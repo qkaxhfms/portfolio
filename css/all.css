@@ -567,6 +567,8 @@ body {
   padding-right: 200px;
   line-height: 1.5rem;
   margin: 0 0 0.15rem; }
+  .description p {
+    margin-bottom: 0.45rem; }
 
 .company {
   color: #222;
@@ -619,7 +621,9 @@ body {
 @media screen and (max-width: 939px) {
   .description {
     padding-right: 0;
-    font-size: 0.9rem; } }
+    font-size: 0.9rem; }
+    .description p {
+      margin-bottom: 0.22rem; } }
 @media screen and (max-width: 719px) {
   body {
     font-size: 0.9rem; }
