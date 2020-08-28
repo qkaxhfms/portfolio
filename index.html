@@ -226,60 +226,6 @@
     function logoClick(){
         document.querySelector("body").classList.toggle("change");
     }
-
-    var message = new Array(); 
-    
-    message[0] = "Portfolio"; 
-    message[1] = "KwakMinsang"; 
-    // 
-    var reps = 1; 
-    var speed = 230;
-    var hold = 4 // 
-    //  
-    var p = message.length; 
-    var q = 0; 
-    var r = 0; 
-    var C = 0; 
-    var mC = 0; 
-    var s = 0; 
-    var sT = null;
-    
-    if (reps < 1) { 
-        reps = 1; 
-    } 
-
-    function setMessage() { 
-        typing = message[mC]; 
-        q = typing.length; 
-        r = q + hold; 
-        typeMessage(); 
-    } 
-    
-    function typeMessage() { 
-        if (s > r) { 
-            s = 0; 
-        } 
-        if (s > q) { 
-            document.title = ""+ typing +""; 
-        } 
-        else { 
-            document.title = ""+ typing.substr(0,s)+""; 
-        } 
-        if (C < (r * reps)) { 
-            sT = setTimeout("typeMessage()", speed); 
-            C++; 
-            s++; 
-        } 
-        else { 
-            C = 0; 
-            s = 0; 
-            mC++; 
-        if(mC > p - 1) {mC = 0;} 
-            sT = null; 
-            setMessage(); 
-        } 
-    } 
-    setMessage(); 
     
     </script>
 </body>
