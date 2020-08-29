@@ -191,6 +191,10 @@ h1 {
 
     dt {
       margin: 1.5rem 0 0.75rem;
+
+      &:first-child {
+        margin-top: 0;
+      }
     }
 
     dd {
@@ -212,7 +216,8 @@ h1 {
     }
 
     dt {
-      margin: 1.5rem 0;
+      // margin: 1.5rem 0;
+      margin-bottom: 1.5rem;
       font-family: "GothicA1-Medium";
       font-weight: 500;
       font-size: 1rem;
@@ -232,7 +237,7 @@ h1 {
 
 /*project*/
 .project {
-  margin-top: 3.5rem;
+  // margin-top: 3.5rem;
 
   .tits1 {
     margin: 0 0 1.5rem;
