@@ -409,7 +409,7 @@ h1 {
     position: absolute;
     left: 10%;
     bottom: 0;
-    content: '';
+    content: "";
     width: 0;
     height: 1px;
     background: #0057ff;
