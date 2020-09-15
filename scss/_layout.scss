@@ -2,8 +2,7 @@
 
 /*change*/
 .change {
-  header.scroll {
-  }
+  header.scroll {}
 
   #btnTop button {
     background: $colorBK1;
@@ -42,11 +41,11 @@
     }
   }
 
-  .project article > dl > dt {
+  .project article>dl>dt {
     color: $colorG1;
   }
 
-  .project article > dl > dd {
+  .project article>dl>dd {
     color: $colorG2;
   }
 }
@@ -157,8 +156,7 @@ h1 {
   table {
     text-align: left;
 
-    tr {
-    }
+    tr {}
 
     th {
       font-weight: 400;
@@ -183,6 +181,7 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
+
     dt,
     dd {
       line-height: 1.5rem;
@@ -208,6 +207,7 @@ h1 {
   margin-top: 3.5rem;
 
   dl {
+
     dt,
     dd {
       line-height: 1.5rem;
@@ -315,9 +315,15 @@ h1 {
     }
 
     .listSlide {
-      display: none;
+      overflow: hidden;
+      height: 0;
+      opacity: 0;
+      transition: all 0.2s;
 
       &.on {
+        overflow: visible;
+        height: auto;
+        opacity: 1;
         display: block;
       }
     }

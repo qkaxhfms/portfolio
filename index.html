@@ -9,8 +9,6 @@
 <link rel="icon" href="img/logo_minsang.png">
 <link rel="stylesheet" href="css/all.css">
 <script src="https://kit.fontawesome.com/17cac2d3ef.js" crossorigin="anonymous"></script>
-<script src="js/jquery-1.12.3.min.js"></script>
-<script src="js/common.js"></script>
 
 </head>
 <body>
@@ -220,12 +218,70 @@
     </footer>
     <script>
 
+    const logo = document.querySelector("#logo");
+    const btnMore = document.querySelector(".btnMore");
+    const btnTop = document.querySelector("#btnTop");
     const btnLogo = document.querySelector("#logo");
+    const header = document.querySelector("header");
+
     btnLogo.addEventListener("click", logoClick);
 
     function logoClick(){
         document.querySelector("body").classList.toggle("change");
     }
+
+    btnMore.addEventListener("click", showList);
+    function showList(){
+        const listSlide = document.querySelector(".listSlide");
+        listSlide.classList.toggle("on");
+    }
+
+    btnTop.addEventListener("click", gotoTop);
+    function gotoTop(){
+        window.scroll({
+            top: 0, 
+            left: 0, 
+            behavior: 'smooth'
+        });
+    }
+
+    window.onscroll = () =>  {
+
+        // scroll
+        const scrollStart = 1;
+        const scrollStandard = 100;
+
+        let scroll = this.scrollY;
+        let main = document.querySelector("#main");
+        let footer = document.querySelector("footer");
+        let footerTop = footer.offsetTop;
+
+        // scrollStart
+        if(scroll > scrollStart){
+            header.classList.add("scroll");
+        }else{
+            header.classList.remove("scroll");
+        }
+
+        // scrollStandard
+        if(scroll > scrollStandard){
+            btnTop.classList.add("on");
+            logo.classList.add("bgTr");
+        }else{
+            btnTop.classList.remove("on");
+            logo.classList.remove("bgTr");
+        }
+
+        // footerTop
+        if(scroll > footerTop/2){
+            console.log(footerTop);
+            btnTop.classList.add("fixed");
+        }else{
+            btnTop.classList.remove("fixed");
+        }
+
+    }
+    
     
     </script>
 </body>

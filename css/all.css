@@ -415,8 +415,14 @@ h1 {
     background: #0057ff;
     transition: all 0.2s; }
 .project article .listSlide {
-  display: none; }
+  overflow: hidden;
+  height: 0;
+  opacity: 0;
+  transition: all 0.2s; }
   .project article .listSlide.on {
+    overflow: visible;
+    height: auto;
+    opacity: 1;
     display: block; }
 
 /*write*/
