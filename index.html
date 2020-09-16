@@ -77,7 +77,7 @@
                 </p>
                 <dl>
                     <dt>웰릭스몰</dt>
-                    <dd>2020.07 - 2020.09</dd>
+                    <dd>2020.07 - 2020.09 <span class="btnGray">KOSA</span></dd>
 
                     <dt>국카몰(KB카드 직영쇼핑몰)</dt>
                     <dd>2020.04 - 2020.07 <span class="btnGray">KOSA</span></dd>
@@ -218,33 +218,37 @@
     </footer>
     <script>
 
+    // variable
     const logo = document.querySelector("#logo");
     const btnMore = document.querySelector(".btnMore");
     const btnTop = document.querySelector("#btnTop");
     const btnLogo = document.querySelector("#logo");
     const header = document.querySelector("header");
 
-    btnLogo.addEventListener("click", logoClick);
-
-    function logoClick(){
+    //function logoClick
+    const logoClick = () => {
         document.querySelector("body").classList.toggle("change");
     }
+    btnLogo.addEventListener("click", logoClick);
 
-    btnMore.addEventListener("click", showList);
-    function showList(){
-        const listSlide = document.querySelector(".listSlide");
+    //function showList
+    const showList = () => {
+        let listSlide = document.querySelector(".listSlide");
         listSlide.classList.toggle("on");
     }
+    btnMore.addEventListener("click", showList);
 
-    btnTop.addEventListener("click", gotoTop);
-    function gotoTop(){
+    //function gotoTop
+    const gotoTop = () => {
         window.scroll({
             top: 0, 
             left: 0, 
             behavior: 'smooth'
         });
     }
+    btnTop.addEventListener("click", gotoTop);
 
+    //all scrolling
     window.onscroll = () =>  {
 
         // scroll
@@ -274,7 +278,6 @@
 
         // footerTop
         if(scroll > footerTop/2){
-            console.log(footerTop);
             btnTop.classList.add("fixed");
         }else{
             btnTop.classList.remove("fixed");
