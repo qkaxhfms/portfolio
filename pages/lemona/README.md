@@ -77,10 +77,10 @@
 - product pc 영역 작성
 - slider swiper로 제작
 
-11. news,info,footer 영역 작업 [2020.03.29]
+11. news,info,.footer 영역 작업 [2020.03.29]
 
 - news 영역 작업
-- news, info, footer pc 영역 작성
+- news, info, .footer pc 영역 작성
 - slider swiper로 제작
 - index.html 전체 1차 수정 작업
 - 헤더 및 css 수정
@@ -96,7 +96,7 @@
 
 13. css -> scss 변경 영역 작업 [2020.04.01]
 
-- mobile header css 및 js 추가
+- mobile .header css 및 js 추가
 
 14. 반응형 작업 [2020.04.01]
 
@@ -114,7 +114,7 @@
 
 16. js 통합작업
 
-- [2020.04.02 ~ 2020.04.04] header/visual 영역 작성
+- [2020.04.02 ~ 2020.04.04] .header/visual 영역 작성
 - [2020.04.05 ~ 2020.04.06] all.js, all.js_minifier 수정
 
 16. js 변수 재설정 및 간결화 [2020.04.07]

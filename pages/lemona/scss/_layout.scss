@@ -1,8 +1,8 @@
 @charset 'utf-8';
 /* layout */
 
-/* header */
-header {
+/* .header */
+.header {
   z-index: 100;
   position: fixed;
   top: 0;
@@ -10,20 +10,20 @@ header {
   width: 100%;
 
   // scroll-on event
-  &.on .header-inner {
+  &.on ..header-inner {
     background: #fdf71d;
     border-bottom: 1px solid #555555;
   }
 
-  //header-inner
-  .header-inner {
+  //.header-inner
+  ..header-inner {
     position: relative;
     height: 80px;
     box-sizing: border-box;
     background: transparent;
     transition: all 0.5s;
 
-    // header-logo
+    // .header-logo
     h1 {
       z-index: 130;
       position: absolute;
@@ -337,8 +337,8 @@ header {
     bottom: 0;
     top: auto;
   }
-  // footer
-  footer {
+  // .footer
+  .footer {
     position: relative;
     width: 72.91666666%;
     // inner
@@ -401,13 +401,13 @@ header {
 
 // tablet
 @media screen and (max-width: $tabletWid) {
-  /* header */
-  header {
-    //header-inner
-    .header-inner {
+  /* .header */
+  .header {
+    //.header-inner
+    ..header-inner {
       height: 60px;
 
-      // header-logo
+      // .header-logo
       h1 {
         height: 60px;
       }
@@ -632,8 +632,8 @@ header {
       bottom: 0;
       top: auto;
     }
-    // footer
-    footer {
+    // .footer
+    .footer {
       // position: relative;
       // width: 72.91666666%;
       width: 100%; // inner
