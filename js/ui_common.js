@@ -60,10 +60,10 @@
         // scrollStandard
         if(scroll > scrollStandard){
             btnTop.classList.add("on");
-            headerLogo.classList.add("background-transparent");
+            headerLogo.classList.add("header__background--transparent");
         }else{
             btnTop.classList.remove("on");
-            headerLogo.classList.remove("background-transparent");
+            headerLogo.classList.remove("header__background--transparent");
         }
 
         // .footerTop

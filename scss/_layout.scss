@@ -9,7 +9,7 @@
   width: 100%;
   transition: all 0.2s ease-in;
 
-  &.scroll .header__navigation{
+  &.scroll .navigation{
     transform: rotate(-90deg);
   }
 
@@ -32,7 +32,7 @@
     margin-bottom: 0;
     transition: all 0.2s ease-in;
 
-    &.background-transparent{
+    &.header__background--transparent{
       opacity:0;
     }
 
@@ -48,20 +48,21 @@
   &__navigation {
     transition: 0.2s;
     transform-origin: 85% 10px;
+  }
+}
 
+.navigation{
+  transition: 0.2s;
+  transform-origin: 85% 10px;
+  &__inner{
 
-
-
-    &-list{
-
-    }
-    &-item{
-      transition: color 0.2s;
-      font-family: "RedHatDisplay-Medium";
-      font-weight: 500;
-      font-size:1.05rem;
-      letter-spacing: -0.0175rem;
-    }
+  }
+  &__list{
+    transition: color 0.2s;
+    font-family: "RedHatDisplay-Medium";
+    font-weight: 500;
+    font-size:1.05rem;
+    letter-spacing: -0.0175rem;
   }
 }
 

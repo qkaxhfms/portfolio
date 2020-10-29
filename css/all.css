@@ -244,7 +244,7 @@ em {
   width: 100%;
   transition: all 0.2s ease-in;
   /*nav*/ }
-  .header.scroll .header__navigation {
+  .header.scroll .navigation {
     transform: rotate(-90deg); }
   .header__inner {
     position: relative;
@@ -262,7 +262,7 @@ em {
     margin-top: 0;
     margin-bottom: 0;
     transition: all 0.2s ease-in; }
-    .header__logo.background-transparent {
+    .header__logo.header__background--transparent {
       opacity: 0; }
     .header__logo:hover svg {
       fill: #000; }
@@ -271,12 +271,16 @@ em {
   .header__navigation {
     transition: 0.2s;
     transform-origin: 85% 10px; }
-    .header__navigation-item {
-      transition: color 0.2s;
-      font-family: "RedHatDisplay-Medium";
-      font-weight: 500;
-      font-size: 1.05rem;
-      letter-spacing: -0.0175rem; }
+
+.navigation {
+  transition: 0.2s;
+  transform-origin: 85% 10px; }
+  .navigation__list {
+    transition: color 0.2s;
+    font-family: "RedHatDisplay-Medium";
+    font-weight: 500;
+    font-size: 1.05rem;
+    letter-spacing: -0.0175rem; }
 
 /*main*/
 #main {
