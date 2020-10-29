@@ -429,12 +429,19 @@ em {
     padding: 50px 24px;
     width: 980px;
     margin: 0 auto; }
-    .footer__inner-sns {
+    .footer__inner--sns {
       display: inline-block;
       margin-left: 1.1rem;
       font-size: 2rem;
       color: #fff;
       vertical-align: middle; }
+  .footer .icon__github svg {
+    width: 24px;
+    fill: #ffffff; }
+  .footer .icon__mail svg {
+    margin-top: 7px;
+    width: 28px;
+    fill: #ffffff; }
 
 @media screen and (max-width: 979px) {
   /*.header*/
@@ -471,8 +478,10 @@ body {
   .tag__red {
     color: #f90101; }
 
+button {
+  cursor: pointer; }
+
 .button__more {
-  cursor: pointer;
   position: relative;
   padding-left: 0.25rem;
   display: inline-block;

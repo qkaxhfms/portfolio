@@ -283,7 +283,7 @@
     width: 980px;
     margin: 0 auto;
 
-    &-sns{
+    &--sns{
       display: inline-block;
       margin-left: 1.1rem;
       font-size: 2rem;
@@ -291,6 +291,18 @@
       vertical-align: middle;
     }
 
+
+  }
+  .icon{
+    &__github svg{
+      width:24px;
+      fill:#ffffff;
+    }
+    &__mail svg{
+      margin-top:7px;
+      width:28px;
+      fill:#ffffff;
+    }
   }
 }
 

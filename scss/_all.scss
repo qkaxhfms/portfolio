@@ -49,9 +49,10 @@ body{
     color: #f90101;
   }
 }
-
-.button__more{
+button{
   cursor: pointer;
+}
+.button__more{
   position: relative;
   padding-left: 0.25rem;
   display: inline-block;
