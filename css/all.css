@@ -288,6 +288,9 @@ em {
   margin: 13.5rem auto 5rem;
   padding: 0 20px; }
 
+.item__block {
+  display: block; }
+
 /* section */
 .section {
   margin: 3.5rem 0; }
@@ -307,8 +310,6 @@ em {
       height: 8px;
       border-top: 4px solid #0057ff;
       border-left: 4px solid #0057ff; }
-  .section__heading-item-block {
-    display: block; }
   .section__list li {
     line-height: 1.5rem; }
   .section__list--level-1 {
@@ -354,29 +355,29 @@ em {
     .section__project li p {
       margin-top: 0.55rem; }
 
-.page__background-dark {
+.page__background--dark {
   background: #000000;
   color: #cccccc; }
-  .page__background-dark .header__logo-svg {
+  .page__background--dark .header__logo-svg {
     fill: #ffffff; }
-    .page__background-dark .header__logo-svg:hover {
+    .page__background--dark .header__logo-svg:hover {
       fill: #0057ff; }
-  .page__background-dark .tag-kosa {
+  .page__background--dark .tag-kosa {
     background: transparent;
     border: 1px solid #999999; }
-  .page__background-dark .tag-red {
+  .page__background--dark .tag-red {
     color: #0057ff; }
-  .page__background-dark .section__list--level-2,
-  .page__background-dark .section__list-work li {
+  .page__background--dark .section__list--level-2,
+  .page__background--dark .section__list-work li {
     color: #999999; }
-  .page__background-dark table th, .page__background-dark table td, .page__background-dark table a {
+  .page__background--dark table th, .page__background--dark table td, .page__background--dark table a {
     color: #999999; }
-  .page__background-dark .footer__button-top {
+  .page__background--dark .footer__button-top {
     background: #000000; }
-    .page__background-dark .footer__button-top:hover {
+    .page__background--dark .footer__button-top:hover {
       border-color: #000000;
       background: #0057ff; }
-      .page__background-dark .footer__button-top:hover::before {
+      .page__background--dark .footer__button-top:hover::before {
         border-left-color: #000000;
         border-top-color: #000000; }
 
@@ -463,14 +464,14 @@ body {
 .tag {
   display: inline-block;
   padding: 0 0.22rem; }
-  .tag-kosa {
+  .tag__kosa {
     color: #888;
     font-size: 0.75rem;
     background: #eee; }
-  .tag-red {
+  .tag__red {
     color: #f90101; }
 
-.button-more {
+.button__more {
   cursor: pointer;
   position: relative;
   padding-left: 0.25rem;
@@ -509,6 +510,13 @@ table {
   border: 4px solid #fff; }
 
 /*scrollbar-change*/
+.page__background--dark::-webkit-scrollbar {
+  width: 16px;
+  background-color: #000; }
+
+.page__background--dark::-webkit-scrollbar-thumb {
+  border: 4px solid #000; }
+
 /*selection*/
 ::selection {
   background: #0057ff;

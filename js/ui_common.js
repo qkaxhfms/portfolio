@@ -4,14 +4,14 @@
     const header = document.querySelector(".header");
     const headerLogo = document.querySelector(".header__logo");
 
-    const btnMore = document.querySelector(".button-more");
+    const btnMore = document.querySelector(".button__more");
     const btnTop = document.querySelector(".footer__button-top");
 
 
 
     //function logoClick
     const logoClick = () => {
-        document.querySelector("body").classList.toggle("page__background-dark");
+        document.querySelector("body").classList.toggle("page__background--dark");
     }
     headerLogo.addEventListener("click", logoClick);
 
