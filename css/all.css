@@ -462,6 +462,9 @@ em {
       display: inline-block;
       margin-left: 0.5rem;
       font-size: 1.4rem; } }
+@media screen and (max-width: 719px) {
+  .section__intro .section__paragraph--level-1 {
+    display: inline; } }
 body {
   transition: background 0.3s;
   font-family: "GothicA1-Regular", "RedHatDisplay-Regular", sans-serif;

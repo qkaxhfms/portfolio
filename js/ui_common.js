@@ -22,9 +22,6 @@
         let listSlide = document.querySelector(".section__list-more");
         listSlide.classList.toggle("active");
 
-        // if(listSlide.classList.contains("active")){
-        // }else{
-        // }
         
     }
 
