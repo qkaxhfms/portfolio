@@ -19,10 +19,12 @@
 
     btnMore.addEventListener("click", showList);
     function showList (){
+
         let listSlide = document.querySelector(".section__list-more");
+        btnMore.classList.toggle("active");
         listSlide.classList.toggle("active");
 
-        
+        !btnMore.classList.contains("active") ? btnMore.innerHTML='더보기':btnMore.innerHTML='간단히보기'
     }
 
     //function gotoTop

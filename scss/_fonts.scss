@@ -60,22 +60,21 @@
 }
 
 /* font__size-l */
-.section__heading--level-1.font__size-l{
-    font-family: "GothicA1-Medium";
-    font-weight: 500;
+.section__heading--level-1.font__size-l {
+    font-family: "RedHatDisplay-Bold";
+    font-weight: 700;
     font-size: 2rem;
     line-height: 1.2;
-    &::before{
+    &::before {
         display: none;
     }
 }
 
-.section__paragraph--level-1.font__size-m{
-
-    font-size:1.1rem;
+.section__paragraph--level-1.font__size-m {
+    font-size: 1.1rem;
 }
 
 /* font__color-hightlight */
-.color-hightlight{
-    color:#0057ff;
+.color-hightlight {
+    color: #0057ff;
 }
