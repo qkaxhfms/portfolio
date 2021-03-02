@@ -58,7 +58,7 @@
     }
     &__list {
         transition: color 0.2s;
-        font-family: "RedHatDisplay-Medium";
+        font-family: 'RedHatDisplay-Medium';
         font-weight: 500;
         font-size: 1.05rem;
         letter-spacing: -0.0175rem;
@@ -84,7 +84,7 @@
         &--level-1 {
             position: relative;
             display: inline-block;
-            font-family: "RedHatDisplay-Bold";
+            font-family: 'RedHatDisplay-Bold';
             font-weight: 700;
             font-size: 1.2rem;
             margin: 1.22rem 0;
@@ -93,7 +93,7 @@
                 position: absolute;
                 top: -8px;
                 left: -6px;
-                content: "";
+                content: '';
                 width: 8px;
                 height: 8px;
                 border-top: 4px solid #0057ff;
@@ -114,7 +114,7 @@
                 margin-left: 0.8rem;
                 font-size: 0.84rem;
                 color: #222;
-                font-family: "GothicA1-Medium";
+                font-family: 'GothicA1-Medium';
                 font-weight: 400;
                 font-size: 0.9rem;
             }
@@ -122,6 +122,9 @@
         &-work {
             margin-left: 0.8rem;
             font-size: 0.84rem;
+            &.none li::before {
+                content: '';
+            }
             li {
                 position: relative;
                 padding-left: 0.8rem;
@@ -133,7 +136,7 @@
                     display: block;
                     left: 0;
                     top: 0;
-                    content: "-";
+                    content: '-';
                 }
             }
         }
@@ -250,7 +253,7 @@
 
         &::before {
             position: absolute;
-            content: "";
+            content: '';
             width: 0.6rem;
             height: 0.6rem;
             left: 50%;
