@@ -84,20 +84,22 @@
         &--level-1 {
             position: relative;
             display: inline-block;
-            font-family: 'RedHatDisplay-Bold';
-            font-weight: 700;
+            font-family: 'RedHatDisplay-Medium';
+            font-weight: 500;
             font-size: 1.2rem;
             margin: 1.22rem 0;
+            span {
+                position: relative;
+            }
 
             &::before {
                 position: absolute;
-                top: -8px;
-                left: -6px;
+                top: 12px;
+                left: -3px;
                 content: '';
-                width: 8px;
-                height: 8px;
-                border-top: 4px solid #0057ff;
-                border-left: 4px solid #0057ff;
+                width: 90%;
+                height: 14px;
+                background-color: rgba(0, 85, 255, 0.25);
             }
         }
     }

@@ -179,50 +179,50 @@ em {
 /* fonts */
 /* Gothic A1 */
 @font-face {
-  font-family: "GothicA1-Light";
+  font-family: 'GothicA1-Light';
   font-style: normal;
   font-weight: 300;
   src: local("☺"), url(../font/GothicA1-Light.ttf) format("truetype"); }
 @font-face {
-  font-family: "GothicA1-Regular";
+  font-family: 'GothicA1-Regular';
   font-style: normal;
   font-weight: 400;
   src: local("☺"), url(../font/GothicA1-Regular.ttf) format("truetype"); }
 @font-face {
-  font-family: "GothicA1-Medium";
+  font-family: 'GothicA1-Medium';
   font-style: normal;
   font-weight: 500;
   src: local("☺"), url(../font/GothicA1-Medium.ttf) format("truetype"); }
 @font-face {
-  font-family: "GothicA1-Semi-bold";
+  font-family: 'GothicA1-Semi-bold';
   font-style: normal;
   font-weight: 600;
   src: local("☺"), url(../font/GothicA1-SemiBold.ttf) format("truetype"); }
 @font-face {
-  font-family: "GothicA1-Bold";
+  font-family: 'GothicA1-Bold';
   font-style: normal;
   font-weight: 700;
   src: local("☺"), url(../font/GothicA1-Bold.ttf) format("truetype"); }
 /* Red Hat Display */
 @font-face {
-  font-family: "RedHatDisplay-Regular";
+  font-family: 'RedHatDisplay-Regular';
   font-style: normal;
   font-weight: 400;
   src: local("☺"), url(../font/GothicA1-Regular.ttf) format("truetype"); }
 @font-face {
-  font-family: "RedHatDisplay-Medium";
+  font-family: 'RedHatDisplay-Medium';
   font-style: normal;
   font-weight: 500;
   src: local("☺"), url(../font/RedHatDisplay-Medium.ttf) format("truetype"); }
 @font-face {
-  font-family: "RedHatDisplay-Bold";
+  font-family: 'RedHatDisplay-Bold';
   font-style: normal;
   font-weight: 700;
   src: local("☺"), url(../font/RedHatDisplay-Bold.ttf) format("truetype"); }
 /* font__size-l */
 .section__heading--level-1.font__size-l {
-  font-family: "RedHatDisplay-Bold";
-  font-weight: 700;
+  font-family: 'RedHatDisplay-Medium';
+  font-weight: 500;
   font-size: 2rem;
   line-height: 1.2; }
   .section__heading--level-1.font__size-l::before {
@@ -297,19 +297,20 @@ em {
   .section__heading--level-1 {
     position: relative;
     display: inline-block;
-    font-family: 'RedHatDisplay-Bold';
-    font-weight: 700;
+    font-family: 'RedHatDisplay-Medium';
+    font-weight: 500;
     font-size: 1.2rem;
     margin: 1.22rem 0; }
+    .section__heading--level-1 span {
+      position: relative; }
     .section__heading--level-1::before {
       position: absolute;
-      top: -8px;
-      left: -6px;
+      top: 12px;
+      left: -3px;
       content: '';
-      width: 8px;
-      height: 8px;
-      border-top: 4px solid #0057ff;
-      border-left: 4px solid #0057ff; }
+      width: 90%;
+      height: 14px;
+      background-color: rgba(0, 85, 255, 0.25); }
   .section__list li {
     line-height: 1.5rem; }
   .section__list--level-1 {
