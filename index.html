@@ -1,62 +1,399 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta
-            name="viewport"
-            content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"
-        />
-        <meta name="keywords" content="Portfolio Overview Minsang-Kwak" />
-        <title>Portfolio KwakMinsang</title>
-        <link rel="icon" href="img/logo_minsang.png" />
-        <style>
-            * {
-                margin: 0;
-                padding: 0;
-            }
-            html,
-            body {
-                margin: 0;
-                padding: 0;
-                height: 100vh;
-            }
-            body {
-            }
-            .page {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .inReady {
-                text-align: center;
-            }
-        </style>
-    </head>
-    <body class="page">
-        <!-- page__background--dark -->
-
-        <div class="inReady">
-            <svg
-                version="1.1"
-                viewBox="0 0 224 227"
-                class="header__logo-svg"
-                style="width: 80px; height: 80px"
-            >
-                <polygon
-                    points="0,0 0,1 0,38 0,189 0,227 38,227 150,227 150,189 38,189 38,38 186,38 186,149.5 224,149.5 224,38 224,1.5 224,0 
-                            "
-                />
-                <rect
-                    x="186"
-                    y="189"
-                    transform="matrix(6.123234e-17 -1 1 6.123234e-17 -3 413)"
-                    width="38"
-                    height="38"
-                />
-            </svg>
-            <p>준비 중입니다.</p>
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="keywords" content="Portfolio Overview Minsang-Kwak">
+<title>Portfolio KwakMinsang</title>
+<link rel="icon" href="img/logo_minsang.png">
+<link rel="stylesheet" href="css/all.css">
+<script src="https://kit.fontawesome.com/17cac2d3ef.js" crossorigin="anonymous"></script>
+</head>
+<body class="page"><!-- page__background--dark -->
+    <!-- header (s) -->
+    <header class="header">
+        <div class="header__inner">
+            <h1 class="header__logo">
+                <span class="logo__inner">
+                    <svg version="1.1" viewBox="0 0 224 227" class="header__logo-svg">
+                        <polygon points="0,0 0,1 0,38 0,189 0,227 38,227 150,227 150,189 38,189 38,38 186,38 186,149.5 224,149.5 224,38 224,1.5 224,0 
+                            "/>
+                        <rect x="186" y="189" transform="matrix(6.123234e-17 -1 1 6.123234e-17 -3 413)" width="38" height="38"/>
+                    </svg>
+                </span>
+            </h1>
+            <nav class="navigation">
+                <ul class="navigation__inner">
+                    <li class="navigation__list resume">Overview</li>
+                </ul>
+            </nav>
         </div>
-        <!-- <script src="js/ui_common.js"></script> -->
-    </body>
-</html>
+    </header>
+    <!-- header (e) -->
+
+    <!-- main (s) -->
+    <div id="main">
+
+        <!-- 소개글:S -->
+        <section class="section section__intro">
+
+            <h2 class="section__heading section__heading--level-1 font__size-l">
+                <span class="section__heading--item item__block">안녕하세요</span>
+                <span class="section__heading--item color-hightlight">주니어</span>
+                <span class="section__heading--item">프론트엔드 개발자</span>
+                <span class="section__heading--item item__block">곽민상 입니다.</span>
+            </h2>
+
+            <div class="section__paragraph">
+                <p class="section__paragraph--level-1">다양한 프로젝트를 통해 성장하고 있는 개발자 곽민상입니다.</p> 
+                <p class="section__paragraph--level-1">에이전시에서 UX 설계 및 구현 업무를 수행한 경험이 있습니다.</p> 
+                <p class="section__paragraph--level-1">현재는 (주)후이즈 기업부설연구소에서 프론트엔드 신입 팀원으로 UX&middot;UI 개발 업무를 수행하고 있습니다.</p>
+            </div>
+
+            <div class="section__paragraph">
+                <p class="section__paragraph--level-1">더 좋은 코드를 개선하고 설계하기 위해 시간을 내어</p>     
+                <p class="section__paragraph--level-1">개발에 필요하다고 생각하는 개념과 관련 지식을 Github에 공유하고 있습니다.</p>     
+            </div>
+
+        </section>   
+        <!-- 소개글:E --> 
+
+        <!-- 경력 사항:S -->
+        <section class="section section__career">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>경력사항</span>
+            </h2>
+
+            <ul class="section__list">
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2021.01 - 현재</p>
+                    <p class="section__list--level-2">WHOIS</p>
+                    <ol class="section__list-work none">
+                        <li>(주) 후이즈 기업부설 연구소에서 개발팀의 프론트엔드 신입 팀원으로 UX&middot;UI 분야에서 소프트웨어 개발 및 개선 업무에 참여 하고 있습니다.</li>
+                        <li>입사 후부터 꾸준한 업데이트로 계속 서비스를 하고 있고, 기본적인 유지보수를 비롯해</li>
+                        <li>비즈니스의 요구에 맞는 다양한 새로운 기능을 개선 및 개발하고 있습니다.</li>
+                    </ol>
+                    <p class="section__list--level-2">What did I do.</p>
+                    <ol class="section__list-work">
+                        <li>프론트엔드 인터페이스 구현</li>
+                        <li>후이즈웍스 솔루션 프로그램 UX&middot;UI 개발 및 개편</li>
+                    </ol>
+                    <p class="section__list--level-2">Tech Stack</p>
+                    <ol class="section__list-work">
+                        <li>GitHub, SVN</li>
+                        <li>AJAX, json</li>
+                        <li>JavaScript, jQuery</li>
+                        <li>Bootstrap</li>
+                        <li>HTML, CSS</li>
+                    </ol>
+                </li>
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2018.09 - 2020.09</p>
+                    <p class="section__list--level-2">FUZ, CODE NUMBER4</p>
+                    <ol class="section__list-work none">
+                        <li>UX&middot;UI 개발 분야에서 퍼블리싱팀의 팀원으로 총 2년간</li>
+                        <li>퇴사 전까지 금융권 프로젝트 등 웹/앱 UX설계 및 제작에 참여 하였습니다.</li>
+                        <li>개발업무에 대한 의지와 개인의 발전을 위해 이직을 하게 되었습니다.</li>
+                    </ol>
+                    <p class="section__list--level-2">What did I do.</p>
+                    <ol class="section__list-work">
+                        <li>WEB&middot;APP 프로젝트 UI 구현</li>
+                        <li>SI 프로젝트 고도화 및 신규구축 및 UI개편</li>
+                    </ol>
+                    <p class="section__list--level-2">Tech Stack</p>
+                    <ol class="section__list-work">
+                        <li>GitHub, SVN</li>
+                        <li>AJAX</li>
+                        <li>GSAP</li>
+                        <li>JavaScript, jQuery</li>
+                        <li>HTML, CSS, SCSS</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </section>
+        <!-- 경력 사항:E -->
+
+        <!-- 참여 프로젝트:S -->
+        <section class="section section__project">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>참여 프로젝트</span>
+            </h2>
+
+            <div class="section__paragraph">
+                <p class="section__paragraph--level-1">개인 포트폴리오를 제외한 참여했던 실제 프로젝트 이력을 기술합니다.</p>
+            </div>
+
+            <ul class="section__list">
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2021 - 현재</p>
+
+                    <p class="section__list--level-2">00 솔루션 웹 프로그램</p>
+                    <ol class="section__list-work">
+                        <li>2021.01 - 현재</li>
+                    </ol>
+
+                </li>
+
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2019 - 2020
+                        <button type="button" class="button__more" value="더보기">더보기</button>
+                    </p>
+
+                    <p class="section__list--level-2">웰릭스몰</p>
+                    <ol class="section__list-work">
+                        <li>2020.07 - 2020.09 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                    <p class="section__list--level-2">국카몰(KB카드 직영쇼핑몰)</p>
+                    <ol class="section__list-work">
+                        <li>2020.04 - 2020.07 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                    <p class="section__list--level-2">신원몰 이커머스 통합 플랫폼</p>
+                    <ol class="section__list-work">
+                        <li>2020.03 - 2020.04 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                    <div class="section__list-more">
+                        <div>
+
+                        <p class="section__list--level-2">OK저축은행 모바일뱅킹</p>
+                        <ol class="section__list-work">
+                            <li>2019.11 - 2020.03 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                        <p class="section__list--level-2">광주은행 모바일뱅킹 <span class="tag tag__red">고도화</span></p>
+                        <ol class="section__list-work">
+                            <li>2019.10 - 2019.10 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                        <p class="section__list--level-2">코드넘버4 웹사이트</p>
+                        <ol class="section__list-work">
+                            <li>2019.06 - 2019.08 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                        <p class="section__list--level-2">드림치과의원 웹사이트</p>
+                        <ol class="section__list-work">
+                            <li>2019.04 - 2019.08 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                        <p class="section__list--level-2">붙임머리아인 웹사이트</p>
+                        <ol class="section__list-work">
+                            <li>2019.03 - 2019.05 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                        <p class="section__list--level-2">더바름치과 웹사이트</p>
+                        <ol class="section__list-work">
+                            <li>2018.12 - 2019.03 <span class="tag tag__kosa">KOSA</span></li>
+                        </ol>
+
+                    </div>
+
+                </li>
+
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2018 - 2019</p>
+
+                    <p class="section__list--level-2">코드넘버4 랭킹관리조회프로그램</p>
+                    <ol class="section__list-work">
+                        <li>2018.10 - 2018.12 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                    <p class="section__list--level-2">미유펫 동물병원 웹사이트</p>
+                    <ol class="section__list-work">
+                        <li>2018.09 - 2018.12 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                    <p class="section__list--level-2">코드넘버4 OX퀴즈 프로그램</p>
+                    <ol class="section__list-work">
+                        <li>2018.09 - 2018.10 <span class="tag tag__kosa">KOSA</span></li>
+                    </ol>
+
+                </li>
+
+            </ul>
+
+        </section>
+        <!-- 참여 프로젝트:E -->
+
+        <!-- 토이 프로젝트:S -->
+        <section class="section section__project">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>토이 프로젝트</span>
+            </h2>
+
+            <div class="section__paragraph">
+                <p class="section__paragraph--level-1">업무를 수행하며 새로운 프론트엔드 지식을 익히기 위한 토이 프로젝트 참여 이력을 기술합니다.</p>
+            </div>
+
+            <ul class="section__list">
+
+                <li>
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">2020.11 - 2020.12</p>
+                    <p class="section__list--level-2">N행시</p>
+                    <ol class="section__list-work none">
+                        <li>컴포넌트를 최대한 재사용하는 것을 목적으로 Figma를 사용하여 제작한 팀 프로젝트입니다.</li>
+                        <li>타임어택으로 N행시 게임을 진행하는 프로젝트입니다.</li>
+                    </ol>
+                    <p class="section__list--level-2">What did I do.</p>
+                    <ol class="section__list-work">
+                        <li>프론트엔드 인터페이스 구현</li>
+                        <li>Front-End / Guide line</li>
+                    </ol>
+                    <p class="section__list--level-2">Tech Stack</p>
+                    <ol class="section__list-work">
+                        <li>Github</li>
+                        <li>Github Actions</li>
+                        <li>React, Redux</li>
+                        <li>Storybook, Github Actions</li>
+                        <li>JavaScript</li>
+                        <li>HTML, CSS, SCSS</li>
+                    </ol>
+                    <p class="section__list--level-2">Collaboration Management</p>
+                    <ol class="section__list-work">
+                        <li>Github</li>
+                        <li>Google Meet, Discord</li>
+                        <li>Figma</li>
+                        <li>Slack, Trello</li>
+                    </ol>
+                </li>
+            </ul>
+
+        </section>
+        <!-- 토이 프로젝트:E -->
+
+        <!-- 사용 기술:S -->
+        <section class="section section__career">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>사용 기술</span>
+            </h2>
+
+            <ul class="section__list">
+                <li>
+
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">Overall</p>
+                    <ol class="section__list-work">
+                        <li>사용자와 소통하는 인터렉션을 좋아합니다.</li>
+                        <li>업무에 필요하다면 낯선 라이브러리이더라도 적극적으로 탐색하여 최적의 결과를 낼 수 있도록 노력합니다.</li>
+                        <li>솔직하며 직설적인 커뮤니케이션을 선호합니다.</li>
+                    </ol>
+
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">Communication</p>
+                    <ol class="section__list-work">
+                        <li>직위나 포지션에 관계없이 적극적으로 생각을 피력합니다.</li>
+                        <li>지적 겸손함을 유지하기 위해 노력합니다.</li>
+                        <li>커뮤니케이션은 적은 것보다는 많은게 좋다고 생각합니다.</li>
+                    </ol>
+
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">HTML / CSS / ANIMATION</p>
+                    <ol class="section__list-work">
+                        <li>시맨틱 마크업을 준수합니다.</li>
+                        <li>다양한 플랫폼 및 브라우저를 지원할 수 있습니다.</li>
+                        <li>Sass 등 CSS Preprocessor로 유틸을 만들어 유지보수가 되는 마크업을 개발합니다.</li>
+                        <li>BEM 등의 CSS 방법론을 적용할 수 있습니다.</li>
+                        <li>CSS cubic-bezier 관련 지식으로 SVG 애니메이션을 구현합니다.</li>
+                    </ol>
+
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">JavaScript / React</p>
+                    <ol class="section__list-work">
+                        <li>ES6 + 자바스크립트 문법을 활용합니다.</li>
+                        <li>React는 클래스형 뿐만 아니라 함수형 컴포넌트로 개발하며 Custom Hook을 만들어 사용합니다.</li>
+                        <li>Redux로 전역 상태 관리를 하며 flux구조를 이해하고 있습니다.</li>
+                    </ol>
+
+                    <p class="section__list--level-1 section__paragraph--level-1 font__size-m">Tooling</p>
+                    <ol class="section__list-work">
+                        <li>Git을 활용한 형상관리를 하며 git flow로 브랜치 배드 전략을 수립합니다.</li>
+                        <li>Visual Studio Code, Eclipse 등의 개발 툴을 활용합니다.</li>
+                    </ol>
+
+                </li>
+            </ul>
+
+        </section>
+        <!-- 사용 기술:E -->
+
+        <!-- 프로필:S -->
+        <section class="section section__profile">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>프로필</span>
+            </h2>
+            <table>
+                <caption></caption>
+                <colgroup>
+                    <col width="90px">
+                    <col width="auto">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <th>이름</th>
+                        <td>곽민상</td>
+                    </tr>
+                    <tr>
+                        <th>이메일</th>
+                        <td><a href="mailto:kmsdevwork@gmail.com" target="_blank">kmsdevwork@gmail.com</a></td>
+                    </tr>
+                    <tr>
+                        <th>Github</th>
+                        <td><a href="https://github.com/qkaxhfms" target="_blank">https://github.com/qkaxhfms</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <!-- 프로필:E -->
+
+        <!-- 남김글:S -->
+        <section class="section section__write">
+
+            <h2 class="section__heading section__heading--level-1">
+                <span>남김글</span>
+            </h2>
+
+            <div class="section__paragraph">
+                <p class="section__paragraph--level-1">발전하는 개발분야에서 같이 일하고 싶은 개발자가 되기 위해</p>
+                <p class="section__paragraph--level-1">관련 지식을 꾸준히 습득하고 정리하고 있습니다.</p>
+                <p class="section__paragraph--level-1">함께 나누고 싶은 얘기가 있으시다면 편하게 연락 주세요.</p>
+                <p class="section__paragraph--level-1">감사합니다.</p>
+            </div>
+
+        </section>
+        <!-- 남김글:E -->
+
+    </div>
+    <!-- main (e) -->
+
+    <!-- footer (s) -->
+    <footer class="footer">
+        <div class="footer__inner">
+            <button type="button" class="button footer__button-top fixed active"></button>
+            <div>&copy; Minsang Kwak</div>
+            <div>
+                <a class="footer__inner--sns icon__github" href="https://github.com/qkaxhfms" class="sns" target="_blank">
+                    <svg viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                    </svg>
+                </a>
+                <a class="footer__inner--sns icon__mail" href="mailto:kmsdevwork@gmail.com" class="sns" target="_blank">
+                    <svg viewBox="0 0 100 125">
+                        <g transform="translate(0,-952.36218)">
+                            <path d="M15,976.4c-1.2,0-2.3,0.4-3.2,0.9l35.5,30c1.6,1.4,3.8,1.4,5.4,0l35.4-30c-0.9-0.6-2-0.9-3.2-0.9H15z M9.3,980.4
+                                c-0.2,0.6-0.3,1.3-0.3,2v40c0,1.2,0.4,2.3,1,3.2l25.4-23.2L9.3,980.4z M90.7,980.4l-26,22l25.3,23.2c0.6-0.9,1-2,1-3.2v-40
+                                C91,981.7,90.9,981,90.7,980.4z M61.6,1005l-6.3,5.3c-3.1,2.6-7.5,2.6-10.6,0l-6.3-5.3l-25.2,23c0.6,0.2,1.2,0.3,1.8,0.3h70
+                                c0.6,0,1.2-0.1,1.8-0.3C86.8,1028.1,61.6,1005,61.6,1005z"/>
+                        </g>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <!-- footer (e) -->
+
+    <script src="js/ui_common.js"></script>
+</body>
